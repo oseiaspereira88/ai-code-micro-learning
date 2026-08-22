@@ -1,3 +1,5 @@
 {"at":"2026-08-22T04:47:58Z","trigger":"manual","dedup_key":"dbd196a7b735acc1","consumer":"state-refresh","result":"ok","duration_ms":4,"changed_sections":["Specs \u0026 Roadmaps","Follow-ups","Capabilities","Decisões \u0026 Conhecimento","Validação \u0026 Evidência","Arquitetura","Docs"]}
 {"at":"2026-08-22T06:49:01Z","trigger":"manual","dedup_key":"17255fc2f94dc2db","consumer":"state-refresh","result":"ok","duration_ms":5,"changed_sections":["Specs \u0026 Roadmaps","Validação \u0026 Evidência"]}
 {"at":"2026-08-22T06:49:52Z","trigger":"manual","dedup_key":"17255fc2f94dc2db","consumer":"state-refresh","result":"ok","duration_ms":5,"changed_sections":["Validação \u0026 Evidência"]}
+{"at":"2026-08-22T19:52:21Z","trigger":"spec_closeout","target":"architecture-decision-baseline","dedup_key":"95ee1075af7821c4","consumer":"state-refresh","result":"ok","duration_ms":5,"changed_sections":["Specs \u0026 Roadmaps","Validação \u0026 Evidência"]}
+{"at":"2026-08-22T19:52:46Z","trigger":"spec_closeout","target":"architecture-decision-baseline","dedup_key":"95ee1075af7821c4","consumer":"state-refresh","result":"skipped","duration_ms":0}

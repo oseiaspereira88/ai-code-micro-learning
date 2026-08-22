@@ -140,14 +140,17 @@ Validar estrutura, referências e precisão editorial; não executar checks de a
 - R6 [satisfied] report:.pose/knowledge/2026-08-22-decision-log-adr-agent-mcp-and-core-boundaries-review.md
 
 ### Known gaps
-- Closeout formal ficou bloqueado por dois defeitos sucessivos do engine
-  POSE, ambos corrigidos durante a execução desta spec: `unknown review rule
+- Closeout formal ficou bloqueado por três defeitos sucessivos do engine
+  POSE, todos corrigidos durante a execução desta spec: `unknown review rule
   "backend-go"/"frontend-react"` em `pose 1.7.3`
   ([pose#35](https://github.com/oseiaspereira88/pose/issues/35), corrigido em
-  1.7.4) e `no immutable attributed change set` /
+  1.7.4); `no immutable attributed change set` /
   `no passed structured validation evidence` para specs sem módulo de código
   ([pose#36](https://github.com/oseiaspereira88/pose/issues/36), corrigido em
-  1.7.5). Bundle `rvb-78fd6f4bac4b7492` selado, atestado
+  1.7.5); e `lint-spec --strict` reportando falso "missing spec" para a
+  disposição `[covered: v1-integrated-acceptance]` em spec `done`
+  ([pose#37](https://github.com/oseiaspereira88/pose/issues/37), corrigido em
+  1.7.6). Bundle `rvb-78fd6f4bac4b7492` selado, atestado
   (`rva-0dfac1908946269a`) e verificado (`ready-to-close`) após a correção.
 
 ## 7. Final Report
