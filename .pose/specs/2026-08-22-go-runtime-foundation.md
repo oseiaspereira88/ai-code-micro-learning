@@ -1,13 +1,14 @@
 ---
 slug: go-runtime-foundation
-status: in-progress
+status: done
 created_at: 2026-08-22
-completed_at:
+completed_at: 2026-08-22
 supersedes:
 depends_on: architecture-decision-baseline
 priority: 10
 components: runtime, cli
 delivers:
+changelog: none
 ---
 
 # Spec: go-runtime-foundation
@@ -176,6 +177,15 @@ Cobrir parsing, códigos de saída, cancelamento, build reproduzível e ausênci
   mod tidy` não geram `go.sum` sem `require` externo. O artefato foi removido
   da seção 3 desta spec; será criado organicamente quando a primeira
   dependência externa (ex.: `go-sdk` do MCP) for adicionada.
+- Closeout foi bloqueado por
+  [pose#38](https://github.com/oseiaspereira88/pose/issues/38) (`go.mod` na
+  raiz classificado como bloqueador não resolvível pelo `review bundle`),
+  corrigido em `pose 1.7.7`. Bundle `rvb-9aa5fc5c237008c3` selado, atestado
+  (`rva-d8bde250ba75e74b`) e verificado `ready-to-close`.
+- Atribuir evidência de validação ao `review bundle` exige rodar
+  `pose validate --json <path>` e só então `pose index` (nesta ordem); rodar
+  `pose index` antes recomputa o grafo a partir de um resultado desatualizado
+  e o bundle reporta evidência zero mesmo com checks passando.
 
 ## 7. Final Report
 

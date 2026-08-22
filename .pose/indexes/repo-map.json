@@ -2,12 +2,42 @@
   "apps": [],
   "dockerfiles": [],
   "helmCharts": [],
-  "manifests": [],
+  "manifests": [
+    "go.mod"
+  ],
   "moduleMetadata": {
     "schemaVersion": 1,
     "source": ".pose/indexes/module-metadata.json"
   },
-  "packages": [],
+  "packages": [
+    {
+      "name": "ai-code-micro-learning",
+      "path": "",
+      "language": "go",
+      "hasDockerfile": false,
+      "hasHelmChart": false,
+      "owner": "unknown",
+      "criticality": "medium",
+      "domain": "unknown",
+      "validationProfile": "baseline",
+      "metadata": {
+        "criticality": "medium",
+        "domain": "unknown",
+        "owner": "unknown",
+        "validationProfile": "baseline"
+      },
+      "metadataStatus": {
+        "isComplete": false,
+        "missingFields": [
+          "criticality",
+          "domain",
+          "owner",
+          "validationProfile"
+        ],
+        "source": "defaulted"
+      }
+    }
+  ],
   "readmes": [
     ".agents/skills/README.md",
     ".pose/assessments/README.md",

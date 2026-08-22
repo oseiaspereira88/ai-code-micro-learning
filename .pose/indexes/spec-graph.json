@@ -534,7 +534,7 @@
       ],
       "path": ".pose/specs/2026-08-22-go-runtime-foundation.md",
       "priority": 10,
-      "status": "draft"
+      "status": "in-progress"
     },
     "installation-documentation-ci": {
       "depends_on": [

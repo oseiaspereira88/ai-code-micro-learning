@@ -1,0 +1,593 @@
+{
+  "schema_version": 1,
+  "bundle_id": "rvb-9aa5fc5c237008c3",
+  "bundle_digest": "sha256:9aa5fc5c237008c3cc9cf701ee8bb66c8bde2182e372131db798a31a11e48f93",
+  "state": "sealed",
+  "sealed_at": "2026-08-22T23:23:58Z",
+  "payload": {
+    "scope": {
+      "ref": "spec:go-runtime-foundation",
+      "kind": "spec",
+      "slug": "go-runtime-foundation",
+      "depends_on": [
+        "architecture-decision-baseline"
+      ],
+      "components": [
+        "cli",
+        "runtime"
+      ],
+      "sections": [
+        {
+          "kind": "semantic-section",
+          "path": "decisions",
+          "digest": "sha256:b7cfaa9c62da209b5139284732b93a9c91641601a558d79f2142eb70e3359552",
+          "reason": "governed semantic review input"
+        },
+        {
+          "kind": "semantic-section",
+          "path": "intent",
+          "digest": "sha256:d14e552c6f27157044d663f752f24b45041d21298ced4a6a5bcd590037dcccb4",
+          "reason": "governed semantic review input"
+        },
+        {
+          "kind": "semantic-section",
+          "path": "requirements",
+          "digest": "sha256:e0ba394f075cc11ec34047e42f4444aa523b511b842e7ae9c01889215cf06fa3",
+          "reason": "governed semantic review input"
+        },
+        {
+          "kind": "semantic-section",
+          "path": "technical plan",
+          "digest": "sha256:7ffa7f78f86e6b7aa744611da657d3c58b8a9197172b6bde5aab16955166c52a",
+          "reason": "governed semantic review input"
+        }
+      ]
+    },
+    "subject": {
+      "change_sets": [
+        "cs-7d4647e50da0"
+      ],
+      "base": "34c16410926f5958808e6c25270e3d931a8311ea",
+      "head": "c3560df1ad107d9c6175e28b9b6e9607307e76b7",
+      "patch_digest": "sha256:77ae6452281aa59c51788f894c1cd2abe2e0f04ded075ad968b9b5a793508d44",
+      "tree_digest": "sha256:1e21af20a9f90c5d2b3ac20fe5e1763af99a7aefd327bf3b6c5c4528f4ebcb42",
+      "entries": [
+        {
+          "action": "created",
+          "path": "cmd/ailearn/main.go",
+          "class": "implementation",
+          "digest": "sha256:3997ff0441fdf4157c437b61c09a1d38157811c31059d6625ada49a7fb7d1705",
+          "reason": "attributed implementation path in the immutable change set"
+        },
+        {
+          "action": "created",
+          "path": "go.mod",
+          "class": "governance",
+          "digest": "sha256:331c05bd14a525edf52c5ab76b32691e040eca00f40ffd20080b2d7c3442f4ae",
+          "reason": "attributed governance path in the immutable change set"
+        },
+        {
+          "action": "created",
+          "path": "internal/cli/doctor.go",
+          "class": "implementation",
+          "digest": "sha256:8faaf80a8ac28f4d0ee81d56d8422915597cb5d48860dfc4b63240c0773ad04e",
+          "reason": "attributed implementation path in the immutable change set"
+        },
+        {
+          "action": "created",
+          "path": "internal/cli/root.go",
+          "class": "implementation",
+          "digest": "sha256:461a5d0561e46d8b5171b6ffae8f4175ab0a21a1fb044dd36efa91b5c76c656c",
+          "reason": "attributed implementation path in the immutable change set"
+        },
+        {
+          "action": "created",
+          "path": "internal/cli/root_test.go",
+          "class": "implementation",
+          "digest": "sha256:9ea5ae444b16d7f74814c10ea11e280a7234dde4e5263eb6e8a98e7c9f935e84",
+          "reason": "attributed implementation path in the immutable change set"
+        },
+        {
+          "action": "created",
+          "path": "internal/cli/version.go",
+          "class": "implementation",
+          "digest": "sha256:5485e93cd05a244df881e89dac0cb8d44afa62a4106c98403171d6a249225db2",
+          "reason": "attributed implementation path in the immutable change set"
+        },
+        {
+          "action": "created",
+          "path": "internal/config/config.go",
+          "class": "implementation",
+          "digest": "sha256:0373ccebc1d79514e11135499d63b8aca77972fc7ee6228d2a566978ca7e97ab",
+          "reason": "attributed implementation path in the immutable change set"
+        },
+        {
+          "action": "modified",
+          "path": ".pose/indexes/module-metadata.json",
+          "class": "governance",
+          "digest": "sha256:327d4300c21ad69db723c186f4000272f0ff255e0932b8c094f2504ea8b4ec5a",
+          "reason": "attributed governance path in the immutable change set"
+        },
+        {
+          "action": "modified",
+          "path": ".pose/indexes/validation-matrix.json",
+          "class": "governance",
+          "digest": "sha256:7564215c57d3cd1a7735bb7e8ba0c6689b2485c78588fcaaac8c07ddcd59ddc7",
+          "reason": "attributed governance path in the immutable change set"
+        }
+      ]
+    },
+    "plan": {
+      "plan_digest": "sha256:cbabaf5e2a2fe96c7356b35a612fab6c2d3138451c8a60a3bdc43aa6e5ab2380",
+      "independence": "same-actor-separate-execution",
+      "components": [
+        {
+          "id": "cmd",
+          "path": "cmd",
+          "kind": "directory",
+          "sources": [
+            "artifact:go-runtime-foundation:cmd/ailearn/main.go",
+            "observed:go-runtime-foundation:cmd/ailearn/main.go"
+          ]
+        },
+        {
+          "id": "internal",
+          "path": "internal",
+          "kind": "directory",
+          "sources": [
+            "artifact:go-runtime-foundation:internal/cli/doctor.go",
+            "artifact:go-runtime-foundation:internal/cli/root.go",
+            "artifact:go-runtime-foundation:internal/cli/root_test.go",
+            "artifact:go-runtime-foundation:internal/cli/version.go",
+            "artifact:go-runtime-foundation:internal/config/config.go",
+            "observed:go-runtime-foundation:internal/cli/doctor.go",
+            "observed:go-runtime-foundation:internal/cli/root.go",
+            "observed:go-runtime-foundation:internal/cli/root_test.go",
+            "observed:go-runtime-foundation:internal/cli/version.go",
+            "observed:go-runtime-foundation:internal/config/config.go"
+          ]
+        }
+      ],
+      "criteria": [
+        {
+          "id": "compatibility",
+          "description": "Public CLI, file and MCP contracts are compatible or explicitly migrated.",
+          "required": true,
+          "profiles": [
+            "spec-closeout@1"
+          ]
+        },
+        {
+          "id": "correctness",
+          "description": "Functional and negative behavior is correct.",
+          "required": true,
+          "evidence_classes": [
+            "test",
+            "validation"
+          ],
+          "profiles": [
+            "spec-closeout@1"
+          ]
+        },
+        {
+          "id": "cross-component-integration",
+          "description": "Observed component boundaries and contracts are integrated and covered by current evidence.",
+          "required": true,
+          "evidence_classes": [
+            "integration"
+          ],
+          "profiles": [
+            "synthetic:cross-component"
+          ]
+        },
+        {
+          "id": "documentation",
+          "description": "Operational docs, templates and scaffold match runtime behavior.",
+          "required": true,
+          "rules": [
+            "documentation-style"
+          ],
+          "profiles": [
+            "spec-closeout@1"
+          ]
+        },
+        {
+          "id": "operability",
+          "description": "Errors, explanations and remediation are actionable.",
+          "required": true,
+          "profiles": [
+            "spec-closeout@1"
+          ]
+        },
+        {
+          "id": "requirements",
+          "description": "Every requirement has current, relevant evidence.",
+          "required": true,
+          "evidence_classes": [
+            "requirement-trace",
+            "test"
+          ],
+          "profiles": [
+            "spec-closeout@1"
+          ]
+        },
+        {
+          "id": "scope",
+          "description": "The implementation matches the approved spec scope.",
+          "required": true,
+          "rules": [
+            "documentation-style"
+          ],
+          "profiles": [
+            "spec-closeout@1"
+          ]
+        },
+        {
+          "id": "security",
+          "description": "Inputs, paths, evidence and authority boundaries are safe.",
+          "required": true,
+          "rules": [
+            "security"
+          ],
+          "profiles": [
+            "spec-closeout@1"
+          ]
+        }
+      ],
+      "tools": [
+        {
+          "id": "artifact-check",
+          "requiredness": "required",
+          "args": [
+            "pose",
+            "artifact-check",
+            "--spec",
+            "go-runtime-foundation",
+            "--strict"
+          ],
+          "rationale": "reconcile declared artifacts with Git-observed provenance",
+          "criteria": [
+            "requirements",
+            "scope"
+          ],
+          "preconditions": [
+            "artifacts-attributed"
+          ]
+        },
+        {
+          "id": "assess-discover",
+          "requiredness": "recommended",
+          "args": [
+            "pose",
+            "assess",
+            "discover",
+            "--component",
+            "cmd"
+          ],
+          "rationale": "inspect component structure, language, size and visible debt",
+          "component": "cmd",
+          "preconditions": [
+            "scope-authorized"
+          ]
+        },
+        {
+          "id": "assess-discover",
+          "requiredness": "recommended",
+          "args": [
+            "pose",
+            "assess",
+            "discover",
+            "--component",
+            "internal"
+          ],
+          "rationale": "inspect component structure, language, size and visible debt",
+          "component": "internal",
+          "preconditions": [
+            "scope-authorized"
+          ]
+        },
+        {
+          "id": "assess-integrate",
+          "requiredness": "required",
+          "args": [
+            "pose",
+            "assess",
+            "integrate"
+          ],
+          "rationale": "inspect providers, consumers and inter-component contract gaps",
+          "evidence_classes": [
+            "integration"
+          ],
+          "criteria": [
+            "cross-component-integration"
+          ],
+          "preconditions": [
+            "scope-authorized"
+          ]
+        },
+        {
+          "id": "assess-tech-debt",
+          "requiredness": "recommended",
+          "args": [
+            "pose",
+            "assess",
+            "tech-debt"
+          ],
+          "rationale": "inspect unresolved TODO, FIXME, panic and stub findings",
+          "criteria": [
+            "correctness"
+          ],
+          "preconditions": [
+            "scope-authorized"
+          ]
+        },
+        {
+          "id": "closeout-check",
+          "requiredness": "required",
+          "args": [
+            "pose",
+            "closeout-check",
+            "spec:go-runtime-foundation"
+          ],
+          "rationale": "verify remaining hierarchical closeout blockers",
+          "preconditions": [
+            "review-complete"
+          ]
+        },
+        {
+          "id": "review-check",
+          "requiredness": "required",
+          "args": [
+            "pose",
+            "review-check",
+            "spec:go-runtime-foundation"
+          ],
+          "rationale": "verify exact review-plan coverage and freshness",
+          "preconditions": [
+            "review-complete"
+          ]
+        },
+        {
+          "id": "suggest-review",
+          "requiredness": "recommended",
+          "args": [
+            "pose",
+            "suggest",
+            "review",
+            "--path",
+            "cmd"
+          ],
+          "rationale": "resolve the component-specific workflow, skill, rules and validation trail",
+          "component": "cmd",
+          "preconditions": [
+            "scope-authorized"
+          ]
+        },
+        {
+          "id": "suggest-review",
+          "requiredness": "recommended",
+          "args": [
+            "pose",
+            "suggest",
+            "review",
+            "--path",
+            "internal"
+          ],
+          "rationale": "resolve the component-specific workflow, skill, rules and validation trail",
+          "component": "internal",
+          "preconditions": [
+            "scope-authorized"
+          ]
+        },
+        {
+          "id": "validate",
+          "requiredness": "required",
+          "args": [
+            "pose",
+            "validate",
+            "--strict"
+          ],
+          "rationale": "run the registered deterministic checks for the affected module",
+          "evidence_classes": [
+            "validation"
+          ],
+          "criteria": [
+            "correctness",
+            "requirements"
+          ],
+          "preconditions": [
+            "delivery-target-declared"
+          ]
+        },
+        {
+          "id": "validate",
+          "requiredness": "required",
+          "args": [
+            "pose",
+            "validate",
+            "--strict",
+            "--module",
+            "cmd"
+          ],
+          "rationale": "run the registered deterministic checks for the affected module",
+          "evidence_classes": [
+            "validation"
+          ],
+          "component": "cmd",
+          "preconditions": [
+            "delivery-target-declared"
+          ]
+        },
+        {
+          "id": "validate",
+          "requiredness": "required",
+          "args": [
+            "pose",
+            "validate",
+            "--strict",
+            "--module",
+            "internal"
+          ],
+          "rationale": "run the registered deterministic checks for the affected module",
+          "evidence_classes": [
+            "validation"
+          ],
+          "component": "internal",
+          "preconditions": [
+            "delivery-target-declared"
+          ]
+        }
+      ]
+    },
+    "evidence": [
+      {
+        "id": "./go/build",
+        "module": ".",
+        "check": "build",
+        "evidence_class": "build",
+        "outcome": "pass",
+        "git_head": "c3560df1ad107d9c6175e28b9b6e9607307e76b7",
+        "provenance_digest": "sha256:390f79ef3588062a8755ecc31042c4c55edc69ee273570af534546af080b0d49",
+        "report": ".pose/results/delivery-validation.json"
+      },
+      {
+        "id": "./go/test",
+        "module": ".",
+        "check": "test",
+        "evidence_class": "unit",
+        "outcome": "pass",
+        "git_head": "c3560df1ad107d9c6175e28b9b6e9607307e76b7",
+        "provenance_digest": "sha256:390f79ef3588062a8755ecc31042c4c55edc69ee273570af534546af080b0d49",
+        "report": ".pose/results/delivery-validation.json"
+      }
+    ],
+    "consumed_inputs": [
+      {
+        "kind": "governed-config",
+        "path": ".pose/indexes/validation-matrix.json",
+        "digest": "sha256:7564215c57d3cd1a7735bb7e8ba0c6689b2485c78588fcaaac8c07ddcd59ddc7",
+        "reason": "consumed review policy or validation contract"
+      },
+      {
+        "kind": "governed-config",
+        "path": ".pose/policy/review.json",
+        "digest": "sha256:89a78e6ec6e1806414c669e66239831b593c08b9a182e36fae119bccecd28b5e",
+        "reason": "consumed review policy or validation contract"
+      },
+      {
+        "kind": "review-plan",
+        "path": "spec-closeout@1",
+        "digest": "sha256:cbabaf5e2a2fe96c7356b35a612fab6c2d3138451c8a60a3bdc43aa6e5ab2380",
+        "reason": "effective component-aware plan contract"
+      },
+      {
+        "kind": "review-profile",
+        "path": ".pose/review-profiles/spec-closeout.json",
+        "digest": "sha256:de13c1d59e485aaf4cb474a8c2836507447c44dc7090cbdc2de589fa75c6cc92",
+        "reason": "selected by effective review plan"
+      },
+      {
+        "kind": "rule",
+        "path": ".pose/rules/documentation-style.md",
+        "digest": "sha256:5c5c666fc6c796cf9ae3876d25d3fd4fa523d121892459dc0d681d73da1d60ae",
+        "reason": "selected by effective review criterion"
+      },
+      {
+        "kind": "rule",
+        "path": ".pose/rules/security.md",
+        "digest": "sha256:1cbf29c12d09cad0799e2d8715e94f84a49ee8fa09867bb5f12a544f8df43774",
+        "reason": "selected by effective review criterion"
+      },
+      {
+        "kind": "schema",
+        "path": "review-bundle@1",
+        "digest": "sha256:e7c9643ec88eccb2a6dea3ee3291c351983d78e1d2fa44b61399514c5021bcb0",
+        "reason": "canonical bundle and attestation schema identity"
+      },
+      {
+        "kind": "tool-catalog",
+        "path": "native-review-tools@1",
+        "digest": "sha256:cbabaf5e2a2fe96c7356b35a612fab6c2d3138451c8a60a3bdc43aa6e5ab2380",
+        "reason": "closed resolved native tool contract"
+      }
+    ]
+  },
+  "excluded_inputs": [
+    {
+      "kind": "derived-evidence",
+      "path": ".pose/contributions/20260822-201802-review-bundle-root-level-files-gomod-pro.md",
+      "reason": "attributed path is outside the semantic review subject"
+    },
+    {
+      "kind": "derived-evidence",
+      "path": ".pose/reports/2026-08-22-standard-fundacao-go-executavel-do-ailearn.md",
+      "reason": "attributed path is outside the semantic review subject"
+    },
+    {
+      "kind": "derived-evidence",
+      "path": ".pose/reports/2026-08-22-standard-validate-native.md",
+      "reason": "attributed path is outside the semantic review subject"
+    },
+    {
+      "kind": "derived-evidence",
+      "path": ".pose/reports/history/standard-fundacao-go-executavel-do-ailearn.jsonl",
+      "reason": "attributed path is outside the semantic review subject"
+    },
+    {
+      "kind": "derived-evidence",
+      "path": ".pose/reports/history/standard-validate-native.jsonl",
+      "reason": "attributed path is outside the semantic review subject"
+    },
+    {
+      "kind": "derived-evidence",
+      "path": ".pose/results/delivery-validation.json",
+      "reason": "attributed path is outside the semantic review subject"
+    },
+    {
+      "kind": "derived-evidence",
+      "path": ".pose/state/machinery-manifest.json",
+      "reason": "attributed path is outside the semantic review subject"
+    },
+    {
+      "kind": "derived-index",
+      "path": ".pose/indexes/delivery-integrity.json",
+      "reason": "attributed path is outside the semantic review subject"
+    },
+    {
+      "kind": "derived-section",
+      "path": "final report",
+      "digest": "sha256:a606a0b31ae8c3dcbbf0c9eb64b2661ca69ae2ba8a2a5581eed48c4c54b4b6f3",
+      "reason": "operational closeout content is verified by its own gate"
+    },
+    {
+      "kind": "derived-section",
+      "path": "tasks",
+      "digest": "sha256:4d0f19a508a92d029985cd06ed33bc4ba92e887686239ccbbbdec6dafed5c20c",
+      "reason": "operational closeout content is verified by its own gate"
+    },
+    {
+      "kind": "derived-section",
+      "path": "validation",
+      "digest": "sha256:eaf1c9e8dc34379a15d01ed31c3275f99d0d147329e43d156a62f5fd3ce1f8e3",
+      "reason": "operational closeout content is verified by its own gate"
+    },
+    {
+      "kind": "lifecycle",
+      "path": "/home/go/GolandProjects/ai-code-micro-learning/.pose/specs/2026-08-22-go-runtime-foundation.md",
+      "reason": "status and completed_at do not define the reviewed semantic subject"
+    },
+    {
+      "kind": "semantic-scope",
+      "path": ".pose/specs/2026-08-22-go-runtime-foundation.md",
+      "reason": "attributed path is outside the semantic review subject"
+    }
+  ],
+  "warnings": [
+    "unmapped review component explicit:cli",
+    "unmapped review component explicit:runtime",
+    "unmapped review component path:.pose/indexes/module-metadata.json",
+    "unmapped review component path:.pose/indexes/validation-matrix.json",
+    "unmapped review component path:go.mod"
+  ],
+  "path": ".pose/review-bundles/rvb-9aa5fc5c237008c3.json"
+}

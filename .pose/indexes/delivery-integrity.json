@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "input_digest": "sha256:697ce791d22e4e8afdc867a81bb4a036ba7923ce42bd7d787e21dd2195547d31",
-  "provenance_digest": "sha256:35e1ce408fb9afb85be15e6ce33d7e8f69c6d3fdde284ec88a04495ea8261533",
+  "input_digest": "sha256:aa364c266fabbaf5efeea43329485e99bf249df09343c18f2a7a7ecedea22389",
+  "provenance_digest": "sha256:390f79ef3588062a8755ecc31042c4c55edc69ee273570af534546af080b0d49",
   "nodes": [
     {
       "id": "artifact:.agents/skills/ailearn/SKILL.md",
@@ -137,6 +137,13 @@
       }
     },
     {
+      "id": "artifact:.pose/contributions/20260822-201802-review-bundle-root-level-files-gomod-pro.md",
+      "type": "artifact",
+      "attributes": {
+        "path": ".pose/contributions/20260822-201802-review-bundle-root-level-files-gomod-pro.md"
+      }
+    },
+    {
       "id": "artifact:.pose/indexes/delivery-integrity.json",
       "type": "artifact",
       "attributes": {
@@ -193,6 +200,13 @@
       }
     },
     {
+      "id": "artifact:.pose/reports/2026-08-22-standard-fundacao-go-executavel-do-ailearn.md",
+      "type": "artifact",
+      "attributes": {
+        "path": ".pose/reports/2026-08-22-standard-fundacao-go-executavel-do-ailearn.md"
+      }
+    },
+    {
       "id": "artifact:.pose/reports/2026-08-22-standard-registrar-baseline-de-decis-es-arquiteturais-4-adrs.md",
       "type": "artifact",
       "attributes": {
@@ -204,6 +218,13 @@
       "type": "artifact",
       "attributes": {
         "path": ".pose/reports/2026-08-22-standard-validate-native.md"
+      }
+    },
+    {
+      "id": "artifact:.pose/reports/history/standard-fundacao-go-executavel-do-ailearn.jsonl",
+      "type": "artifact",
+      "attributes": {
+        "path": ".pose/reports/history/standard-fundacao-go-executavel-do-ailearn.jsonl"
       }
     },
     {
@@ -1594,10 +1615,10 @@
       }
     },
     {
-      "id": "change-set:cs-c7828f11031b",
+      "id": "change-set:cs-7d4647e50da0",
       "type": "change-set",
       "attributes": {
-        "diff_digest": "sha256:f7dc05efb6d09b65d1158d03a503cdb375589c92697fae7bfadae46f2bb54f86",
+        "diff_digest": "sha256:d409c08a825575c2df2289cc4e36f08aa9974cbdb12f84beb6943fbc8f10156e",
         "selector": "trailers:go-runtime-foundation"
       }
     },
@@ -1782,6 +1803,33 @@
       "attributes": {
         "status": "draft"
       }
+    },
+    {
+      "id": "validation-result:./go/build",
+      "type": "validation-result",
+      "attributes": {
+        "check": "build",
+        "evidence_class": "build",
+        "outcome": "pass"
+      }
+    },
+    {
+      "id": "validation-result:./go/test",
+      "type": "validation-result",
+      "attributes": {
+        "check": "test",
+        "evidence_class": "unit",
+        "outcome": "pass"
+      }
+    },
+    {
+      "id": "validation-result:./go/vet",
+      "type": "validation-result",
+      "attributes": {
+        "check": "vet",
+        "evidence_class": "build",
+        "outcome": "pass"
+      }
     }
   ],
   "edges": [
@@ -1911,62 +1959,92 @@
       "type": "changes"
     },
     {
-      "from": "change-set:cs-c7828f11031b",
+      "from": "change-set:cs-7d4647e50da0",
+      "to": "artifact:.pose/contributions/20260822-201802-review-bundle-root-level-files-gomod-pro.md",
+      "type": "changes"
+    },
+    {
+      "from": "change-set:cs-7d4647e50da0",
+      "to": "artifact:.pose/indexes/delivery-integrity.json",
+      "type": "changes"
+    },
+    {
+      "from": "change-set:cs-7d4647e50da0",
       "to": "artifact:.pose/indexes/module-metadata.json",
       "type": "changes"
     },
     {
-      "from": "change-set:cs-c7828f11031b",
+      "from": "change-set:cs-7d4647e50da0",
       "to": "artifact:.pose/indexes/validation-matrix.json",
       "type": "changes"
     },
     {
-      "from": "change-set:cs-c7828f11031b",
+      "from": "change-set:cs-7d4647e50da0",
+      "to": "artifact:.pose/reports/2026-08-22-standard-fundacao-go-executavel-do-ailearn.md",
+      "type": "changes"
+    },
+    {
+      "from": "change-set:cs-7d4647e50da0",
       "to": "artifact:.pose/reports/2026-08-22-standard-validate-native.md",
       "type": "changes"
     },
     {
-      "from": "change-set:cs-c7828f11031b",
+      "from": "change-set:cs-7d4647e50da0",
+      "to": "artifact:.pose/reports/history/standard-fundacao-go-executavel-do-ailearn.jsonl",
+      "type": "changes"
+    },
+    {
+      "from": "change-set:cs-7d4647e50da0",
       "to": "artifact:.pose/reports/history/standard-validate-native.jsonl",
       "type": "changes"
     },
     {
-      "from": "change-set:cs-c7828f11031b",
+      "from": "change-set:cs-7d4647e50da0",
+      "to": "artifact:.pose/results/delivery-validation.json",
+      "type": "changes"
+    },
+    {
+      "from": "change-set:cs-7d4647e50da0",
       "to": "artifact:.pose/specs/2026-08-22-go-runtime-foundation.md",
       "type": "changes"
     },
     {
-      "from": "change-set:cs-c7828f11031b",
+      "from": "change-set:cs-7d4647e50da0",
+      "to": "artifact:.pose/state/machinery-manifest.json",
+      "type": "changes"
+    },
+    {
+      "from": "change-set:cs-7d4647e50da0",
       "to": "artifact:cmd/ailearn/main.go",
       "type": "changes"
     },
     {
-      "from": "change-set:cs-c7828f11031b",
+      "from": "change-set:cs-7d4647e50da0",
       "to": "artifact:go.mod",
       "type": "changes"
     },
     {
-      "from": "change-set:cs-c7828f11031b",
+      "from": "change-set:cs-7d4647e50da0",
       "to": "artifact:internal/cli/doctor.go",
       "type": "changes"
     },
     {
-      "from": "change-set:cs-c7828f11031b",
+      "from": "change-set:cs-7d4647e50da0",
       "to": "artifact:internal/cli/root.go",
       "type": "changes"
     },
     {
-      "from": "change-set:cs-c7828f11031b",
+      "from": "change-set:cs-7d4647e50da0",
       "to": "artifact:internal/cli/root_test.go",
       "type": "changes"
     },
     {
-      "from": "change-set:cs-c7828f11031b",
+      "from": "change-set:cs-7d4647e50da0",
       "to": "artifact:internal/cli/version.go",
       "type": "changes"
     },
     {
-      "from": "change-set:cs-c7828f11031b",
+      "from": "change-set:cs-7d4647e50da0",
       "to": "artifact:internal/config/config.go",
       "type": "changes"
     },
@@ -2427,7 +2505,7 @@
     },
     {
       "from": "spec:go-runtime-foundation",
-      "to": "change-set:cs-c7828f11031b",
+      "to": "change-set:cs-7d4647e50da0",
       "type": "observed-by"
     },
     {
@@ -4354,18 +4432,33 @@
       "diff_digest": "sha256:99af988f9b3d75b3ee0304952a578c49163845943110481445da9e9e60953670"
     },
     {
-      "id": "cs-c7828f11031b",
+      "id": "cs-7d4647e50da0",
       "spec": "go-runtime-foundation",
       "selector": "trailers:go-runtime-foundation",
       "base": "369b8fa00a80afaa450949210b5a4aa83f3cc033^",
-      "head": "79f04e56b82f474fd51a6ef3519246378abeab11",
+      "head": "c3560df1ad107d9c6175e28b9b6e9607307e76b7",
       "resolved_base": "34c16410926f5958808e6c25270e3d931a8311ea",
-      "resolved_head": "79f04e56b82f474fd51a6ef3519246378abeab11",
+      "resolved_head": "c3560df1ad107d9c6175e28b9b6e9607307e76b7",
       "commits": [
         "369b8fa00a80afaa450949210b5a4aa83f3cc033",
-        "79f04e56b82f474fd51a6ef3519246378abeab11"
+        "79f04e56b82f474fd51a6ef3519246378abeab11",
+        "e6ae68bd4cb90f3e237c737450d75b25150adec3",
+        "21c68939af75f3082dea80e0be69cd7877f39927",
+        "c3560df1ad107d9c6175e28b9b6e9607307e76b7"
       ],
       "paths": [
+        {
+          "action": "created",
+          "path": ".pose/contributions/20260822-201802-review-bundle-root-level-files-gomod-pro.md"
+        },
+        {
+          "action": "created",
+          "path": ".pose/reports/2026-08-22-standard-fundacao-go-executavel-do-ailearn.md"
+        },
+        {
+          "action": "created",
+          "path": ".pose/reports/history/standard-fundacao-go-executavel-do-ailearn.jsonl"
+        },
         {
           "action": "created",
           "path": "cmd/ailearn/main.go"
@@ -4396,6 +4489,10 @@
         },
         {
           "action": "modified",
+          "path": ".pose/indexes/delivery-integrity.json"
+        },
+        {
+          "action": "modified",
           "path": ".pose/indexes/module-metadata.json"
         },
         {
@@ -4412,10 +4509,18 @@
         },
         {
           "action": "modified",
+          "path": ".pose/results/delivery-validation.json"
+        },
+        {
+          "action": "modified",
           "path": ".pose/specs/2026-08-22-go-runtime-foundation.md"
+        },
+        {
+          "action": "modified",
+          "path": ".pose/state/machinery-manifest.json"
         }
       ],
-      "diff_digest": "sha256:f7dc05efb6d09b65d1158d03a503cdb375589c92697fae7bfadae46f2bb54f86"
+      "diff_digest": "sha256:d409c08a825575c2df2289cc4e36f08aa9974cbdb12f84beb6943fbc8f10156e"
     }
   ],
   "reverse": {
@@ -8824,6 +8929,56 @@
       "path": "internal/checks/process_windows.go",
       "message": "declared current artifact is not tracked at the selected head",
       "remediation": "correct the exact path or commit the artifact before closeout"
+    }
+  ],
+  "validation_results": [
+    {
+      "id": "./go/build",
+      "module": ".",
+      "check": "build",
+      "evidence_class": "build",
+      "severity": "required",
+      "outcome": "pass",
+      "git_head": "c3560df1ad107d9c6175e28b9b6e9607307e76b7",
+      "generated_at": "2026-08-22T23:23:27Z",
+      "provenance_digest": "sha256:390f79ef3588062a8755ecc31042c4c55edc69ee273570af534546af080b0d49",
+      "report": ".pose/results/delivery-validation.json",
+      "scope_provenance": {
+        "architecture-decision-baseline": "sha256:0cb9538df6c6193eeea826dda56f91288808c178925c98b02a43af253045c99e",
+        "go-runtime-foundation": "sha256:4debe1665ff803c677608ca07accabebcd9533464e1c904c8678b7690ca61b49"
+      }
+    },
+    {
+      "id": "./go/test",
+      "module": ".",
+      "check": "test",
+      "evidence_class": "unit",
+      "severity": "required",
+      "outcome": "pass",
+      "git_head": "c3560df1ad107d9c6175e28b9b6e9607307e76b7",
+      "generated_at": "2026-08-22T23:23:27Z",
+      "provenance_digest": "sha256:390f79ef3588062a8755ecc31042c4c55edc69ee273570af534546af080b0d49",
+      "report": ".pose/results/delivery-validation.json",
+      "scope_provenance": {
+        "architecture-decision-baseline": "sha256:0cb9538df6c6193eeea826dda56f91288808c178925c98b02a43af253045c99e",
+        "go-runtime-foundation": "sha256:4debe1665ff803c677608ca07accabebcd9533464e1c904c8678b7690ca61b49"
+      }
+    },
+    {
+      "id": "./go/vet",
+      "module": ".",
+      "check": "vet",
+      "evidence_class": "build",
+      "severity": "optional",
+      "outcome": "pass",
+      "git_head": "c3560df1ad107d9c6175e28b9b6e9607307e76b7",
+      "generated_at": "2026-08-22T23:23:27Z",
+      "provenance_digest": "sha256:390f79ef3588062a8755ecc31042c4c55edc69ee273570af534546af080b0d49",
+      "report": ".pose/results/delivery-validation.json",
+      "scope_provenance": {
+        "architecture-decision-baseline": "sha256:0cb9538df6c6193eeea826dda56f91288808c178925c98b02a43af253045c99e",
+        "go-runtime-foundation": "sha256:4debe1665ff803c677608ca07accabebcd9533464e1c904c8678b7690ca61b49"
+      }
     }
   ]
 }
