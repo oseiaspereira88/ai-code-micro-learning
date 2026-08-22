@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "component_slug": "root",
+  "path": ".",
+  "discovered_at": "2026-08-22T06:23:49Z",
+  "baseline_commit": "b904fa917a77",
+  "metrics": {
+    "loc_production": 0,
+    "loc_tests": 0,
+    "total_files": 0,
+    "languages": null
+  },
+  "technical_debt": {
+    "todos": 0,
+    "fixmes": 0,
+    "panics": 0,
+    "stubs": 0
+  },
+  "status": "verified",
+  "completeness_score": 1
+}

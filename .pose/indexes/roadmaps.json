@@ -1,4 +1,92 @@
 {
-  "roadmaps": {},
+  "roadmaps": {
+    "ailearn-v1": {
+      "created_at": "2026-08-22",
+      "depends_on": null,
+      "milestones": [
+        {
+          "id": "architecture-baseline",
+          "specs": [
+            "architecture-decision-baseline"
+          ]
+        },
+        {
+          "id": "executable-foundation",
+          "after": [
+            "architecture-baseline"
+          ],
+          "specs": [
+            "go-runtime-foundation",
+            "learning-domain-model",
+            "catalog-schema-loader",
+            "local-event-store",
+            "mcp-stdio-foundation"
+          ]
+        },
+        {
+          "id": "pedagogical-core",
+          "after": [
+            "executable-foundation"
+          ],
+          "specs": [
+            "session-orchestration-disclosure",
+            "assistance-hints-detours",
+            "feedback-evaluation-progression",
+            "workspace-observation-baselines",
+            "safe-check-executor",
+            "mastery-review-scheduling",
+            "curriculum-graph-path-recommendation"
+          ]
+        },
+        {
+          "id": "tutor-surfaces-and-modes",
+          "after": [
+            "pedagogical-core"
+          ],
+          "specs": [
+            "tutor-skill-host-integration",
+            "administrative-cli-fixtures",
+            "learning-practice-debug-modes",
+            "interview-mode"
+          ]
+        },
+        {
+          "id": "curriculum-v1",
+          "after": [
+            "tutor-surfaces-and-modes"
+          ],
+          "specs": [
+            "catalog-authoring-quality",
+            "go-foundations-packs",
+            "go-backend-packs",
+            "go-production-architecture-packs",
+            "go-interviews-pack"
+          ]
+        },
+        {
+          "id": "production-hardening",
+          "after": [
+            "curriculum-v1"
+          ],
+          "specs": [
+            "security-privacy-hardening",
+            "reliability-observability-compatibility",
+            "installation-documentation-ci"
+          ]
+        },
+        {
+          "id": "v1-acceptance",
+          "after": [
+            "production-hardening"
+          ],
+          "specs": [
+            "v1-integrated-acceptance"
+          ]
+        }
+      ],
+      "path": ".pose/roadmaps/ailearn-v1.md",
+      "status": "active"
+    }
+  },
   "schemaVersion": 1
 }
