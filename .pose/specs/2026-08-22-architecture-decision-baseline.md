@@ -1,6 +1,6 @@
 ---
 slug: architecture-decision-baseline
-status: draft
+status: in-progress
 created_at: 2026-08-22
 completed_at:
 supersedes:
@@ -139,8 +139,16 @@ Validar estrutura, referências e precisão editorial; não executar checks de a
 - R6 [satisfied] report:.pose/knowledge/2026-08-22-decision-log-adr-agent-mcp-and-core-boundaries-review.md
 
 ### Known gaps
-- Nenhum; os quatro nomes de ADR previstos coincidiram com o output real de
-  `pose new-adr`.
+- Closeout formal (`pose close spec:architecture-decision-baseline`) está
+  bloqueado por defeito do engine: `pose review bundle --seal` falha com
+  `unknown review rule "backend-go"/"frontend-react"` porque
+  `.pose/policy/review.json` traz `overlay_profiles` que dependem de regras
+  hoje distribuídas por extensão, nunca instaladas (`pose extension list`
+  retorna vazio) porque o projeto rodou `pose init` sem stack definida.
+  Reportado em
+  `.pose/contributions/20260822-104601-review-bundle-seal-crashes-on-overlay-pr.md`.
+  A spec permanece `in-progress` até o engine ser corrigido ou os
+  `overlay_profiles` serem resolvidos manualmente.
 
 ## 7. Final Report
 
