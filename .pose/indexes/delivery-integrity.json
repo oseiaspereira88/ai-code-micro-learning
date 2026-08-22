@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "input_digest": "sha256:aa364c266fabbaf5efeea43329485e99bf249df09343c18f2a7a7ecedea22389",
-  "provenance_digest": "sha256:390f79ef3588062a8755ecc31042c4c55edc69ee273570af534546af080b0d49",
+  "input_digest": "sha256:fa5d0ee28bc4972e6de19e2f0d2b5c147c24dadb80dac910b96471dc87c32431",
+  "provenance_digest": "sha256:a222a2f5ee97aabbda6efbf1b97b4d0f60728cd08b221f551d7b41d6214071e0",
   "nodes": [
     {
       "id": "artifact:.agents/skills/ailearn/SKILL.md",
@@ -158,6 +158,20 @@
       }
     },
     {
+      "id": "artifact:.pose/indexes/packages.json",
+      "type": "artifact",
+      "attributes": {
+        "path": ".pose/indexes/packages.json"
+      }
+    },
+    {
+      "id": "artifact:.pose/indexes/repo-map.json",
+      "type": "artifact",
+      "attributes": {
+        "path": ".pose/indexes/repo-map.json"
+      }
+    },
+    {
       "id": "artifact:.pose/indexes/spec-graph.json",
       "type": "artifact",
       "attributes": {
@@ -256,10 +270,24 @@
       }
     },
     {
+      "id": "artifact:.pose/review-attestations/rva-d8bde250ba75e74b.json",
+      "type": "artifact",
+      "attributes": {
+        "path": ".pose/review-attestations/rva-d8bde250ba75e74b.json"
+      }
+    },
+    {
       "id": "artifact:.pose/review-bundles/rvb-78fd6f4bac4b7492.json",
       "type": "artifact",
       "attributes": {
         "path": ".pose/review-bundles/rvb-78fd6f4bac4b7492.json"
+      }
+    },
+    {
+      "id": "artifact:.pose/review-bundles/rvb-9aa5fc5c237008c3.json",
+      "type": "artifact",
+      "attributes": {
+        "path": ".pose/review-bundles/rvb-9aa5fc5c237008c3.json"
       }
     },
     {
@@ -274,6 +302,13 @@
       "type": "artifact",
       "attributes": {
         "path": ".pose/specs/2026-08-22-go-runtime-foundation.md"
+      }
+    },
+    {
+      "id": "artifact:.pose/specs/2026-08-22-learning-domain-model.md",
+      "type": "artifact",
+      "attributes": {
+        "path": ".pose/specs/2026-08-22-learning-domain-model.md"
       }
     },
     {
@@ -1615,10 +1650,18 @@
       }
     },
     {
-      "id": "change-set:cs-7d4647e50da0",
+      "id": "change-set:cs-1dfd6e582047",
       "type": "change-set",
       "attributes": {
-        "diff_digest": "sha256:d409c08a825575c2df2289cc4e36f08aa9974cbdb12f84beb6943fbc8f10156e",
+        "diff_digest": "sha256:2d0f09e50210d3bfaeffc370dd41679dcfb4ce5a19c9e0b772c049b34adaa3b8",
+        "selector": "trailers:learning-domain-model"
+      }
+    },
+    {
+      "id": "change-set:cs-27f24a7c63e8",
+      "type": "change-set",
+      "attributes": {
+        "diff_digest": "sha256:e9953a03f1dbec16030f48f076da80a5ec03855b06eaf9fb3f0bb8fa980bdc39",
         "selector": "trailers:go-runtime-foundation"
       }
     },
@@ -1703,7 +1746,7 @@
       "id": "spec:go-runtime-foundation",
       "type": "spec",
       "attributes": {
-        "status": "in-progress"
+        "status": "done"
       }
     },
     {
@@ -1724,7 +1767,7 @@
       "id": "spec:learning-domain-model",
       "type": "spec",
       "attributes": {
-        "status": "draft"
+        "status": "in-progress"
       }
     },
     {
@@ -1959,92 +2002,172 @@
       "type": "changes"
     },
     {
-      "from": "change-set:cs-7d4647e50da0",
+      "from": "change-set:cs-1dfd6e582047",
+      "to": "artifact:.pose/specs/2026-08-22-learning-domain-model.md",
+      "type": "changes"
+    },
+    {
+      "from": "change-set:cs-1dfd6e582047",
+      "to": "artifact:internal/learning/catalog.go",
+      "type": "changes"
+    },
+    {
+      "from": "change-set:cs-1dfd6e582047",
+      "to": "artifact:internal/learning/challenge.go",
+      "type": "changes"
+    },
+    {
+      "from": "change-set:cs-1dfd6e582047",
+      "to": "artifact:internal/learning/errors.go",
+      "type": "changes"
+    },
+    {
+      "from": "change-set:cs-1dfd6e582047",
+      "to": "artifact:internal/learning/evaluation.go",
+      "type": "changes"
+    },
+    {
+      "from": "change-set:cs-1dfd6e582047",
+      "to": "artifact:internal/learning/evidence.go",
+      "type": "changes"
+    },
+    {
+      "from": "change-set:cs-1dfd6e582047",
+      "to": "artifact:internal/learning/policy.go",
+      "type": "changes"
+    },
+    {
+      "from": "change-set:cs-1dfd6e582047",
+      "to": "artifact:internal/learning/policy_test.go",
+      "type": "changes"
+    },
+    {
+      "from": "change-set:cs-1dfd6e582047",
+      "to": "artifact:internal/learning/session.go",
+      "type": "changes"
+    },
+    {
+      "from": "change-set:cs-1dfd6e582047",
+      "to": "artifact:internal/learning/session_test.go",
+      "type": "changes"
+    },
+    {
+      "from": "change-set:cs-1dfd6e582047",
+      "to": "artifact:internal/learning/step.go",
+      "type": "changes"
+    },
+    {
+      "from": "change-set:cs-27f24a7c63e8",
       "to": "artifact:.pose/contributions/20260822-201802-review-bundle-root-level-files-gomod-pro.md",
       "type": "changes"
     },
     {
-      "from": "change-set:cs-7d4647e50da0",
+      "from": "change-set:cs-27f24a7c63e8",
       "to": "artifact:.pose/indexes/delivery-integrity.json",
       "type": "changes"
     },
     {
-      "from": "change-set:cs-7d4647e50da0",
+      "from": "change-set:cs-27f24a7c63e8",
       "to": "artifact:.pose/indexes/module-metadata.json",
       "type": "changes"
     },
     {
-      "from": "change-set:cs-7d4647e50da0",
+      "from": "change-set:cs-27f24a7c63e8",
+      "to": "artifact:.pose/indexes/packages.json",
+      "type": "changes"
+    },
+    {
+      "from": "change-set:cs-27f24a7c63e8",
+      "to": "artifact:.pose/indexes/repo-map.json",
+      "type": "changes"
+    },
+    {
+      "from": "change-set:cs-27f24a7c63e8",
+      "to": "artifact:.pose/indexes/spec-graph.json",
+      "type": "changes"
+    },
+    {
+      "from": "change-set:cs-27f24a7c63e8",
       "to": "artifact:.pose/indexes/validation-matrix.json",
       "type": "changes"
     },
     {
-      "from": "change-set:cs-7d4647e50da0",
+      "from": "change-set:cs-27f24a7c63e8",
       "to": "artifact:.pose/reports/2026-08-22-standard-fundacao-go-executavel-do-ailearn.md",
       "type": "changes"
     },
     {
-      "from": "change-set:cs-7d4647e50da0",
+      "from": "change-set:cs-27f24a7c63e8",
       "to": "artifact:.pose/reports/2026-08-22-standard-validate-native.md",
       "type": "changes"
     },
     {
-      "from": "change-set:cs-7d4647e50da0",
+      "from": "change-set:cs-27f24a7c63e8",
       "to": "artifact:.pose/reports/history/standard-fundacao-go-executavel-do-ailearn.jsonl",
       "type": "changes"
     },
     {
-      "from": "change-set:cs-7d4647e50da0",
+      "from": "change-set:cs-27f24a7c63e8",
       "to": "artifact:.pose/reports/history/standard-validate-native.jsonl",
       "type": "changes"
     },
     {
-      "from": "change-set:cs-7d4647e50da0",
+      "from": "change-set:cs-27f24a7c63e8",
       "to": "artifact:.pose/results/delivery-validation.json",
       "type": "changes"
     },
     {
-      "from": "change-set:cs-7d4647e50da0",
+      "from": "change-set:cs-27f24a7c63e8",
+      "to": "artifact:.pose/review-attestations/rva-d8bde250ba75e74b.json",
+      "type": "changes"
+    },
+    {
+      "from": "change-set:cs-27f24a7c63e8",
+      "to": "artifact:.pose/review-bundles/rvb-9aa5fc5c237008c3.json",
+      "type": "changes"
+    },
+    {
+      "from": "change-set:cs-27f24a7c63e8",
       "to": "artifact:.pose/specs/2026-08-22-go-runtime-foundation.md",
       "type": "changes"
     },
     {
-      "from": "change-set:cs-7d4647e50da0",
+      "from": "change-set:cs-27f24a7c63e8",
       "to": "artifact:.pose/state/machinery-manifest.json",
       "type": "changes"
     },
     {
-      "from": "change-set:cs-7d4647e50da0",
+      "from": "change-set:cs-27f24a7c63e8",
       "to": "artifact:cmd/ailearn/main.go",
       "type": "changes"
     },
     {
-      "from": "change-set:cs-7d4647e50da0",
+      "from": "change-set:cs-27f24a7c63e8",
       "to": "artifact:go.mod",
       "type": "changes"
     },
     {
-      "from": "change-set:cs-7d4647e50da0",
+      "from": "change-set:cs-27f24a7c63e8",
       "to": "artifact:internal/cli/doctor.go",
       "type": "changes"
     },
     {
-      "from": "change-set:cs-7d4647e50da0",
+      "from": "change-set:cs-27f24a7c63e8",
       "to": "artifact:internal/cli/root.go",
       "type": "changes"
     },
     {
-      "from": "change-set:cs-7d4647e50da0",
+      "from": "change-set:cs-27f24a7c63e8",
       "to": "artifact:internal/cli/root_test.go",
       "type": "changes"
     },
     {
-      "from": "change-set:cs-7d4647e50da0",
+      "from": "change-set:cs-27f24a7c63e8",
       "to": "artifact:internal/cli/version.go",
       "type": "changes"
     },
     {
-      "from": "change-set:cs-7d4647e50da0",
+      "from": "change-set:cs-27f24a7c63e8",
       "to": "artifact:internal/config/config.go",
       "type": "changes"
     },
@@ -2505,7 +2628,7 @@
     },
     {
       "from": "spec:go-runtime-foundation",
-      "to": "change-set:cs-7d4647e50da0",
+      "to": "change-set:cs-27f24a7c63e8",
       "type": "observed-by"
     },
     {
@@ -2652,6 +2775,11 @@
       "from": "spec:learning-domain-model",
       "to": "artifact:internal/learning/step.go",
       "type": "declares"
+    },
+    {
+      "from": "spec:learning-domain-model",
+      "to": "change-set:cs-1dfd6e582047",
+      "type": "observed-by"
     },
     {
       "from": "spec:learning-practice-debug-modes",
@@ -4432,19 +4560,79 @@
       "diff_digest": "sha256:99af988f9b3d75b3ee0304952a578c49163845943110481445da9e9e60953670"
     },
     {
-      "id": "cs-7d4647e50da0",
+      "id": "cs-1dfd6e582047",
+      "spec": "learning-domain-model",
+      "selector": "trailers:learning-domain-model",
+      "base": "013fb55b79572171c18466cb3eaebe0dbe9d6727^",
+      "head": "013fb55b79572171c18466cb3eaebe0dbe9d6727",
+      "resolved_base": "75a773cdf32025f6ab31bcfd5f79a8ac9a974f7d",
+      "resolved_head": "013fb55b79572171c18466cb3eaebe0dbe9d6727",
+      "commits": [
+        "013fb55b79572171c18466cb3eaebe0dbe9d6727"
+      ],
+      "paths": [
+        {
+          "action": "created",
+          "path": "internal/learning/catalog.go"
+        },
+        {
+          "action": "created",
+          "path": "internal/learning/challenge.go"
+        },
+        {
+          "action": "created",
+          "path": "internal/learning/errors.go"
+        },
+        {
+          "action": "created",
+          "path": "internal/learning/evaluation.go"
+        },
+        {
+          "action": "created",
+          "path": "internal/learning/evidence.go"
+        },
+        {
+          "action": "created",
+          "path": "internal/learning/policy.go"
+        },
+        {
+          "action": "created",
+          "path": "internal/learning/policy_test.go"
+        },
+        {
+          "action": "created",
+          "path": "internal/learning/session.go"
+        },
+        {
+          "action": "created",
+          "path": "internal/learning/session_test.go"
+        },
+        {
+          "action": "created",
+          "path": "internal/learning/step.go"
+        },
+        {
+          "action": "modified",
+          "path": ".pose/specs/2026-08-22-learning-domain-model.md"
+        }
+      ],
+      "diff_digest": "sha256:2d0f09e50210d3bfaeffc370dd41679dcfb4ce5a19c9e0b772c049b34adaa3b8"
+    },
+    {
+      "id": "cs-27f24a7c63e8",
       "spec": "go-runtime-foundation",
       "selector": "trailers:go-runtime-foundation",
       "base": "369b8fa00a80afaa450949210b5a4aa83f3cc033^",
-      "head": "c3560df1ad107d9c6175e28b9b6e9607307e76b7",
+      "head": "75a773cdf32025f6ab31bcfd5f79a8ac9a974f7d",
       "resolved_base": "34c16410926f5958808e6c25270e3d931a8311ea",
-      "resolved_head": "c3560df1ad107d9c6175e28b9b6e9607307e76b7",
+      "resolved_head": "75a773cdf32025f6ab31bcfd5f79a8ac9a974f7d",
       "commits": [
         "369b8fa00a80afaa450949210b5a4aa83f3cc033",
         "79f04e56b82f474fd51a6ef3519246378abeab11",
         "e6ae68bd4cb90f3e237c737450d75b25150adec3",
         "21c68939af75f3082dea80e0be69cd7877f39927",
-        "c3560df1ad107d9c6175e28b9b6e9607307e76b7"
+        "c3560df1ad107d9c6175e28b9b6e9607307e76b7",
+        "75a773cdf32025f6ab31bcfd5f79a8ac9a974f7d"
       ],
       "paths": [
         {
@@ -4458,6 +4646,14 @@
         {
           "action": "created",
           "path": ".pose/reports/history/standard-fundacao-go-executavel-do-ailearn.jsonl"
+        },
+        {
+          "action": "created",
+          "path": ".pose/review-attestations/rva-d8bde250ba75e74b.json"
+        },
+        {
+          "action": "created",
+          "path": ".pose/review-bundles/rvb-9aa5fc5c237008c3.json"
         },
         {
           "action": "created",
@@ -4497,6 +4693,18 @@
         },
         {
           "action": "modified",
+          "path": ".pose/indexes/packages.json"
+        },
+        {
+          "action": "modified",
+          "path": ".pose/indexes/repo-map.json"
+        },
+        {
+          "action": "modified",
+          "path": ".pose/indexes/spec-graph.json"
+        },
+        {
+          "action": "modified",
           "path": ".pose/indexes/validation-matrix.json"
         },
         {
@@ -4520,7 +4728,7 @@
           "path": ".pose/state/machinery-manifest.json"
         }
       ],
-      "diff_digest": "sha256:d409c08a825575c2df2289cc4e36f08aa9974cbdb12f84beb6943fbc8f10156e"
+      "diff_digest": "sha256:e9953a03f1dbec16030f48f076da80a5ec03855b06eaf9fb3f0bb8fa980bdc39"
     }
   ],
   "reverse": {
@@ -5214,15 +5422,6 @@
       "remediation": "no Git change sets are attributed to spec assistance-hints-detours (ensure commits carry 'POSE-Spec: assistance-hints-detours' trailer or generate report with pose report)"
     },
     {
-      "id": "dif-05070fc02ecb",
-      "code": "existence",
-      "severity": "error",
-      "spec": "learning-domain-model",
-      "path": "internal/learning/evidence.go",
-      "message": "declared current artifact is not tracked at the selected head",
-      "remediation": "correct the exact path or commit the artifact before closeout"
-    },
-    {
       "id": "dif-0582cf976f99",
       "code": "existence",
       "severity": "error",
@@ -5529,15 +5728,6 @@
       "remediation": "correct the exact path or commit the artifact before closeout"
     },
     {
-      "id": "dif-1e47864e6768",
-      "code": "action-mismatch",
-      "severity": "error",
-      "spec": "learning-domain-model",
-      "path": "internal/learning/step.go",
-      "message": "declared artifact action is absent from the attributed Git change sets",
-      "remediation": "no Git change sets are attributed to spec learning-domain-model (ensure commits carry 'POSE-Spec: learning-domain-model' trailer or generate report with pose report)"
-    },
-    {
       "id": "dif-1f2f98d01143",
       "code": "action-mismatch",
       "severity": "error",
@@ -5826,15 +6016,6 @@
       "remediation": "no Git change sets are attributed to spec curriculum-graph-path-recommendation (ensure commits carry 'POSE-Spec: curriculum-graph-path-recommendation' trailer or generate report with pose report)"
     },
     {
-      "id": "dif-310f59d8fe99",
-      "code": "existence",
-      "severity": "error",
-      "spec": "learning-domain-model",
-      "path": "internal/learning/step.go",
-      "message": "declared current artifact is not tracked at the selected head",
-      "remediation": "correct the exact path or commit the artifact before closeout"
-    },
-    {
       "id": "dif-3135e879e64f",
       "code": "action-mismatch",
       "severity": "error",
@@ -5889,15 +6070,6 @@
       "remediation": "no Git change sets are attributed to spec assistance-hints-detours (ensure commits carry 'POSE-Spec: assistance-hints-detours' trailer or generate report with pose report)"
     },
     {
-      "id": "dif-36efa83d6176",
-      "code": "action-mismatch",
-      "severity": "error",
-      "spec": "learning-domain-model",
-      "path": "internal/learning/evaluation.go",
-      "message": "declared artifact action is absent from the attributed Git change sets",
-      "remediation": "no Git change sets are attributed to spec learning-domain-model (ensure commits carry 'POSE-Spec: learning-domain-model' trailer or generate report with pose report)"
-    },
-    {
       "id": "dif-36f353b35f1d",
       "code": "existence",
       "severity": "error",
@@ -5941,15 +6113,6 @@
       "path": "docs/security/privacy.md",
       "message": "declared current artifact is not tracked at the selected head",
       "remediation": "correct the exact path or commit the artifact before closeout"
-    },
-    {
-      "id": "dif-3988ee53c617",
-      "code": "action-mismatch",
-      "severity": "error",
-      "spec": "learning-domain-model",
-      "path": "internal/learning/challenge.go",
-      "message": "declared artifact action is absent from the attributed Git change sets",
-      "remediation": "no Git change sets are attributed to spec learning-domain-model (ensure commits carry 'POSE-Spec: learning-domain-model' trailer or generate report with pose report)"
     },
     {
       "id": "dif-39aa33b792f7",
@@ -6319,15 +6482,6 @@
       "path": "scripts/smoke-install.sh",
       "message": "declared current artifact is not tracked at the selected head",
       "remediation": "correct the exact path or commit the artifact before closeout"
-    },
-    {
-      "id": "dif-4e4af2188695",
-      "code": "action-mismatch",
-      "severity": "error",
-      "spec": "learning-domain-model",
-      "path": "internal/learning/errors.go",
-      "message": "declared artifact action is absent from the attributed Git change sets",
-      "remediation": "no Git change sets are attributed to spec learning-domain-model (ensure commits carry 'POSE-Spec: learning-domain-model' trailer or generate report with pose report)"
     },
     {
       "id": "dif-4eacdce12714",
@@ -7113,15 +7267,6 @@
       "remediation": "correct the exact path or commit the artifact before closeout"
     },
     {
-      "id": "dif-7e8c1b1ec340",
-      "code": "existence",
-      "severity": "error",
-      "spec": "learning-domain-model",
-      "path": "internal/learning/evaluation.go",
-      "message": "declared current artifact is not tracked at the selected head",
-      "remediation": "correct the exact path or commit the artifact before closeout"
-    },
-    {
       "id": "dif-7ee9a59aaa3f",
       "code": "existence",
       "severity": "error",
@@ -7156,15 +7301,6 @@
       "path": "internal/checks/executor_test.go",
       "message": "declared artifact action is absent from the attributed Git change sets",
       "remediation": "no Git change sets are attributed to spec safe-check-executor (ensure commits carry 'POSE-Spec: safe-check-executor' trailer or generate report with pose report)"
-    },
-    {
-      "id": "dif-80a3f6357afe",
-      "code": "existence",
-      "severity": "error",
-      "spec": "learning-domain-model",
-      "path": "internal/learning/session_test.go",
-      "message": "declared current artifact is not tracked at the selected head",
-      "remediation": "correct the exact path or commit the artifact before closeout"
     },
     {
       "id": "dif-81631b140ccb",
@@ -7203,15 +7339,6 @@
       "remediation": "no Git change sets are attributed to spec administrative-cli-fixtures (ensure commits carry 'POSE-Spec: administrative-cli-fixtures' trailer or generate report with pose report)"
     },
     {
-      "id": "dif-841a19998c22",
-      "code": "existence",
-      "severity": "error",
-      "spec": "learning-domain-model",
-      "path": "internal/learning/policy.go",
-      "message": "declared current artifact is not tracked at the selected head",
-      "remediation": "correct the exact path or commit the artifact before closeout"
-    },
-    {
       "id": "dif-843521ceaec1",
       "code": "existence",
       "severity": "error",
@@ -7235,15 +7362,6 @@
       "severity": "error",
       "spec": "feedback-evaluation-progression",
       "path": "internal/assessment/service.go",
-      "message": "declared current artifact is not tracked at the selected head",
-      "remediation": "correct the exact path or commit the artifact before closeout"
-    },
-    {
-      "id": "dif-87a09eb83010",
-      "code": "existence",
-      "severity": "error",
-      "spec": "learning-domain-model",
-      "path": "internal/learning/challenge.go",
       "message": "declared current artifact is not tracked at the selected head",
       "remediation": "correct the exact path or commit the artifact before closeout"
     },
@@ -7318,15 +7436,6 @@
       "path": "internal/application/catalog.go",
       "message": "declared artifact action is absent from the attributed Git change sets",
       "remediation": "no Git change sets are attributed to spec mcp-stdio-foundation (ensure commits carry 'POSE-Spec: mcp-stdio-foundation' trailer or generate report with pose report)"
-    },
-    {
-      "id": "dif-8c26732e60c8",
-      "code": "existence",
-      "severity": "error",
-      "spec": "learning-domain-model",
-      "path": "internal/learning/errors.go",
-      "message": "declared current artifact is not tracked at the selected head",
-      "remediation": "correct the exact path or commit the artifact before closeout"
     },
     {
       "id": "dif-8ce1ef243744",
@@ -7435,15 +7544,6 @@
       "path": "internal/mcpserver/envelope.go",
       "message": "declared artifact action is absent from the attributed Git change sets",
       "remediation": "no Git change sets are attributed to spec mcp-stdio-foundation (ensure commits carry 'POSE-Spec: mcp-stdio-foundation' trailer or generate report with pose report)"
-    },
-    {
-      "id": "dif-937ba1ee83da",
-      "code": "action-mismatch",
-      "severity": "error",
-      "spec": "learning-domain-model",
-      "path": "internal/learning/evidence.go",
-      "message": "declared artifact action is absent from the attributed Git change sets",
-      "remediation": "no Git change sets are attributed to spec learning-domain-model (ensure commits carry 'POSE-Spec: learning-domain-model' trailer or generate report with pose report)"
     },
     {
       "id": "dif-9415fa488b4f",
@@ -7703,15 +7803,6 @@
       "severity": "error",
       "spec": "mastery-review-scheduling",
       "path": "internal/mastery/scheduler_test.go",
-      "message": "declared current artifact is not tracked at the selected head",
-      "remediation": "correct the exact path or commit the artifact before closeout"
-    },
-    {
-      "id": "dif-a51df1d604c3",
-      "code": "existence",
-      "severity": "error",
-      "spec": "learning-domain-model",
-      "path": "internal/learning/catalog.go",
       "message": "declared current artifact is not tracked at the selected head",
       "remediation": "correct the exact path or commit the artifact before closeout"
     },
@@ -8094,15 +8185,6 @@
       "remediation": "no Git change sets are attributed to spec mastery-review-scheduling (ensure commits carry 'POSE-Spec: mastery-review-scheduling' trailer or generate report with pose report)"
     },
     {
-      "id": "dif-c53c9c1be45b",
-      "code": "existence",
-      "severity": "error",
-      "spec": "learning-domain-model",
-      "path": "internal/learning/session.go",
-      "message": "declared current artifact is not tracked at the selected head",
-      "remediation": "correct the exact path or commit the artifact before closeout"
-    },
-    {
       "id": "dif-c578766f6746",
       "code": "action-mismatch",
       "severity": "error",
@@ -8110,15 +8192,6 @@
       "path": "internal/assessment/service_test.go",
       "message": "declared artifact action is absent from the attributed Git change sets",
       "remediation": "no Git change sets are attributed to spec feedback-evaluation-progression (ensure commits carry 'POSE-Spec: feedback-evaluation-progression' trailer or generate report with pose report)"
-    },
-    {
-      "id": "dif-c5a2539a3887",
-      "code": "action-mismatch",
-      "severity": "error",
-      "spec": "learning-domain-model",
-      "path": "internal/learning/catalog.go",
-      "message": "declared artifact action is absent from the attributed Git change sets",
-      "remediation": "no Git change sets are attributed to spec learning-domain-model (ensure commits carry 'POSE-Spec: learning-domain-model' trailer or generate report with pose report)"
     },
     {
       "id": "dif-c648ae6d8fca",
@@ -8155,15 +8228,6 @@
       "path": "internal/workspace/root.go",
       "message": "declared current artifact is not tracked at the selected head",
       "remediation": "correct the exact path or commit the artifact before closeout"
-    },
-    {
-      "id": "dif-c8cb8d692b78",
-      "code": "action-mismatch",
-      "severity": "error",
-      "spec": "learning-domain-model",
-      "path": "internal/learning/session_test.go",
-      "message": "declared artifact action is absent from the attributed Git change sets",
-      "remediation": "no Git change sets are attributed to spec learning-domain-model (ensure commits carry 'POSE-Spec: learning-domain-model' trailer or generate report with pose report)"
     },
     {
       "id": "dif-c8f864d649be",
@@ -8227,15 +8291,6 @@
       "path": "internal/fixtures/materialize.go",
       "message": "declared artifact action is absent from the attributed Git change sets",
       "remediation": "no Git change sets are attributed to spec administrative-cli-fixtures (ensure commits carry 'POSE-Spec: administrative-cli-fixtures' trailer or generate report with pose report)"
-    },
-    {
-      "id": "dif-ce1cc5154eae",
-      "code": "action-mismatch",
-      "severity": "error",
-      "spec": "learning-domain-model",
-      "path": "internal/learning/policy.go",
-      "message": "declared artifact action is absent from the attributed Git change sets",
-      "remediation": "no Git change sets are attributed to spec learning-domain-model (ensure commits carry 'POSE-Spec: learning-domain-model' trailer or generate report with pose report)"
     },
     {
       "id": "dif-ce40f6d31bf3",
@@ -8427,15 +8482,6 @@
       "remediation": "correct the exact path or commit the artifact before closeout"
     },
     {
-      "id": "dif-dda5458cbffd",
-      "code": "action-mismatch",
-      "severity": "error",
-      "spec": "learning-domain-model",
-      "path": "internal/learning/session.go",
-      "message": "declared artifact action is absent from the attributed Git change sets",
-      "remediation": "no Git change sets are attributed to spec learning-domain-model (ensure commits carry 'POSE-Spec: learning-domain-model' trailer or generate report with pose report)"
-    },
-    {
       "id": "dif-df47bbd666a7",
       "code": "existence",
       "severity": "error",
@@ -8558,15 +8604,6 @@
       "severity": "error",
       "spec": "catalog-authoring-quality",
       "path": "internal/cli/catalog.go",
-      "message": "declared current artifact is not tracked at the selected head",
-      "remediation": "correct the exact path or commit the artifact before closeout"
-    },
-    {
-      "id": "dif-e6bfeccbd589",
-      "code": "existence",
-      "severity": "error",
-      "spec": "learning-domain-model",
-      "path": "internal/learning/policy_test.go",
       "message": "declared current artifact is not tracked at the selected head",
       "remediation": "correct the exact path or commit the artifact before closeout"
     },
@@ -8751,15 +8788,6 @@
       "remediation": "no Git change sets are attributed to spec mastery-review-scheduling (ensure commits carry 'POSE-Spec: mastery-review-scheduling' trailer or generate report with pose report)"
     },
     {
-      "id": "dif-f0db692f7fff",
-      "code": "action-mismatch",
-      "severity": "error",
-      "spec": "learning-domain-model",
-      "path": "internal/learning/policy_test.go",
-      "message": "declared artifact action is absent from the attributed Git change sets",
-      "remediation": "no Git change sets are attributed to spec learning-domain-model (ensure commits carry 'POSE-Spec: learning-domain-model' trailer or generate report with pose report)"
-    },
-    {
       "id": "dif-f2d565e96e5b",
       "code": "existence",
       "severity": "error",
@@ -8939,13 +8967,14 @@
       "evidence_class": "build",
       "severity": "required",
       "outcome": "pass",
-      "git_head": "c3560df1ad107d9c6175e28b9b6e9607307e76b7",
-      "generated_at": "2026-08-22T23:23:27Z",
-      "provenance_digest": "sha256:390f79ef3588062a8755ecc31042c4c55edc69ee273570af534546af080b0d49",
+      "git_head": "013fb55b79572171c18466cb3eaebe0dbe9d6727",
+      "generated_at": "2026-08-22T23:43:51Z",
+      "provenance_digest": "sha256:a222a2f5ee97aabbda6efbf1b97b4d0f60728cd08b221f551d7b41d6214071e0",
       "report": ".pose/results/delivery-validation.json",
       "scope_provenance": {
         "architecture-decision-baseline": "sha256:0cb9538df6c6193eeea826dda56f91288808c178925c98b02a43af253045c99e",
-        "go-runtime-foundation": "sha256:4debe1665ff803c677608ca07accabebcd9533464e1c904c8678b7690ca61b49"
+        "go-runtime-foundation": "sha256:9a4e47998be06f380306497a3e5f9a87b700e2ea0881b7f33cea67e2d2d7da03",
+        "learning-domain-model": "sha256:a19aced49e2129dc8c1cb8955b767035c822fd8291f21b6fd8202c3b36030047"
       }
     },
     {
@@ -8955,13 +8984,14 @@
       "evidence_class": "unit",
       "severity": "required",
       "outcome": "pass",
-      "git_head": "c3560df1ad107d9c6175e28b9b6e9607307e76b7",
-      "generated_at": "2026-08-22T23:23:27Z",
-      "provenance_digest": "sha256:390f79ef3588062a8755ecc31042c4c55edc69ee273570af534546af080b0d49",
+      "git_head": "013fb55b79572171c18466cb3eaebe0dbe9d6727",
+      "generated_at": "2026-08-22T23:43:51Z",
+      "provenance_digest": "sha256:a222a2f5ee97aabbda6efbf1b97b4d0f60728cd08b221f551d7b41d6214071e0",
       "report": ".pose/results/delivery-validation.json",
       "scope_provenance": {
         "architecture-decision-baseline": "sha256:0cb9538df6c6193eeea826dda56f91288808c178925c98b02a43af253045c99e",
-        "go-runtime-foundation": "sha256:4debe1665ff803c677608ca07accabebcd9533464e1c904c8678b7690ca61b49"
+        "go-runtime-foundation": "sha256:9a4e47998be06f380306497a3e5f9a87b700e2ea0881b7f33cea67e2d2d7da03",
+        "learning-domain-model": "sha256:a19aced49e2129dc8c1cb8955b767035c822fd8291f21b6fd8202c3b36030047"
       }
     },
     {
@@ -8971,13 +9001,14 @@
       "evidence_class": "build",
       "severity": "optional",
       "outcome": "pass",
-      "git_head": "c3560df1ad107d9c6175e28b9b6e9607307e76b7",
-      "generated_at": "2026-08-22T23:23:27Z",
-      "provenance_digest": "sha256:390f79ef3588062a8755ecc31042c4c55edc69ee273570af534546af080b0d49",
+      "git_head": "013fb55b79572171c18466cb3eaebe0dbe9d6727",
+      "generated_at": "2026-08-22T23:43:51Z",
+      "provenance_digest": "sha256:a222a2f5ee97aabbda6efbf1b97b4d0f60728cd08b221f551d7b41d6214071e0",
       "report": ".pose/results/delivery-validation.json",
       "scope_provenance": {
         "architecture-decision-baseline": "sha256:0cb9538df6c6193eeea826dda56f91288808c178925c98b02a43af253045c99e",
-        "go-runtime-foundation": "sha256:4debe1665ff803c677608ca07accabebcd9533464e1c904c8678b7690ca61b49"
+        "go-runtime-foundation": "sha256:9a4e47998be06f380306497a3e5f9a87b700e2ea0881b7f33cea67e2d2d7da03",
+        "learning-domain-model": "sha256:a19aced49e2129dc8c1cb8955b767035c822fd8291f21b6fd8202c3b36030047"
       }
     }
   ]

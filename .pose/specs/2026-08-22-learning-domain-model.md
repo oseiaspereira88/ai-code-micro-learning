@@ -1,13 +1,14 @@
 ---
 slug: learning-domain-model
-status: in-progress
+status: done
 created_at: 2026-08-22
-completed_at:
+completed_at: 2026-08-22
 supersedes:
 depends_on: architecture-decision-baseline, go-runtime-foundation
 priority: 20
 components: learning-domain
 delivers:
+changelog: none
 ---
 
 # Spec: learning-domain-model
@@ -137,7 +138,7 @@ Testar invariantes por tabelas, transições negativas e propriedades de determi
 ### Execution log
 - `gofmt -l internal/learning` → saída vazia (2026-08-22).
 - `go vet ./internal/learning/...` → sem findings (2026-08-22).
-- `go test ./internal/learning/...` → `ok`, 20 casos de teste (2026-08-22).
+- `go test ./internal/learning/...` → `ok`, 15 funções de teste (2026-08-22).
 - `go test ./internal/learning/... -race` → sem data races (2026-08-22).
 - `go list -deps ./internal/learning/...` → produção importa somente `fmt` e
   `time`; nenhuma dependência de MCP, CLI, YAML ou filesystem (2026-08-22).

@@ -534,7 +534,7 @@
       ],
       "path": ".pose/specs/2026-08-22-go-runtime-foundation.md",
       "priority": 10,
-      "status": "in-progress"
+      "status": "done"
     },
     "installation-documentation-ci": {
       "depends_on": [
@@ -566,7 +566,7 @@
       ],
       "path": ".pose/specs/2026-08-22-learning-domain-model.md",
       "priority": 20,
-      "status": "draft"
+      "status": "in-progress"
     },
     "learning-practice-debug-modes": {
       "depends_on": [
