@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "defaults": {
+    "owner": "",
+    "criticality": "medium",
+    "domain": "",
+    "validationProfile": "baseline"
+  },
+  "modules": {}
+}

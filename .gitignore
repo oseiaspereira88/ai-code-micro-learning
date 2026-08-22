@@ -2,7 +2,7 @@
 /bin/
 /build/
 /dist/
-/gocoach
+/ailearn
 *.test
 *.exe
 *.dll
@@ -24,8 +24,8 @@ go.work.sum
 # Vendored dependencies are generated from go.mod/go.sum
 /vendor/
 
-# GoCoach local state and exports
-/.gocoach/
+# ailearn local state and exports
+/.ailearn/
 
 # Environment and machine-local configuration
 .env

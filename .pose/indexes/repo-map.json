@@ -1,0 +1,17 @@
+{
+  "apps": [],
+  "dockerfiles": [],
+  "helmCharts": [],
+  "manifests": [],
+  "moduleMetadata": {
+    "schemaVersion": 1,
+    "source": ".pose/indexes/module-metadata.json"
+  },
+  "packages": [],
+  "readmes": [
+    ".agents/skills/README.md",
+    "README.md"
+  ],
+  "root": ".",
+  "services": []
+}
