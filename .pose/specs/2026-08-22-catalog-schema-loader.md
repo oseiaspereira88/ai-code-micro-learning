@@ -1,13 +1,14 @@
 ---
 slug: catalog-schema-loader
-status: in-progress
+status: done
 created_at: 2026-08-22
-completed_at:
+completed_at: 2026-08-22
 supersedes:
 depends_on: architecture-decision-baseline, go-runtime-foundation
 priority: 30
 components: curriculum
 delivers:
+changelog: none
 ---
 
 # Spec: catalog-schema-loader

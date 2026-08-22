@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "input_digest": "sha256:fa5d0ee28bc4972e6de19e2f0d2b5c147c24dadb80dac910b96471dc87c32431",
-  "provenance_digest": "sha256:a222a2f5ee97aabbda6efbf1b97b4d0f60728cd08b221f551d7b41d6214071e0",
+  "input_digest": "sha256:b413b542437cd3b9507bdeb86c9629a4e44fb8c06161ec4763eedc6999bca7d6",
+  "provenance_digest": "sha256:9fba709d40b59d0658bdc50ad4b5942bd1bd77fa2178c168fb8cadd7cfcadb16",
   "nodes": [
     {
       "id": "artifact:.agents/skills/ailearn/SKILL.md",
@@ -263,6 +263,13 @@
       }
     },
     {
+      "id": "artifact:.pose/review-attestations/rva-08c97e35179606ec.json",
+      "type": "artifact",
+      "attributes": {
+        "path": ".pose/review-attestations/rva-08c97e35179606ec.json"
+      }
+    },
+    {
       "id": "artifact:.pose/review-attestations/rva-0dfac1908946269a.json",
       "type": "artifact",
       "attributes": {
@@ -291,10 +298,24 @@
       }
     },
     {
+      "id": "artifact:.pose/review-bundles/rvb-aefeb25172e12266.json",
+      "type": "artifact",
+      "attributes": {
+        "path": ".pose/review-bundles/rvb-aefeb25172e12266.json"
+      }
+    },
+    {
       "id": "artifact:.pose/specs/2026-08-22-architecture-decision-baseline.md",
       "type": "artifact",
       "attributes": {
         "path": ".pose/specs/2026-08-22-architecture-decision-baseline.md"
+      }
+    },
+    {
+      "id": "artifact:.pose/specs/2026-08-22-catalog-schema-loader.md",
+      "type": "artifact",
+      "attributes": {
+        "path": ".pose/specs/2026-08-22-catalog-schema-loader.md"
       }
     },
     {
@@ -498,6 +519,13 @@
       "type": "artifact",
       "attributes": {
         "path": "go.mod"
+      }
+    },
+    {
+      "id": "artifact:go.sum",
+      "type": "artifact",
+      "attributes": {
+        "path": "go.sum"
       }
     },
     {
@@ -823,10 +851,94 @@
       }
     },
     {
-      "id": "artifact:internal/curriculum/testdata",
+      "id": "artifact:internal/curriculum/testdata/criteria_without_evidence/manifest.yaml",
       "type": "artifact",
       "attributes": {
-        "path": "internal/curriculum/testdata"
+        "path": "internal/curriculum/testdata/criteria_without_evidence/manifest.yaml"
+      }
+    },
+    {
+      "id": "artifact:internal/curriculum/testdata/criteria_without_evidence/pack.yaml",
+      "type": "artifact",
+      "attributes": {
+        "path": "internal/curriculum/testdata/criteria_without_evidence/pack.yaml"
+      }
+    },
+    {
+      "id": "artifact:internal/curriculum/testdata/duplicate_id/manifest.yaml",
+      "type": "artifact",
+      "attributes": {
+        "path": "internal/curriculum/testdata/duplicate_id/manifest.yaml"
+      }
+    },
+    {
+      "id": "artifact:internal/curriculum/testdata/duplicate_id/pack.yaml",
+      "type": "artifact",
+      "attributes": {
+        "path": "internal/curriculum/testdata/duplicate_id/pack.yaml"
+      }
+    },
+    {
+      "id": "artifact:internal/curriculum/testdata/incompatible_schema_version/manifest.yaml",
+      "type": "artifact",
+      "attributes": {
+        "path": "internal/curriculum/testdata/incompatible_schema_version/manifest.yaml"
+      }
+    },
+    {
+      "id": "artifact:internal/curriculum/testdata/incompatible_schema_version/pack.yaml",
+      "type": "artifact",
+      "attributes": {
+        "path": "internal/curriculum/testdata/incompatible_schema_version/pack.yaml"
+      }
+    },
+    {
+      "id": "artifact:internal/curriculum/testdata/missing_reference/manifest.yaml",
+      "type": "artifact",
+      "attributes": {
+        "path": "internal/curriculum/testdata/missing_reference/manifest.yaml"
+      }
+    },
+    {
+      "id": "artifact:internal/curriculum/testdata/missing_reference/pack.yaml",
+      "type": "artifact",
+      "attributes": {
+        "path": "internal/curriculum/testdata/missing_reference/pack.yaml"
+      }
+    },
+    {
+      "id": "artifact:internal/curriculum/testdata/path_escape/manifest.yaml",
+      "type": "artifact",
+      "attributes": {
+        "path": "internal/curriculum/testdata/path_escape/manifest.yaml"
+      }
+    },
+    {
+      "id": "artifact:internal/curriculum/testdata/prerequisite_cycle/manifest.yaml",
+      "type": "artifact",
+      "attributes": {
+        "path": "internal/curriculum/testdata/prerequisite_cycle/manifest.yaml"
+      }
+    },
+    {
+      "id": "artifact:internal/curriculum/testdata/prerequisite_cycle/pack.yaml",
+      "type": "artifact",
+      "attributes": {
+        "path": "internal/curriculum/testdata/prerequisite_cycle/pack.yaml"
+      }
+    },
+    {
+      "id": "artifact:internal/curriculum/testdata/valid/manifest.yaml",
+      "type": "artifact",
+      "attributes": {
+        "path": "internal/curriculum/testdata/valid/manifest.yaml"
+      }
+    },
+    {
+      "id": "artifact:internal/curriculum/testdata/valid/pack.yaml",
+      "type": "artifact",
+      "attributes": {
+        "path": "internal/curriculum/testdata/valid/pack.yaml"
       }
     },
     {
@@ -1425,6 +1537,13 @@
       }
     },
     {
+      "id": "artifact:packs/go-first-steps.yaml",
+      "type": "artifact",
+      "attributes": {
+        "path": "packs/go-first-steps.yaml"
+      }
+    },
+    {
       "id": "artifact:packs/go-http",
       "type": "artifact",
       "attributes": {
@@ -1492,13 +1611,6 @@
       "type": "artifact",
       "attributes": {
         "path": "schemas/editorial.schema.json"
-      }
-    },
-    {
-      "id": "artifact:schemas/event.schema.json",
-      "type": "artifact",
-      "attributes": {
-        "path": "schemas/event.schema.json"
       }
     },
     {
@@ -1650,19 +1762,27 @@
       }
     },
     {
-      "id": "change-set:cs-1dfd6e582047",
-      "type": "change-set",
-      "attributes": {
-        "diff_digest": "sha256:2d0f09e50210d3bfaeffc370dd41679dcfb4ce5a19c9e0b772c049b34adaa3b8",
-        "selector": "trailers:learning-domain-model"
-      }
-    },
-    {
       "id": "change-set:cs-27f24a7c63e8",
       "type": "change-set",
       "attributes": {
         "diff_digest": "sha256:e9953a03f1dbec16030f48f076da80a5ec03855b06eaf9fb3f0bb8fa980bdc39",
         "selector": "trailers:go-runtime-foundation"
+      }
+    },
+    {
+      "id": "change-set:cs-34b93787f8dd",
+      "type": "change-set",
+      "attributes": {
+        "diff_digest": "sha256:a1f1f3592e4043c7efb7bb360cbbb5e57093b8a6c0525eaa20f403335e9e6ba9",
+        "selector": "trailers:learning-domain-model"
+      }
+    },
+    {
+      "id": "change-set:cs-7b2f05bb6d4e",
+      "type": "change-set",
+      "attributes": {
+        "diff_digest": "sha256:12e80d322427f453885109a6a9369448dab74e377443f6e434f6ea4d30db4f75",
+        "selector": "trailers:catalog-schema-loader"
       }
     },
     {
@@ -1697,7 +1817,7 @@
       "id": "spec:catalog-schema-loader",
       "type": "spec",
       "attributes": {
-        "status": "draft"
+        "status": "in-progress"
       }
     },
     {
@@ -1767,7 +1887,7 @@
       "id": "spec:learning-domain-model",
       "type": "spec",
       "attributes": {
-        "status": "in-progress"
+        "status": "done"
       }
     },
     {
@@ -2002,61 +2122,6 @@
       "type": "changes"
     },
     {
-      "from": "change-set:cs-1dfd6e582047",
-      "to": "artifact:.pose/specs/2026-08-22-learning-domain-model.md",
-      "type": "changes"
-    },
-    {
-      "from": "change-set:cs-1dfd6e582047",
-      "to": "artifact:internal/learning/catalog.go",
-      "type": "changes"
-    },
-    {
-      "from": "change-set:cs-1dfd6e582047",
-      "to": "artifact:internal/learning/challenge.go",
-      "type": "changes"
-    },
-    {
-      "from": "change-set:cs-1dfd6e582047",
-      "to": "artifact:internal/learning/errors.go",
-      "type": "changes"
-    },
-    {
-      "from": "change-set:cs-1dfd6e582047",
-      "to": "artifact:internal/learning/evaluation.go",
-      "type": "changes"
-    },
-    {
-      "from": "change-set:cs-1dfd6e582047",
-      "to": "artifact:internal/learning/evidence.go",
-      "type": "changes"
-    },
-    {
-      "from": "change-set:cs-1dfd6e582047",
-      "to": "artifact:internal/learning/policy.go",
-      "type": "changes"
-    },
-    {
-      "from": "change-set:cs-1dfd6e582047",
-      "to": "artifact:internal/learning/policy_test.go",
-      "type": "changes"
-    },
-    {
-      "from": "change-set:cs-1dfd6e582047",
-      "to": "artifact:internal/learning/session.go",
-      "type": "changes"
-    },
-    {
-      "from": "change-set:cs-1dfd6e582047",
-      "to": "artifact:internal/learning/session_test.go",
-      "type": "changes"
-    },
-    {
-      "from": "change-set:cs-1dfd6e582047",
-      "to": "artifact:internal/learning/step.go",
-      "type": "changes"
-    },
-    {
       "from": "change-set:cs-27f24a7c63e8",
       "to": "artifact:.pose/contributions/20260822-201802-review-bundle-root-level-files-gomod-pro.md",
       "type": "changes"
@@ -2169,6 +2234,216 @@
     {
       "from": "change-set:cs-27f24a7c63e8",
       "to": "artifact:internal/config/config.go",
+      "type": "changes"
+    },
+    {
+      "from": "change-set:cs-34b93787f8dd",
+      "to": "artifact:.pose/indexes/delivery-integrity.json",
+      "type": "changes"
+    },
+    {
+      "from": "change-set:cs-34b93787f8dd",
+      "to": "artifact:.pose/indexes/spec-graph.json",
+      "type": "changes"
+    },
+    {
+      "from": "change-set:cs-34b93787f8dd",
+      "to": "artifact:.pose/results/delivery-validation.json",
+      "type": "changes"
+    },
+    {
+      "from": "change-set:cs-34b93787f8dd",
+      "to": "artifact:.pose/review-attestations/rva-08c97e35179606ec.json",
+      "type": "changes"
+    },
+    {
+      "from": "change-set:cs-34b93787f8dd",
+      "to": "artifact:.pose/review-bundles/rvb-aefeb25172e12266.json",
+      "type": "changes"
+    },
+    {
+      "from": "change-set:cs-34b93787f8dd",
+      "to": "artifact:.pose/specs/2026-08-22-learning-domain-model.md",
+      "type": "changes"
+    },
+    {
+      "from": "change-set:cs-34b93787f8dd",
+      "to": "artifact:internal/learning/catalog.go",
+      "type": "changes"
+    },
+    {
+      "from": "change-set:cs-34b93787f8dd",
+      "to": "artifact:internal/learning/challenge.go",
+      "type": "changes"
+    },
+    {
+      "from": "change-set:cs-34b93787f8dd",
+      "to": "artifact:internal/learning/errors.go",
+      "type": "changes"
+    },
+    {
+      "from": "change-set:cs-34b93787f8dd",
+      "to": "artifact:internal/learning/evaluation.go",
+      "type": "changes"
+    },
+    {
+      "from": "change-set:cs-34b93787f8dd",
+      "to": "artifact:internal/learning/evidence.go",
+      "type": "changes"
+    },
+    {
+      "from": "change-set:cs-34b93787f8dd",
+      "to": "artifact:internal/learning/policy.go",
+      "type": "changes"
+    },
+    {
+      "from": "change-set:cs-34b93787f8dd",
+      "to": "artifact:internal/learning/policy_test.go",
+      "type": "changes"
+    },
+    {
+      "from": "change-set:cs-34b93787f8dd",
+      "to": "artifact:internal/learning/session.go",
+      "type": "changes"
+    },
+    {
+      "from": "change-set:cs-34b93787f8dd",
+      "to": "artifact:internal/learning/session_test.go",
+      "type": "changes"
+    },
+    {
+      "from": "change-set:cs-34b93787f8dd",
+      "to": "artifact:internal/learning/step.go",
+      "type": "changes"
+    },
+    {
+      "from": "change-set:cs-7b2f05bb6d4e",
+      "to": "artifact:.pose/specs/2026-08-22-catalog-schema-loader.md",
+      "type": "changes"
+    },
+    {
+      "from": "change-set:cs-7b2f05bb6d4e",
+      "to": "artifact:go.mod",
+      "type": "changes"
+    },
+    {
+      "from": "change-set:cs-7b2f05bb6d4e",
+      "to": "artifact:go.sum",
+      "type": "changes"
+    },
+    {
+      "from": "change-set:cs-7b2f05bb6d4e",
+      "to": "artifact:internal/curriculum/index.go",
+      "type": "changes"
+    },
+    {
+      "from": "change-set:cs-7b2f05bb6d4e",
+      "to": "artifact:internal/curriculum/loader.go",
+      "type": "changes"
+    },
+    {
+      "from": "change-set:cs-7b2f05bb6d4e",
+      "to": "artifact:internal/curriculum/loader_test.go",
+      "type": "changes"
+    },
+    {
+      "from": "change-set:cs-7b2f05bb6d4e",
+      "to": "artifact:internal/curriculum/model.go",
+      "type": "changes"
+    },
+    {
+      "from": "change-set:cs-7b2f05bb6d4e",
+      "to": "artifact:internal/curriculum/testdata/criteria_without_evidence/manifest.yaml",
+      "type": "changes"
+    },
+    {
+      "from": "change-set:cs-7b2f05bb6d4e",
+      "to": "artifact:internal/curriculum/testdata/criteria_without_evidence/pack.yaml",
+      "type": "changes"
+    },
+    {
+      "from": "change-set:cs-7b2f05bb6d4e",
+      "to": "artifact:internal/curriculum/testdata/duplicate_id/manifest.yaml",
+      "type": "changes"
+    },
+    {
+      "from": "change-set:cs-7b2f05bb6d4e",
+      "to": "artifact:internal/curriculum/testdata/duplicate_id/pack.yaml",
+      "type": "changes"
+    },
+    {
+      "from": "change-set:cs-7b2f05bb6d4e",
+      "to": "artifact:internal/curriculum/testdata/incompatible_schema_version/manifest.yaml",
+      "type": "changes"
+    },
+    {
+      "from": "change-set:cs-7b2f05bb6d4e",
+      "to": "artifact:internal/curriculum/testdata/incompatible_schema_version/pack.yaml",
+      "type": "changes"
+    },
+    {
+      "from": "change-set:cs-7b2f05bb6d4e",
+      "to": "artifact:internal/curriculum/testdata/missing_reference/manifest.yaml",
+      "type": "changes"
+    },
+    {
+      "from": "change-set:cs-7b2f05bb6d4e",
+      "to": "artifact:internal/curriculum/testdata/missing_reference/pack.yaml",
+      "type": "changes"
+    },
+    {
+      "from": "change-set:cs-7b2f05bb6d4e",
+      "to": "artifact:internal/curriculum/testdata/path_escape/manifest.yaml",
+      "type": "changes"
+    },
+    {
+      "from": "change-set:cs-7b2f05bb6d4e",
+      "to": "artifact:internal/curriculum/testdata/prerequisite_cycle/manifest.yaml",
+      "type": "changes"
+    },
+    {
+      "from": "change-set:cs-7b2f05bb6d4e",
+      "to": "artifact:internal/curriculum/testdata/prerequisite_cycle/pack.yaml",
+      "type": "changes"
+    },
+    {
+      "from": "change-set:cs-7b2f05bb6d4e",
+      "to": "artifact:internal/curriculum/testdata/valid/manifest.yaml",
+      "type": "changes"
+    },
+    {
+      "from": "change-set:cs-7b2f05bb6d4e",
+      "to": "artifact:internal/curriculum/testdata/valid/pack.yaml",
+      "type": "changes"
+    },
+    {
+      "from": "change-set:cs-7b2f05bb6d4e",
+      "to": "artifact:internal/curriculum/validator.go",
+      "type": "changes"
+    },
+    {
+      "from": "change-set:cs-7b2f05bb6d4e",
+      "to": "artifact:packs/go-first-steps.yaml",
+      "type": "changes"
+    },
+    {
+      "from": "change-set:cs-7b2f05bb6d4e",
+      "to": "artifact:packs/manifest.yaml",
+      "type": "changes"
+    },
+    {
+      "from": "change-set:cs-7b2f05bb6d4e",
+      "to": "artifact:schemas/catalog.schema.json",
+      "type": "changes"
+    },
+    {
+      "from": "change-set:cs-7b2f05bb6d4e",
+      "to": "artifact:schemas/challenge.schema.json",
+      "type": "changes"
+    },
+    {
+      "from": "change-set:cs-7b2f05bb6d4e",
+      "to": "artifact:schemas/pack.schema.json",
       "type": "changes"
     },
     {
@@ -2338,6 +2613,16 @@
     },
     {
       "from": "spec:catalog-schema-loader",
+      "to": "artifact:go.mod",
+      "type": "declares"
+    },
+    {
+      "from": "spec:catalog-schema-loader",
+      "to": "artifact:go.sum",
+      "type": "declares"
+    },
+    {
+      "from": "spec:catalog-schema-loader",
       "to": "artifact:internal/curriculum/index.go",
       "type": "declares"
     },
@@ -2358,12 +2643,77 @@
     },
     {
       "from": "spec:catalog-schema-loader",
-      "to": "artifact:internal/curriculum/testdata",
+      "to": "artifact:internal/curriculum/testdata/criteria_without_evidence/manifest.yaml",
+      "type": "declares"
+    },
+    {
+      "from": "spec:catalog-schema-loader",
+      "to": "artifact:internal/curriculum/testdata/criteria_without_evidence/pack.yaml",
+      "type": "declares"
+    },
+    {
+      "from": "spec:catalog-schema-loader",
+      "to": "artifact:internal/curriculum/testdata/duplicate_id/manifest.yaml",
+      "type": "declares"
+    },
+    {
+      "from": "spec:catalog-schema-loader",
+      "to": "artifact:internal/curriculum/testdata/duplicate_id/pack.yaml",
+      "type": "declares"
+    },
+    {
+      "from": "spec:catalog-schema-loader",
+      "to": "artifact:internal/curriculum/testdata/incompatible_schema_version/manifest.yaml",
+      "type": "declares"
+    },
+    {
+      "from": "spec:catalog-schema-loader",
+      "to": "artifact:internal/curriculum/testdata/incompatible_schema_version/pack.yaml",
+      "type": "declares"
+    },
+    {
+      "from": "spec:catalog-schema-loader",
+      "to": "artifact:internal/curriculum/testdata/missing_reference/manifest.yaml",
+      "type": "declares"
+    },
+    {
+      "from": "spec:catalog-schema-loader",
+      "to": "artifact:internal/curriculum/testdata/missing_reference/pack.yaml",
+      "type": "declares"
+    },
+    {
+      "from": "spec:catalog-schema-loader",
+      "to": "artifact:internal/curriculum/testdata/path_escape/manifest.yaml",
+      "type": "declares"
+    },
+    {
+      "from": "spec:catalog-schema-loader",
+      "to": "artifact:internal/curriculum/testdata/prerequisite_cycle/manifest.yaml",
+      "type": "declares"
+    },
+    {
+      "from": "spec:catalog-schema-loader",
+      "to": "artifact:internal/curriculum/testdata/prerequisite_cycle/pack.yaml",
+      "type": "declares"
+    },
+    {
+      "from": "spec:catalog-schema-loader",
+      "to": "artifact:internal/curriculum/testdata/valid/manifest.yaml",
+      "type": "declares"
+    },
+    {
+      "from": "spec:catalog-schema-loader",
+      "to": "artifact:internal/curriculum/testdata/valid/pack.yaml",
       "type": "declares"
     },
     {
       "from": "spec:catalog-schema-loader",
       "to": "artifact:internal/curriculum/validator.go",
+      "type": "declares"
+    },
+    {
+      "from": "spec:catalog-schema-loader",
+      "to": "artifact:packs/go-first-steps.yaml",
       "type": "declares"
     },
     {
@@ -2383,13 +2733,13 @@
     },
     {
       "from": "spec:catalog-schema-loader",
-      "to": "artifact:schemas/event.schema.json",
+      "to": "artifact:schemas/pack.schema.json",
       "type": "declares"
     },
     {
       "from": "spec:catalog-schema-loader",
-      "to": "artifact:schemas/pack.schema.json",
-      "type": "declares"
+      "to": "change-set:cs-7b2f05bb6d4e",
+      "type": "observed-by"
     },
     {
       "from": "spec:curriculum-graph-path-recommendation",
@@ -2778,7 +3128,7 @@
     },
     {
       "from": "spec:learning-domain-model",
-      "to": "change-set:cs-1dfd6e582047",
+      "to": "change-set:cs-34b93787f8dd",
       "type": "observed-by"
     },
     {
@@ -3476,6 +3826,11 @@
     {
       "spec": "catalog-schema-loader",
       "action": "created",
+      "path": "go.sum"
+    },
+    {
+      "spec": "catalog-schema-loader",
+      "action": "created",
       "path": "internal/curriculum/index.go"
     },
     {
@@ -3496,12 +3851,77 @@
     {
       "spec": "catalog-schema-loader",
       "action": "created",
-      "path": "internal/curriculum/testdata"
+      "path": "internal/curriculum/testdata/criteria_without_evidence/manifest.yaml"
+    },
+    {
+      "spec": "catalog-schema-loader",
+      "action": "created",
+      "path": "internal/curriculum/testdata/criteria_without_evidence/pack.yaml"
+    },
+    {
+      "spec": "catalog-schema-loader",
+      "action": "created",
+      "path": "internal/curriculum/testdata/duplicate_id/manifest.yaml"
+    },
+    {
+      "spec": "catalog-schema-loader",
+      "action": "created",
+      "path": "internal/curriculum/testdata/duplicate_id/pack.yaml"
+    },
+    {
+      "spec": "catalog-schema-loader",
+      "action": "created",
+      "path": "internal/curriculum/testdata/incompatible_schema_version/manifest.yaml"
+    },
+    {
+      "spec": "catalog-schema-loader",
+      "action": "created",
+      "path": "internal/curriculum/testdata/incompatible_schema_version/pack.yaml"
+    },
+    {
+      "spec": "catalog-schema-loader",
+      "action": "created",
+      "path": "internal/curriculum/testdata/missing_reference/manifest.yaml"
+    },
+    {
+      "spec": "catalog-schema-loader",
+      "action": "created",
+      "path": "internal/curriculum/testdata/missing_reference/pack.yaml"
+    },
+    {
+      "spec": "catalog-schema-loader",
+      "action": "created",
+      "path": "internal/curriculum/testdata/path_escape/manifest.yaml"
+    },
+    {
+      "spec": "catalog-schema-loader",
+      "action": "created",
+      "path": "internal/curriculum/testdata/prerequisite_cycle/manifest.yaml"
+    },
+    {
+      "spec": "catalog-schema-loader",
+      "action": "created",
+      "path": "internal/curriculum/testdata/prerequisite_cycle/pack.yaml"
+    },
+    {
+      "spec": "catalog-schema-loader",
+      "action": "created",
+      "path": "internal/curriculum/testdata/valid/manifest.yaml"
+    },
+    {
+      "spec": "catalog-schema-loader",
+      "action": "created",
+      "path": "internal/curriculum/testdata/valid/pack.yaml"
     },
     {
       "spec": "catalog-schema-loader",
       "action": "created",
       "path": "internal/curriculum/validator.go"
+    },
+    {
+      "spec": "catalog-schema-loader",
+      "action": "created",
+      "path": "packs/go-first-steps.yaml"
     },
     {
       "spec": "catalog-schema-loader",
@@ -3521,12 +3941,12 @@
     {
       "spec": "catalog-schema-loader",
       "action": "created",
-      "path": "schemas/event.schema.json"
+      "path": "schemas/pack.schema.json"
     },
     {
       "spec": "catalog-schema-loader",
-      "action": "created",
-      "path": "schemas/pack.schema.json"
+      "action": "modified",
+      "path": "go.mod"
     },
     {
       "spec": "curriculum-graph-path-recommendation",
@@ -4560,65 +4980,6 @@
       "diff_digest": "sha256:99af988f9b3d75b3ee0304952a578c49163845943110481445da9e9e60953670"
     },
     {
-      "id": "cs-1dfd6e582047",
-      "spec": "learning-domain-model",
-      "selector": "trailers:learning-domain-model",
-      "base": "013fb55b79572171c18466cb3eaebe0dbe9d6727^",
-      "head": "013fb55b79572171c18466cb3eaebe0dbe9d6727",
-      "resolved_base": "75a773cdf32025f6ab31bcfd5f79a8ac9a974f7d",
-      "resolved_head": "013fb55b79572171c18466cb3eaebe0dbe9d6727",
-      "commits": [
-        "013fb55b79572171c18466cb3eaebe0dbe9d6727"
-      ],
-      "paths": [
-        {
-          "action": "created",
-          "path": "internal/learning/catalog.go"
-        },
-        {
-          "action": "created",
-          "path": "internal/learning/challenge.go"
-        },
-        {
-          "action": "created",
-          "path": "internal/learning/errors.go"
-        },
-        {
-          "action": "created",
-          "path": "internal/learning/evaluation.go"
-        },
-        {
-          "action": "created",
-          "path": "internal/learning/evidence.go"
-        },
-        {
-          "action": "created",
-          "path": "internal/learning/policy.go"
-        },
-        {
-          "action": "created",
-          "path": "internal/learning/policy_test.go"
-        },
-        {
-          "action": "created",
-          "path": "internal/learning/session.go"
-        },
-        {
-          "action": "created",
-          "path": "internal/learning/session_test.go"
-        },
-        {
-          "action": "created",
-          "path": "internal/learning/step.go"
-        },
-        {
-          "action": "modified",
-          "path": ".pose/specs/2026-08-22-learning-domain-model.md"
-        }
-      ],
-      "diff_digest": "sha256:2d0f09e50210d3bfaeffc370dd41679dcfb4ce5a19c9e0b772c049b34adaa3b8"
-    },
-    {
       "id": "cs-27f24a7c63e8",
       "spec": "go-runtime-foundation",
       "selector": "trailers:go-runtime-foundation",
@@ -4729,6 +5090,206 @@
         }
       ],
       "diff_digest": "sha256:e9953a03f1dbec16030f48f076da80a5ec03855b06eaf9fb3f0bb8fa980bdc39"
+    },
+    {
+      "id": "cs-34b93787f8dd",
+      "spec": "learning-domain-model",
+      "selector": "trailers:learning-domain-model",
+      "base": "013fb55b79572171c18466cb3eaebe0dbe9d6727^",
+      "head": "85a74f40c27f4734c2eaf71eb24fe4bfcd0d928d",
+      "resolved_base": "75a773cdf32025f6ab31bcfd5f79a8ac9a974f7d",
+      "resolved_head": "85a74f40c27f4734c2eaf71eb24fe4bfcd0d928d",
+      "commits": [
+        "013fb55b79572171c18466cb3eaebe0dbe9d6727",
+        "85a74f40c27f4734c2eaf71eb24fe4bfcd0d928d"
+      ],
+      "paths": [
+        {
+          "action": "created",
+          "path": ".pose/review-attestations/rva-08c97e35179606ec.json"
+        },
+        {
+          "action": "created",
+          "path": ".pose/review-bundles/rvb-aefeb25172e12266.json"
+        },
+        {
+          "action": "created",
+          "path": "internal/learning/catalog.go"
+        },
+        {
+          "action": "created",
+          "path": "internal/learning/challenge.go"
+        },
+        {
+          "action": "created",
+          "path": "internal/learning/errors.go"
+        },
+        {
+          "action": "created",
+          "path": "internal/learning/evaluation.go"
+        },
+        {
+          "action": "created",
+          "path": "internal/learning/evidence.go"
+        },
+        {
+          "action": "created",
+          "path": "internal/learning/policy.go"
+        },
+        {
+          "action": "created",
+          "path": "internal/learning/policy_test.go"
+        },
+        {
+          "action": "created",
+          "path": "internal/learning/session.go"
+        },
+        {
+          "action": "created",
+          "path": "internal/learning/session_test.go"
+        },
+        {
+          "action": "created",
+          "path": "internal/learning/step.go"
+        },
+        {
+          "action": "modified",
+          "path": ".pose/indexes/delivery-integrity.json"
+        },
+        {
+          "action": "modified",
+          "path": ".pose/indexes/spec-graph.json"
+        },
+        {
+          "action": "modified",
+          "path": ".pose/results/delivery-validation.json"
+        },
+        {
+          "action": "modified",
+          "path": ".pose/specs/2026-08-22-learning-domain-model.md"
+        }
+      ],
+      "diff_digest": "sha256:a1f1f3592e4043c7efb7bb360cbbb5e57093b8a6c0525eaa20f403335e9e6ba9"
+    },
+    {
+      "id": "cs-7b2f05bb6d4e",
+      "spec": "catalog-schema-loader",
+      "selector": "trailers:catalog-schema-loader",
+      "base": "6b6aaab43dcbb96825fdf5342330460ae3d0e132^",
+      "head": "80feec8b75813575a96d8ed8893575638c8f8044",
+      "resolved_base": "85a74f40c27f4734c2eaf71eb24fe4bfcd0d928d",
+      "resolved_head": "80feec8b75813575a96d8ed8893575638c8f8044",
+      "commits": [
+        "6b6aaab43dcbb96825fdf5342330460ae3d0e132",
+        "80feec8b75813575a96d8ed8893575638c8f8044"
+      ],
+      "paths": [
+        {
+          "action": "created",
+          "path": "go.sum"
+        },
+        {
+          "action": "created",
+          "path": "internal/curriculum/index.go"
+        },
+        {
+          "action": "created",
+          "path": "internal/curriculum/loader.go"
+        },
+        {
+          "action": "created",
+          "path": "internal/curriculum/loader_test.go"
+        },
+        {
+          "action": "created",
+          "path": "internal/curriculum/model.go"
+        },
+        {
+          "action": "created",
+          "path": "internal/curriculum/testdata/criteria_without_evidence/manifest.yaml"
+        },
+        {
+          "action": "created",
+          "path": "internal/curriculum/testdata/criteria_without_evidence/pack.yaml"
+        },
+        {
+          "action": "created",
+          "path": "internal/curriculum/testdata/duplicate_id/manifest.yaml"
+        },
+        {
+          "action": "created",
+          "path": "internal/curriculum/testdata/duplicate_id/pack.yaml"
+        },
+        {
+          "action": "created",
+          "path": "internal/curriculum/testdata/incompatible_schema_version/manifest.yaml"
+        },
+        {
+          "action": "created",
+          "path": "internal/curriculum/testdata/incompatible_schema_version/pack.yaml"
+        },
+        {
+          "action": "created",
+          "path": "internal/curriculum/testdata/missing_reference/manifest.yaml"
+        },
+        {
+          "action": "created",
+          "path": "internal/curriculum/testdata/missing_reference/pack.yaml"
+        },
+        {
+          "action": "created",
+          "path": "internal/curriculum/testdata/path_escape/manifest.yaml"
+        },
+        {
+          "action": "created",
+          "path": "internal/curriculum/testdata/prerequisite_cycle/manifest.yaml"
+        },
+        {
+          "action": "created",
+          "path": "internal/curriculum/testdata/prerequisite_cycle/pack.yaml"
+        },
+        {
+          "action": "created",
+          "path": "internal/curriculum/testdata/valid/manifest.yaml"
+        },
+        {
+          "action": "created",
+          "path": "internal/curriculum/testdata/valid/pack.yaml"
+        },
+        {
+          "action": "created",
+          "path": "internal/curriculum/validator.go"
+        },
+        {
+          "action": "created",
+          "path": "packs/go-first-steps.yaml"
+        },
+        {
+          "action": "created",
+          "path": "packs/manifest.yaml"
+        },
+        {
+          "action": "created",
+          "path": "schemas/catalog.schema.json"
+        },
+        {
+          "action": "created",
+          "path": "schemas/challenge.schema.json"
+        },
+        {
+          "action": "created",
+          "path": "schemas/pack.schema.json"
+        },
+        {
+          "action": "modified",
+          "path": ".pose/specs/2026-08-22-catalog-schema-loader.md"
+        },
+        {
+          "action": "modified",
+          "path": "go.mod"
+        }
+      ],
+      "diff_digest": "sha256:12e80d322427f453885109a6a9369448dab74e377443f6e434f6ea4d30db4f75"
     }
   ],
   "reverse": {
@@ -4859,7 +5420,11 @@
       "reliability-observability-compatibility"
     ],
     "go.mod": [
+      "catalog-schema-loader",
       "go-runtime-foundation"
+    ],
+    "go.sum": [
+      "catalog-schema-loader"
     ],
     "internal/application/catalog.go": [
       "mcp-stdio-foundation"
@@ -5005,7 +5570,43 @@
     "internal/curriculum/search.go": [
       "curriculum-graph-path-recommendation"
     ],
-    "internal/curriculum/testdata": [
+    "internal/curriculum/testdata/criteria_without_evidence/manifest.yaml": [
+      "catalog-schema-loader"
+    ],
+    "internal/curriculum/testdata/criteria_without_evidence/pack.yaml": [
+      "catalog-schema-loader"
+    ],
+    "internal/curriculum/testdata/duplicate_id/manifest.yaml": [
+      "catalog-schema-loader"
+    ],
+    "internal/curriculum/testdata/duplicate_id/pack.yaml": [
+      "catalog-schema-loader"
+    ],
+    "internal/curriculum/testdata/incompatible_schema_version/manifest.yaml": [
+      "catalog-schema-loader"
+    ],
+    "internal/curriculum/testdata/incompatible_schema_version/pack.yaml": [
+      "catalog-schema-loader"
+    ],
+    "internal/curriculum/testdata/missing_reference/manifest.yaml": [
+      "catalog-schema-loader"
+    ],
+    "internal/curriculum/testdata/missing_reference/pack.yaml": [
+      "catalog-schema-loader"
+    ],
+    "internal/curriculum/testdata/path_escape/manifest.yaml": [
+      "catalog-schema-loader"
+    ],
+    "internal/curriculum/testdata/prerequisite_cycle/manifest.yaml": [
+      "catalog-schema-loader"
+    ],
+    "internal/curriculum/testdata/prerequisite_cycle/pack.yaml": [
+      "catalog-schema-loader"
+    ],
+    "internal/curriculum/testdata/valid/manifest.yaml": [
+      "catalog-schema-loader"
+    ],
+    "internal/curriculum/testdata/valid/pack.yaml": [
       "catalog-schema-loader"
     ],
     "internal/curriculum/validator.go": [
@@ -5272,6 +5873,9 @@
     "packs/go-first-steps": [
       "go-foundations-packs"
     ],
+    "packs/go-first-steps.yaml": [
+      "catalog-schema-loader"
+    ],
     "packs/go-http": [
       "go-backend-packs"
     ],
@@ -5301,9 +5905,6 @@
     ],
     "schemas/editorial.schema.json": [
       "catalog-authoring-quality"
-    ],
-    "schemas/event.schema.json": [
-      "catalog-schema-loader"
     ],
     "schemas/pack.schema.json": [
       "catalog-schema-loader"
@@ -5447,15 +6048,6 @@
       "path": "internal/checks/executor.go",
       "message": "declared artifact action is absent from the attributed Git change sets",
       "remediation": "no Git change sets are attributed to spec safe-check-executor (ensure commits carry 'POSE-Spec: safe-check-executor' trailer or generate report with pose report)"
-    },
-    {
-      "id": "dif-0647e50442c6",
-      "code": "action-mismatch",
-      "severity": "error",
-      "spec": "catalog-schema-loader",
-      "path": "internal/curriculum/loader.go",
-      "message": "declared artifact action is absent from the attributed Git change sets",
-      "remediation": "no Git change sets are attributed to spec catalog-schema-loader (ensure commits carry 'POSE-Spec: catalog-schema-loader' trailer or generate report with pose report)"
     },
     {
       "id": "dif-076de131cf5d",
@@ -5647,15 +6239,6 @@
       "remediation": "correct the exact path or commit the artifact before closeout"
     },
     {
-      "id": "dif-163da758e73f",
-      "code": "existence",
-      "severity": "error",
-      "spec": "catalog-schema-loader",
-      "path": "schemas/event.schema.json",
-      "message": "declared current artifact is not tracked at the selected head",
-      "remediation": "correct the exact path or commit the artifact before closeout"
-    },
-    {
       "id": "dif-164d700add54",
       "code": "action-mismatch",
       "severity": "error",
@@ -5708,15 +6291,6 @@
       "path": "tests/security/v1-adversarial",
       "message": "declared artifact action is absent from the attributed Git change sets",
       "remediation": "no Git change sets are attributed to spec v1-integrated-acceptance (ensure commits carry 'POSE-Spec: v1-integrated-acceptance' trailer or generate report with pose report)"
-    },
-    {
-      "id": "dif-1c6baa7ddc6f",
-      "code": "action-mismatch",
-      "severity": "error",
-      "spec": "catalog-schema-loader",
-      "path": "schemas/challenge.schema.json",
-      "message": "declared artifact action is absent from the attributed Git change sets",
-      "remediation": "no Git change sets are attributed to spec catalog-schema-loader (ensure commits carry 'POSE-Spec: catalog-schema-loader' trailer or generate report with pose report)"
     },
     {
       "id": "dif-1d9829439284",
@@ -6151,15 +6725,6 @@
       "remediation": "correct the exact path or commit the artifact before closeout"
     },
     {
-      "id": "dif-3b29900d0ede",
-      "code": "existence",
-      "severity": "error",
-      "spec": "catalog-schema-loader",
-      "path": "internal/curriculum/loader_test.go",
-      "message": "declared current artifact is not tracked at the selected head",
-      "remediation": "correct the exact path or commit the artifact before closeout"
-    },
-    {
       "id": "dif-3b91ec3f4a9c",
       "code": "action-mismatch",
       "severity": "error",
@@ -6583,15 +7148,6 @@
       "remediation": "correct the exact path or commit the artifact before closeout"
     },
     {
-      "id": "dif-558d27968f6f",
-      "code": "existence",
-      "severity": "error",
-      "spec": "catalog-schema-loader",
-      "path": "packs/manifest.yaml",
-      "message": "declared current artifact is not tracked at the selected head",
-      "remediation": "correct the exact path or commit the artifact before closeout"
-    },
-    {
       "id": "dif-559dd044a648",
       "code": "existence",
       "severity": "error",
@@ -6709,15 +7265,6 @@
       "remediation": "no Git change sets are attributed to spec local-event-store (ensure commits carry 'POSE-Spec: local-event-store' trailer or generate report with pose report)"
     },
     {
-      "id": "dif-5c1c0bc537da",
-      "code": "existence",
-      "severity": "error",
-      "spec": "catalog-schema-loader",
-      "path": "internal/curriculum/validator.go",
-      "message": "declared current artifact is not tracked at the selected head",
-      "remediation": "correct the exact path or commit the artifact before closeout"
-    },
-    {
       "id": "dif-5cb2334ca177",
       "code": "existence",
       "severity": "error",
@@ -6781,15 +7328,6 @@
       "remediation": "no Git change sets are attributed to spec learning-practice-debug-modes (ensure commits carry 'POSE-Spec: learning-practice-debug-modes' trailer or generate report with pose report)"
     },
     {
-      "id": "dif-602c5683ea2c",
-      "code": "action-mismatch",
-      "severity": "error",
-      "spec": "catalog-schema-loader",
-      "path": "internal/curriculum/testdata",
-      "message": "declared artifact action is absent from the attributed Git change sets",
-      "remediation": "no Git change sets are attributed to spec catalog-schema-loader (ensure commits carry 'POSE-Spec: catalog-schema-loader' trailer or generate report with pose report)"
-    },
-    {
       "id": "dif-60a5c66a291d",
       "code": "action-mismatch",
       "severity": "error",
@@ -6817,15 +7355,6 @@
       "remediation": "no Git change sets are attributed to spec mastery-review-scheduling (ensure commits carry 'POSE-Spec: mastery-review-scheduling' trailer or generate report with pose report)"
     },
     {
-      "id": "dif-61e5986959c0",
-      "code": "action-mismatch",
-      "severity": "error",
-      "spec": "catalog-schema-loader",
-      "path": "internal/curriculum/loader_test.go",
-      "message": "declared artifact action is absent from the attributed Git change sets",
-      "remediation": "no Git change sets are attributed to spec catalog-schema-loader (ensure commits carry 'POSE-Spec: catalog-schema-loader' trailer or generate report with pose report)"
-    },
-    {
       "id": "dif-63375b104be3",
       "code": "existence",
       "severity": "error",
@@ -6833,15 +7362,6 @@
       "path": "internal/mcpserver/server_test.go",
       "message": "declared current artifact is not tracked at the selected head",
       "remediation": "correct the exact path or commit the artifact before closeout"
-    },
-    {
-      "id": "dif-634bd21066ec",
-      "code": "action-mismatch",
-      "severity": "error",
-      "spec": "catalog-schema-loader",
-      "path": "schemas/catalog.schema.json",
-      "message": "declared artifact action is absent from the attributed Git change sets",
-      "remediation": "no Git change sets are attributed to spec catalog-schema-loader (ensure commits carry 'POSE-Spec: catalog-schema-loader' trailer or generate report with pose report)"
     },
     {
       "id": "dif-648091914247",
@@ -6941,15 +7461,6 @@
       "path": "internal/diagnostics/doctor.go",
       "message": "declared current artifact is not tracked at the selected head",
       "remediation": "correct the exact path or commit the artifact before closeout"
-    },
-    {
-      "id": "dif-6b7a4cda0a60",
-      "code": "action-mismatch",
-      "severity": "error",
-      "spec": "catalog-schema-loader",
-      "path": "schemas/pack.schema.json",
-      "message": "declared artifact action is absent from the attributed Git change sets",
-      "remediation": "no Git change sets are attributed to spec catalog-schema-loader (ensure commits carry 'POSE-Spec: catalog-schema-loader' trailer or generate report with pose report)"
     },
     {
       "id": "dif-6cfc6eaad98b",
@@ -7123,15 +7634,6 @@
       "remediation": "no Git change sets are attributed to spec installation-documentation-ci (ensure commits carry 'POSE-Spec: installation-documentation-ci' trailer or generate report with pose report)"
     },
     {
-      "id": "dif-75e3710d3182",
-      "code": "action-mismatch",
-      "severity": "error",
-      "spec": "catalog-schema-loader",
-      "path": "internal/curriculum/validator.go",
-      "message": "declared artifact action is absent from the attributed Git change sets",
-      "remediation": "no Git change sets are attributed to spec catalog-schema-loader (ensure commits carry 'POSE-Spec: catalog-schema-loader' trailer or generate report with pose report)"
-    },
-    {
       "id": "dif-7625788abb12",
       "code": "existence",
       "severity": "error",
@@ -7240,15 +7742,6 @@
       "remediation": "correct the exact path or commit the artifact before closeout"
     },
     {
-      "id": "dif-7d24fb1c67a0",
-      "code": "existence",
-      "severity": "error",
-      "spec": "catalog-schema-loader",
-      "path": "schemas/challenge.schema.json",
-      "message": "declared current artifact is not tracked at the selected head",
-      "remediation": "correct the exact path or commit the artifact before closeout"
-    },
-    {
       "id": "dif-7e564edb1121",
       "code": "action-mismatch",
       "severity": "error",
@@ -7339,15 +7832,6 @@
       "remediation": "no Git change sets are attributed to spec administrative-cli-fixtures (ensure commits carry 'POSE-Spec: administrative-cli-fixtures' trailer or generate report with pose report)"
     },
     {
-      "id": "dif-843521ceaec1",
-      "code": "existence",
-      "severity": "error",
-      "spec": "catalog-schema-loader",
-      "path": "schemas/pack.schema.json",
-      "message": "declared current artifact is not tracked at the selected head",
-      "remediation": "correct the exact path or commit the artifact before closeout"
-    },
-    {
       "id": "dif-84de8f0f9598",
       "code": "action-mismatch",
       "severity": "error",
@@ -7436,15 +7920,6 @@
       "path": "internal/application/catalog.go",
       "message": "declared artifact action is absent from the attributed Git change sets",
       "remediation": "no Git change sets are attributed to spec mcp-stdio-foundation (ensure commits carry 'POSE-Spec: mcp-stdio-foundation' trailer or generate report with pose report)"
-    },
-    {
-      "id": "dif-8ce1ef243744",
-      "code": "existence",
-      "severity": "error",
-      "spec": "catalog-schema-loader",
-      "path": "internal/curriculum/loader.go",
-      "message": "declared current artifact is not tracked at the selected head",
-      "remediation": "correct the exact path or commit the artifact before closeout"
     },
     {
       "id": "dif-8d6420587145",
@@ -7562,15 +8037,6 @@
       "path": ".codex/config.toml.example",
       "message": "declared artifact action is absent from the attributed Git change sets",
       "remediation": "no Git change sets are attributed to spec tutor-skill-host-integration (ensure commits carry 'POSE-Spec: tutor-skill-host-integration' trailer or generate report with pose report)"
-    },
-    {
-      "id": "dif-9615e6e7bd57",
-      "code": "action-mismatch",
-      "severity": "error",
-      "spec": "catalog-schema-loader",
-      "path": "schemas/event.schema.json",
-      "message": "declared artifact action is absent from the attributed Git change sets",
-      "remediation": "no Git change sets are attributed to spec catalog-schema-loader (ensure commits carry 'POSE-Spec: catalog-schema-loader' trailer or generate report with pose report)"
     },
     {
       "id": "dif-976db26827bc",
@@ -7787,15 +8253,6 @@
       "path": "docs/content-authoring.md",
       "message": "declared artifact action is absent from the attributed Git change sets",
       "remediation": "no Git change sets are attributed to spec catalog-authoring-quality (ensure commits carry 'POSE-Spec: catalog-authoring-quality' trailer or generate report with pose report)"
-    },
-    {
-      "id": "dif-a48b85d0a619",
-      "code": "action-mismatch",
-      "severity": "error",
-      "spec": "catalog-schema-loader",
-      "path": "internal/curriculum/index.go",
-      "message": "declared artifact action is absent from the attributed Git change sets",
-      "remediation": "no Git change sets are attributed to spec catalog-schema-loader (ensure commits carry 'POSE-Spec: catalog-schema-loader' trailer or generate report with pose report)"
     },
     {
       "id": "dif-a4b3914d0142",
@@ -8329,15 +8786,6 @@
       "remediation": "correct the exact path or commit the artifact before closeout"
     },
     {
-      "id": "dif-cfd879da5d89",
-      "code": "existence",
-      "severity": "error",
-      "spec": "catalog-schema-loader",
-      "path": "internal/curriculum/index.go",
-      "message": "declared current artifact is not tracked at the selected head",
-      "remediation": "correct the exact path or commit the artifact before closeout"
-    },
-    {
       "id": "dif-d20a5509634b",
       "code": "action-mismatch",
       "severity": "error",
@@ -8363,15 +8811,6 @@
       "path": "internal/diagnostics/doctor.go",
       "message": "declared artifact action is absent from the attributed Git change sets",
       "remediation": "no Git change sets are attributed to spec reliability-observability-compatibility (ensure commits carry 'POSE-Spec: reliability-observability-compatibility' trailer or generate report with pose report)"
-    },
-    {
-      "id": "dif-d2e76752d0af",
-      "code": "existence",
-      "severity": "error",
-      "spec": "catalog-schema-loader",
-      "path": "internal/curriculum/model.go",
-      "message": "declared current artifact is not tracked at the selected head",
-      "remediation": "correct the exact path or commit the artifact before closeout"
     },
     {
       "id": "dif-d532d68dd205",
@@ -8408,15 +8847,6 @@
       "path": "internal/assistance/service.go",
       "message": "declared current artifact is not tracked at the selected head",
       "remediation": "correct the exact path or commit the artifact before closeout"
-    },
-    {
-      "id": "dif-d7640403480c",
-      "code": "action-mismatch",
-      "severity": "error",
-      "spec": "catalog-schema-loader",
-      "path": "packs/manifest.yaml",
-      "message": "declared artifact action is absent from the attributed Git change sets",
-      "remediation": "no Git change sets are attributed to spec catalog-schema-loader (ensure commits carry 'POSE-Spec: catalog-schema-loader' trailer or generate report with pose report)"
     },
     {
       "id": "dif-d823b60920b6",
@@ -8460,15 +8890,6 @@
       "severity": "error",
       "spec": "go-interviews-pack",
       "path": "docs/catalog/go-interviews.md",
-      "message": "declared current artifact is not tracked at the selected head",
-      "remediation": "correct the exact path or commit the artifact before closeout"
-    },
-    {
-      "id": "dif-dbe37134b1cc",
-      "code": "existence",
-      "severity": "error",
-      "spec": "catalog-schema-loader",
-      "path": "schemas/catalog.schema.json",
       "message": "declared current artifact is not tracked at the selected head",
       "remediation": "correct the exact path or commit the artifact before closeout"
     },
@@ -8534,15 +8955,6 @@
       "path": "internal/mcpserver/instructions.go",
       "message": "declared artifact action is absent from the attributed Git change sets",
       "remediation": "no Git change sets are attributed to spec mcp-stdio-foundation (ensure commits carry 'POSE-Spec: mcp-stdio-foundation' trailer or generate report with pose report)"
-    },
-    {
-      "id": "dif-e1e6568055f2",
-      "code": "action-mismatch",
-      "severity": "error",
-      "spec": "catalog-schema-loader",
-      "path": "internal/curriculum/model.go",
-      "message": "declared artifact action is absent from the attributed Git change sets",
-      "remediation": "no Git change sets are attributed to spec catalog-schema-loader (ensure commits carry 'POSE-Spec: catalog-schema-loader' trailer or generate report with pose report)"
     },
     {
       "id": "dif-e270eea0fa9d",
@@ -8678,15 +9090,6 @@
       "path": "internal/session/modes_test.go",
       "message": "declared artifact action is absent from the attributed Git change sets",
       "remediation": "no Git change sets are attributed to spec learning-practice-debug-modes (ensure commits carry 'POSE-Spec: learning-practice-debug-modes' trailer or generate report with pose report)"
-    },
-    {
-      "id": "dif-ec620e05dd0b",
-      "code": "existence",
-      "severity": "error",
-      "spec": "catalog-schema-loader",
-      "path": "internal/curriculum/testdata",
-      "message": "declared current artifact is not tracked at the selected head",
-      "remediation": "correct the exact path or commit the artifact before closeout"
     },
     {
       "id": "dif-ec6b126811d1",
@@ -8967,14 +9370,15 @@
       "evidence_class": "build",
       "severity": "required",
       "outcome": "pass",
-      "git_head": "013fb55b79572171c18466cb3eaebe0dbe9d6727",
-      "generated_at": "2026-08-22T23:43:51Z",
-      "provenance_digest": "sha256:a222a2f5ee97aabbda6efbf1b97b4d0f60728cd08b221f551d7b41d6214071e0",
+      "git_head": "80feec8b75813575a96d8ed8893575638c8f8044",
+      "generated_at": "2026-08-22T23:57:36Z",
+      "provenance_digest": "sha256:9fba709d40b59d0658bdc50ad4b5942bd1bd77fa2178c168fb8cadd7cfcadb16",
       "report": ".pose/results/delivery-validation.json",
       "scope_provenance": {
         "architecture-decision-baseline": "sha256:0cb9538df6c6193eeea826dda56f91288808c178925c98b02a43af253045c99e",
+        "catalog-schema-loader": "sha256:65d1bac540f432ad6e0e2c0531f2361db0717fccbf2ac64d668c95c494531877",
         "go-runtime-foundation": "sha256:9a4e47998be06f380306497a3e5f9a87b700e2ea0881b7f33cea67e2d2d7da03",
-        "learning-domain-model": "sha256:a19aced49e2129dc8c1cb8955b767035c822fd8291f21b6fd8202c3b36030047"
+        "learning-domain-model": "sha256:d02fa5101f4bf12416a3360691755de2a1bee097647dc70f162cd6c1c2cd9796"
       }
     },
     {
@@ -8984,14 +9388,15 @@
       "evidence_class": "unit",
       "severity": "required",
       "outcome": "pass",
-      "git_head": "013fb55b79572171c18466cb3eaebe0dbe9d6727",
-      "generated_at": "2026-08-22T23:43:51Z",
-      "provenance_digest": "sha256:a222a2f5ee97aabbda6efbf1b97b4d0f60728cd08b221f551d7b41d6214071e0",
+      "git_head": "80feec8b75813575a96d8ed8893575638c8f8044",
+      "generated_at": "2026-08-22T23:57:36Z",
+      "provenance_digest": "sha256:9fba709d40b59d0658bdc50ad4b5942bd1bd77fa2178c168fb8cadd7cfcadb16",
       "report": ".pose/results/delivery-validation.json",
       "scope_provenance": {
         "architecture-decision-baseline": "sha256:0cb9538df6c6193eeea826dda56f91288808c178925c98b02a43af253045c99e",
+        "catalog-schema-loader": "sha256:65d1bac540f432ad6e0e2c0531f2361db0717fccbf2ac64d668c95c494531877",
         "go-runtime-foundation": "sha256:9a4e47998be06f380306497a3e5f9a87b700e2ea0881b7f33cea67e2d2d7da03",
-        "learning-domain-model": "sha256:a19aced49e2129dc8c1cb8955b767035c822fd8291f21b6fd8202c3b36030047"
+        "learning-domain-model": "sha256:d02fa5101f4bf12416a3360691755de2a1bee097647dc70f162cd6c1c2cd9796"
       }
     },
     {
@@ -9001,14 +9406,15 @@
       "evidence_class": "build",
       "severity": "optional",
       "outcome": "pass",
-      "git_head": "013fb55b79572171c18466cb3eaebe0dbe9d6727",
-      "generated_at": "2026-08-22T23:43:51Z",
-      "provenance_digest": "sha256:a222a2f5ee97aabbda6efbf1b97b4d0f60728cd08b221f551d7b41d6214071e0",
+      "git_head": "80feec8b75813575a96d8ed8893575638c8f8044",
+      "generated_at": "2026-08-22T23:57:36Z",
+      "provenance_digest": "sha256:9fba709d40b59d0658bdc50ad4b5942bd1bd77fa2178c168fb8cadd7cfcadb16",
       "report": ".pose/results/delivery-validation.json",
       "scope_provenance": {
         "architecture-decision-baseline": "sha256:0cb9538df6c6193eeea826dda56f91288808c178925c98b02a43af253045c99e",
+        "catalog-schema-loader": "sha256:65d1bac540f432ad6e0e2c0531f2361db0717fccbf2ac64d668c95c494531877",
         "go-runtime-foundation": "sha256:9a4e47998be06f380306497a3e5f9a87b700e2ea0881b7f33cea67e2d2d7da03",
-        "learning-domain-model": "sha256:a19aced49e2129dc8c1cb8955b767035c822fd8291f21b6fd8202c3b36030047"
+        "learning-domain-model": "sha256:d02fa5101f4bf12416a3360691755de2a1bee097647dc70f162cd6c1c2cd9796"
       }
     }
   ]
