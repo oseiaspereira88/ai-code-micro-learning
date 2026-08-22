@@ -1,13 +1,14 @@
 ---
 slug: architecture-decision-baseline
-status: in-progress
+status: done
 created_at: 2026-08-22
-completed_at:
+completed_at: 2026-08-22
 supersedes:
 depends_on:
 priority: 0
 components: governance, architecture
 delivers:
+changelog: none
 ---
 
 # Spec: architecture-decision-baseline
@@ -139,20 +140,15 @@ Validar estrutura, referências e precisão editorial; não executar checks de a
 - R6 [satisfied] report:.pose/knowledge/2026-08-22-decision-log-adr-agent-mcp-and-core-boundaries-review.md
 
 ### Known gaps
-- Closeout formal (`pose close spec:architecture-decision-baseline`) está
-  bloqueado por defeito do engine. Em `pose 1.7.3` o `--seal` falhava com
-  `unknown review rule "backend-go"/"frontend-react"`
-  (`.pose/contributions/20260822-104601-review-bundle-seal-crashes-on-overlay-pr.md`,
-  [pose#35](https://github.com/oseiaspereira88/pose/issues/35)); corrigido em
-  `pose 1.7.4`. Após a atualização, o `--seal` ainda falha com
-  `no immutable attributed change set exists` e
-  `no passed structured validation evidence is attributed to the review scope`,
-  porque a spec não possui módulo de código (`Delivery targets: Nenhum`) e a
-  tool `validate` do perfil `spec-closeout@1` é `required` sem precondição
-  para esse caso — reportado em
-  `.pose/contributions/20260822-111613-review-bundle-seal-unreachable-for-doc-o.md`
-  ([pose#36](https://github.com/oseiaspereira88/pose/issues/36)). A spec
-  permanece `in-progress` até o engine ser corrigido.
+- Closeout formal ficou bloqueado por dois defeitos sucessivos do engine
+  POSE, ambos corrigidos durante a execução desta spec: `unknown review rule
+  "backend-go"/"frontend-react"` em `pose 1.7.3`
+  ([pose#35](https://github.com/oseiaspereira88/pose/issues/35), corrigido em
+  1.7.4) e `no immutable attributed change set` /
+  `no passed structured validation evidence` para specs sem módulo de código
+  ([pose#36](https://github.com/oseiaspereira88/pose/issues/36), corrigido em
+  1.7.5). Bundle `rvb-78fd6f4bac4b7492` selado, atestado
+  (`rva-0dfac1908946269a`) e verificado (`ready-to-close`) após a correção.
 
 ## 7. Final Report
 

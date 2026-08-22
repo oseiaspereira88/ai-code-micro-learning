@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "input_digest": "sha256:8e23f69638c7c7b18905a663f2a3ae613cb00a68436544a7cbbd39471d360723",
-  "provenance_digest": "sha256:b841c18e1766548f4915606f613f015add197f75f332ea5521f21ecbb10cb0ff",
+  "input_digest": "sha256:98c8c426a361e63d6d92fd9580b23c8fa4fc2cc391cb49f2f702996e1b910421",
+  "provenance_digest": "sha256:8e718d48da62b0393a4423f921686867505958382dac98034cdd827ddc186486",
   "nodes": [
     {
       "id": "artifact:.agents/skills/ailearn/SKILL.md",
@@ -116,6 +116,20 @@
       }
     },
     {
+      "id": "artifact:.pose/contributions/20260822-104601-review-bundle-seal-crashes-on-overlay-pr.md",
+      "type": "artifact",
+      "attributes": {
+        "path": ".pose/contributions/20260822-104601-review-bundle-seal-crashes-on-overlay-pr.md"
+      }
+    },
+    {
+      "id": "artifact:.pose/contributions/20260822-111613-review-bundle-seal-unreachable-for-doc-o.md",
+      "type": "artifact",
+      "attributes": {
+        "path": ".pose/contributions/20260822-111613-review-bundle-seal-unreachable-for-doc-o.md"
+      }
+    },
+    {
       "id": "artifact:.pose/indexes/module-metadata.json",
       "type": "artifact",
       "attributes": {
@@ -127,6 +141,83 @@
       "type": "artifact",
       "attributes": {
         "path": ".pose/indexes/validation-matrix.json"
+      }
+    },
+    {
+      "id": "artifact:.pose/knowledge/2026-08-22-decision-log-adr-agent-mcp-and-core-boundaries-review.md",
+      "type": "artifact",
+      "attributes": {
+        "path": ".pose/knowledge/2026-08-22-decision-log-adr-agent-mcp-and-core-boundaries-review.md"
+      }
+    },
+    {
+      "id": "artifact:.pose/knowledge/2026-08-22-decision-log-adr-independent-pedagogical-transitions-review.md",
+      "type": "artifact",
+      "attributes": {
+        "path": ".pose/knowledge/2026-08-22-decision-log-adr-independent-pedagogical-transitions-review.md"
+      }
+    },
+    {
+      "id": "artifact:.pose/knowledge/2026-08-22-decision-log-adr-learner-code-ownership-and-safe-checks-review.md",
+      "type": "artifact",
+      "attributes": {
+        "path": ".pose/knowledge/2026-08-22-decision-log-adr-learner-code-ownership-and-safe-checks-review.md"
+      }
+    },
+    {
+      "id": "artifact:.pose/knowledge/2026-08-22-decision-log-adr-local-versioned-catalog-and-event-state-review.md",
+      "type": "artifact",
+      "attributes": {
+        "path": ".pose/knowledge/2026-08-22-decision-log-adr-local-versioned-catalog-and-event-state-review.md"
+      }
+    },
+    {
+      "id": "artifact:.pose/reports/2026-08-22-standard-registrar-baseline-de-decis-es-arquiteturais-4-adrs.md",
+      "type": "artifact",
+      "attributes": {
+        "path": ".pose/reports/2026-08-22-standard-registrar-baseline-de-decis-es-arquiteturais-4-adrs.md"
+      }
+    },
+    {
+      "id": "artifact:.pose/reports/2026-08-22-standard-validate-native.md",
+      "type": "artifact",
+      "attributes": {
+        "path": ".pose/reports/2026-08-22-standard-validate-native.md"
+      }
+    },
+    {
+      "id": "artifact:.pose/reports/history/standard-registrar-baseline-de-decis-es-arquiteturais-4-adrs.jsonl",
+      "type": "artifact",
+      "attributes": {
+        "path": ".pose/reports/history/standard-registrar-baseline-de-decis-es-arquiteturais-4-adrs.jsonl"
+      }
+    },
+    {
+      "id": "artifact:.pose/reports/history/standard-validate-native.jsonl",
+      "type": "artifact",
+      "attributes": {
+        "path": ".pose/reports/history/standard-validate-native.jsonl"
+      }
+    },
+    {
+      "id": "artifact:.pose/results/delivery-validation.json",
+      "type": "artifact",
+      "attributes": {
+        "path": ".pose/results/delivery-validation.json"
+      }
+    },
+    {
+      "id": "artifact:.pose/specs/2026-08-22-architecture-decision-baseline.md",
+      "type": "artifact",
+      "attributes": {
+        "path": ".pose/specs/2026-08-22-architecture-decision-baseline.md"
+      }
+    },
+    {
+      "id": "artifact:.pose/state/machinery-manifest.json",
+      "type": "artifact",
+      "attributes": {
+        "path": ".pose/state/machinery-manifest.json"
       }
     },
     {
@@ -1439,6 +1530,14 @@
       }
     },
     {
+      "id": "change-set:cs-fa8c93499995",
+      "type": "change-set",
+      "attributes": {
+        "diff_digest": "sha256:b0d07b8c1ff6aba8604cce4653aa2e292baafd0b44247d9ebc9ec599a08ca95f",
+        "selector": "trailers:architecture-decision-baseline"
+      }
+    },
+    {
       "id": "spec:administrative-cli-fixtures",
       "type": "spec",
       "attributes": {
@@ -1449,7 +1548,7 @@
       "id": "spec:architecture-decision-baseline",
       "type": "spec",
       "attributes": {
-        "status": "draft"
+        "status": "done"
       }
     },
     {
@@ -1623,6 +1722,91 @@
   ],
   "edges": [
     {
+      "from": "change-set:cs-fa8c93499995",
+      "to": "artifact:.pose/adr/2026-08-22-agent-mcp-and-core-boundaries.md",
+      "type": "changes"
+    },
+    {
+      "from": "change-set:cs-fa8c93499995",
+      "to": "artifact:.pose/adr/2026-08-22-independent-pedagogical-transitions.md",
+      "type": "changes"
+    },
+    {
+      "from": "change-set:cs-fa8c93499995",
+      "to": "artifact:.pose/adr/2026-08-22-learner-code-ownership-and-safe-checks.md",
+      "type": "changes"
+    },
+    {
+      "from": "change-set:cs-fa8c93499995",
+      "to": "artifact:.pose/adr/2026-08-22-local-versioned-catalog-and-event-state.md",
+      "type": "changes"
+    },
+    {
+      "from": "change-set:cs-fa8c93499995",
+      "to": "artifact:.pose/contributions/20260822-104601-review-bundle-seal-crashes-on-overlay-pr.md",
+      "type": "changes"
+    },
+    {
+      "from": "change-set:cs-fa8c93499995",
+      "to": "artifact:.pose/contributions/20260822-111613-review-bundle-seal-unreachable-for-doc-o.md",
+      "type": "changes"
+    },
+    {
+      "from": "change-set:cs-fa8c93499995",
+      "to": "artifact:.pose/knowledge/2026-08-22-decision-log-adr-agent-mcp-and-core-boundaries-review.md",
+      "type": "changes"
+    },
+    {
+      "from": "change-set:cs-fa8c93499995",
+      "to": "artifact:.pose/knowledge/2026-08-22-decision-log-adr-independent-pedagogical-transitions-review.md",
+      "type": "changes"
+    },
+    {
+      "from": "change-set:cs-fa8c93499995",
+      "to": "artifact:.pose/knowledge/2026-08-22-decision-log-adr-learner-code-ownership-and-safe-checks-review.md",
+      "type": "changes"
+    },
+    {
+      "from": "change-set:cs-fa8c93499995",
+      "to": "artifact:.pose/knowledge/2026-08-22-decision-log-adr-local-versioned-catalog-and-event-state-review.md",
+      "type": "changes"
+    },
+    {
+      "from": "change-set:cs-fa8c93499995",
+      "to": "artifact:.pose/reports/2026-08-22-standard-registrar-baseline-de-decis-es-arquiteturais-4-adrs.md",
+      "type": "changes"
+    },
+    {
+      "from": "change-set:cs-fa8c93499995",
+      "to": "artifact:.pose/reports/2026-08-22-standard-validate-native.md",
+      "type": "changes"
+    },
+    {
+      "from": "change-set:cs-fa8c93499995",
+      "to": "artifact:.pose/reports/history/standard-registrar-baseline-de-decis-es-arquiteturais-4-adrs.jsonl",
+      "type": "changes"
+    },
+    {
+      "from": "change-set:cs-fa8c93499995",
+      "to": "artifact:.pose/reports/history/standard-validate-native.jsonl",
+      "type": "changes"
+    },
+    {
+      "from": "change-set:cs-fa8c93499995",
+      "to": "artifact:.pose/results/delivery-validation.json",
+      "type": "changes"
+    },
+    {
+      "from": "change-set:cs-fa8c93499995",
+      "to": "artifact:.pose/specs/2026-08-22-architecture-decision-baseline.md",
+      "type": "changes"
+    },
+    {
+      "from": "change-set:cs-fa8c93499995",
+      "to": "artifact:.pose/state/machinery-manifest.json",
+      "type": "changes"
+    },
+    {
       "from": "spec:administrative-cli-fixtures",
       "to": "artifact:internal/cli/catalog.go",
       "type": "declares"
@@ -1691,6 +1875,11 @@
       "from": "spec:architecture-decision-baseline",
       "to": "artifact:.pose/adr/2026-08-22-local-versioned-catalog-and-event-state.md",
       "type": "declares"
+    },
+    {
+      "from": "spec:architecture-decision-baseline",
+      "to": "change-set:cs-fa8c93499995",
+      "type": "observed-by"
     },
     {
       "from": "spec:assistance-hints-detours",
@@ -3885,7 +4074,93 @@
       "path": "internal/evidence/store.go"
     }
   ],
-  "change_sets": [],
+  "change_sets": [
+    {
+      "id": "cs-fa8c93499995",
+      "spec": "architecture-decision-baseline",
+      "selector": "trailers:architecture-decision-baseline",
+      "base": "b28db2d630b0c9440d31ab36ef8d7741636f7874^",
+      "head": "3c13b07a8a96dbbf95dfe2568a8c17d8058bd468",
+      "resolved_base": "34180b65d1f08984f9dd99130f262e8200756a64",
+      "resolved_head": "3c13b07a8a96dbbf95dfe2568a8c17d8058bd468",
+      "commits": [
+        "b28db2d630b0c9440d31ab36ef8d7741636f7874",
+        "e7d53cb2b4d5030ee69b68abcc4bda19d912ffe5",
+        "3c13b07a8a96dbbf95dfe2568a8c17d8058bd468"
+      ],
+      "paths": [
+        {
+          "action": "created",
+          "path": ".pose/adr/2026-08-22-agent-mcp-and-core-boundaries.md"
+        },
+        {
+          "action": "created",
+          "path": ".pose/adr/2026-08-22-independent-pedagogical-transitions.md"
+        },
+        {
+          "action": "created",
+          "path": ".pose/adr/2026-08-22-learner-code-ownership-and-safe-checks.md"
+        },
+        {
+          "action": "created",
+          "path": ".pose/adr/2026-08-22-local-versioned-catalog-and-event-state.md"
+        },
+        {
+          "action": "created",
+          "path": ".pose/contributions/20260822-104601-review-bundle-seal-crashes-on-overlay-pr.md"
+        },
+        {
+          "action": "created",
+          "path": ".pose/contributions/20260822-111613-review-bundle-seal-unreachable-for-doc-o.md"
+        },
+        {
+          "action": "created",
+          "path": ".pose/knowledge/2026-08-22-decision-log-adr-agent-mcp-and-core-boundaries-review.md"
+        },
+        {
+          "action": "created",
+          "path": ".pose/knowledge/2026-08-22-decision-log-adr-independent-pedagogical-transitions-review.md"
+        },
+        {
+          "action": "created",
+          "path": ".pose/knowledge/2026-08-22-decision-log-adr-learner-code-ownership-and-safe-checks-review.md"
+        },
+        {
+          "action": "created",
+          "path": ".pose/knowledge/2026-08-22-decision-log-adr-local-versioned-catalog-and-event-state-review.md"
+        },
+        {
+          "action": "created",
+          "path": ".pose/reports/2026-08-22-standard-registrar-baseline-de-decis-es-arquiteturais-4-adrs.md"
+        },
+        {
+          "action": "created",
+          "path": ".pose/reports/2026-08-22-standard-validate-native.md"
+        },
+        {
+          "action": "created",
+          "path": ".pose/reports/history/standard-registrar-baseline-de-decis-es-arquiteturais-4-adrs.jsonl"
+        },
+        {
+          "action": "created",
+          "path": ".pose/reports/history/standard-validate-native.jsonl"
+        },
+        {
+          "action": "created",
+          "path": ".pose/results/delivery-validation.json"
+        },
+        {
+          "action": "modified",
+          "path": ".pose/specs/2026-08-22-architecture-decision-baseline.md"
+        },
+        {
+          "action": "modified",
+          "path": ".pose/state/machinery-manifest.json"
+        }
+      ],
+      "diff_digest": "sha256:b0d07b8c1ff6aba8604cce4653aa2e292baafd0b44247d9ebc9ec599a08ca95f"
+    }
+  ],
   "reverse": {
     ".agents/skills/ailearn/SKILL.md": [
       "tutor-skill-host-integration"
@@ -4994,15 +5269,6 @@
       "remediation": "no Git change sets are attributed to spec workspace-observation-baselines (ensure commits carry 'POSE-Spec: workspace-observation-baselines' trailer or generate report with pose report)"
     },
     {
-      "id": "dif-23f0bcb5959d",
-      "code": "existence",
-      "severity": "error",
-      "spec": "architecture-decision-baseline",
-      "path": ".pose/adr/2026-08-22-learner-code-ownership-and-safe-checks.md",
-      "message": "declared current artifact is not tracked at the selected head",
-      "remediation": "correct the exact path or commit the artifact before closeout"
-    },
-    {
       "id": "dif-241bc605f8a3",
       "code": "action-mismatch",
       "severity": "error",
@@ -5948,15 +6214,6 @@
       "remediation": "correct the exact path or commit the artifact before closeout"
     },
     {
-      "id": "dif-5aa3e1c76851",
-      "code": "action-mismatch",
-      "severity": "error",
-      "spec": "architecture-decision-baseline",
-      "path": ".pose/adr/2026-08-22-local-versioned-catalog-and-event-state.md",
-      "message": "declared artifact action is absent from the attributed Git change sets",
-      "remediation": "no Git change sets are attributed to spec architecture-decision-baseline (ensure commits carry 'POSE-Spec: architecture-decision-baseline' trailer or generate report with pose report)"
-    },
-    {
       "id": "dif-5ab3e6cbb275",
       "code": "existence",
       "severity": "error",
@@ -5991,15 +6248,6 @@
       "path": "internal/eventstore/store.go",
       "message": "declared artifact action is absent from the attributed Git change sets",
       "remediation": "no Git change sets are attributed to spec local-event-store (ensure commits carry 'POSE-Spec: local-event-store' trailer or generate report with pose report)"
-    },
-    {
-      "id": "dif-5bb619e5401f",
-      "code": "existence",
-      "severity": "error",
-      "spec": "architecture-decision-baseline",
-      "path": ".pose/adr/2026-08-22-independent-pedagogical-transitions.md",
-      "message": "declared current artifact is not tracked at the selected head",
-      "remediation": "correct the exact path or commit the artifact before closeout"
     },
     {
       "id": "dif-5c1c0bc537da",
@@ -6432,15 +6680,6 @@
       "path": ".github/workflows/release.yml",
       "message": "declared artifact action is absent from the attributed Git change sets",
       "remediation": "no Git change sets are attributed to spec installation-documentation-ci (ensure commits carry 'POSE-Spec: installation-documentation-ci' trailer or generate report with pose report)"
-    },
-    {
-      "id": "dif-7554a15729b2",
-      "code": "action-mismatch",
-      "severity": "error",
-      "spec": "architecture-decision-baseline",
-      "path": ".pose/adr/2026-08-22-learner-code-ownership-and-safe-checks.md",
-      "message": "declared artifact action is absent from the attributed Git change sets",
-      "remediation": "no Git change sets are attributed to spec architecture-decision-baseline (ensure commits carry 'POSE-Spec: architecture-decision-baseline' trailer or generate report with pose report)"
     },
     {
       "id": "dif-75e3710d3182",
@@ -7100,15 +7339,6 @@
       "remediation": "no Git change sets are attributed to spec go-runtime-foundation (ensure commits carry 'POSE-Spec: go-runtime-foundation' trailer or generate report with pose report)"
     },
     {
-      "id": "dif-9b6ff7be28de",
-      "code": "existence",
-      "severity": "error",
-      "spec": "architecture-decision-baseline",
-      "path": ".pose/adr/2026-08-22-local-versioned-catalog-and-event-state.md",
-      "message": "declared current artifact is not tracked at the selected head",
-      "remediation": "correct the exact path or commit the artifact before closeout"
-    },
-    {
       "id": "dif-9d98af273492",
       "code": "existence",
       "severity": "error",
@@ -7505,15 +7735,6 @@
       "remediation": "correct the exact path or commit the artifact before closeout"
     },
     {
-      "id": "dif-b80f6d36b197",
-      "code": "existence",
-      "severity": "error",
-      "spec": "architecture-decision-baseline",
-      "path": ".pose/adr/2026-08-22-agent-mcp-and-core-boundaries.md",
-      "message": "declared current artifact is not tracked at the selected head",
-      "remediation": "correct the exact path or commit the artifact before closeout"
-    },
-    {
       "id": "dif-b90b0799dca8",
       "code": "existence",
       "severity": "error",
@@ -7584,15 +7805,6 @@
       "path": "internal/curriculum/search.go",
       "message": "declared artifact action is absent from the attributed Git change sets",
       "remediation": "no Git change sets are attributed to spec curriculum-graph-path-recommendation (ensure commits carry 'POSE-Spec: curriculum-graph-path-recommendation' trailer or generate report with pose report)"
-    },
-    {
-      "id": "dif-be6b6b6af1a5",
-      "code": "action-mismatch",
-      "severity": "error",
-      "spec": "architecture-decision-baseline",
-      "path": ".pose/adr/2026-08-22-agent-mcp-and-core-boundaries.md",
-      "message": "declared artifact action is absent from the attributed Git change sets",
-      "remediation": "no Git change sets are attributed to spec architecture-decision-baseline (ensure commits carry 'POSE-Spec: architecture-decision-baseline' trailer or generate report with pose report)"
     },
     {
       "id": "dif-beff4348fac9",
@@ -7863,15 +8075,6 @@
       "path": "internal/curriculum/index.go",
       "message": "declared current artifact is not tracked at the selected head",
       "remediation": "correct the exact path or commit the artifact before closeout"
-    },
-    {
-      "id": "dif-d1ddc067313b",
-      "code": "action-mismatch",
-      "severity": "error",
-      "spec": "architecture-decision-baseline",
-      "path": ".pose/adr/2026-08-22-independent-pedagogical-transitions.md",
-      "message": "declared artifact action is absent from the attributed Git change sets",
-      "remediation": "no Git change sets are attributed to spec architecture-decision-baseline (ensure commits carry 'POSE-Spec: architecture-decision-baseline' trailer or generate report with pose report)"
     },
     {
       "id": "dif-d20a5509634b",

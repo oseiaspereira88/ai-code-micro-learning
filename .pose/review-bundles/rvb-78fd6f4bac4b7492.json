@@ -1,0 +1,404 @@
+{
+  "schema_version": 1,
+  "bundle_id": "rvb-78fd6f4bac4b7492",
+  "bundle_digest": "sha256:78fd6f4bac4b74926afe258ab9f016d2a37fb683758d5f63b8ea9d45dcc598ca",
+  "state": "sealed",
+  "sealed_at": "2026-08-22T15:08:40Z",
+  "payload": {
+    "scope": {
+      "ref": "spec:architecture-decision-baseline",
+      "kind": "spec",
+      "slug": "architecture-decision-baseline",
+      "components": [
+        "architecture",
+        "governance"
+      ],
+      "sections": [
+        {
+          "kind": "semantic-section",
+          "path": "decisions",
+          "digest": "sha256:a1945115d47788ecb3ecf57643fdc9e274224f79b1b8139e766aa45737117812",
+          "reason": "governed semantic review input"
+        },
+        {
+          "kind": "semantic-section",
+          "path": "intent",
+          "digest": "sha256:2f8e43662caa5bb0f142703a37db3f7e5402531ac02484c332e3740d16f502c1",
+          "reason": "governed semantic review input"
+        },
+        {
+          "kind": "semantic-section",
+          "path": "requirements",
+          "digest": "sha256:6147d1d8d6857e293a818d53804b69977f862d341956d445de36013b7990176b",
+          "reason": "governed semantic review input"
+        },
+        {
+          "kind": "semantic-section",
+          "path": "technical plan",
+          "digest": "sha256:eaec90ac4ee796fd241bfc15bb9c762f886c4183f9e328e1c9674c7f12890b71",
+          "reason": "governed semantic review input"
+        }
+      ]
+    },
+    "subject": {
+      "change_sets": [
+        "cs-fa8c93499995"
+      ],
+      "base": "34180b65d1f08984f9dd99130f262e8200756a64",
+      "head": "3c13b07a8a96dbbf95dfe2568a8c17d8058bd468",
+      "patch_digest": "sha256:233ee7c316b05cef2c12f1359c08a06e94bf9469519aecae03f33ebf9cb808d8",
+      "tree_digest": "sha256:6d6155c79aa5032dd3fe4743b306d9525fd00ea9fba0a16a58bd0d825c559e0d",
+      "entries": [
+        {
+          "action": "created",
+          "path": ".pose/adr/2026-08-22-agent-mcp-and-core-boundaries.md",
+          "class": "governance",
+          "digest": "sha256:ce18065fba36ee0436adbfb74acbeee41797c27112d9f0d825e3732f1f8b54a3",
+          "reason": "attributed governance path in the immutable change set"
+        },
+        {
+          "action": "created",
+          "path": ".pose/adr/2026-08-22-independent-pedagogical-transitions.md",
+          "class": "governance",
+          "digest": "sha256:371ad13317372aa05be9d5adb4506ac936d0aeeb8e36e7458f0464c3dc82362f",
+          "reason": "attributed governance path in the immutable change set"
+        },
+        {
+          "action": "created",
+          "path": ".pose/adr/2026-08-22-learner-code-ownership-and-safe-checks.md",
+          "class": "governance",
+          "digest": "sha256:c83bb3389a51cb9c55118406a9b5022b90e33c2a46a5cb2ce1b7f767118b8c44",
+          "reason": "attributed governance path in the immutable change set"
+        },
+        {
+          "action": "created",
+          "path": ".pose/adr/2026-08-22-local-versioned-catalog-and-event-state.md",
+          "class": "governance",
+          "digest": "sha256:1a9bffd3aa03fc073f77ae92d6566a53bc72eb43640fbf0d3724ee90de99b731",
+          "reason": "attributed governance path in the immutable change set"
+        },
+        {
+          "action": "created",
+          "path": ".pose/knowledge/2026-08-22-decision-log-adr-agent-mcp-and-core-boundaries-review.md",
+          "class": "governance",
+          "digest": "sha256:6e5d6bbb8811a32a9ba7149b79be821dbdc40e7d9a6b7fdb0cb4be5bad47f0e1",
+          "reason": "attributed governance path in the immutable change set"
+        },
+        {
+          "action": "created",
+          "path": ".pose/knowledge/2026-08-22-decision-log-adr-independent-pedagogical-transitions-review.md",
+          "class": "governance",
+          "digest": "sha256:af4bbfa51a65ed4a04e9bfd2cef0c5c680f8162f5f9ce49b01d4445875894669",
+          "reason": "attributed governance path in the immutable change set"
+        },
+        {
+          "action": "created",
+          "path": ".pose/knowledge/2026-08-22-decision-log-adr-learner-code-ownership-and-safe-checks-review.md",
+          "class": "governance",
+          "digest": "sha256:027df7e363d6ec81184589202f5c87a2558f9c49b16dcb0c0b6d33891a53be18",
+          "reason": "attributed governance path in the immutable change set"
+        },
+        {
+          "action": "created",
+          "path": ".pose/knowledge/2026-08-22-decision-log-adr-local-versioned-catalog-and-event-state-review.md",
+          "class": "governance",
+          "digest": "sha256:200954bf38408bd3b0482eba22036463c85bdc9c3f9ba943579dbf0a22136de7",
+          "reason": "attributed governance path in the immutable change set"
+        }
+      ]
+    },
+    "plan": {
+      "plan_digest": "sha256:fc41a0ba7233b8a87604395fefb879d2a6ed9dd25dffc697c5a9776bcf235fd8",
+      "independence": "same-actor-separate-execution",
+      "components": [],
+      "criteria": [
+        {
+          "id": "compatibility",
+          "description": "Public CLI, file and MCP contracts are compatible or explicitly migrated.",
+          "required": true,
+          "profiles": [
+            "spec-closeout@1"
+          ]
+        },
+        {
+          "id": "correctness",
+          "description": "Functional and negative behavior is correct.",
+          "required": true,
+          "evidence_classes": [
+            "test",
+            "validation"
+          ],
+          "profiles": [
+            "spec-closeout@1"
+          ]
+        },
+        {
+          "id": "documentation",
+          "description": "Operational docs, templates and scaffold match runtime behavior.",
+          "required": true,
+          "rules": [
+            "documentation-style"
+          ],
+          "profiles": [
+            "spec-closeout@1"
+          ]
+        },
+        {
+          "id": "operability",
+          "description": "Errors, explanations and remediation are actionable.",
+          "required": true,
+          "profiles": [
+            "spec-closeout@1"
+          ]
+        },
+        {
+          "id": "requirements",
+          "description": "Every requirement has current, relevant evidence.",
+          "required": true,
+          "evidence_classes": [
+            "requirement-trace",
+            "test"
+          ],
+          "profiles": [
+            "spec-closeout@1"
+          ]
+        },
+        {
+          "id": "scope",
+          "description": "The implementation matches the approved spec scope.",
+          "required": true,
+          "rules": [
+            "documentation-style"
+          ],
+          "profiles": [
+            "spec-closeout@1"
+          ]
+        },
+        {
+          "id": "security",
+          "description": "Inputs, paths, evidence and authority boundaries are safe.",
+          "required": true,
+          "rules": [
+            "security"
+          ],
+          "profiles": [
+            "spec-closeout@1"
+          ]
+        }
+      ],
+      "tools": [
+        {
+          "id": "artifact-check",
+          "requiredness": "required",
+          "args": [
+            "pose",
+            "artifact-check",
+            "--spec",
+            "architecture-decision-baseline",
+            "--strict"
+          ],
+          "rationale": "reconcile declared artifacts with Git-observed provenance",
+          "criteria": [
+            "requirements",
+            "scope"
+          ],
+          "preconditions": [
+            "artifacts-attributed"
+          ]
+        },
+        {
+          "id": "assess-tech-debt",
+          "requiredness": "recommended",
+          "args": [
+            "pose",
+            "assess",
+            "tech-debt"
+          ],
+          "rationale": "inspect unresolved TODO, FIXME, panic and stub findings",
+          "criteria": [
+            "correctness"
+          ],
+          "preconditions": [
+            "scope-authorized"
+          ]
+        },
+        {
+          "id": "closeout-check",
+          "requiredness": "required",
+          "args": [
+            "pose",
+            "closeout-check",
+            "spec:architecture-decision-baseline"
+          ],
+          "rationale": "verify remaining hierarchical closeout blockers",
+          "preconditions": [
+            "review-complete"
+          ]
+        },
+        {
+          "id": "review-check",
+          "requiredness": "required",
+          "args": [
+            "pose",
+            "review-check",
+            "spec:architecture-decision-baseline"
+          ],
+          "rationale": "verify exact review-plan coverage and freshness",
+          "preconditions": [
+            "review-complete"
+          ]
+        },
+        {
+          "id": "validate",
+          "requiredness": "required",
+          "args": [
+            "pose",
+            "validate",
+            "--strict"
+          ],
+          "rationale": "run the registered deterministic checks for the affected module",
+          "evidence_classes": [
+            "validation"
+          ],
+          "criteria": [
+            "correctness",
+            "requirements"
+          ],
+          "preconditions": [
+            "delivery-target-declared"
+          ]
+        }
+      ]
+    },
+    "evidence": [],
+    "consumed_inputs": [
+      {
+        "kind": "governed-config",
+        "path": ".pose/indexes/validation-matrix.json",
+        "digest": "sha256:d8a36b2938234b87ab8f81f498834a253bf981e0f14691d9a6e076feec96122c",
+        "reason": "consumed review policy or validation contract"
+      },
+      {
+        "kind": "governed-config",
+        "path": ".pose/policy/review.json",
+        "digest": "sha256:89a78e6ec6e1806414c669e66239831b593c08b9a182e36fae119bccecd28b5e",
+        "reason": "consumed review policy or validation contract"
+      },
+      {
+        "kind": "review-plan",
+        "path": "spec-closeout@1",
+        "digest": "sha256:fc41a0ba7233b8a87604395fefb879d2a6ed9dd25dffc697c5a9776bcf235fd8",
+        "reason": "effective component-aware plan contract"
+      },
+      {
+        "kind": "review-profile",
+        "path": ".pose/review-profiles/spec-closeout.json",
+        "digest": "sha256:de13c1d59e485aaf4cb474a8c2836507447c44dc7090cbdc2de589fa75c6cc92",
+        "reason": "selected by effective review plan"
+      },
+      {
+        "kind": "rule",
+        "path": ".pose/rules/documentation-style.md",
+        "digest": "sha256:5c5c666fc6c796cf9ae3876d25d3fd4fa523d121892459dc0d681d73da1d60ae",
+        "reason": "selected by effective review criterion"
+      },
+      {
+        "kind": "rule",
+        "path": ".pose/rules/security.md",
+        "digest": "sha256:1cbf29c12d09cad0799e2d8715e94f84a49ee8fa09867bb5f12a544f8df43774",
+        "reason": "selected by effective review criterion"
+      },
+      {
+        "kind": "schema",
+        "path": "review-bundle@1",
+        "digest": "sha256:e7c9643ec88eccb2a6dea3ee3291c351983d78e1d2fa44b61399514c5021bcb0",
+        "reason": "canonical bundle and attestation schema identity"
+      },
+      {
+        "kind": "tool-catalog",
+        "path": "native-review-tools@1",
+        "digest": "sha256:fc41a0ba7233b8a87604395fefb879d2a6ed9dd25dffc697c5a9776bcf235fd8",
+        "reason": "closed resolved native tool contract"
+      }
+    ]
+  },
+  "excluded_inputs": [
+    {
+      "kind": "derived-evidence",
+      "path": ".pose/contributions/20260822-104601-review-bundle-seal-crashes-on-overlay-pr.md",
+      "reason": "attributed path is outside the semantic review subject"
+    },
+    {
+      "kind": "derived-evidence",
+      "path": ".pose/contributions/20260822-111613-review-bundle-seal-unreachable-for-doc-o.md",
+      "reason": "attributed path is outside the semantic review subject"
+    },
+    {
+      "kind": "derived-evidence",
+      "path": ".pose/reports/2026-08-22-standard-registrar-baseline-de-decis-es-arquiteturais-4-adrs.md",
+      "reason": "attributed path is outside the semantic review subject"
+    },
+    {
+      "kind": "derived-evidence",
+      "path": ".pose/reports/2026-08-22-standard-validate-native.md",
+      "reason": "attributed path is outside the semantic review subject"
+    },
+    {
+      "kind": "derived-evidence",
+      "path": ".pose/reports/history/standard-registrar-baseline-de-decis-es-arquiteturais-4-adrs.jsonl",
+      "reason": "attributed path is outside the semantic review subject"
+    },
+    {
+      "kind": "derived-evidence",
+      "path": ".pose/reports/history/standard-validate-native.jsonl",
+      "reason": "attributed path is outside the semantic review subject"
+    },
+    {
+      "kind": "derived-evidence",
+      "path": ".pose/results/delivery-validation.json",
+      "reason": "attributed path is outside the semantic review subject"
+    },
+    {
+      "kind": "derived-evidence",
+      "path": ".pose/state/machinery-manifest.json",
+      "reason": "attributed path is outside the semantic review subject"
+    },
+    {
+      "kind": "derived-section",
+      "path": "final report",
+      "digest": "sha256:57a38df210f9ea78b1396fc77718e40ed2e505366fc8bfeb5037db64040f111f",
+      "reason": "operational closeout content is verified by its own gate"
+    },
+    {
+      "kind": "derived-section",
+      "path": "tasks",
+      "digest": "sha256:77fa22e93d739e311ba2df0b0af3573d58d2d69c7e5ef907ccaf42c1a5d293b7",
+      "reason": "operational closeout content is verified by its own gate"
+    },
+    {
+      "kind": "derived-section",
+      "path": "validation",
+      "digest": "sha256:c98a179626f903d8db133a95a879f7520e3b8b7e21f770088065d3eb4e8bade1",
+      "reason": "operational closeout content is verified by its own gate"
+    },
+    {
+      "kind": "lifecycle",
+      "path": "/home/go/GolandProjects/ai-code-micro-learning/.pose/specs/2026-08-22-architecture-decision-baseline.md",
+      "reason": "status and completed_at do not define the reviewed semantic subject"
+    },
+    {
+      "kind": "semantic-scope",
+      "path": ".pose/specs/2026-08-22-architecture-decision-baseline.md",
+      "reason": "attributed path is outside the semantic review subject"
+    }
+  ],
+  "warnings": [
+    "unmapped review component explicit:architecture",
+    "unmapped review component explicit:governance",
+    "unmapped review component path:.pose/adr/2026-08-22-agent-mcp-and-core-boundaries.md",
+    "unmapped review component path:.pose/adr/2026-08-22-independent-pedagogical-transitions.md",
+    "unmapped review component path:.pose/adr/2026-08-22-learner-code-ownership-and-safe-checks.md",
+    "unmapped review component path:.pose/adr/2026-08-22-local-versioned-catalog-and-event-state.md"
+  ],
+  "path": ".pose/review-bundles/rvb-78fd6f4bac4b7492.json"
+}

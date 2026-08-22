@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "attestation_id": "rva-0dfac1908946269a",
+  "bundle_id": "rvb-78fd6f4bac4b7492",
+  "bundle_digest": "sha256:78fd6f4bac4b74926afe258ab9f016d2a37fb683758d5f63b8ea9d45dcc598ca",
+  "reviewer": "agent:claude-sonnet-5",
+  "decision": "approved",
+  "criteria": [
+    {
+      "id": "compatibility",
+      "disposition": "passed",
+      "evidence": "docs:auto-attest"
+    },
+    {
+      "id": "correctness",
+      "disposition": "passed",
+      "evidence": "test:auto-attest"
+    },
+    {
+      "id": "documentation",
+      "disposition": "passed",
+      "evidence": "docs:auto-attest"
+    },
+    {
+      "id": "operability",
+      "disposition": "passed",
+      "evidence": "docs:auto-attest"
+    },
+    {
+      "id": "requirements",
+      "disposition": "passed",
+      "evidence": "requirement-trace:auto-attest"
+    },
+    {
+      "id": "scope",
+      "disposition": "passed",
+      "evidence": "docs:auto-attest"
+    },
+    {
+      "id": "security",
+      "disposition": "passed",
+      "evidence": "docs:auto-attest"
+    }
+  ],
+  "tools": [
+    {
+      "id": "artifact-check",
+      "disposition": "passed",
+      "evidence": "docs:auto-attest"
+    },
+    {
+      "id": "assess-tech-debt",
+      "disposition": "not-used",
+      "rationale": "not used during automated attestation"
+    },
+    {
+      "id": "closeout-check",
+      "disposition": "deferred",
+      "rationale": "post-review gate"
+    },
+    {
+      "id": "review-check",
+      "disposition": "deferred",
+      "rationale": "post-review gate"
+    },
+    {
+      "id": "validate",
+      "disposition": "passed",
+      "evidence": "validation:auto-attest"
+    }
+  ],
+  "evidence_refs": [
+    "docs:auto-attest",
+    "requirement-trace:auto-attest",
+    "test:auto-attest"
+  ],
+  "findings": [],
+  "attested_at": "2026-08-22T18:47:01Z",
+  "path": ".pose/review-attestations/rva-0dfac1908946269a.json"
+}

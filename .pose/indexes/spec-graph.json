@@ -431,21 +431,21 @@
         "workspace-observation-baselines",
         "safe-check-executor"
       ],
-      "path": ".pose/specs/administrative-cli-fixtures/spec.md",
+      "path": ".pose/specs/2026-08-22-administrative-cli-fixtures.md",
       "priority": 140,
       "status": "draft"
     },
     "architecture-decision-baseline": {
       "depends_on": null,
-      "path": ".pose/specs/architecture-decision-baseline/spec.md",
+      "path": ".pose/specs/2026-08-22-architecture-decision-baseline.md",
       "priority": 0,
-      "status": "draft"
+      "status": "done"
     },
     "assistance-hints-detours": {
       "depends_on": [
         "session-orchestration-disclosure"
       ],
-      "path": ".pose/specs/assistance-hints-detours/spec.md",
+      "path": ".pose/specs/2026-08-22-assistance-hints-detours.md",
       "priority": 70,
       "status": "draft"
     },
@@ -456,7 +456,7 @@
         "administrative-cli-fixtures",
         "curriculum-graph-path-recommendation"
       ],
-      "path": ".pose/specs/catalog-authoring-quality/spec.md",
+      "path": ".pose/specs/2026-08-22-catalog-authoring-quality.md",
       "priority": 170,
       "status": "draft"
     },
@@ -465,7 +465,7 @@
         "architecture-decision-baseline",
         "go-runtime-foundation"
       ],
-      "path": ".pose/specs/catalog-schema-loader/spec.md",
+      "path": ".pose/specs/2026-08-22-catalog-schema-loader.md",
       "priority": 30,
       "status": "draft"
     },
@@ -474,7 +474,7 @@
         "catalog-schema-loader",
         "mastery-review-scheduling"
       ],
-      "path": ".pose/specs/curriculum-graph-path-recommendation/spec.md",
+      "path": ".pose/specs/2026-08-22-curriculum-graph-path-recommendation.md",
       "priority": 120,
       "status": "draft"
     },
@@ -484,7 +484,7 @@
         "local-event-store",
         "mcp-stdio-foundation"
       ],
-      "path": ".pose/specs/feedback-evaluation-progression/spec.md",
+      "path": ".pose/specs/2026-08-22-feedback-evaluation-progression.md",
       "priority": 80,
       "status": "draft"
     },
@@ -494,7 +494,7 @@
         "catalog-authoring-quality",
         "go-foundations-packs"
       ],
-      "path": ".pose/specs/go-backend-packs/spec.md",
+      "path": ".pose/specs/2026-08-22-go-backend-packs.md",
       "priority": 190,
       "status": "draft"
     },
@@ -503,7 +503,7 @@
         "curriculum-graph-path-recommendation",
         "catalog-authoring-quality"
       ],
-      "path": ".pose/specs/go-foundations-packs/spec.md",
+      "path": ".pose/specs/2026-08-22-go-foundations-packs.md",
       "priority": 180,
       "status": "draft"
     },
@@ -514,7 +514,7 @@
         "interview-mode",
         "go-production-architecture-packs"
       ],
-      "path": ".pose/specs/go-interviews-pack/spec.md",
+      "path": ".pose/specs/2026-08-22-go-interviews-pack.md",
       "priority": 210,
       "status": "draft"
     },
@@ -524,7 +524,7 @@
         "catalog-authoring-quality",
         "go-backend-packs"
       ],
-      "path": ".pose/specs/go-production-architecture-packs/spec.md",
+      "path": ".pose/specs/2026-08-22-go-production-architecture-packs.md",
       "priority": 200,
       "status": "draft"
     },
@@ -532,7 +532,7 @@
       "depends_on": [
         "architecture-decision-baseline"
       ],
-      "path": ".pose/specs/go-runtime-foundation/spec.md",
+      "path": ".pose/specs/2026-08-22-go-runtime-foundation.md",
       "priority": 10,
       "status": "draft"
     },
@@ -544,7 +544,7 @@
         "security-privacy-hardening",
         "reliability-observability-compatibility"
       ],
-      "path": ".pose/specs/installation-documentation-ci/spec.md",
+      "path": ".pose/specs/2026-08-22-installation-documentation-ci.md",
       "priority": 240,
       "status": "draft"
     },
@@ -555,7 +555,7 @@
         "tutor-skill-host-integration",
         "learning-practice-debug-modes"
       ],
-      "path": ".pose/specs/interview-mode/spec.md",
+      "path": ".pose/specs/2026-08-22-interview-mode.md",
       "priority": 160,
       "status": "draft"
     },
@@ -564,7 +564,7 @@
         "architecture-decision-baseline",
         "go-runtime-foundation"
       ],
-      "path": ".pose/specs/learning-domain-model/spec.md",
+      "path": ".pose/specs/2026-08-22-learning-domain-model.md",
       "priority": 20,
       "status": "draft"
     },
@@ -576,7 +576,7 @@
         "mastery-review-scheduling",
         "tutor-skill-host-integration"
       ],
-      "path": ".pose/specs/learning-practice-debug-modes/spec.md",
+      "path": ".pose/specs/2026-08-22-learning-practice-debug-modes.md",
       "priority": 150,
       "status": "draft"
     },
@@ -586,7 +586,7 @@
         "go-runtime-foundation",
         "learning-domain-model"
       ],
-      "path": ".pose/specs/local-event-store/spec.md",
+      "path": ".pose/specs/2026-08-22-local-event-store.md",
       "priority": 40,
       "status": "draft"
     },
@@ -595,7 +595,7 @@
         "local-event-store",
         "feedback-evaluation-progression"
       ],
-      "path": ".pose/specs/mastery-review-scheduling/spec.md",
+      "path": ".pose/specs/2026-08-22-mastery-review-scheduling.md",
       "priority": 110,
       "status": "draft"
     },
@@ -606,7 +606,7 @@
         "catalog-schema-loader",
         "local-event-store"
       ],
-      "path": ".pose/specs/mcp-stdio-foundation/spec.md",
+      "path": ".pose/specs/2026-08-22-mcp-stdio-foundation.md",
       "priority": 50,
       "status": "draft"
     },
@@ -619,7 +619,7 @@
         "administrative-cli-fixtures",
         "security-privacy-hardening"
       ],
-      "path": ".pose/specs/reliability-observability-compatibility/spec.md",
+      "path": ".pose/specs/2026-08-22-reliability-observability-compatibility.md",
       "priority": 230,
       "status": "draft"
     },
@@ -628,7 +628,7 @@
         "catalog-schema-loader",
         "workspace-observation-baselines"
       ],
-      "path": ".pose/specs/safe-check-executor/spec.md",
+      "path": ".pose/specs/2026-08-22-safe-check-executor.md",
       "priority": 100,
       "status": "draft"
     },
@@ -640,7 +640,7 @@
         "tutor-skill-host-integration",
         "administrative-cli-fixtures"
       ],
-      "path": ".pose/specs/security-privacy-hardening/spec.md",
+      "path": ".pose/specs/2026-08-22-security-privacy-hardening.md",
       "priority": 220,
       "status": "draft"
     },
@@ -651,7 +651,7 @@
         "local-event-store",
         "mcp-stdio-foundation"
       ],
-      "path": ".pose/specs/session-orchestration-disclosure/spec.md",
+      "path": ".pose/specs/2026-08-22-session-orchestration-disclosure.md",
       "priority": 60,
       "status": "draft"
     },
@@ -664,7 +664,7 @@
         "workspace-observation-baselines",
         "safe-check-executor"
       ],
-      "path": ".pose/specs/tutor-skill-host-integration/spec.md",
+      "path": ".pose/specs/2026-08-22-tutor-skill-host-integration.md",
       "priority": 130,
       "status": "draft"
     },
@@ -696,7 +696,7 @@
         "reliability-observability-compatibility",
         "installation-documentation-ci"
       ],
-      "path": ".pose/specs/v1-integrated-acceptance/spec.md",
+      "path": ".pose/specs/2026-08-22-v1-integrated-acceptance.md",
       "priority": 250,
       "status": "draft"
     },
@@ -705,7 +705,7 @@
         "go-runtime-foundation",
         "local-event-store"
       ],
-      "path": ".pose/specs/workspace-observation-baselines/spec.md",
+      "path": ".pose/specs/2026-08-22-workspace-observation-baselines.md",
       "priority": 90,
       "status": "draft"
     }
