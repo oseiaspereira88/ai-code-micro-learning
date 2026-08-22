@@ -57,7 +57,6 @@ Transformar o repositório documental em uma base executável pequena, reproduz�
 
 ### Artifacts
 - created: go.mod
-- created: go.sum
 - created: cmd/ailearn/main.go
 - created: internal/cli/root.go
 - created: internal/cli/version.go
@@ -172,6 +171,11 @@ Cobrir parsing, códigos de saída, cancelamento, build reproduzível e ausênci
 - `gofmt -l .` não está automatizado em `pose validate` porque o exit code do
   comando não reflete achados (sempre 0); verificado manualmente nesta
   entrega e deve ser revisitado quando um wrapper multiplataforma existir.
+- `go.sum` não foi criado: o módulo não tem nenhuma dependência externa
+  (biblioteca padrão apenas, conforme `PROJECT.md` §24.1), e `go build`/`go
+  mod tidy` não geram `go.sum` sem `require` externo. O artefato foi removido
+  da seção 3 desta spec; será criado organicamente quando a primeira
+  dependência externa (ex.: `go-sdk` do MCP) for adicionada.
 
 ## 7. Final Report
 
