@@ -1,0 +1,53 @@
+# Go build artifacts
+/bin/
+/build/
+/dist/
+/gocoach
+*.test
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Go tooling, tests, coverage and profiling
+coverage.out
+coverage.html
+*.coverprofile
+*.pprof
+*.prof
+__debug_bin*
+
+# Local Go workspace files
+go.work
+go.work.sum
+
+# Vendored dependencies are generated from go.mod/go.sum
+/vendor/
+
+# GoCoach local state and exports
+/.gocoach/
+
+# Environment and machine-local configuration
+.env
+.env.*
+!.env.example
+!.env.sample
+*.local
+
+# Logs and temporary files
+*.log
+*.tmp
+*.swp
+*.swo
+*~
+/.tmp/
+/tmp/
+
+# IDEs and editors
+/.idea/
+/.vscode/
+/.fleet/
+
+# Operating system metadata
+.DS_Store
+Thumbs.db
