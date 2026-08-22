@@ -1,0 +1,8 @@
+schema_version: 1
+id: fixture-pack
+version: 1.0.0
+concepts:
+  - id: dup-concept
+    title: First
+  - id: dup-concept
+    title: Second

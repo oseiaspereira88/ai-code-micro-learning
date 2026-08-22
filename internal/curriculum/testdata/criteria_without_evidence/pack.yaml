@@ -1,0 +1,19 @@
+schema_version: 1
+id: fixture-pack
+version: 1.0.0
+challenges:
+  - schema_version: 1
+    id: fixture.challenge-one
+    version: 1.0.0
+    title: Fixture challenge
+    kind: atomic
+    difficulty: foundational
+    layers:
+      - id: understanding
+        macro_steps:
+          - id: fixture.step-one
+            kind: micro
+            title: Fixture step
+            criteria:
+              - id: compiles
+                kind: structural

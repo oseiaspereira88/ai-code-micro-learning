@@ -1,0 +1,12 @@
+schema_version: 1
+id: fixture-pack
+version: 1.0.0
+challenges:
+  - schema_version: 1
+    id: fixture.challenge-one
+    version: 1.0.0
+    title: Fixture challenge
+    kind: atomic
+    difficulty: foundational
+    competencies:
+      primary: [does-not-exist]

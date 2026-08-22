@@ -1,0 +1,144 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://ailearn.dev/schemas/challenge.schema.json",
+  "title": "Challenge",
+  "description": "A complete problem referencing concepts and producing evidence for competencies (PROJECT.md §14.8). Authoring contract; the Go loader in internal/curriculum enforces the equivalent rules natively (see catalog-schema-loader Decision 3).",
+  "type": "object",
+  "required": ["schema_version", "id", "version", "title", "kind", "difficulty"],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": { "type": "integer", "const": 1 },
+    "id": { "type": "string", "minLength": 1 },
+    "version": { "type": "string", "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$" },
+    "title": { "type": "string", "minLength": 1 },
+    "kind": {
+      "type": "string",
+      "enum": ["atomic", "combined", "functional_slice", "debugging", "refactoring", "code_review", "systems_mission", "simulation"]
+    },
+    "difficulty": { "type": "string", "minLength": 1 },
+    "estimated_minutes": { "type": "integer", "minimum": 1 },
+    "themes": { "type": "array", "items": { "type": "string" } },
+    "competencies": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "primary": { "type": "array", "items": { "type": "string" } },
+        "secondary": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "prerequisites": { "type": "array", "items": { "type": "string" } },
+    "brief": { "type": "string" },
+    "constraints": { "type": "array", "items": { "type": "string" } },
+    "acceptance": { "type": "array", "items": { "type": "string" } },
+    "layers": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id"],
+        "additionalProperties": false,
+        "properties": {
+          "id": { "type": "string" },
+          "macro_steps": {
+            "type": "array",
+            "items": { "$ref": "#/definitions/step" }
+          }
+        }
+      }
+    },
+    "checks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "runner"],
+        "additionalProperties": false,
+        "properties": {
+          "id": { "type": "string" },
+          "runner": { "type": "string" },
+          "package": { "type": "string" },
+          "test_pattern": { "type": "string" },
+          "timeout": { "type": "string" }
+        }
+      }
+    },
+    "variants": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "Reserved: never exposed by the catalog's default public queries."
+    }
+  },
+  "definitions": {
+    "step": {
+      "type": "object",
+      "description": "A macro, meso or micro step (PROJECT.md §14.9). Recursive via children.",
+      "required": ["id", "kind"],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "type": "string" },
+        "kind": { "type": "string", "enum": ["macro", "meso", "micro"] },
+        "action": { "type": "string" },
+        "target": { "type": "string" },
+        "title": { "type": "string" },
+        "instruction": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "objective": { "type": "string" },
+            "scope": { "type": "string" },
+            "constraints": { "type": "array", "items": { "type": "string" } }
+          }
+        },
+        "concepts": { "type": "array", "items": { "type": "string" } },
+        "evidence": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "strategies": { "type": "array", "items": { "type": "string" } }
+          }
+        },
+        "criteria": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["id", "kind"],
+            "additionalProperties": false,
+            "properties": {
+              "id": { "type": "string" },
+              "kind": { "type": "string" }
+            }
+          }
+        },
+        "completion": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "requires_positive_evaluation": { "type": "boolean" },
+            "requires_user_confirmation": { "type": "boolean" }
+          }
+        },
+        "hints": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["level", "kind"],
+            "additionalProperties": false,
+            "properties": {
+              "level": { "type": "integer", "minimum": 0, "maximum": 6 },
+              "kind": { "type": "string" }
+            }
+          }
+        },
+        "reflection": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "optional": { "type": "array", "items": { "type": "string" } }
+          }
+        },
+        "children": {
+          "type": "array",
+          "items": { "$ref": "#/definitions/step" }
+        }
+      }
+    }
+  }
+}

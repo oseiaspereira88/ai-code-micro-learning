@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://ailearn.dev/schemas/catalog.schema.json",
+  "title": "Catalog manifest",
+  "description": "packs/manifest.yaml: the ordered list of packs that make up a catalog. Authoring contract for humans and external tooling; the Go loader in internal/curriculum enforces the equivalent rules natively (see catalog-schema-loader Decision 3).",
+  "type": "object",
+  "required": ["schema_version", "packs"],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "type": "integer",
+      "const": 1,
+      "description": "Must match the loader's supported schema version exactly."
+    },
+    "packs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[A-Za-z0-9_.-]+\\.ya?ml$",
+        "description": "Filename relative to the manifest's own directory. Must never resolve outside it."
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    }
+  }
+}

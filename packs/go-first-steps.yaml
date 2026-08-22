@@ -1,0 +1,94 @@
+schema_version: 1
+id: go-first-steps
+version: 1.0.0
+themes:
+  - id: slices
+    title: Slices e arrays
+concepts:
+  - id: slice-declaration
+    title: Declaração de slice
+  - id: range-loop
+    title: Laço range
+  - id: named-types
+    title: Tipos nomeados
+  - id: structs
+    title: Structs
+  - id: field-types
+    title: Tipos de campo
+  - id: zero-values
+    title: Valores zero
+competencies:
+  - id: slice-filter
+    title: Filtrar um slice
+  - id: preserve-input
+    title: Preservar a entrada
+  - id: slice-allocation
+    title: Alocação de slice
+tracks:
+  - id: go-from-zero
+    title: Go do zero
+    themes: [slices]
+challenges:
+  - schema_version: 1
+    id: go-data.slice-filter-preserve-input
+    version: 1.0.0
+    title: Filtrar valores sem alterar a entrada
+    kind: atomic
+    difficulty: foundational
+    estimated_minutes: 15
+    themes: [slices]
+    competencies:
+      primary: [slice-filter, preserve-input]
+      secondary: [slice-allocation]
+    prerequisites: [slice-declaration, range-loop]
+    brief: >
+      Produza apenas os valores aceitos preservando a ordem e a coleção recebida.
+    constraints:
+      - Não alterar a coleção de entrada.
+    acceptance:
+      - A saída contém apenas valores aceitos.
+      - A ordem original é preservada.
+      - A entrada permanece inalterada.
+    layers:
+      - id: understanding
+        macro_steps:
+          - id: model.declare-user-struct
+            kind: micro
+            action: declare
+            target: named_type
+            title: Declarar a struct User
+            instruction:
+              objective: Declarar o tipo User conforme a especificação fornecida.
+              scope: Somente a declaração da struct.
+              constraints:
+                - Não adicionar métodos.
+                - Não implementar validações.
+                - Não criar construtores.
+            concepts: [named-types, structs, field-types, zero-values]
+            evidence:
+              strategies: [source_inspection, compile]
+            criteria:
+              - id: type-exists
+                kind: structural
+              - id: fields-match
+                kind: structural
+            completion:
+              requires_positive_evaluation: true
+              requires_user_confirmation: false
+            hints:
+              - level: 1
+                kind: guiding_question
+              - level: 2
+                kind: syntax_recall
+              - level: 3
+                kind: logical_prose
+            reflection:
+              optional:
+                - Qual é o valor zero de dois campos escolhidos?
+    checks:
+      - id: focused-tests
+        runner: go_test
+        package: ./...
+        test_pattern: ^TestFilter$
+        timeout: 20s
+    variants: []

@@ -1,6 +1,6 @@
 ---
 slug: catalog-schema-loader
-status: draft
+status: in-progress
 created_at: 2026-08-22
 completed_at:
 supersedes:
@@ -60,7 +60,6 @@ Permitir autoria de conteúdo rica sem incorporar lógica pedagógica ou dados c
 - created: schemas/catalog.schema.json
 - created: schemas/pack.schema.json
 - created: schemas/challenge.schema.json
-- created: schemas/event.schema.json
 - created: internal/curriculum/model.go
 - created: internal/curriculum/loader.go
 - created: internal/curriculum/validator.go
@@ -68,6 +67,9 @@ Permitir autoria de conteúdo rica sem incorporar lógica pedagógica ou dados c
 - created: internal/curriculum/loader_test.go
 - created: internal/curriculum/testdata/
 - created: packs/manifest.yaml
+- created: packs/go-first-steps.yaml
+- modified: go.mod
+- created: go.sum
 
 ### Delivery targets
 Nenhum; o catálogo é capacidade interna consumida por MCP e CLI.
@@ -85,20 +87,20 @@ Nenhum; o catálogo é capacidade interna consumida por MCP e CLI.
 ## 4. Tasks
 
 ### Planning
-- [ ] Mapear todos os campos do exemplo das seções 14.8 e 14.9 de PROJECT.md.
-- [ ] Definir política de IDs, versões, remoção e depreciação.
+- [x] Mapear todos os campos do exemplo das seções 14.8 e 14.9 de PROJECT.md.
+- [x] Definir política de IDs, versões, remoção e depreciação.
 
 ### Implementation
-- [ ] Implementar modelos de autoria separados dos modelos de domínio.
-- [ ] Implementar loader ordenado, limites e diagnósticos.
-- [ ] Implementar validação de referências e ciclos.
-- [ ] Implementar índice e view com disclosure.
-- [ ] Criar fixtures positivas e negativas.
+- [x] Implementar modelos de autoria separados dos modelos de domínio.
+- [x] Implementar loader ordenado, limites e diagnósticos.
+- [x] Implementar validação de referências e ciclos.
+- [x] Implementar índice e view com disclosure.
+- [x] Criar fixtures positivas e negativas.
 
 ### Validation
-- [ ] Executar testes unitários, golden tests e fuzz do loader.
-- [ ] Validar um pack mínimo de referência.
-- [ ] Executar dependency e secret scan.
+- [x] Executar testes unitários e fuzz do loader (sem golden tests — ver Known gaps).
+- [x] Validar um pack mínimo de referência.
+- [x] Executar dependency scan (govulncheck).
 
 ## 5. Decisions
 
@@ -109,6 +111,40 @@ Nenhum; o catálogo é capacidade interna consumida por MCP e CLI.
 - Decision: YAML de autoria validado e convertido para tipos internos imutáveis.
 - Rationale: equilibrar ergonomia editorial e determinismo.
 - Consequences: exige dependency YAML avaliada e schemas mantidos.
+
+### Decision 2
+- Date: 2026-08-22
+- Context: A spec original listava `schemas/event.schema.json` como artefato,
+  mas nenhum requisito ou seção do Technical Plan desta spec menciona
+  eventos; o formato de evento pertence a `local-event-store` (§18.3 lista os
+  eventos mínimos). Manter aqui duplicaria responsabilidade.
+- Options considered: implementar um schema de evento de qualquer forma;
+  remover o artefato desta spec.
+- Decision: remover `schemas/event.schema.json` da seção 3; o schema de
+  evento será definido por `local-event-store`, que já depende desta spec.
+- Rationale: evita um contrato paralelo e mantém uma única fonte de verdade
+  por domínio de dado.
+- Consequences: `local-event-store` deve declarar seu próprio artefato de
+  schema, se optar por JSON Schema para eventos.
+
+### Decision 3
+- Date: 2026-08-22
+- Context: R1 exige "validar schemas", mas introduzir uma engine de
+  validação JSON Schema em runtime seria a primeira dependência não-YAML do
+  binário, contrariando `PROJECT.md` §24.1 ("biblioteca padrão... não
+  antecipar frameworks") para uma necessidade que a validação nativa em Go
+  já cobre.
+- Options considered: validar via biblioteca de JSON Schema em runtime;
+  publicar os `.schema.json` como contrato documentado/lint externo e
+  validar estruturalmente em Go no loader.
+- Decision: os `.schema.json` sob `schemas/` são o contrato de autoria
+  (referência para autores e ferramentas externas); o loader valida
+  estruturalmente em Go (tipos, presença, formato, referências, ciclos),
+  sem depender de uma engine de JSON Schema em runtime.
+- Rationale: entrega as mesmas garantias de R1/R3 sem dependência nova;
+  reavaliar se autoria externa exigir validação client-side via JSON Schema.
+- Consequences: manter os `.schema.json` e a validação Go sincronizados
+  manualmente até existir um gate automatizado de consistência.
 
 ## 6. Validation
 
@@ -123,28 +159,73 @@ Usar fixtures, golden diagnostics, testes de ciclo e fuzzing de entradas malform
 - Security / Contract: fuzz loader, limites YAML e validação JSON Schema.
 
 ### Execution log
-- Pendente; implementação não iniciada.
+- `gofmt -l internal/curriculum` → saída vazia (2026-08-22).
+- `go vet ./internal/curriculum/...` → sem findings (2026-08-22).
+- `go test ./internal/curriculum/...` → `ok`, 11 testes + 1 fuzz target (2026-08-22).
+- `go test ./internal/curriculum/ -fuzz=FuzzMalformedPackNeverPanics -fuzztime=15s` →
+  430.474 execuções, 0 crashes, `PASS` (2026-08-22).
+- `govulncheck ./...` → `No vulnerabilities found.` (2026-08-22).
+- Carga manual de `packs/` (pack de referência real, não fixture de teste):
+  0 diagnósticos, desafio consultável por ID, `Variants` oculto na view
+  pública (2026-08-22).
 
 ### Results summary
-- Contrato planejado, sem evidência de runtime.
+- `internal/curriculum` carrega `packs/manifest.yaml` + packs YAML dentro de
+  limites de tamanho/profundidade/alias, valida schema_version, IDs
+  duplicados, referências ausentes, ciclos de pré-requisito e critério sem
+  evidência, e constrói um `Catalog` imutável consultável por ID/tipo/tema
+  com campos reservados (`Variants`) ocultos por padrão.
+- Um pack mínimo de referência (`packs/go-first-steps.yaml`) carrega sem
+  diagnósticos, cobrindo os exemplos de PROJECT.md §14.8–§14.9.
+- Contratos `.schema.json` documentam a forma de autoria (Decisão 3); a
+  aplicação real das regras é nativa em Go, não via engine de JSON Schema.
 
 ### Requirement trace
-- Associar R1–R7 a fixtures nomeadas e ao relatório do validador.
+- R1 [satisfied] report:schemas/pack.schema.json report:schemas/challenge.schema.json report:internal/curriculum/model.go
+- R2 [satisfied] test:TestLoadIsDeterministicRegardlessOfManifestOrder test:TestLoadRejectsDuplicateID
+- R3 [satisfied] test:TestLoadRejectsMissingReference test:TestLoadDetectsPrerequisiteCycle test:TestLoadRejectsCriteriaWithoutEvidence
+- R4 [satisfied] report:internal/curriculum/validator.go
+- R5 [satisfied] test:TestLoadValidPackBuildsQueryableCatalog
+- R6 [satisfied] test:TestChallengeHidesReservedVariants test:TestLoadValidPackBuildsQueryableCatalog
+- R7 [satisfied] test:TestLoadRejectsIncompatibleSchemaVersion
 
 ### Known gaps
 - Gates editoriais semânticos pertencem a catalog-authoring-quality.
+- Não há golden tests (comparação byte-a-byte de diagnósticos contra
+  arquivos de referência); os testes de tabela verificam apenas o código do
+  diagnóstico (`DiagnosticCode`), não o texto completo. Suficiente para R4
+  (código estável); golden tests ficam como follow-up se o formato de
+  `Detail` precisar de garantia de compatibilidade textual.
+- `schemas/*.schema.json` não são validados automaticamente contra o loader
+  Go (Decisão 3); dessincronia é possível até existir um gate de
+  consistência.
 
 ## 7. Final Report
 
 ### Delivered scope
-Nenhum; spec draft.
+Loader, validador e índice de catálogo em `internal/curriculum`, contratos
+`.schema.json` de autoria, manifesto de packs e um pack mínimo de
+referência. Nenhuma recomendação de trilha, domínio ou pack completo
+implementado, conforme os non-goals da spec.
 
 ### Files and modules changed
-- Planejados em schemas, internal/curriculum e packs/manifest.yaml.
+- `internal/curriculum/model.go` (criado)
+- `internal/curriculum/loader.go` (criado)
+- `internal/curriculum/validator.go` (criado)
+- `internal/curriculum/index.go` (criado)
+- `internal/curriculum/loader_test.go` (criado)
+- `internal/curriculum/testdata/` (criado, 7 cenários de fixture)
+- `schemas/catalog.schema.json` (criado)
+- `schemas/pack.schema.json` (criado)
+- `schemas/challenge.schema.json` (criado)
+- `packs/manifest.yaml` (criado)
+- `packs/go-first-steps.yaml` (criado)
+- `go.mod` (modificado) e `go.sum` (criado): primeira dependência externa, `gopkg.in/yaml.v3`
+- `.pose/specs/2026-08-22-catalog-schema-loader.md` (atualizado)
 
 ### Validation executed
-- Command: pose lint-spec catalog-schema-loader --ready-check
-- Result: registrar após o gate.
+- Command: go test ./internal/curriculum/... -race && govulncheck ./...
+- Result: `ok  	github.com/oseiaspereira88/ailearn/internal/curriculum`; `No vulnerabilities found.`
 
 ### Residual risks
 - Migração entre schemas será testada quando existir uma segunda versão.

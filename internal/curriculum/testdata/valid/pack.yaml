@@ -1,0 +1,41 @@
+schema_version: 1
+id: fixture-pack
+version: 1.0.0
+themes:
+  - id: slices
+    title: Slices
+concepts:
+  - id: slice-declaration
+    title: Slice declaration
+competencies:
+  - id: slice-filter
+    title: Filter a slice
+tracks:
+  - id: go-from-zero
+    title: Go from zero
+    themes: [slices]
+challenges:
+  - schema_version: 1
+    id: fixture.challenge-one
+    version: 1.0.0
+    title: Fixture challenge
+    kind: atomic
+    difficulty: foundational
+    themes: [slices]
+    competencies:
+      primary: [slice-filter]
+    prerequisites: [slice-declaration]
+    layers:
+      - id: understanding
+        macro_steps:
+          - id: fixture.step-one
+            kind: micro
+            title: Fixture step
+            concepts: [slice-declaration]
+            evidence:
+              strategies: [compile]
+            criteria:
+              - id: compiles
+                kind: structural
+    variants:
+      - reserved-variant
