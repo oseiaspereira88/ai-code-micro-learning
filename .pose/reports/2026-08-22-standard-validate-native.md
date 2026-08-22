@@ -14,7 +14,7 @@
 - _Not provided_
 
 ## Files Changed
-- _No files detected_
+- pose/state/machinery-manifest.json
 
 ## Validation Commands
 - _Fill manually_
@@ -23,15 +23,15 @@
 - _No validation output detected_
 
 ## Execution Metadata
-- Generated at (UTC): 2026-08-22T10:37:44Z
+- Generated at (UTC): 2026-08-22T11:13:07Z
 - Context: auto-validate
 - Validation profile: strict
-- Sequence for task/spec: 1
+- Sequence for task/spec: 2
 - Stable comparison hash: 5b47855e60f64e73728abd99582eb01357a94f0c289ad7fa9125d680a322e54f
 
 ## Historical Comparison
-- Previous execution: _No previous execution_
-- Status: first-run
+- Previous execution: 2026-08-22T10:37:44Z
+- Status: stable
 - Stable field diffs:
 - _No changes in stable fields_
 

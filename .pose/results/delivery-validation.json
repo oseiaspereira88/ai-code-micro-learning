@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-08-22T11:13:28Z",
+  "mode": "strict",
+  "git_head": "f9210d051eab528f9557b1dc220b78c502c926dc",
+  "matrix_sha256": "sha256:d8a36b2938234b87ab8f81f498834a253bf981e0f14691d9a6e076feec96122c",
+  "provenance_digest": "sha256:8ec0bb80ee3066334042e04fcaf6ee6c937e360c325ba6ded1b2983d93558756",
+  "scope_provenance": {
+    "architecture-decision-baseline": "sha256:872a0eb7269dca04b378d4a9a45cd978576ff6cba23c568d752b90c267559a9c"
+  },
+  "outcome": "pass",
+  "counts": {
+    "executed": 0,
+    "passed": 0,
+    "failed": 0,
+    "optional_failed": 0,
+    "errored": 0,
+    "skipped": 0
+  },
+  "checks": []
+}

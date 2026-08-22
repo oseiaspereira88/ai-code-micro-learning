@@ -140,15 +140,19 @@ Validar estrutura, referências e precisão editorial; não executar checks de a
 
 ### Known gaps
 - Closeout formal (`pose close spec:architecture-decision-baseline`) está
-  bloqueado por defeito do engine: `pose review bundle --seal` falha com
-  `unknown review rule "backend-go"/"frontend-react"` porque
-  `.pose/policy/review.json` traz `overlay_profiles` que dependem de regras
-  hoje distribuídas por extensão, nunca instaladas (`pose extension list`
-  retorna vazio) porque o projeto rodou `pose init` sem stack definida.
-  Reportado em
-  `.pose/contributions/20260822-104601-review-bundle-seal-crashes-on-overlay-pr.md`.
-  A spec permanece `in-progress` até o engine ser corrigido ou os
-  `overlay_profiles` serem resolvidos manualmente.
+  bloqueado por defeito do engine. Em `pose 1.7.3` o `--seal` falhava com
+  `unknown review rule "backend-go"/"frontend-react"`
+  (`.pose/contributions/20260822-104601-review-bundle-seal-crashes-on-overlay-pr.md`,
+  [pose#35](https://github.com/oseiaspereira88/pose/issues/35)); corrigido em
+  `pose 1.7.4`. Após a atualização, o `--seal` ainda falha com
+  `no immutable attributed change set exists` e
+  `no passed structured validation evidence is attributed to the review scope`,
+  porque a spec não possui módulo de código (`Delivery targets: Nenhum`) e a
+  tool `validate` do perfil `spec-closeout@1` é `required` sem precondição
+  para esse caso — reportado em
+  `.pose/contributions/20260822-111613-review-bundle-seal-unreachable-for-doc-o.md`
+  ([pose#36](https://github.com/oseiaspereira88/pose/issues/36)). A spec
+  permanece `in-progress` até o engine ser corrigido.
 
 ## 7. Final Report
 
