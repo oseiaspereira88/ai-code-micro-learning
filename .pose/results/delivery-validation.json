@@ -1,13 +1,13 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-22T23:18:44Z",
+  "generated_at": "2026-08-22T23:19:37Z",
   "mode": "strict",
-  "git_head": "e6ae68bd4cb90f3e237c737450d75b25150adec3",
+  "git_head": "21c68939af75f3082dea80e0be69cd7877f39927",
   "matrix_sha256": "sha256:7564215c57d3cd1a7735bb7e8ba0c6689b2485c78588fcaaac8c07ddcd59ddc7",
-  "provenance_digest": "sha256:8ff7a33affeb31922a40bd9ddcbb4e4a27c4892a5efa8742bfd598f7d161dd80",
+  "provenance_digest": "sha256:1d286a0192e25e16ef19846f4c000f25ec1591b2e9d441f75c8b831a1e25ce77",
   "scope_provenance": {
     "architecture-decision-baseline": "sha256:0cb9538df6c6193eeea826dda56f91288808c178925c98b02a43af253045c99e",
-    "go-runtime-foundation": "sha256:90be322b2cd4cf965382225c4acee98201269860c51277433015b0d006d4889a"
+    "go-runtime-foundation": "sha256:0f8d117817e9e963406e35f137f94de17ddc87bbd8d3fe76a4872234cf1a2ed3"
   },
   "outcome": "pass",
   "counts": {
@@ -32,7 +32,7 @@
       "severity": "required",
       "evidence_class": "unit",
       "outcome": "pass",
-      "duration_seconds": 0.19442195,
+      "duration_seconds": 0.037472751,
       "output": "?   \tgithub.com/oseiaspereira88/ailearn/cmd/ailearn\t[no test files]\nok  \tgithub.com/oseiaspereira88/ailearn/internal/cli\t(cached)\n?   \tgithub.com/oseiaspereira88/ailearn/internal/config\t[no test files]\n"
     },
     {
@@ -48,7 +48,7 @@
       "severity": "optional",
       "evidence_class": "build",
       "outcome": "pass",
-      "duration_seconds": 0.033480885
+      "duration_seconds": 0.034742086
     },
     {
       "id": "./go/build",
@@ -63,7 +63,7 @@
       "severity": "required",
       "evidence_class": "build",
       "outcome": "pass",
-      "duration_seconds": 0.159908455
+      "duration_seconds": 0.106264987
     }
   ]
 }
