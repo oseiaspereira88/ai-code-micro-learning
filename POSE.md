@@ -2,7 +2,7 @@
 
 ## 1) What it is
 
-POSE is the operating standard for agent work in **ai-code-micro-learning**.
+POSE is the operating standard for agent work in **ailearn**.
 
 Primary goals:
 
@@ -405,7 +405,13 @@ as degraded and block functional expansion until it recovers.
      modules missing from module-metadata.json, stacks outside the matrix,
      gates still tolerant and why. Note: this tracks instance setup, NOT engine bugs. -->
 
-- Document limitations as the instance evolves.
+- As of 2026-08-22, the repository contains product and operating
+  documentation but no application module. `pose init --wizard --yes`
+  therefore detects no stack and cannot seed a Go module validation override.
+- CI is not configured yet. Run strict POSE gates locally until a governed CI
+  workflow is introduced.
+- No specs, roadmaps, knowledge artifacts or capability assessments exist yet;
+  do not infer implemented product behavior from [`PROJECT.md`](PROJECT.md).
 
 ---
 
@@ -415,9 +421,15 @@ as degraded and block functional expansion until it recovers.
 <!-- The operational backlog of POSE IN THIS repository (not product
      features). Each item with an owner and a done criterion. -->
 
-1. Fill `.pose/indexes/module-metadata.json` for critical modules.
-2. Enable strict `check`/`validate` in CI (see §7).
-3. Run knowledge housekeeping on a recurring cycle.
+1. Create the governed V1 roadmap and its first eligible implementation spec.
+   Done when both pass their strict readiness checks.
+2. Re-run `pose init --wizard --yes` after creating `go.mod`, install the Go
+   backend rule extension, and register the module in
+   `.pose/indexes/module-metadata.json`.
+3. Add strict `pose check` and `pose validate` CI gates after the first
+   executable module exists.
+4. Activate knowledge governance only when the first reusable engineering
+   decision or cross-execution handoff is created.
 
 ---
 
@@ -442,3 +454,15 @@ POSE is the operational layer that makes agent work reliable in the repository:
 - operational depth in [`.pose/`](.pose/)
 - assisted execution via [`pose`](pose) (CLI)
 - progressive maturity with skills in [`.agents/skills/`](.agents/skills/)
+
+## Open-Source POSE Contributor Mode
+
+<!-- pose:contributor-mode -->
+
+This repository has enabled POSE Contributor Mode. Executing AI agents will automatically stage feedback, bug reports, and stack extension proposals under `.pose/contributions/` when encountering workflow friction.
+
+- Check staged contributions: `pose contribute list`
+- Check contributor status: `pose contribute status`
+- Stage a contribution manually: `pose contribute stage --type <bug|enhancement> --title <title>`
+- Disable contributor mode: `pose contribute disable`
+- Privacy guarantee: staged reports strictly isolate POSE engine mechanics and never leak proprietary code.
