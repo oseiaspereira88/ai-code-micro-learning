@@ -73,5 +73,11 @@
       ]
     }
   },
-  "moduleOverrides": {}
+  "moduleOverrides": {
+    ".": {
+      "checks": [
+        {"name": "build", "program": "go", "args": ["build", "./cmd/ailearn"], "severity": "required", "evidenceClass": "build"}
+      ]
+    }
+  }
 }

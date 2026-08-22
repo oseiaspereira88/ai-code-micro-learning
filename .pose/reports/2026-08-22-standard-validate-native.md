@@ -14,7 +14,13 @@
 - _Not provided_
 
 ## Files Changed
-- pose/state/machinery-manifest.json
+- pose/indexes/validation-matrix.json
+- .pose/reports/2026-08-22-standard-validate-native.md
+- .pose/reports/history/standard-validate-native.jsonl
+- .pose/specs/2026-08-22-go-runtime-foundation.md
+- cmd/
+- go.mod
+- internal/
 
 ## Validation Commands
 - _Fill manually_
@@ -23,14 +29,14 @@
 - _No validation output detected_
 
 ## Execution Metadata
-- Generated at (UTC): 2026-08-22T11:13:07Z
+- Generated at (UTC): 2026-08-22T20:14:10Z
 - Context: auto-validate
 - Validation profile: strict
-- Sequence for task/spec: 2
+- Sequence for task/spec: 6
 - Stable comparison hash: 5b47855e60f64e73728abd99582eb01357a94f0c289ad7fa9125d680a322e54f
 
 ## Historical Comparison
-- Previous execution: 2026-08-22T10:37:44Z
+- Previous execution: 2026-08-22T20:13:51Z
 - Status: stable
 - Stable field diffs:
 - _No changes in stable fields_

@@ -6,5 +6,12 @@
     "domain": "",
     "validationProfile": "baseline"
   },
-  "modules": {}
+  "modules": {
+    ".": {
+      "owner": "@oseiaspereira",
+      "criticality": "high",
+      "domain": "runtime",
+      "validationProfile": "baseline"
+    }
+  }
 }
