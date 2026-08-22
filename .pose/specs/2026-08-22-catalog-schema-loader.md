@@ -65,7 +65,19 @@ Permitir autoria de conteúdo rica sem incorporar lógica pedagógica ou dados c
 - created: internal/curriculum/validator.go
 - created: internal/curriculum/index.go
 - created: internal/curriculum/loader_test.go
-- created: internal/curriculum/testdata/
+- created: internal/curriculum/testdata/valid/manifest.yaml
+- created: internal/curriculum/testdata/valid/pack.yaml
+- created: internal/curriculum/testdata/duplicate_id/manifest.yaml
+- created: internal/curriculum/testdata/duplicate_id/pack.yaml
+- created: internal/curriculum/testdata/missing_reference/manifest.yaml
+- created: internal/curriculum/testdata/missing_reference/pack.yaml
+- created: internal/curriculum/testdata/prerequisite_cycle/manifest.yaml
+- created: internal/curriculum/testdata/prerequisite_cycle/pack.yaml
+- created: internal/curriculum/testdata/criteria_without_evidence/manifest.yaml
+- created: internal/curriculum/testdata/criteria_without_evidence/pack.yaml
+- created: internal/curriculum/testdata/incompatible_schema_version/manifest.yaml
+- created: internal/curriculum/testdata/incompatible_schema_version/pack.yaml
+- created: internal/curriculum/testdata/path_escape/manifest.yaml
 - created: packs/manifest.yaml
 - created: packs/go-first-steps.yaml
 - modified: go.mod
@@ -214,7 +226,7 @@ implementado, conforme os non-goals da spec.
 - `internal/curriculum/validator.go` (criado)
 - `internal/curriculum/index.go` (criado)
 - `internal/curriculum/loader_test.go` (criado)
-- `internal/curriculum/testdata/` (criado, 7 cenários de fixture)
+- `internal/curriculum/testdata/{valid,duplicate_id,missing_reference,prerequisite_cycle,criteria_without_evidence,incompatible_schema_version,path_escape}/*.yaml` (criado, 13 arquivos em 7 cenários de fixture)
 - `schemas/catalog.schema.json` (criado)
 - `schemas/pack.schema.json` (criado)
 - `schemas/challenge.schema.json` (criado)
