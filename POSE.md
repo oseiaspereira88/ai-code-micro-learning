@@ -2,7 +2,7 @@
 
 ## 1) What it is
 
-POSE is the operating standard for agent work in **ailearn**.
+POSE is the operating standard for agent work in **codinho**.
 
 Primary goals:
 

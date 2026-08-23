@@ -8,11 +8,11 @@ import (
 	"sync/atomic"
 
 	"github.com/modelcontextprotocol/go-sdk/mcp"
-	"github.com/oseiaspereira88/ailearn/internal/application"
+	"github.com/oseiaspereira88/codinho/internal/application"
 )
 
 // Deps are the already-opened dependencies a Server needs. The caller
-// (cmd/ailearn) owns their lifecycle: opening the catalog and event store,
+// (cmd/codinho) owns their lifecycle: opening the catalog and event store,
 // acquiring the workspace lock, and closing/releasing them after Run
 // returns.
 type Deps struct {
@@ -25,7 +25,7 @@ type Deps struct {
 // the protocol (requirement R1; security).
 func New(deps Deps, stderr io.Writer) *mcp.Server {
 	server := mcp.NewServer(&mcp.Implementation{
-		Name:    "ailearn",
+		Name:    "codinho",
 		Version: "0.1.0",
 	}, &mcp.ServerOptions{
 		Instructions: Instructions,

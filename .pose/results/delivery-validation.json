@@ -38,7 +38,7 @@
       "evidence_class": "unit",
       "outcome": "pass",
       "duration_seconds": 0.625260941,
-      "output": "?   \tgithub.com/oseiaspereira88/ailearn/cmd/ailearn\t[no test files]\nok  \tgithub.com/oseiaspereira88/ailearn/internal/application\t(cached)\nok  \tgithub.com/oseiaspereira88/ailearn/internal/cli\t(cached)\n?   \tgithub.com/oseiaspereira88/ailearn/internal/config\t[no test files]\nok  \tgithub.com/oseiaspereira88/ailearn/internal/curriculum\t(cached)\nok  \tgithub.com/oseiaspereira88/ailearn/internal/eventstore\t(cached)\nok  \tgithub.com/oseiaspereira88/ailearn/internal/evidence\t(cached)\nok  \tgithub.com/oseiaspereira88/ailearn/internal/learning\t(cached)\nok  \tgithub.com/oseiaspereira88/ailearn/internal/mcpserver\t0.053s\nok  \tgithub.com/oseiaspereira88/ailearn/internal/session\t0.004s\n"
+      "output": "?   \tgithub.com/oseiaspereira88/codinho/cmd/codinho\t[no test files]\nok  \tgithub.com/oseiaspereira88/codinho/internal/application\t(cached)\nok  \tgithub.com/oseiaspereira88/codinho/internal/cli\t(cached)\n?   \tgithub.com/oseiaspereira88/codinho/internal/config\t[no test files]\nok  \tgithub.com/oseiaspereira88/codinho/internal/curriculum\t(cached)\nok  \tgithub.com/oseiaspereira88/codinho/internal/eventstore\t(cached)\nok  \tgithub.com/oseiaspereira88/codinho/internal/evidence\t(cached)\nok  \tgithub.com/oseiaspereira88/codinho/internal/learning\t(cached)\nok  \tgithub.com/oseiaspereira88/codinho/internal/mcpserver\t0.053s\nok  \tgithub.com/oseiaspereira88/codinho/internal/session\t0.004s\n"
     },
     {
       "id": "./go/vet",
@@ -63,7 +63,7 @@
       "program": "go",
       "args": [
         "build",
-        "./cmd/ailearn"
+        "./cmd/codinho"
       ],
       "severity": "required",
       "evidence_class": "build",
@@ -86,7 +86,7 @@
       "evidence_class": "integration",
       "outcome": "pass",
       "duration_seconds": 0.265394599,
-      "output": "ok  \tgithub.com/oseiaspereira88/ailearn/internal/mcpserver\t0.054s\n"
+      "output": "ok  \tgithub.com/oseiaspereira88/codinho/internal/mcpserver\t0.054s\n"
     }
   ]
 }

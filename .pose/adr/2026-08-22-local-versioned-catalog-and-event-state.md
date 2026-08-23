@@ -13,7 +13,7 @@ reinterpretação divergente entre `catalog-schema-loader`, `local-event-store`
 e specs dependentes.
 
 Módulos afetados: `catalog-schema-loader`, `local-event-store`,
-`workspace-observation-baselines` (evidência), layout `.ailearn/`.
+`workspace-observation-baselines` (evidência), layout `.codinho/`.
 
 ## Decision
 

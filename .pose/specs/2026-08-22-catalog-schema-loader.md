@@ -238,7 +238,7 @@ implementado, conforme os non-goals da spec.
 
 ### Validation executed
 - Command: go test ./internal/curriculum/... -race && govulncheck ./...
-- Result: `ok  	github.com/oseiaspereira88/ailearn/internal/curriculum`; `No vulnerabilities found.`
+- Result: `ok  	github.com/oseiaspereira88/codinho/internal/curriculum`; `No vulnerabilities found.`
 
 ### Residual risks
 - Migração entre schemas será testada quando existir uma segunda versão.

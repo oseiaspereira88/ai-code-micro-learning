@@ -18,7 +18,7 @@ delivers:
 Entregar instalação local reproduzível, documentação operacional e CI estrito para código, contratos, segurança e catálogo.
 
 ### Business value
-Permitir que uma pessoa instale e use ailearn no Codex CLI ou IDE sem conhecimento implícito do autor.
+Permitir que uma pessoa instale e use codinho no Codex CLI ou IDE sem conhecimento implícito do autor.
 
 ### Constraints
 - Distribuição V1 é binário, skill e configuração local; não é plugin.
@@ -74,9 +74,9 @@ Permitir que uma pessoa instale e use ailearn no Codex CLI ou IDE sem conhecimen
 - modified: .codex/config.toml.example
 
 ### Delivery targets
-Os alvos planejados são a infrastructure `ailearn-local-distribution`, com
-módulo `cmd/ailearn` e entrypoint `cmd/ailearn/main.go`, e a governance
-`ailearn-ci`, com módulo `.github/workflows` e entrypoint
+Os alvos planejados são a infrastructure `codinho-local-distribution`, com
+módulo `cmd/codinho` e entrypoint `cmd/codinho/main.go`, e a governance
+`codinho-ci`, com módulo `.github/workflows` e entrypoint
 `.github/workflows/ci.yml`; ambos usam o perfil `release-governance`.
 Registrá-los como alvos tipados quando esses caminhos forem materializados,
 antes do closeout desta spec.

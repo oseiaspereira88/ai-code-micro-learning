@@ -172,7 +172,7 @@ Cobrir state machine, disclosure negativo, replay e contratos MCP.
 - Test: go test ./internal/session/... ./internal/mcpserver/...
 - Lint: gofmt -l internal/session internal/mcpserver
 - Typecheck: go vet ./internal/session/... ./internal/mcpserver/...
-- Build: go build ./cmd/ailearn
+- Build: go build ./cmd/codinho
 - Security / Contract: golden leak tests e pose assess integrate.
 
 ### Execution log

@@ -1,4 +1,4 @@
-// Package mcpserver implements the ailearn MCP server over stdio
+// Package mcpserver implements the codinho MCP server over stdio
 // (PROJECT.md §15). It never calls an LLM and never edits learner files; it
 // exposes a minimal vertical slice of read-mostly tools over the domain,
 // curriculum and event-store packages.

@@ -121,7 +121,7 @@ Usar threat model, corpus adversarial, scanners e revisão separada.
 - Test: go test -race ./internal/security/... ./internal/workspace/... ./internal/checks/... ./internal/mcpserver/... ./internal/cli/...
 - Lint: gofmt -l internal
 - Typecheck: go vet ./...
-- Build: go build ./cmd/ailearn
+- Build: go build ./cmd/codinho
 - Security / Contract: govulncheck ./...; secret scan; negative suite; pose assess integrate.
 
 ### Execution log

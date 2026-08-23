@@ -34,7 +34,7 @@ Tornar sessões retomáveis e problemas operacionais explicáveis sem depender d
 - R1: Recuperar após interrupção entre evento e snapshot sem perder evento confirmado.
 - R2: Detectar e diagnosticar log truncado, snapshot adulterado, lock órfão e evidência ausente.
 - R3: Implementar logs em stderr com correlation ID, tool, duração, status e tamanho, sem payload sensível.
-- R4: Completar ailearn doctor para binário, catálogo, estado, workspace, checks e conexão estática MCP.
+- R4: Completar codinho doctor para binário, catálogo, estado, workspace, checks e conexão estática MCP.
 - R5: Atender startup até 1 segundo e queries p95 até 100 ms no volume-alvo.
 - R6: Limitar memória, output, tempo e concorrência em operações custosas.
 - R7: Testar Linux e macOS; documentar Windows como suportado somente após evidência.
@@ -119,7 +119,7 @@ Combinar fault injection, golden diagnostics, benchmarks e CI multi-OS.
 - Test: go test -race ./... e suites de fault/compatibility.
 - Lint: gofmt -l .
 - Typecheck: go vet ./...
-- Build: go build ./cmd/ailearn em plataformas declaradas.
+- Build: go build ./cmd/codinho em plataformas declaradas.
 - Security / Contract: stdout purity, redaction e schema compatibility.
 
 ### Execution log

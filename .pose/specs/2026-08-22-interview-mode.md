@@ -54,15 +54,15 @@ Praticar autonomia, comunicação e solução sob condições próximas de live 
 ## 3. Technical Plan
 
 ### Affected areas
-- internal/session/, internal/assessment/, .agents/skills/ailearn/, packs/go-interviews/
+- internal/session/, internal/assessment/, .agents/skills/codinho/, packs/go-interviews/
 
 ### Artifacts
 - created: internal/session/interview.go
 - created: internal/session/interview_test.go
 - created: internal/assessment/interview_report.go
 - created: internal/assessment/interview_report_test.go
-- modified: .agents/skills/ailearn/references/session-modes.md
-- created: .agents/skills/ailearn/assets/interview-report-template.md
+- modified: .agents/skills/codinho/references/session-modes.md
+- created: .agents/skills/codinho/assets/interview-report-template.md
 - created: testdata/host/interview-transcripts/
 
 ### Delivery targets
@@ -115,7 +115,7 @@ Combinar clocks falsos, policy tests, transcripts adversariais e revisão de rel
 - Test: go test ./internal/session/... ./internal/assessment/...
 - Lint: gofmt -l internal/session internal/assessment
 - Typecheck: go vet ./internal/session/... ./internal/assessment/...
-- Build: go build ./cmd/ailearn
+- Build: go build ./cmd/codinho
 - Security / Contract: privacy review e leak tests.
 
 ### Execution log

@@ -4,8 +4,8 @@ import (
 	"context"
 
 	"github.com/modelcontextprotocol/go-sdk/mcp"
-	"github.com/oseiaspereira88/ailearn/internal/application"
-	"github.com/oseiaspereira88/ailearn/internal/curriculum"
+	"github.com/oseiaspereira88/codinho/internal/application"
+	"github.com/oseiaspereira88/codinho/internal/curriculum"
 )
 
 // catalogSearchArgs is catalog_search's strict input schema (requirement

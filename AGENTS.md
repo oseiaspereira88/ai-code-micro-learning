@@ -1,4 +1,4 @@
-# AGENTS.md — ailearn
+# AGENTS.md — codinho
 
 This repository uses **POSE** (Project Operating Standard for Engineering) to
 govern agent work. This file is the short contract. For the operating manual
@@ -15,7 +15,7 @@ govern agent work. This file is the short contract. For the operating manual
      README.md/CLAUDE.md on first install when one is present; `pose
      update` never touches this section afterward — edit it directly. -->
 
-O ailearn é um sistema local de prática deliberada, inicialmente especializado
+O codinho é um sistema local de prática deliberada, inicialmente especializado
 em Go. A V1 planeja uma skill de tutor, um servidor MCP local, uma CLI
 administrativa e um catálogo versionado de aprendizagem. Consulte
 [`PROJECT.md`](PROJECT.md) para a visão do produto; use [`.pose/specs/`](.pose/specs/)

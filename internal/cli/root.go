@@ -1,4 +1,4 @@
-// Package cli implements the ailearn command-line entry points.
+// Package cli implements the codinho command-line entry points.
 package cli
 
 import (
@@ -14,10 +14,10 @@ const (
 	exitUsage = 2
 )
 
-const usage = `ailearn - deliberate practice tutor runtime
+const usage = `codinho - deliberate practice tutor runtime
 
 Usage:
-  ailearn <command>
+  codinho <command>
 
 Commands:
   version   Print version and build information
@@ -30,7 +30,7 @@ Commands:
 func Run(ctx context.Context, args []string, stdout, stderr io.Writer) int {
 	select {
 	case <-ctx.Done():
-		fmt.Fprintln(stderr, "ailearn: cancelled")
+		fmt.Fprintln(stderr, "codinho: cancelled")
 		return exitError
 	default:
 	}
@@ -49,7 +49,7 @@ func Run(ctx context.Context, args []string, stdout, stderr io.Writer) int {
 		fmt.Fprint(stdout, usage)
 		return exitOK
 	default:
-		fmt.Fprintf(stderr, "ailearn: unknown command %q\n\n", args[0])
+		fmt.Fprintf(stderr, "codinho: unknown command %q\n\n", args[0])
 		fmt.Fprint(stderr, usage)
 		return exitUsage
 	}

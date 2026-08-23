@@ -112,9 +112,9 @@ Combinar validação de catálogo, leak tests, checks e playtests cronometrados.
 
 ### Deterministic checks
 - Test: checks das quatro simulações e variantes.
-- Lint: ailearn catalog validate packs/go-interviews
+- Lint: codinho catalog validate packs/go-interviews
 - Typecheck: go vet ./...
-- Build: go build ./cmd/ailearn
+- Build: go build ./cmd/codinho
 - Security / Contract: disclosure tests, privacy review e synthetic-data scan.
 
 ### Execution log

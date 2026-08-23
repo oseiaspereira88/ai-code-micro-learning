@@ -3,9 +3,9 @@ package mcpserver
 import (
 	"errors"
 
-	"github.com/oseiaspereira88/ailearn/internal/application"
-	"github.com/oseiaspereira88/ailearn/internal/eventstore"
-	"github.com/oseiaspereira88/ailearn/internal/learning"
+	"github.com/oseiaspereira88/codinho/internal/application"
+	"github.com/oseiaspereira88/codinho/internal/eventstore"
+	"github.com/oseiaspereira88/codinho/internal/learning"
 )
 
 // ErrorCode is one of the stable codes PROJECT.md §15.4 defines. Only the

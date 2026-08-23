@@ -11,7 +11,7 @@ refresh_pending:
 ## Resumo executivo
 <!-- state:curated -->
 
-O ailearn é um sistema local de prática deliberada assistida por agente,
+O codinho é um sistema local de prática deliberada assistida por agente,
 inicialmente especializado no desenvolvimento de fluência em Go. A visão e o
 escopo da V1 estão documentados em `PROJECT.md`; ainda não existe um módulo de
 aplicação nem comportamento funcional implementado.
@@ -19,7 +19,7 @@ aplicação nem comportamento funcional implementado.
 ## Direção atual
 <!-- state:curated -->
 
-Execute o roadmap `ailearn-v1` pelas dependências registradas nas 26 specs.
+Execute o roadmap `codinho-v1` pelas dependências registradas nas 26 specs.
 Comece por `architecture-decision-baseline`; em seguida materialize a fundação
 executável e o primeiro fluxo MCP local de ponta a ponta. Mantenha catálogo,
 hardening e aceite final condicionados aos gates definidos pelas respectivas
@@ -59,14 +59,14 @@ specs.
 ## Validação & Evidência
 <!-- state:derived hash:955dff733a6c -->
 
-- último registro: task=fundacao-go-executavel-do-ailearn outcome=pass (2026-08-22T23:18:45Z)
+- último registro: task=fundacao-go-executavel-do-codinho outcome=pass (2026-08-22T23:18:45Z)
 - últimos 30 dias: total=11 outcome_ok=10 outcome_outro=1
 - reports revisados (.md): total=6
-  - report:2026-08-22-standard-fundacao-go-executavel-do-ailearn.md
+  - report:2026-08-22-standard-fundacao-go-executavel-do-codinho.md
   - report:2026-08-22-standard-validate-native.md
   - report:2026-08-22-standard-registrar-baseline-de-decis-es-arquiteturais-4-adrs.md
-  - report:2026-08-22-standard-create-complete-ailearn-v1-spec-portfolio.md
-  - report:2026-08-22-ailearn-v1-spec-coverage.md
+  - report:2026-08-22-standard-create-complete-codinho-v1-spec-portfolio.md
+  - report:2026-08-22-codinho-v1-spec-coverage.md
 
 ## Arquitetura
 <!-- state:derived hash:26bc9a5cafff status:unavailable -->

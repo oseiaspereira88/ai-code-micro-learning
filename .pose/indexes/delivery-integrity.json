@@ -4,59 +4,59 @@
   "provenance_digest": "sha256:f38cf52550662669a679e107980d15b095067d5ed02cc8d694ea5d0fb5a5d004",
   "nodes": [
     {
-      "id": "artifact:.agents/skills/ailearn/SKILL.md",
+      "id": "artifact:.agents/skills/codinho/SKILL.md",
       "type": "artifact",
       "attributes": {
-        "path": ".agents/skills/ailearn/SKILL.md"
+        "path": ".agents/skills/codinho/SKILL.md"
       }
     },
     {
-      "id": "artifact:.agents/skills/ailearn/agents/openai.yaml",
+      "id": "artifact:.agents/skills/codinho/agents/openai.yaml",
       "type": "artifact",
       "attributes": {
-        "path": ".agents/skills/ailearn/agents/openai.yaml"
+        "path": ".agents/skills/codinho/agents/openai.yaml"
       }
     },
     {
-      "id": "artifact:.agents/skills/ailearn/assets/interview-report-template.md",
+      "id": "artifact:.agents/skills/codinho/assets/interview-report-template.md",
       "type": "artifact",
       "attributes": {
-        "path": ".agents/skills/ailearn/assets/interview-report-template.md"
+        "path": ".agents/skills/codinho/assets/interview-report-template.md"
       }
     },
     {
-      "id": "artifact:.agents/skills/ailearn/assets/session-summary-template.md",
+      "id": "artifact:.agents/skills/codinho/assets/session-summary-template.md",
       "type": "artifact",
       "attributes": {
-        "path": ".agents/skills/ailearn/assets/session-summary-template.md"
+        "path": ".agents/skills/codinho/assets/session-summary-template.md"
       }
     },
     {
-      "id": "artifact:.agents/skills/ailearn/references/feedback-rubric.md",
+      "id": "artifact:.agents/skills/codinho/references/feedback-rubric.md",
       "type": "artifact",
       "attributes": {
-        "path": ".agents/skills/ailearn/references/feedback-rubric.md"
+        "path": ".agents/skills/codinho/references/feedback-rubric.md"
       }
     },
     {
-      "id": "artifact:.agents/skills/ailearn/references/mcp-tool-routing.md",
+      "id": "artifact:.agents/skills/codinho/references/mcp-tool-routing.md",
       "type": "artifact",
       "attributes": {
-        "path": ".agents/skills/ailearn/references/mcp-tool-routing.md"
+        "path": ".agents/skills/codinho/references/mcp-tool-routing.md"
       }
     },
     {
-      "id": "artifact:.agents/skills/ailearn/references/session-modes.md",
+      "id": "artifact:.agents/skills/codinho/references/session-modes.md",
       "type": "artifact",
       "attributes": {
-        "path": ".agents/skills/ailearn/references/session-modes.md"
+        "path": ".agents/skills/codinho/references/session-modes.md"
       }
     },
     {
-      "id": "artifact:.agents/skills/ailearn/references/tutor-contract.md",
+      "id": "artifact:.agents/skills/codinho/references/tutor-contract.md",
       "type": "artifact",
       "attributes": {
-        "path": ".agents/skills/ailearn/references/tutor-contract.md"
+        "path": ".agents/skills/codinho/references/tutor-contract.md"
       }
     },
     {
@@ -221,10 +221,10 @@
       }
     },
     {
-      "id": "artifact:.pose/reports/2026-08-22-standard-fundacao-go-executavel-do-ailearn.md",
+      "id": "artifact:.pose/reports/2026-08-22-standard-fundacao-go-executavel-do-codinho.md",
       "type": "artifact",
       "attributes": {
-        "path": ".pose/reports/2026-08-22-standard-fundacao-go-executavel-do-ailearn.md"
+        "path": ".pose/reports/2026-08-22-standard-fundacao-go-executavel-do-codinho.md"
       }
     },
     {
@@ -242,10 +242,10 @@
       }
     },
     {
-      "id": "artifact:.pose/reports/history/standard-fundacao-go-executavel-do-ailearn.jsonl",
+      "id": "artifact:.pose/reports/history/standard-fundacao-go-executavel-do-codinho.jsonl",
       "type": "artifact",
       "attributes": {
-        "path": ".pose/reports/history/standard-fundacao-go-executavel-do-ailearn.jsonl"
+        "path": ".pose/reports/history/standard-fundacao-go-executavel-do-codinho.jsonl"
       }
     },
     {
@@ -445,10 +445,10 @@
       }
     },
     {
-      "id": "artifact:cmd/ailearn/main.go",
+      "id": "artifact:cmd/codinho/main.go",
       "type": "artifact",
       "attributes": {
-        "path": "cmd/ailearn/main.go"
+        "path": "cmd/codinho/main.go"
       }
     },
     {
@@ -1887,7 +1887,7 @@
       }
     },
     {
-      "id": "delivery:contract:ailearn-mcp-v1",
+      "id": "delivery:contract:codinho-mcp-v1",
       "type": "contract",
       "attributes": {
         "module": "internal/mcpserver",
@@ -1895,10 +1895,10 @@
       }
     },
     {
-      "id": "entrypoint:cmd/ailearn/main.go",
+      "id": "entrypoint:cmd/codinho/main.go",
       "type": "entrypoint",
       "attributes": {
-        "path": "cmd/ailearn/main.go"
+        "path": "cmd/codinho/main.go"
       }
     },
     {
@@ -2123,77 +2123,77 @@
   "edges": [
     {
       "from": "artifact:.pose/indexes/validation-matrix.json",
-      "to": "delivery:contract:ailearn-mcp-v1",
+      "to": "delivery:contract:codinho-mcp-v1",
       "type": "implemented-by"
     },
     {
-      "from": "artifact:cmd/ailearn/main.go",
-      "to": "delivery:contract:ailearn-mcp-v1",
+      "from": "artifact:cmd/codinho/main.go",
+      "to": "delivery:contract:codinho-mcp-v1",
       "type": "implemented-by"
     },
     {
       "from": "artifact:go.mod",
-      "to": "delivery:contract:ailearn-mcp-v1",
+      "to": "delivery:contract:codinho-mcp-v1",
       "type": "implemented-by"
     },
     {
       "from": "artifact:go.sum",
-      "to": "delivery:contract:ailearn-mcp-v1",
+      "to": "delivery:contract:codinho-mcp-v1",
       "type": "implemented-by"
     },
     {
       "from": "artifact:internal/application/catalog.go",
-      "to": "delivery:contract:ailearn-mcp-v1",
+      "to": "delivery:contract:codinho-mcp-v1",
       "type": "implemented-by"
     },
     {
       "from": "artifact:internal/application/session.go",
-      "to": "delivery:contract:ailearn-mcp-v1",
+      "to": "delivery:contract:codinho-mcp-v1",
       "type": "implemented-by"
     },
     {
       "from": "artifact:internal/application/session_test.go",
-      "to": "delivery:contract:ailearn-mcp-v1",
+      "to": "delivery:contract:codinho-mcp-v1",
       "type": "implemented-by"
     },
     {
       "from": "artifact:internal/mcpserver/catalog_tools.go",
-      "to": "delivery:contract:ailearn-mcp-v1",
+      "to": "delivery:contract:codinho-mcp-v1",
       "type": "implemented-by"
     },
     {
       "from": "artifact:internal/mcpserver/contract_test.go",
-      "to": "delivery:contract:ailearn-mcp-v1",
+      "to": "delivery:contract:codinho-mcp-v1",
       "type": "implemented-by"
     },
     {
       "from": "artifact:internal/mcpserver/envelope.go",
-      "to": "delivery:contract:ailearn-mcp-v1",
+      "to": "delivery:contract:codinho-mcp-v1",
       "type": "implemented-by"
     },
     {
       "from": "artifact:internal/mcpserver/errors.go",
-      "to": "delivery:contract:ailearn-mcp-v1",
+      "to": "delivery:contract:codinho-mcp-v1",
       "type": "implemented-by"
     },
     {
       "from": "artifact:internal/mcpserver/instructions.go",
-      "to": "delivery:contract:ailearn-mcp-v1",
+      "to": "delivery:contract:codinho-mcp-v1",
       "type": "implemented-by"
     },
     {
       "from": "artifact:internal/mcpserver/server.go",
-      "to": "delivery:contract:ailearn-mcp-v1",
+      "to": "delivery:contract:codinho-mcp-v1",
       "type": "implemented-by"
     },
     {
       "from": "artifact:internal/mcpserver/server_test.go",
-      "to": "delivery:contract:ailearn-mcp-v1",
+      "to": "delivery:contract:codinho-mcp-v1",
       "type": "implemented-by"
     },
     {
       "from": "artifact:internal/mcpserver/session_tools.go",
-      "to": "delivery:contract:ailearn-mcp-v1",
+      "to": "delivery:contract:codinho-mcp-v1",
       "type": "implemented-by"
     },
     {
@@ -2358,7 +2358,7 @@
     },
     {
       "from": "change-set:cs-27f24a7c63e8",
-      "to": "artifact:.pose/reports/2026-08-22-standard-fundacao-go-executavel-do-ailearn.md",
+      "to": "artifact:.pose/reports/2026-08-22-standard-fundacao-go-executavel-do-codinho.md",
       "type": "changes"
     },
     {
@@ -2368,7 +2368,7 @@
     },
     {
       "from": "change-set:cs-27f24a7c63e8",
-      "to": "artifact:.pose/reports/history/standard-fundacao-go-executavel-do-ailearn.jsonl",
+      "to": "artifact:.pose/reports/history/standard-fundacao-go-executavel-do-codinho.jsonl",
       "type": "changes"
     },
     {
@@ -2403,7 +2403,7 @@
     },
     {
       "from": "change-set:cs-27f24a7c63e8",
-      "to": "artifact:cmd/ailearn/main.go",
+      "to": "artifact:cmd/codinho/main.go",
       "type": "changes"
     },
     {
@@ -2583,7 +2583,7 @@
     },
     {
       "from": "change-set:cs-40725deda987",
-      "to": "artifact:cmd/ailearn/main.go",
+      "to": "artifact:cmd/codinho/main.go",
       "type": "changes"
     },
     {
@@ -2952,17 +2952,17 @@
       "type": "changes"
     },
     {
-      "from": "delivery:contract:ailearn-mcp-v1",
-      "to": "entrypoint:cmd/ailearn/main.go",
+      "from": "delivery:contract:codinho-mcp-v1",
+      "to": "entrypoint:cmd/codinho/main.go",
       "type": "composes"
     },
     {
-      "from": "delivery:contract:ailearn-mcp-v1",
+      "from": "delivery:contract:codinho-mcp-v1",
       "to": "validation-result:./go/mcp-contract",
       "type": "validated-by"
     },
     {
-      "from": "entrypoint:cmd/ailearn/main.go",
+      "from": "entrypoint:cmd/codinho/main.go",
       "to": "validation-result:./go/mcp-contract",
       "type": "validated-by"
     },
@@ -3463,7 +3463,7 @@
     },
     {
       "from": "spec:go-runtime-foundation",
-      "to": "artifact:cmd/ailearn/main.go",
+      "to": "artifact:cmd/codinho/main.go",
       "type": "declares"
     },
     {
@@ -3563,12 +3563,12 @@
     },
     {
       "from": "spec:interview-mode",
-      "to": "artifact:.agents/skills/ailearn/assets/interview-report-template.md",
+      "to": "artifact:.agents/skills/codinho/assets/interview-report-template.md",
       "type": "declares"
     },
     {
       "from": "spec:interview-mode",
-      "to": "artifact:.agents/skills/ailearn/references/session-modes.md",
+      "to": "artifact:.agents/skills/codinho/references/session-modes.md",
       "type": "declares"
     },
     {
@@ -3653,7 +3653,7 @@
     },
     {
       "from": "spec:learning-practice-debug-modes",
-      "to": "artifact:.agents/skills/ailearn/references/session-modes.md",
+      "to": "artifact:.agents/skills/codinho/references/session-modes.md",
       "type": "declares"
     },
     {
@@ -3788,7 +3788,7 @@
     },
     {
       "from": "spec:mcp-stdio-foundation",
-      "to": "artifact:cmd/ailearn/main.go",
+      "to": "artifact:cmd/codinho/main.go",
       "type": "declares"
     },
     {
@@ -3858,7 +3858,7 @@
     },
     {
       "from": "spec:mcp-stdio-foundation",
-      "to": "delivery:contract:ailearn-mcp-v1",
+      "to": "delivery:contract:codinho-mcp-v1",
       "type": "delivers"
     },
     {
@@ -4093,37 +4093,37 @@
     },
     {
       "from": "spec:tutor-skill-host-integration",
-      "to": "artifact:.agents/skills/ailearn/SKILL.md",
+      "to": "artifact:.agents/skills/codinho/SKILL.md",
       "type": "declares"
     },
     {
       "from": "spec:tutor-skill-host-integration",
-      "to": "artifact:.agents/skills/ailearn/agents/openai.yaml",
+      "to": "artifact:.agents/skills/codinho/agents/openai.yaml",
       "type": "declares"
     },
     {
       "from": "spec:tutor-skill-host-integration",
-      "to": "artifact:.agents/skills/ailearn/assets/session-summary-template.md",
+      "to": "artifact:.agents/skills/codinho/assets/session-summary-template.md",
       "type": "declares"
     },
     {
       "from": "spec:tutor-skill-host-integration",
-      "to": "artifact:.agents/skills/ailearn/references/feedback-rubric.md",
+      "to": "artifact:.agents/skills/codinho/references/feedback-rubric.md",
       "type": "declares"
     },
     {
       "from": "spec:tutor-skill-host-integration",
-      "to": "artifact:.agents/skills/ailearn/references/mcp-tool-routing.md",
+      "to": "artifact:.agents/skills/codinho/references/mcp-tool-routing.md",
       "type": "declares"
     },
     {
       "from": "spec:tutor-skill-host-integration",
-      "to": "artifact:.agents/skills/ailearn/references/session-modes.md",
+      "to": "artifact:.agents/skills/codinho/references/session-modes.md",
       "type": "declares"
     },
     {
       "from": "spec:tutor-skill-host-integration",
-      "to": "artifact:.agents/skills/ailearn/references/tutor-contract.md",
+      "to": "artifact:.agents/skills/codinho/references/tutor-contract.md",
       "type": "declares"
     },
     {
@@ -4721,7 +4721,7 @@
     {
       "spec": "go-runtime-foundation",
       "action": "created",
-      "path": "cmd/ailearn/main.go"
+      "path": "cmd/codinho/main.go"
     },
     {
       "spec": "go-runtime-foundation",
@@ -4826,7 +4826,7 @@
     {
       "spec": "interview-mode",
       "action": "created",
-      "path": ".agents/skills/ailearn/assets/interview-report-template.md"
+      "path": ".agents/skills/codinho/assets/interview-report-template.md"
     },
     {
       "spec": "interview-mode",
@@ -4856,7 +4856,7 @@
     {
       "spec": "interview-mode",
       "action": "modified",
-      "path": ".agents/skills/ailearn/references/session-modes.md"
+      "path": ".agents/skills/codinho/references/session-modes.md"
     },
     {
       "spec": "learning-domain-model",
@@ -4936,7 +4936,7 @@
     {
       "spec": "learning-practice-debug-modes",
       "action": "modified",
-      "path": ".agents/skills/ailearn/references/session-modes.md"
+      "path": ".agents/skills/codinho/references/session-modes.md"
     },
     {
       "spec": "learning-practice-debug-modes",
@@ -5096,7 +5096,7 @@
     {
       "spec": "mcp-stdio-foundation",
       "action": "modified",
-      "path": "cmd/ailearn/main.go"
+      "path": "cmd/codinho/main.go"
     },
     {
       "spec": "mcp-stdio-foundation",
@@ -5331,37 +5331,37 @@
     {
       "spec": "tutor-skill-host-integration",
       "action": "created",
-      "path": ".agents/skills/ailearn/SKILL.md"
+      "path": ".agents/skills/codinho/SKILL.md"
     },
     {
       "spec": "tutor-skill-host-integration",
       "action": "created",
-      "path": ".agents/skills/ailearn/agents/openai.yaml"
+      "path": ".agents/skills/codinho/agents/openai.yaml"
     },
     {
       "spec": "tutor-skill-host-integration",
       "action": "created",
-      "path": ".agents/skills/ailearn/assets/session-summary-template.md"
+      "path": ".agents/skills/codinho/assets/session-summary-template.md"
     },
     {
       "spec": "tutor-skill-host-integration",
       "action": "created",
-      "path": ".agents/skills/ailearn/references/feedback-rubric.md"
+      "path": ".agents/skills/codinho/references/feedback-rubric.md"
     },
     {
       "spec": "tutor-skill-host-integration",
       "action": "created",
-      "path": ".agents/skills/ailearn/references/mcp-tool-routing.md"
+      "path": ".agents/skills/codinho/references/mcp-tool-routing.md"
     },
     {
       "spec": "tutor-skill-host-integration",
       "action": "created",
-      "path": ".agents/skills/ailearn/references/session-modes.md"
+      "path": ".agents/skills/codinho/references/session-modes.md"
     },
     {
       "spec": "tutor-skill-host-integration",
       "action": "created",
-      "path": ".agents/skills/ailearn/references/tutor-contract.md"
+      "path": ".agents/skills/codinho/references/tutor-contract.md"
     },
     {
       "spec": "tutor-skill-host-integration",
@@ -5622,11 +5622,11 @@
         },
         {
           "action": "created",
-          "path": ".pose/reports/2026-08-22-standard-fundacao-go-executavel-do-ailearn.md"
+          "path": ".pose/reports/2026-08-22-standard-fundacao-go-executavel-do-codinho.md"
         },
         {
           "action": "created",
-          "path": ".pose/reports/history/standard-fundacao-go-executavel-do-ailearn.jsonl"
+          "path": ".pose/reports/history/standard-fundacao-go-executavel-do-codinho.jsonl"
         },
         {
           "action": "created",
@@ -5638,7 +5638,7 @@
         },
         {
           "action": "created",
-          "path": "cmd/ailearn/main.go"
+          "path": "cmd/codinho/main.go"
         },
         {
           "action": "created",
@@ -5904,7 +5904,7 @@
         },
         {
           "action": "modified",
-          "path": "cmd/ailearn/main.go"
+          "path": "cmd/codinho/main.go"
         },
         {
           "action": "modified",
@@ -6207,30 +6207,30 @@
     }
   ],
   "reverse": {
-    ".agents/skills/ailearn/SKILL.md": [
+    ".agents/skills/codinho/SKILL.md": [
       "tutor-skill-host-integration"
     ],
-    ".agents/skills/ailearn/agents/openai.yaml": [
+    ".agents/skills/codinho/agents/openai.yaml": [
       "tutor-skill-host-integration"
     ],
-    ".agents/skills/ailearn/assets/interview-report-template.md": [
+    ".agents/skills/codinho/assets/interview-report-template.md": [
       "interview-mode"
     ],
-    ".agents/skills/ailearn/assets/session-summary-template.md": [
+    ".agents/skills/codinho/assets/session-summary-template.md": [
       "tutor-skill-host-integration"
     ],
-    ".agents/skills/ailearn/references/feedback-rubric.md": [
+    ".agents/skills/codinho/references/feedback-rubric.md": [
       "tutor-skill-host-integration"
     ],
-    ".agents/skills/ailearn/references/mcp-tool-routing.md": [
+    ".agents/skills/codinho/references/mcp-tool-routing.md": [
       "tutor-skill-host-integration"
     ],
-    ".agents/skills/ailearn/references/session-modes.md": [
+    ".agents/skills/codinho/references/session-modes.md": [
       "interview-mode",
       "learning-practice-debug-modes",
       "tutor-skill-host-integration"
     ],
-    ".agents/skills/ailearn/references/tutor-contract.md": [
+    ".agents/skills/codinho/references/tutor-contract.md": [
       "tutor-skill-host-integration"
     ],
     ".codex/config.toml.example": [
@@ -6268,7 +6268,7 @@
     "README.md": [
       "installation-documentation-ci"
     ],
-    "cmd/ailearn/main.go": [
+    "cmd/codinho/main.go": [
       "go-runtime-foundation",
       "mcp-stdio-foundation"
     ],
@@ -7057,7 +7057,7 @@
       "code": "existence",
       "severity": "error",
       "spec": "interview-mode",
-      "path": ".agents/skills/ailearn/references/session-modes.md",
+      "path": ".agents/skills/codinho/references/session-modes.md",
       "message": "declared current artifact is not tracked at the selected head",
       "remediation": "correct the exact path or commit the artifact before closeout"
     },
@@ -7147,7 +7147,7 @@
       "code": "action-mismatch",
       "severity": "error",
       "spec": "tutor-skill-host-integration",
-      "path": ".agents/skills/ailearn/assets/session-summary-template.md",
+      "path": ".agents/skills/codinho/assets/session-summary-template.md",
       "message": "declared artifact action is absent from the attributed Git change sets",
       "remediation": "no Git change sets are attributed to spec tutor-skill-host-integration (ensure commits carry 'POSE-Spec: tutor-skill-host-integration' trailer or generate report with pose report)"
     },
@@ -7399,7 +7399,7 @@
       "code": "existence",
       "severity": "error",
       "spec": "interview-mode",
-      "path": ".agents/skills/ailearn/assets/interview-report-template.md",
+      "path": ".agents/skills/codinho/assets/interview-report-template.md",
       "message": "declared current artifact is not tracked at the selected head",
       "remediation": "correct the exact path or commit the artifact before closeout"
     },
@@ -7687,7 +7687,7 @@
       "code": "action-mismatch",
       "severity": "error",
       "spec": "interview-mode",
-      "path": ".agents/skills/ailearn/assets/interview-report-template.md",
+      "path": ".agents/skills/codinho/assets/interview-report-template.md",
       "message": "declared artifact action is absent from the attributed Git change sets",
       "remediation": "no Git change sets are attributed to spec interview-mode (ensure commits carry 'POSE-Spec: interview-mode' trailer or generate report with pose report)"
     },
@@ -7903,7 +7903,7 @@
       "code": "action-mismatch",
       "severity": "error",
       "spec": "tutor-skill-host-integration",
-      "path": ".agents/skills/ailearn/references/mcp-tool-routing.md",
+      "path": ".agents/skills/codinho/references/mcp-tool-routing.md",
       "message": "declared artifact action is absent from the attributed Git change sets",
       "remediation": "no Git change sets are attributed to spec tutor-skill-host-integration (ensure commits carry 'POSE-Spec: tutor-skill-host-integration' trailer or generate report with pose report)"
     },
@@ -7957,7 +7957,7 @@
       "code": "action-mismatch",
       "severity": "error",
       "spec": "interview-mode",
-      "path": ".agents/skills/ailearn/references/session-modes.md",
+      "path": ".agents/skills/codinho/references/session-modes.md",
       "message": "declared artifact action is absent from the attributed Git change sets",
       "remediation": "no Git change sets are attributed to spec interview-mode (ensure commits carry 'POSE-Spec: interview-mode' trailer or generate report with pose report)"
     },
@@ -8011,7 +8011,7 @@
       "code": "action-mismatch",
       "severity": "error",
       "spec": "learning-practice-debug-modes",
-      "path": ".agents/skills/ailearn/references/session-modes.md",
+      "path": ".agents/skills/codinho/references/session-modes.md",
       "message": "declared artifact action is absent from the attributed Git change sets",
       "remediation": "no Git change sets are attributed to spec learning-practice-debug-modes (ensure commits carry 'POSE-Spec: learning-practice-debug-modes' trailer or generate report with pose report)"
     },
@@ -8047,7 +8047,7 @@
       "code": "action-mismatch",
       "severity": "error",
       "spec": "tutor-skill-host-integration",
-      "path": ".agents/skills/ailearn/SKILL.md",
+      "path": ".agents/skills/codinho/SKILL.md",
       "message": "declared artifact action is absent from the attributed Git change sets",
       "remediation": "no Git change sets are attributed to spec tutor-skill-host-integration (ensure commits carry 'POSE-Spec: tutor-skill-host-integration' trailer or generate report with pose report)"
     },
@@ -8119,7 +8119,7 @@
       "code": "existence",
       "severity": "error",
       "spec": "tutor-skill-host-integration",
-      "path": ".agents/skills/ailearn/references/tutor-contract.md",
+      "path": ".agents/skills/codinho/references/tutor-contract.md",
       "message": "declared current artifact is not tracked at the selected head",
       "remediation": "correct the exact path or commit the artifact before closeout"
     },
@@ -8317,7 +8317,7 @@
       "code": "existence",
       "severity": "error",
       "spec": "tutor-skill-host-integration",
-      "path": ".agents/skills/ailearn/agents/openai.yaml",
+      "path": ".agents/skills/codinho/agents/openai.yaml",
       "message": "declared current artifact is not tracked at the selected head",
       "remediation": "correct the exact path or commit the artifact before closeout"
     },
@@ -8740,7 +8740,7 @@
       "code": "existence",
       "severity": "error",
       "spec": "tutor-skill-host-integration",
-      "path": ".agents/skills/ailearn/assets/session-summary-template.md",
+      "path": ".agents/skills/codinho/assets/session-summary-template.md",
       "message": "declared current artifact is not tracked at the selected head",
       "remediation": "correct the exact path or commit the artifact before closeout"
     },
@@ -8983,7 +8983,7 @@
       "code": "existence",
       "severity": "error",
       "spec": "learning-practice-debug-modes",
-      "path": ".agents/skills/ailearn/references/session-modes.md",
+      "path": ".agents/skills/codinho/references/session-modes.md",
       "message": "declared current artifact is not tracked at the selected head",
       "remediation": "correct the exact path or commit the artifact before closeout"
     },
@@ -9028,7 +9028,7 @@
       "code": "existence",
       "severity": "error",
       "spec": "tutor-skill-host-integration",
-      "path": ".agents/skills/ailearn/SKILL.md",
+      "path": ".agents/skills/codinho/SKILL.md",
       "message": "declared current artifact is not tracked at the selected head",
       "remediation": "correct the exact path or commit the artifact before closeout"
     },
@@ -9208,7 +9208,7 @@
       "code": "action-mismatch",
       "severity": "error",
       "spec": "tutor-skill-host-integration",
-      "path": ".agents/skills/ailearn/references/feedback-rubric.md",
+      "path": ".agents/skills/codinho/references/feedback-rubric.md",
       "message": "declared artifact action is absent from the attributed Git change sets",
       "remediation": "no Git change sets are attributed to spec tutor-skill-host-integration (ensure commits carry 'POSE-Spec: tutor-skill-host-integration' trailer or generate report with pose report)"
     },
@@ -9361,7 +9361,7 @@
       "code": "existence",
       "severity": "error",
       "spec": "tutor-skill-host-integration",
-      "path": ".agents/skills/ailearn/references/mcp-tool-routing.md",
+      "path": ".agents/skills/codinho/references/mcp-tool-routing.md",
       "message": "declared current artifact is not tracked at the selected head",
       "remediation": "correct the exact path or commit the artifact before closeout"
     },
@@ -9523,7 +9523,7 @@
       "code": "action-mismatch",
       "severity": "error",
       "spec": "tutor-skill-host-integration",
-      "path": ".agents/skills/ailearn/references/tutor-contract.md",
+      "path": ".agents/skills/codinho/references/tutor-contract.md",
       "message": "declared artifact action is absent from the attributed Git change sets",
       "remediation": "no Git change sets are attributed to spec tutor-skill-host-integration (ensure commits carry 'POSE-Spec: tutor-skill-host-integration' trailer or generate report with pose report)"
     },
@@ -9550,7 +9550,7 @@
       "code": "action-mismatch",
       "severity": "error",
       "spec": "tutor-skill-host-integration",
-      "path": ".agents/skills/ailearn/references/session-modes.md",
+      "path": ".agents/skills/codinho/references/session-modes.md",
       "message": "declared artifact action is absent from the attributed Git change sets",
       "remediation": "no Git change sets are attributed to spec tutor-skill-host-integration (ensure commits carry 'POSE-Spec: tutor-skill-host-integration' trailer or generate report with pose report)"
     },
@@ -9649,7 +9649,7 @@
       "code": "existence",
       "severity": "error",
       "spec": "tutor-skill-host-integration",
-      "path": ".agents/skills/ailearn/references/session-modes.md",
+      "path": ".agents/skills/codinho/references/session-modes.md",
       "message": "declared current artifact is not tracked at the selected head",
       "remediation": "correct the exact path or commit the artifact before closeout"
     },
@@ -9685,7 +9685,7 @@
       "code": "existence",
       "severity": "error",
       "spec": "tutor-skill-host-integration",
-      "path": ".agents/skills/ailearn/references/feedback-rubric.md",
+      "path": ".agents/skills/codinho/references/feedback-rubric.md",
       "message": "declared current artifact is not tracked at the selected head",
       "remediation": "correct the exact path or commit the artifact before closeout"
     },
@@ -9694,7 +9694,7 @@
       "code": "action-mismatch",
       "severity": "error",
       "spec": "tutor-skill-host-integration",
-      "path": ".agents/skills/ailearn/agents/openai.yaml",
+      "path": ".agents/skills/codinho/agents/openai.yaml",
       "message": "declared artifact action is absent from the attributed Git change sets",
       "remediation": "no Git change sets are attributed to spec tutor-skill-host-integration (ensure commits carry 'POSE-Spec: tutor-skill-host-integration' trailer or generate report with pose report)"
     },
@@ -9738,12 +9738,12 @@
   "deliveries": [
     {
       "spec": "mcp-stdio-foundation",
-      "ref": "contract:ailearn-mcp-v1",
+      "ref": "contract:codinho-mcp-v1",
       "kind": "contract",
-      "id": "ailearn-mcp-v1",
+      "id": "codinho-mcp-v1",
       "module": "internal/mcpserver",
       "profile": "api-contract",
-      "entrypoint": "cmd/ailearn/main.go"
+      "entrypoint": "cmd/codinho/main.go"
     }
   ],
   "validation_results": [
@@ -9833,7 +9833,7 @@
     }
   ],
   "paths": {
-    "contract:ailearn-mcp-v1": [
+    "contract:codinho-mcp-v1": [
       "spec:mcp-stdio-foundation",
       "artifact:internal/application/catalog.go",
       "artifact:internal/application/session.go",
@@ -9847,11 +9847,11 @@
       "artifact:internal/mcpserver/server_test.go",
       "artifact:internal/mcpserver/session_tools.go",
       "artifact:.pose/indexes/validation-matrix.json",
-      "artifact:cmd/ailearn/main.go",
+      "artifact:cmd/codinho/main.go",
       "artifact:go.mod",
       "artifact:go.sum",
-      "delivery:contract:ailearn-mcp-v1",
-      "entrypoint:cmd/ailearn/main.go",
+      "delivery:contract:codinho-mcp-v1",
+      "entrypoint:cmd/codinho/main.go",
       "validation-result:./go/mcp-contract"
     ]
   }

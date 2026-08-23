@@ -5,7 +5,7 @@ import (
 	"io"
 	"runtime"
 
-	"github.com/oseiaspereira88/ailearn/internal/config"
+	"github.com/oseiaspereira88/codinho/internal/config"
 )
 
 // runDoctor reports installation diagnostics only. It never executes files

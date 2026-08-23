@@ -1,15 +1,15 @@
-# ailearn — Projeto V1
+# codinho — Projeto V1
 
-> Nome do projeto: **ailearn**  
+> Nome do projeto: **codinho**  
 > Estado deste documento: especificação principal da V1  
 > Produto: sistema local de prática deliberada de programação, inicialmente especializado em Go  
 > Superfície principal: conversa com um agente na IDE ou no terminal, apoiada por uma skill e por um servidor MCP local
 
 ## 1. Resumo executivo
 
-O ailearn é um sistema de prática deliberada para recuperar e desenvolver fluência real em programação sem permitir que o agente de IA substitua o ato de pensar, decompor e escrever código.
+O codinho é um sistema de prática deliberada para recuperar e desenvolver fluência real em programação sem permitir que o agente de IA substitua o ato de pensar, decompor e escrever código.
 
-O produto atende a uma lacuna criada pelo desenvolvimento excessivamente delegado a agentes: uma pessoa pode conservar elevada maturidade de engenharia e, ao mesmo tempo, perder velocidade para recordar sintaxe, APIs, idiomatismos e transformar uma intenção em código sem assistência. O ailearn trata essas dimensões separadamente e transforma o agente em tutor, observador e avaliador — nunca em autor silencioso da solução.
+O produto atende a uma lacuna criada pelo desenvolvimento excessivamente delegado a agentes: uma pessoa pode conservar elevada maturidade de engenharia e, ao mesmo tempo, perder velocidade para recordar sintaxe, APIs, idiomatismos e transformar uma intenção em código sem assistência. O codinho trata essas dimensões separadamente e transforma o agente em tutor, observador e avaliador — nunca em autor silencioso da solução.
 
 A unidade pedagógica central é uma árvore de decomposição:
 
@@ -87,7 +87,7 @@ Criar um protocolo pedagógico executável no ambiente real de desenvolvimento, 
 
 > Fluência não é recuperada lendo mais respostas prontas. Ela é recuperada por prática ativa, feedback oportuno, recordação, variação de contexto e retirada progressiva do apoio.
 
-O ailearn se baseia nas seguintes teses:
+O codinho se baseia nas seguintes teses:
 
 1. **Maturidade de engenharia e fluência na linguagem são eixos distintos.**
 2. **Micropasso é uma intenção, não uma quantidade fixa de linhas.**
@@ -576,7 +576,7 @@ Ordem padrão:
 ```mermaid
 flowchart TD
     L[Aluno na IDE ou terminal] --> A[Agente tutor]
-    A --> S[Skill ailearn]
+    A --> S[Skill codinho]
     A --> M[Servidor MCP local]
     M --> APP[Casos de uso]
     APP --> CUR[Currículo e catálogo]
@@ -1213,7 +1213,7 @@ A skill transforma as capacidades do MCP em comportamento consistente. Ela é pe
 ### 16.3 Estrutura prevista
 
 ```text
-.agents/skills/ailearn/
+.agents/skills/codinho/
 ├── SKILL.md
 ├── agents/
 │   └── openai.yaml
@@ -1237,17 +1237,17 @@ A CLI não replica o diálogo do tutor. Ela oferece operações determinísticas
 ### 17.2 Comandos da V1
 
 ```text
-ailearn serve
-ailearn init
-ailearn doctor
-ailearn version
-ailearn catalog validate [path]
-ailearn catalog list
-ailearn catalog show <id>
-ailearn session inspect [id]
-ailearn progress show
-ailearn progress export
-ailearn workspace prepare <challenge-id> --destination <path>
+codinho serve
+codinho init
+codinho doctor
+codinho version
+codinho catalog validate [path]
+codinho catalog list
+codinho catalog show <id>
+codinho session inspect [id]
+codinho progress show
+codinho progress export
+codinho workspace prepare <challenge-id> --destination <path>
 ```
 
 `workspace prepare`:
@@ -1275,7 +1275,7 @@ Essa escolha mantém o produto local, inspecionável e simples. Migração para 
 ### 18.2 Layout local
 
 ```text
-.ailearn/
+.codinho/
 ├── config.yaml
 ├── state/
 │   ├── events.jsonl
@@ -1523,7 +1523,7 @@ Código, comentários, nomes de arquivos, fixtures e saída de comandos são tra
 
 ```text
 cmd/
-└── ailearn/
+└── codinho/
     └── main.go
 
 internal/
@@ -1552,7 +1552,7 @@ packs/
 ├── go-architecture-debugging/
 └── go-interviews/
 
-.agents/skills/ailearn/
+.agents/skills/codinho/
 ├── SKILL.md
 ├── agents/openai.yaml
 ├── references/
@@ -1766,7 +1766,7 @@ Cenários obrigatórios:
 6. Implementar observação de workspace e um único check seguro.
 7. Expor o fluxo vertical pelo MCP.
 8. Criar a skill e testar conversas adversariais, inclusive pedidos ambíguos de código.
-9. Usar o próprio ailearn para desenvolver partes não pedagógicas do projeto quando adequado.
+9. Usar o próprio codinho para desenvolver partes não pedagógicas do projeto quando adequado.
 10. Adicionar feedback, avaliação híbrida e reflexões.
 11. Adicionar granularidade, pistas e desvios.
 12. Projetar domínio e revisão espaçada.
@@ -2019,4 +2019,4 @@ A V1 está concluída quando:
 - [OpenAI — Model Context Protocol no Codex](https://learn.chatgpt.com/docs/extend/mcp)
 - [SDK MCP oficial para Go](https://github.com/modelcontextprotocol/go-sdk)
 
-As referências sustentam a separação adotada: skills descrevem workflows reutilizáveis; MCP conecta o agente a ferramentas e contexto estruturados; o Codex CLI e a extensão da IDE suportam servidores MCP locais por `stdio`. A arquitetura de aprendizagem, a ontologia e as políticas pedagógicas deste projeto são decisões próprias do ailearn.
+As referências sustentam a separação adotada: skills descrevem workflows reutilizáveis; MCP conecta o agente a ferramentas e contexto estruturados; o Codex CLI e a extensão da IDE suportam servidores MCP locais por `stdio`. A arquitetura de aprendizagem, a ontologia e as políticas pedagógicas deste projeto são decisões próprias do codinho.

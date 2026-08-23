@@ -4,9 +4,9 @@ import (
 	"errors"
 	"testing"
 
-	"github.com/oseiaspereira88/ailearn/internal/application"
-	"github.com/oseiaspereira88/ailearn/internal/eventstore"
-	"github.com/oseiaspereira88/ailearn/internal/learning"
+	"github.com/oseiaspereira88/codinho/internal/application"
+	"github.com/oseiaspereira88/codinho/internal/eventstore"
+	"github.com/oseiaspereira88/codinho/internal/learning"
 )
 
 func TestCoreInstructionsFitWithinFirst512Chars(t *testing.T) {

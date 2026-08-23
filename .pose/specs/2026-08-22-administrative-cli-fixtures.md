@@ -55,7 +55,7 @@ Tornar instalação, autoria, diagnóstico e suporte utilizáveis sem duplicar a
 ## 3. Technical Plan
 
 ### Affected areas
-- internal/cli/, internal/fixtures/, cmd/ailearn/
+- internal/cli/, internal/fixtures/, cmd/codinho/
 
 ### Artifacts
 - modified: internal/cli/root.go
@@ -70,8 +70,8 @@ Tornar instalação, autoria, diagnóstico e suporte utilizáveis sem duplicar a
 - created: internal/cli/cli_test.go
 
 ### Delivery targets
-O alvo planejado é a surface `ailearn-cli`, com módulo `cmd/ailearn`, perfil
-`cli-surface` e entrypoint `cmd/ailearn/main.go`. Registrá-lo como alvo
+O alvo planejado é a surface `codinho-cli`, com módulo `cmd/codinho`, perfil
+`cli-surface` e entrypoint `cmd/codinho/main.go`. Registrá-lo como alvo
 tipado quando esses caminhos forem materializados, antes do closeout desta
 spec.
 
@@ -122,7 +122,7 @@ Usar CLI real em diretórios temporários e golden outputs.
 - Test: go test ./internal/cli/... ./internal/fixtures/...
 - Lint: gofmt -l internal/cli internal/fixtures
 - Typecheck: go vet ./internal/cli/... ./internal/fixtures/...
-- Build: go build ./cmd/ailearn
+- Build: go build ./cmd/codinho
 - Security / Contract: traversal suite; pose surface-check --spec administrative-cli-fixtures --strict.
 
 ### Execution log
@@ -143,7 +143,7 @@ Usar CLI real em diretórios temporários e golden outputs.
 Nenhum; planejamento.
 
 ### Files and modules changed
-- Planejados em cli, fixtures e cmd/ailearn.
+- Planejados em cli, fixtures e cmd/codinho.
 
 ### Validation executed
 - Command: pose lint-spec administrative-cli-fixtures --ready-check

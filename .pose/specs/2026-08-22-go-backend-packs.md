@@ -114,9 +114,9 @@ Executar checks herméticos, repetição para flake, race detector e revisão hu
 
 ### Deterministic checks
 - Test: checks de todas as fixtures e go test -race onde aplicável.
-- Lint: ailearn catalog validate packs/go-concurrency-context packs/go-http packs/go-database
+- Lint: codinho catalog validate packs/go-concurrency-context packs/go-http packs/go-database
 - Typecheck: go vet ./...
-- Build: go build ./cmd/ailearn
+- Build: go build ./cmd/codinho
 - Security / Contract: HTTP negative suite, SQL injection cases e path confinement.
 
 ### Execution log

@@ -113,9 +113,9 @@ Combinar checks determinísticos, rubricas, fixtures de incidente e playtest ind
 
 ### Deterministic checks
 - Test: checks de todas as fixtures, race detector e benchmarks controlados.
-- Lint: ailearn catalog validate packs/go-production packs/go-architecture-debugging
+- Lint: codinho catalog validate packs/go-production packs/go-architecture-debugging
 - Typecheck: go vet ./...
-- Build: go build ./cmd/ailearn
+- Build: go build ./cmd/codinho
 - Security / Contract: threat cases, compatibility fixtures e secret scan.
 
 ### Execution log

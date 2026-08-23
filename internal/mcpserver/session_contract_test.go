@@ -7,9 +7,9 @@ import (
 	"testing"
 
 	"github.com/modelcontextprotocol/go-sdk/mcp"
-	"github.com/oseiaspereira88/ailearn/internal/application"
-	"github.com/oseiaspereira88/ailearn/internal/curriculum"
-	"github.com/oseiaspereira88/ailearn/internal/eventstore"
+	"github.com/oseiaspereira88/codinho/internal/application"
+	"github.com/oseiaspereira88/codinho/internal/curriculum"
+	"github.com/oseiaspereira88/codinho/internal/eventstore"
 )
 
 // newNestedContractClient is like newContractClient but its fixture

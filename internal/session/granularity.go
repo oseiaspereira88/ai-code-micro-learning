@@ -1,8 +1,8 @@
 package session
 
 import (
-	"github.com/oseiaspereira88/ailearn/internal/curriculum"
-	"github.com/oseiaspereira88/ailearn/internal/learning"
+	"github.com/oseiaspereira88/codinho/internal/curriculum"
+	"github.com/oseiaspereira88/codinho/internal/learning"
 )
 
 // Window is the node a session's instructional window currently resolves

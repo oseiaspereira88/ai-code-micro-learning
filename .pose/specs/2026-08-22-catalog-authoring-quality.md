@@ -39,7 +39,7 @@ Impedir que a meta de cobertura produza conteúdo superficial, não avaliável o
 - R5: Executar ou validar todos os checks contra fixtures reproduzíveis.
 - R6: Projetar cobertura por tema, conceito, competência, tipo, nível, variante e step node.
 - R7: Exigir metadados de autoria, revisão humana e playtest antes de status published.
-- R8: Expor ailearn catalog validate com saída humana, JSON e códigos estáveis.
+- R8: Expor codinho catalog validate com saída humana, JSON e códigos estáveis.
 - R9: Falhar o gate V1 abaixo de 160 conceitos, 100 competências, 84 desafios, 12 trilhas e 500 step nodes.
 - R10: Verificar a distribuição exata de tipos definida nas specs de packs.
 
@@ -119,9 +119,9 @@ Usar corpus positivo/negativo, checks reais de fixture e auditoria amostral.
 
 ### Deterministic checks
 - Test: go test ./internal/curriculum/... ./internal/cli/...
-- Lint: ailearn catalog validate packs
+- Lint: codinho catalog validate packs
 - Typecheck: go vet ./internal/curriculum/... ./internal/cli/...
-- Build: go build ./cmd/ailearn
+- Build: go build ./cmd/codinho
 - Security / Contract: fixture confinement, secret scan e check registry.
 
 ### Execution log

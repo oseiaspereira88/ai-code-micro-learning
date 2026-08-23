@@ -96,7 +96,7 @@ Nenhum tipado; conteúdo consumido pelo catálogo V1.
 - [ ] Realizar revisão, playtest e correções.
 
 ### Validation
-- [ ] Executar ailearn catalog validate packs.
+- [ ] Executar codinho catalog validate packs.
 - [ ] Executar todos os checks de fixtures.
 - [ ] Auditar contagens, duplicação, leaks e cobertura.
 
@@ -117,9 +117,9 @@ Validar estrutura, distribuição exata, checks, cobertura e playtest humano.
 
 ### Deterministic checks
 - Test: go test ./internal/curriculum/... e checks de cada fixture.
-- Lint: ailearn catalog validate packs/go-first-steps packs/go-core packs/go-data-text packs/go-type-design packs/go-errors packs/go-io packs/go-testing
+- Lint: codinho catalog validate packs/go-first-steps packs/go-core packs/go-data-text packs/go-type-design packs/go-errors packs/go-io packs/go-testing
 - Typecheck: go vet ./...
-- Build: go build ./cmd/ailearn
+- Build: go build ./cmd/codinho
 - Security / Contract: secret scan, path confinement e leak detector.
 
 ### Execution log

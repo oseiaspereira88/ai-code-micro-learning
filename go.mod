@@ -1,4 +1,4 @@
-module github.com/oseiaspereira88/ailearn
+module github.com/oseiaspereira88/codinho
 
 go 1.25.0
 

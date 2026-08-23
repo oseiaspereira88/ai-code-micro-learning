@@ -55,7 +55,7 @@ Permitir que a mesma árvore curricular atenda perfis e intenções diferentes s
 ## 3. Technical Plan
 
 ### Affected areas
-- internal/session/, internal/mastery/, .agents/skills/ailearn/
+- internal/session/, internal/mastery/, .agents/skills/codinho/
 
 ### Artifacts
 - created: internal/session/modes.go
@@ -63,7 +63,7 @@ Permitir que a mesma árvore curricular atenda perfis e intenções diferentes s
 - created: internal/session/modes_test.go
 - created: internal/session/adaptation_test.go
 - modified: internal/mastery/scheduler.go
-- modified: .agents/skills/ailearn/references/session-modes.md
+- modified: .agents/skills/codinho/references/session-modes.md
 - created: testdata/host/mode-transcripts/
 
 ### Delivery targets
@@ -116,7 +116,7 @@ Testar matriz de políticas, eventos e transcripts comportamentais.
 - Test: go test ./internal/session/... ./internal/mastery/...
 - Lint: gofmt -l internal/session internal/mastery
 - Typecheck: go vet ./internal/session/... ./internal/mastery/...
-- Build: go build ./cmd/ailearn
+- Build: go build ./cmd/codinho
 - Security / Contract: golden policies e adversarial transcripts.
 
 ### Execution log

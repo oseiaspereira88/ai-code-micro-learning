@@ -1,9 +1,9 @@
 package application
 
 import (
-	"github.com/oseiaspereira88/ailearn/internal/eventstore"
-	"github.com/oseiaspereira88/ailearn/internal/learning"
-	"github.com/oseiaspereira88/ailearn/internal/session"
+	"github.com/oseiaspereira88/codinho/internal/eventstore"
+	"github.com/oseiaspereira88/codinho/internal/learning"
+	"github.com/oseiaspereira88/codinho/internal/session"
 )
 
 // The session orchestration logic (lifecycle, disclosure, granularity)

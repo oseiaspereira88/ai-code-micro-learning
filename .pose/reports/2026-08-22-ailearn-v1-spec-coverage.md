@@ -2,7 +2,7 @@
 
 Data: 2026-08-22
 Fonte de verdade do produto: `PROJECT.md`
-Roadmap governado: `.pose/roadmaps/ailearn-v1.md`
+Roadmap governado: `.pose/roadmaps/codinho-v1.md`
 
 ## Resultado
 
@@ -30,7 +30,7 @@ será registrado como alvo tipado depois de materializado.
 | 19–20: observação do workspace e checks seguros | `workspace-observation-baselines`, `safe-check-executor` |
 | 21: avaliação, domínio e revisão | `feedback-evaluation-progression`, `mastery-review-scheduling` |
 | 22 e 25–27: segurança, privacidade, confiabilidade, observabilidade e testes | `security-privacy-hardening`, `reliability-observability-compatibility`, `installation-documentation-ci` |
-| 28–29: fases e sequência de implementação | milestones e dependências de `ailearn-v1` |
+| 28–29: fases e sequência de implementação | milestones e dependências de `codinho-v1` |
 | 30–31: aceite, riscos e mitigação | `v1-integrated-acceptance` e requisitos de risco distribuídos nas specs proprietárias |
 | 34: decomposição completa de desafio | `catalog-authoring-quality` e os quatro conjuntos de packs |
 
@@ -61,7 +61,7 @@ dos contratos que consomem.
 - `pose check --strict`: estrutura POSE válida.
 - `pose index`: índices gerados com integridade de entrega.
 - `pose followups --all --json`: 26 follow-ups, 0 abertos, 0 vencidos e 0 sem disposição.
-- `pose roadmap-check ailearn-v1 --tolerant --json`: roadmap ativo e íntegro; os 26 bloqueios reportados correspondem corretamente às 26 specs ainda não implementadas.
+- `pose roadmap-check codinho-v1 --tolerant --json`: roadmap ativo e íntegro; os 26 bloqueios reportados correspondem corretamente às 26 specs ainda não implementadas.
 - Ordenação topológica de `.pose/indexes/spec-graph.json`: concluída sem ciclo.
 - Auditoria editorial: nenhum placeholder `TODO`, `TBD` ou de template permaneceu nas specs e no roadmap.
 

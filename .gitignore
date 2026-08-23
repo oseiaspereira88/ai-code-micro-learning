@@ -2,7 +2,7 @@
 /bin/
 /build/
 /dist/
-/ailearn
+/codinho
 *.test
 *.exe
 *.dll
@@ -24,8 +24,8 @@ go.work.sum
 # Vendored dependencies are generated from go.mod/go.sum
 /vendor/
 
-# ailearn local state and exports
-/.ailearn/
+# codinho local state and exports
+/.codinho/
 
 # Environment and machine-local configuration
 .env

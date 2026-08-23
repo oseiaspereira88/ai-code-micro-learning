@@ -76,7 +76,7 @@ Nenhum; persistência interna.
 - Definir portas de EventStore, SnapshotStore e EvidenceStore no lado consumidor.
 
 ### Data/storage changes
-- Criar layout runtime .ailearn/state, .ailearn/evidence e .ailearn/exports.
+- Criar layout runtime .codinho/state, .codinho/evidence e .codinho/exports.
 
 ### Technical risks
 - Lock portátil entre sistemas operacionais.
@@ -114,15 +114,15 @@ Nenhum; persistência interna.
 ### Decision 2
 - Date: 2026-08-22
 - Context: A spec listava `.gitignore` como artefato modificado, mas
-  `/.ailearn/` já está excluído desde o commit inicial de configuração do
+  `/.codinho/` já está excluído desde o commit inicial de configuração do
   projeto (antes de qualquer spec executável).
 - Options considered: reescrever `.gitignore` mesmo sem mudança real;
   remover o artefato e documentar que já está coberto.
 - Decision: remover `.gitignore` da seção 3; nenhuma mudança é necessária.
 - Rationale: evita um "modified" vazio que `artifact-check` rejeitaria por
   ausência de mudança atribuível.
-- Consequences: nenhuma; layout runtime (`.ailearn/state`, `.ailearn/evidence`,
-  `.ailearn/exports`) já fica fora do Git por padrão.
+- Consequences: nenhuma; layout runtime (`.codinho/state`, `.codinho/evidence`,
+  `.codinho/exports`) já fica fora do Git por padrão.
 
 ### Decision 3
 - Date: 2026-08-22
@@ -222,7 +222,7 @@ sincronização em nuvem ou SQLite, conforme os non-goals da spec.
 
 ### Validation executed
 - Command: go test ./internal/eventstore/... ./internal/evidence/... -race && govulncheck ./...
-- Result: `ok  	github.com/oseiaspereira88/ailearn/internal/eventstore`; `ok  	github.com/oseiaspereira88/ailearn/internal/evidence`; `No vulnerabilities found.`
+- Result: `ok  	github.com/oseiaspereira88/codinho/internal/eventstore`; `ok  	github.com/oseiaspereira88/codinho/internal/evidence`; `No vulnerabilities found.`
 
 ### Residual risks
 - Portabilidade do lock exige prova por plataforma.

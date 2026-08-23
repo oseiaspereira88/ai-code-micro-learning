@@ -73,9 +73,9 @@ Evitar declarar conclusão com componentes isolados, conteúdo contado ou docume
 - created: docs/acceptance/v1-release-readiness.md
 
 ### Delivery targets
-O alvo planejado é a capability composta `ailearn-v1`, com módulo
-`.agents/skills/ailearn`, perfil `composed-capability` e entrypoint
-`.agents/skills/ailearn/SKILL.md`. Registrá-lo como alvo tipado quando esses
+O alvo planejado é a capability composta `codinho-v1`, com módulo
+`.agents/skills/codinho`, perfil `composed-capability` e entrypoint
+`.agents/skills/codinho/SKILL.md`. Registrá-lo como alvo tipado quando esses
 caminhos forem materializados, antes do closeout desta spec.
 
 ### API/contract changes
@@ -105,7 +105,7 @@ caminhos forem materializados, antes do closeout desta spec.
 ### Validation
 - [ ] Executar pose validate --strict --report.
 - [ ] Executar pose assess integrate, tech-debt e discover --update-state.
-- [ ] Executar surface-check para todos os targets e roadmap-check ailearn-v1.
+- [ ] Executar surface-check para todos os targets e roadmap-check codinho-v1.
 - [ ] Exigir revisão e attestation independentes antes de closeout.
 
 ## 5. Decisions

@@ -4,8 +4,8 @@
 - doc-audit
 
 ## Task
-- Initialize POSE governance for ailearn
-- Task slug: initialize-pose-governance-for-ailearn
+- Initialize POSE governance for codinho
+- Task slug: initialize-pose-governance-for-codinho
 
 ## Scope
 - Review the root onboarding documents and initialize POSE project state on 2026-08-22.
@@ -31,7 +31,7 @@
 - .pose/state/refresh-log.jsonl
 
 ## Findings
-- **High:** `README.md` and the instance-owned context in `AGENTS.md` contained placeholders and did not identify ailearn.
+- **High:** `README.md` and the instance-owned context in `AGENTS.md` contained placeholders and did not identify codinho.
 - **High:** POSE had no native project-state artifact, leaving future executions without a canonical resume point.
 - **Medium:** `POSE.md` did not record that the repository has no application module, stack detection, CI, specs, or roadmaps.
 - **Medium:** `pose skills-check --strict` finds a pre-existing broken link in `pose-release-closeout`.
@@ -39,7 +39,7 @@
 
 ## Fixes Applied
 - Replace the placeholder README with a concise project status and canonical document map.
-- Replace the generic AGENTS project context with the ailearn scope and source-of-truth links.
+- Replace the generic AGENTS project context with the codinho scope and source-of-truth links.
 - Record current instance limitations and ordered operational next steps in `POSE.md`.
 - Initialize `.pose/state/project-state.md` and fill only its curated sections.
 - Record both observed POSE engine defects locally under `.pose/feedback/`; do not submit externally.

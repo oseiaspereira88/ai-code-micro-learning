@@ -1,4 +1,4 @@
-// Package config resolves runtime defaults for the ailearn CLI without
+// Package config resolves runtime defaults for the codinho CLI without
 // reading secrets, environment files, or the network.
 package config
 

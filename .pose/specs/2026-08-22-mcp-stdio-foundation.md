@@ -7,7 +7,7 @@ supersedes:
 depends_on: go-runtime-foundation, learning-domain-model, catalog-schema-loader, local-event-store
 priority: 50
 components: mcp-server
-delivers: contract:ailearn-mcp-v1
+delivers: contract:codinho-mcp-v1
 ---
 
 # Spec: mcp-stdio-foundation
@@ -33,7 +33,7 @@ Criar a primeira superfície estruturada utilizável pelo agente sem construir u
 ## 2. Requirements
 
 ### Functional
-- R1: Iniciar por ailearn serve e encerrar de forma limpa quando stdin fechar ou contexto cancelar.
+- R1: Iniciar por codinho serve e encerrar de forma limpa quando stdin fechar ou contexto cancelar.
 - R2: Publicar nome, versão e server instructions com as invariantes centrais nos primeiros 512 caracteres.
 - R3: Retornar envelope consistente com status, request, sessão, nó, efeito, disclosure, ações, data e warnings.
 - R4: Mapear erros de domínio para os códigos estáveis definidos em PROJECT.md sem vazar detalhes internos.
@@ -56,10 +56,10 @@ Criar a primeira superfície estruturada utilizável pelo agente sem construir u
 ## 3. Technical Plan
 
 ### Affected areas
-- cmd/ailearn/, internal/mcpserver/, internal/application/
+- cmd/codinho/, internal/mcpserver/, internal/application/
 
 ### Artifacts
-- modified: cmd/ailearn/main.go
+- modified: cmd/codinho/main.go
 - created: internal/mcpserver/server.go
 - created: internal/mcpserver/instructions.go
 - created: internal/mcpserver/envelope.go
@@ -76,7 +76,7 @@ Criar a primeira superfície estruturada utilizável pelo agente sem construir u
 - modified: .pose/indexes/validation-matrix.json
 
 ### Delivery targets
-- contract:ailearn-mcp-v1 module:internal/mcpserver profile:api-contract entrypoint:cmd/ailearn/main.go
+- contract:codinho-mcp-v1 module:internal/mcpserver profile:api-contract entrypoint:cmd/codinho/main.go
 
 ### API/contract changes
 - Criar contrato MCP v1 e schemas das cinco tools iniciais.
@@ -164,7 +164,7 @@ Criar a primeira superfície estruturada utilizável pelo agente sem construir u
 ### Decision 4
 - Date: 2026-08-22
 - Context: O Technical Plan pede registrar um alvo de entrega tipado
-  (`contract:ailearn-mcp-v1`, perfil `api-contract`) antes do closeout. O
+  (`contract:codinho-mcp-v1`, perfil `api-contract`) antes do closeout. O
   perfil `api-contract` exige evidência de classe `integration`
   (`.pose/indexes/validation-matrix.json` `deliveryProfiles`). A política
   `.pose/policy/delivery.json` está `enabled: false` para todo o projeto
@@ -226,7 +226,7 @@ Validar protocolo por processo real, golden schemas, erros negativos e integraç
 - Test: go test ./internal/mcpserver/... ./internal/application/...
 - Lint: gofmt -l internal/mcpserver internal/application
 - Typecheck: go vet ./internal/mcpserver/... ./internal/application/...
-- Build: go build ./cmd/ailearn
+- Build: go build ./cmd/codinho
 - Security / Contract: pose assess integrate; govulncheck; teste de stdout e schema fuzz.
 
 ### Execution log
@@ -238,7 +238,7 @@ Validar protocolo por processo real, golden schemas, erros negativos e integraç
   `golang.org/x/sys` para v0.44.0, que corrigia GO-2026-5024, inatingível no
   nosso código mas presente na árvore de dependências do SDK) (2026-08-22).
 - Smoke real por subprocesso (`mcp.CommandTransport` + binário compilado,
-  `ailearn serve`): instructions publicadas corretas, 5 tools listadas com
+  `codinho serve`): instructions publicadas corretas, 5 tools listadas com
   anotações de leitura/escrita corretas, `catalog_search` retornou o
   desafio do pack de referência real, processo encerrou limpo ao fechar a
   sessão do cliente, stderr conteve somente logs — nenhum frame de
@@ -248,7 +248,7 @@ Validar protocolo por processo real, golden schemas, erros negativos e integraç
   contratos do engine não reconheceu as tools registradas via
   `mcp.AddTool` como um contrato (provavelmente detecta por convenções de
   Protobuf/Kafka/REST/manifesto MCP dedicado, não por chamadas de SDK Go);
-  o alvo de entrega tipado (`contract:ailearn-mcp-v1`) já registra o
+  o alvo de entrega tipado (`contract:codinho-mcp-v1`) já registra o
   contrato de outra forma, via `pose index`/delivery-integrity — ver Known
   gaps.
 
@@ -270,7 +270,7 @@ Validar protocolo por processo real, golden schemas, erros negativos e integraç
   (`INVALID_INPUT`, `ITEM_NOT_FOUND`, `SESSION_NOT_ACTIVE`, `STATE_CONFLICT`,
   `INTERNAL_ERROR`) sem vazar texto de erro interno; schemas estritos do SDK
   já rejeitam campos obrigatórios ausentes antes do handler rodar.
-- Alvo de entrega tipado `contract:ailearn-mcp-v1` declarado e validado por
+- Alvo de entrega tipado `contract:codinho-mcp-v1` declarado e validado por
   `pose index`/`pose check` (módulo e entrypoint resolvidos).
 
 ### Requirement trace
@@ -320,12 +320,12 @@ Validar protocolo por processo real, golden schemas, erros negativos e integraç
 Servidor MCP local por stdio com envelope único, mapeamento de erros,
 instructions normativas e cinco tools (`catalog_search`, `catalog_get`,
 `session_start`, `session_get`, `instruction_get`), cobrindo R1–R8. Contrato
-`contract:ailearn-mcp-v1` declarado como alvo de entrega tipado. Nenhuma
+`contract:codinho-mcp-v1` declarado como alvo de entrega tipado. Nenhuma
 tool de edição, transporte HTTP/OAuth ou caso de uso pedagógico completo,
 conforme os non-goals da spec.
 
 ### Files and modules changed
-- `cmd/ailearn/main.go` (modificado)
+- `cmd/codinho/main.go` (modificado)
 - `internal/mcpserver/server.go` (criado)
 - `internal/mcpserver/instructions.go` (criado)
 - `internal/mcpserver/envelope.go` (criado)
@@ -343,7 +343,7 @@ conforme os non-goals da spec.
 
 ### Validation executed
 - Command: go test ./internal/mcpserver/... ./internal/application/... -race && govulncheck ./...
-- Result: `ok  	github.com/oseiaspereira88/ailearn/internal/mcpserver`; `ok  	github.com/oseiaspereira88/ailearn/internal/application`; `No vulnerabilities found.`
+- Result: `ok  	github.com/oseiaspereira88/codinho/internal/mcpserver`; `ok  	github.com/oseiaspereira88/codinho/internal/application`; `No vulnerabilities found.`
 
 ### Residual risks
 - Compatibilidade de host só será comprovada em tutor-skill-host-integration.

@@ -6,9 +6,9 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/oseiaspereira88/ailearn/internal/curriculum"
-	"github.com/oseiaspereira88/ailearn/internal/eventstore"
-	"github.com/oseiaspereira88/ailearn/internal/learning"
+	"github.com/oseiaspereira88/codinho/internal/curriculum"
+	"github.com/oseiaspereira88/codinho/internal/eventstore"
+	"github.com/oseiaspereira88/codinho/internal/learning"
 )
 
 const fixtureChallengeID = "fixture.challenge-one"

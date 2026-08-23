@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "https://ailearn.dev/schemas/challenge.schema.json",
+  "$id": "https://codinho.dev/schemas/challenge.schema.json",
   "title": "Challenge",
   "description": "A complete problem referencing concepts and producing evidence for competencies (PROJECT.md §14.8). Authoring contract; the Go loader in internal/curriculum enforces the equivalent rules natively (see catalog-schema-loader Decision 3).",
   "type": "object",

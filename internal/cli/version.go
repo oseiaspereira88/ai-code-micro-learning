@@ -19,7 +19,7 @@ var (
 )
 
 func runVersion(stdout io.Writer) int {
-	fmt.Fprintf(stdout, "ailearn %s (%s)\n", version, resolveCommit())
+	fmt.Fprintf(stdout, "codinho %s (%s)\n", version, resolveCommit())
 	return exitOK
 }
 

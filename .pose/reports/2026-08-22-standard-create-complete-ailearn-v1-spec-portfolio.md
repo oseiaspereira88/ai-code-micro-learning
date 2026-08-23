@@ -4,8 +4,8 @@
 - standard
 
 ## Task
-- create-complete-ailearn-v1-spec-portfolio
-- Task slug: create-complete-ailearn-v1-spec-portfolio
+- create-complete-codinho-v1-spec-portfolio
+- Task slug: create-complete-codinho-v1-spec-portfolio
 
 ## Outcome
 - Outcome: pass (source: manual)
@@ -16,13 +16,13 @@
 - `.pose/rules/knowledge-governance.md`
 
 ## Files Changed
-- `.pose/roadmaps/ailearn-v1.md`
+- `.pose/roadmaps/codinho-v1.md`
 - `.pose/specs/*/spec.md` (26 specs)
 - `.pose/indexes/`
 - .pose/state/history.jsonl
 - .pose/state/project-state.md
 - .pose/state/refresh-log.jsonl
-- .pose/reports/2026-08-22-ailearn-v1-spec-coverage.md
+- .pose/reports/2026-08-22-codinho-v1-spec-coverage.md
 - .pose/state/components/
 
 ## Validation Commands
@@ -30,7 +30,7 @@
 - `pose check --strict`
 - `pose index`
 - `pose followups --all --json`
-- `pose roadmap-check ailearn-v1 --tolerant --json`
+- `pose roadmap-check codinho-v1 --tolerant --json`
 - `jq -r '.edges[] | "\(.from) \(.to)"' .pose/indexes/spec-graph.json | tsort`
 - `rg -n '<feature|path/to|_Not provided_|TODO|TBD|^- R[0-9]+:[[:space:]]*$' .pose/specs .pose/roadmaps`
 

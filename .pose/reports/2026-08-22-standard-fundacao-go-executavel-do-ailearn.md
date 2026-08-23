@@ -4,8 +4,8 @@
 - standard
 
 ## Task
-- Fundacao Go executavel do ailearn
-- Task slug: fundacao-go-executavel-do-ailearn
+- Fundacao Go executavel do codinho
+- Task slug: fundacao-go-executavel-do-codinho
 - Spec: go-runtime-foundation
 
 ## Outcome

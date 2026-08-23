@@ -5,8 +5,8 @@
 package application
 
 import (
-	"github.com/oseiaspereira88/ailearn/internal/curriculum"
-	"github.com/oseiaspereira88/ailearn/internal/session"
+	"github.com/oseiaspereira88/codinho/internal/curriculum"
+	"github.com/oseiaspereira88/codinho/internal/session"
 )
 
 // ErrNotFound is returned when a catalog lookup finds nothing with the

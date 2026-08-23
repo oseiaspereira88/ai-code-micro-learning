@@ -193,7 +193,7 @@ catálogo ou observação de workspace, conforme os non-goals da spec.
 
 ### Validation executed
 - Command: go test ./internal/learning/... -race
-- Result: `ok  	github.com/oseiaspereira88/ailearn/internal/learning`
+- Result: `ok  	github.com/oseiaspereira88/codinho/internal/learning`
 
 ### Residual risks
 - Alterações posteriores no protocolo deverão adaptar, não contaminar, o domínio.

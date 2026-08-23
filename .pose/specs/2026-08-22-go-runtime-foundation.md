@@ -16,7 +16,7 @@ changelog: none
 ## 1. Intent
 
 ### Goal
-Criar o módulo Go, o binário ailearn e as fundações de configuração, versão e lifecycle usadas por todas as entregas.
+Criar o módulo Go, o binário codinho e as fundações de configuração, versão e lifecycle usadas por todas as entregas.
 
 ### Business value
 Transformar o repositório documental em uma base executável pequena, reproduzível e validável.
@@ -54,11 +54,11 @@ Transformar o repositório documental em uma base executável pequena, reproduz�
 ## 3. Technical Plan
 
 ### Affected areas
-- go.mod, go.sum, cmd/ailearn/, internal/cli/, internal/config/
+- go.mod, go.sum, cmd/codinho/, internal/cli/, internal/config/
 
 ### Artifacts
 - created: go.mod
-- created: cmd/ailearn/main.go
+- created: cmd/codinho/main.go
 - created: internal/cli/root.go
 - created: internal/cli/version.go
 - created: internal/cli/doctor.go
@@ -111,19 +111,19 @@ Nenhum público nesta etapa; o CLI completo será entregue por administrative-cl
 - Date: 2026-08-22
 - Context: `go.mod` exige um module path estável; o remote atual do repositório
   (`github.com/oseiaspereira88/ai-code-micro-learning`) diverge do nome do
-  produto (`ailearn`) usado em `PROJECT.md`/`README.md`.
+  produto (`codinho`) usado em `PROJECT.md`/`README.md`.
 - Options considered: usar o nome do remote atual; usar o nome do produto;
   domínio próprio.
-- Decision: `module github.com/oseiaspereira88/ailearn`, confirmado pelo
+- Decision: `module github.com/oseiaspereira88/codinho`, confirmado pelo
   responsável do projeto.
 - Rationale: o import path deve refletir a identidade do produto, não o nome
   histórico do repositório; evita reescrever imports numa renomeação futura
   do repositório.
 - Consequences: se o repositório GitHub não for renomeado/criado como
-  `ailearn`, o module path não corresponderá ao caminho de `go get`
+  `codinho`, o module path não corresponderá ao caminho de `go get`
   automático a partir do remote atual — aceito como risco conhecido, sem
   impacto na V1 (sem publicação de módulo externo prevista).
-- Estrutura (`cmd/ailearn/`, `internal/cli/`, `internal/config/`) confirmada
+- Estrutura (`cmd/codinho/`, `internal/cli/`, `internal/config/`) confirmada
   compatível com
   [ADR agent-mcp-and-core-boundaries](../adr/2026-08-22-agent-mcp-and-core-boundaries.md):
   nenhum pacote sob `internal/` importa MCP ou protocolo; a CLI é um
@@ -139,20 +139,20 @@ Cobrir parsing, códigos de saída, cancelamento, build reproduzível e ausênci
 - Test: go test ./...
 - Lint: gofmt -l . deve produzir saída vazia.
 - Typecheck: go vet ./...
-- Build: go build ./cmd/ailearn
+- Build: go build ./cmd/codinho
 - Security / Contract: secret scan do diff e teste de stdout/stderr.
 
 ### Execution log
 - `gofmt -l .` → saída vazia (2026-08-22).
 - `go vet ./...` → sem findings (2026-08-22).
-- `go build ./cmd/ailearn` → binário gerado com sucesso (2026-08-22).
+- `go build ./cmd/codinho` → binário gerado com sucesso (2026-08-22).
 - `go test ./... -race` → `ok internal/cli`, sem data races (2026-08-22).
 - `pose validate --strict --module . --report` → `Result: SUCCESS` (test, vet, build) (2026-08-22).
 - `pose check --strict` → `Result: SUCCESS` (2026-08-22).
 
 ### Results summary
-- Módulo Go inicializado (`github.com/oseiaspereira88/ailearn`, `go 1.25.0`)
-  com binário `cmd/ailearn`, roteamento mínimo em `internal/cli` (version,
+- Módulo Go inicializado (`github.com/oseiaspereira88/codinho`, `go 1.25.0`)
+  com binário `cmd/codinho`, roteamento mínimo em `internal/cli` (version,
   doctor, help, usage) e resolução de config em `internal/config`.
 - Seis testes automatizados cobrem parsing, exit codes, determinismo de
   `version`, `doctor`, `help` e respeito a contexto cancelado.
@@ -190,14 +190,14 @@ Cobrir parsing, códigos de saída, cancelamento, build reproduzível e ausênci
 ## 7. Final Report
 
 ### Delivered scope
-Módulo Go executável (`ailearn`) com comandos administrativos `version`,
+Módulo Go executável (`codinho`) com comandos administrativos `version`,
 `doctor`, `help` e usage determinística; base de configuração e roteamento
 para specs futuras. Nenhum tool MCP, catálogo ou persistência foi
 implementado, conforme os non-goals da spec.
 
 ### Files and modules changed
 - `go.mod` (criado)
-- `cmd/ailearn/main.go` (criado)
+- `cmd/codinho/main.go` (criado)
 - `internal/cli/root.go` (criado)
 - `internal/cli/version.go` (criado)
 - `internal/cli/doctor.go` (criado)

@@ -15,7 +15,7 @@ delivers:
 ## 1. Intent
 
 ### Goal
-Criar a skill ailearn e comprovar seu workflow com o servidor MCP no Codex CLI e na extensão da IDE.
+Criar a skill codinho e comprovar seu workflow com o servidor MCP no Codex CLI e na extensão da IDE.
 
 ### Business value
 Transformar tools e estado em uma experiência pedagógica consistente que preserve a autoria do aluno.
@@ -57,24 +57,24 @@ Transformar tools e estado em uma experiência pedagógica consistente que prese
 ## 3. Technical Plan
 
 ### Affected areas
-- .agents/skills/ailearn/, .codex/, testdata/host/
+- .agents/skills/codinho/, .codex/, testdata/host/
 
 ### Artifacts
-- created: .agents/skills/ailearn/SKILL.md
-- created: .agents/skills/ailearn/agents/openai.yaml
-- created: .agents/skills/ailearn/references/tutor-contract.md
-- created: .agents/skills/ailearn/references/feedback-rubric.md
-- created: .agents/skills/ailearn/references/session-modes.md
-- created: .agents/skills/ailearn/references/mcp-tool-routing.md
-- created: .agents/skills/ailearn/assets/session-summary-template.md
+- created: .agents/skills/codinho/SKILL.md
+- created: .agents/skills/codinho/agents/openai.yaml
+- created: .agents/skills/codinho/references/tutor-contract.md
+- created: .agents/skills/codinho/references/feedback-rubric.md
+- created: .agents/skills/codinho/references/session-modes.md
+- created: .agents/skills/codinho/references/mcp-tool-routing.md
+- created: .agents/skills/codinho/assets/session-summary-template.md
 - created: testdata/host/adversarial-prompts.yaml
 - created: testdata/host/session-transcripts/
 - created: .codex/config.toml.example
 
 ### Delivery targets
-O alvo planejado é a capability `ailearn-tutor`, com módulo
-`.agents/skills/ailearn`, perfil `composed-capability` e entrypoint
-`.agents/skills/ailearn/SKILL.md`. Registrá-lo como alvo tipado quando esses
+O alvo planejado é a capability `codinho-tutor`, com módulo
+`.agents/skills/codinho`, perfil `composed-capability` e entrypoint
+`.agents/skills/codinho/SKILL.md`. Registrá-lo como alvo tipado quando esses
 caminhos forem materializados, antes do closeout desta spec.
 
 ### API/contract changes
@@ -125,7 +125,7 @@ Combinar conformance da skill, transcripts adversariais e sessões reais nos doi
 - Test: go test ./internal/mcpserver/... e runner de transcripts sintéticos.
 - Lint: pose skills-check --strict.
 - Typecheck: validação YAML de openai.yaml.
-- Build: go build ./cmd/ailearn.
+- Build: go build ./cmd/codinho.
 - Security / Contract: pose assess integrate; pose surface-check --spec tutor-skill-host-integration --strict.
 
 ### Execution log
@@ -146,7 +146,7 @@ Combinar conformance da skill, transcripts adversariais e sessões reais nos doi
 Nenhum; spec draft.
 
 ### Files and modules changed
-- Planejados em .agents/skills/ailearn, testdata/host e config de exemplo.
+- Planejados em .agents/skills/codinho, testdata/host e config de exemplo.
 
 ### Validation executed
 - Command: pose lint-spec tutor-skill-host-integration --ready-check

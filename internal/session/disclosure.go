@@ -1,6 +1,6 @@
 package session
 
-import "github.com/oseiaspereira88/ailearn/internal/learning"
+import "github.com/oseiaspereira88/codinho/internal/learning"
 
 // Disclosure is the client-facing view of a session's current revelation
 // state (PROJECT.md §15.3 "disclosure").
