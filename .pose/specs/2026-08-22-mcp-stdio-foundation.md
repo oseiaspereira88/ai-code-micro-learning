@@ -1,8 +1,8 @@
 ---
 slug: mcp-stdio-foundation
-status: in-progress
+status: done
 created_at: 2026-08-22
-completed_at:
+completed_at: 2026-08-23
 supersedes:
 depends_on: go-runtime-foundation, learning-domain-model, catalog-schema-loader, local-event-store
 priority: 50
@@ -212,6 +212,10 @@ Criar a primeira superfície estruturada utilizável pelo agente sem construir u
   `session_get`/`instruction_get` estão implementadas, testadas e
   validadas por `pose validate --strict`; falta apenas o closeout formal
   via `review bundle`, bloqueado por defeito externo ao código desta spec.
+- Update 2026-08-23: [pose#39](https://github.com/oseiaspereira88/pose/issues/39)
+  corrigido em `pose 1.7.8`. Bundle `rvb-4595cba150c74751` selado com 3
+  evidências, atestado (`rva-854cd3bf2ce14b65`) e verificado
+  `ready-to-close`.
 
 ## 6. Validation
 

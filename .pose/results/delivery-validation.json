@@ -1,17 +1,17 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-08-23T00:32:36Z",
+  "generated_at": "2026-08-23T01:03:38Z",
   "mode": "strict",
-  "git_head": "948c0fc9a32bd74b004fdfafbc516e17586971a2",
+  "git_head": "5f6aeba6793b851d5b1726df28c2483d3bb10742",
   "matrix_sha256": "sha256:334dde3a647f88d9bd57e4bb3dd2ef68ac51b41e3edf89309511ec680c937ff9",
-  "provenance_digest": "sha256:9aacb1ca743c61b05c63a734aee63b6bc24b324e10720e33f3d8992385e6daa2",
+  "provenance_digest": "sha256:0ce91732c4938c3e5050aeb60065493ad69be4dd1cfbf645c4c118f436ddbd8f",
   "scope_provenance": {
     "architecture-decision-baseline": "sha256:0cb9538df6c6193eeea826dda56f91288808c178925c98b02a43af253045c99e",
     "catalog-schema-loader": "sha256:41b16824af93a5c85baf323d23b4e150e819ad577310f9864368cf215da3dca2",
     "go-runtime-foundation": "sha256:9a4e47998be06f380306497a3e5f9a87b700e2ea0881b7f33cea67e2d2d7da03",
     "learning-domain-model": "sha256:d02fa5101f4bf12416a3360691755de2a1bee097647dc70f162cd6c1c2cd9796",
     "local-event-store": "sha256:16d225e08c84782f2b1f11c737e1ef1248487fd80543f66e4f2b03a04f6128d6",
-    "mcp-stdio-foundation": "sha256:9dec771e4b2266f9ba9fa19b651a2c02b55ac2e9cab94730ef4db6967894da88"
+    "mcp-stdio-foundation": "sha256:723cee94349679ddb8bef794d8ce9ba19062de40d43321e5ceae8d0545a387d0"
   },
   "outcome": "pass",
   "counts": {
@@ -36,8 +36,8 @@
       "severity": "required",
       "evidence_class": "unit",
       "outcome": "pass",
-      "duration_seconds": 0.56276937,
-      "output": "?   \tgithub.com/oseiaspereira88/ailearn/cmd/ailearn\t[no test files]\nok  \tgithub.com/oseiaspereira88/ailearn/internal/application\t(cached)\nok  \tgithub.com/oseiaspereira88/ailearn/internal/cli\t(cached)\n?   \tgithub.com/oseiaspereira88/ailearn/internal/config\t[no test files]\nok  \tgithub.com/oseiaspereira88/ailearn/internal/curriculum\t(cached)\nok  \tgithub.com/oseiaspereira88/ailearn/internal/eventstore\t(cached)\nok  \tgithub.com/oseiaspereira88/ailearn/internal/evidence\t(cached)\nok  \tgithub.com/oseiaspereira88/ailearn/internal/learning\t(cached)\nok  \tgithub.com/oseiaspereira88/ailearn/internal/mcpserver\t0.025s\n"
+      "duration_seconds": 0.18724799,
+      "output": "?   \tgithub.com/oseiaspereira88/ailearn/cmd/ailearn\t[no test files]\nok  \tgithub.com/oseiaspereira88/ailearn/internal/application\t(cached)\nok  \tgithub.com/oseiaspereira88/ailearn/internal/cli\t(cached)\n?   \tgithub.com/oseiaspereira88/ailearn/internal/config\t[no test files]\nok  \tgithub.com/oseiaspereira88/ailearn/internal/curriculum\t(cached)\nok  \tgithub.com/oseiaspereira88/ailearn/internal/eventstore\t(cached)\nok  \tgithub.com/oseiaspereira88/ailearn/internal/evidence\t(cached)\nok  \tgithub.com/oseiaspereira88/ailearn/internal/learning\t(cached)\nok  \tgithub.com/oseiaspereira88/ailearn/internal/mcpserver\t(cached)\n"
     },
     {
       "id": "./go/vet",
@@ -52,7 +52,7 @@
       "severity": "optional",
       "evidence_class": "build",
       "outcome": "pass",
-      "duration_seconds": 0.059969376
+      "duration_seconds": 0.073643607
     },
     {
       "id": "./go/build",
@@ -67,7 +67,7 @@
       "severity": "required",
       "evidence_class": "build",
       "outcome": "pass",
-      "duration_seconds": 0.413506989
+      "duration_seconds": 0.522415919
     },
     {
       "id": "./go/mcp-contract",
@@ -84,8 +84,8 @@
       "severity": "required",
       "evidence_class": "integration",
       "outcome": "pass",
-      "duration_seconds": 0.339449976,
-      "output": "ok  \tgithub.com/oseiaspereira88/ailearn/internal/mcpserver\t0.023s\n"
+      "duration_seconds": 0.049548577,
+      "output": "ok  \tgithub.com/oseiaspereira88/ailearn/internal/mcpserver\t(cached)\n"
     }
   ]
 }

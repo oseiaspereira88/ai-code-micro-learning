@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "input_digest": "sha256:db9b1d67d864d616e93f0d3089642116e2d2b83a477bc4957751b3e5055e2133",
-  "provenance_digest": "sha256:9aacb1ca743c61b05c63a734aee63b6bc24b324e10720e33f3d8992385e6daa2",
+  "input_digest": "sha256:27ebefdb2dce8220d7ac03e32c338641776b1c4b0b4f0a3d19950b9c4fae141d",
+  "provenance_digest": "sha256:0ce91732c4938c3e5050aeb60065493ad69be4dd1cfbf645c4c118f436ddbd8f",
   "nodes": [
     {
       "id": "artifact:.agents/skills/ailearn/SKILL.md",
@@ -134,6 +134,13 @@
       "type": "artifact",
       "attributes": {
         "path": ".pose/contributions/20260822-201802-review-bundle-root-level-files-gomod-pro.md"
+      }
+    },
+    {
+      "id": "artifact:.pose/contributions/20260823-003416-delivery-target-module-can-never-satisfy.md",
+      "type": "artifact",
+      "attributes": {
+        "path": ".pose/contributions/20260823-003416-delivery-target-module-can-never-satisfy.md"
       }
     },
     {
@@ -1796,14 +1803,6 @@
       }
     },
     {
-      "id": "change-set:cs-12688d0fa658",
-      "type": "change-set",
-      "attributes": {
-        "diff_digest": "sha256:f7e134fb307b8da8c2f9ff14f2f5627d441b3ed7cb35ac65d6acef31e209ddd8",
-        "selector": "trailers:mcp-stdio-foundation"
-      }
-    },
-    {
       "id": "change-set:cs-15b6a229ef87",
       "type": "change-set",
       "attributes": {
@@ -1833,6 +1832,14 @@
       "attributes": {
         "diff_digest": "sha256:d2cf16cc1d95cd9507cd10245b3c9a3a5b80b6cfe7d67088490db9ee94a0ca89",
         "selector": "trailers:catalog-schema-loader"
+      }
+    },
+    {
+      "id": "change-set:cs-964043dc8c16",
+      "type": "change-set",
+      "attributes": {
+        "diff_digest": "sha256:a2219fc6992e15a3066f584cd8f0a662868bc93753145e2bc84deecdd2b2934f",
+        "selector": "trailers:mcp-stdio-foundation"
       }
     },
     {
@@ -2152,86 +2159,6 @@
       "from": "artifact:internal/mcpserver/session_tools.go",
       "to": "delivery:contract:ailearn-mcp-v1",
       "type": "implemented-by"
-    },
-    {
-      "from": "change-set:cs-12688d0fa658",
-      "to": "artifact:.pose/indexes/validation-matrix.json",
-      "type": "changes"
-    },
-    {
-      "from": "change-set:cs-12688d0fa658",
-      "to": "artifact:.pose/specs/2026-08-22-mcp-stdio-foundation.md",
-      "type": "changes"
-    },
-    {
-      "from": "change-set:cs-12688d0fa658",
-      "to": "artifact:cmd/ailearn/main.go",
-      "type": "changes"
-    },
-    {
-      "from": "change-set:cs-12688d0fa658",
-      "to": "artifact:go.mod",
-      "type": "changes"
-    },
-    {
-      "from": "change-set:cs-12688d0fa658",
-      "to": "artifact:go.sum",
-      "type": "changes"
-    },
-    {
-      "from": "change-set:cs-12688d0fa658",
-      "to": "artifact:internal/application/catalog.go",
-      "type": "changes"
-    },
-    {
-      "from": "change-set:cs-12688d0fa658",
-      "to": "artifact:internal/application/session.go",
-      "type": "changes"
-    },
-    {
-      "from": "change-set:cs-12688d0fa658",
-      "to": "artifact:internal/application/session_test.go",
-      "type": "changes"
-    },
-    {
-      "from": "change-set:cs-12688d0fa658",
-      "to": "artifact:internal/mcpserver/catalog_tools.go",
-      "type": "changes"
-    },
-    {
-      "from": "change-set:cs-12688d0fa658",
-      "to": "artifact:internal/mcpserver/contract_test.go",
-      "type": "changes"
-    },
-    {
-      "from": "change-set:cs-12688d0fa658",
-      "to": "artifact:internal/mcpserver/envelope.go",
-      "type": "changes"
-    },
-    {
-      "from": "change-set:cs-12688d0fa658",
-      "to": "artifact:internal/mcpserver/errors.go",
-      "type": "changes"
-    },
-    {
-      "from": "change-set:cs-12688d0fa658",
-      "to": "artifact:internal/mcpserver/instructions.go",
-      "type": "changes"
-    },
-    {
-      "from": "change-set:cs-12688d0fa658",
-      "to": "artifact:internal/mcpserver/server.go",
-      "type": "changes"
-    },
-    {
-      "from": "change-set:cs-12688d0fa658",
-      "to": "artifact:internal/mcpserver/server_test.go",
-      "type": "changes"
-    },
-    {
-      "from": "change-set:cs-12688d0fa658",
-      "to": "artifact:internal/mcpserver/session_tools.go",
-      "type": "changes"
     },
     {
       "from": "change-set:cs-15b6a229ef87",
@@ -2709,6 +2636,106 @@
       "type": "changes"
     },
     {
+      "from": "change-set:cs-964043dc8c16",
+      "to": "artifact:.pose/contributions/20260823-003416-delivery-target-module-can-never-satisfy.md",
+      "type": "changes"
+    },
+    {
+      "from": "change-set:cs-964043dc8c16",
+      "to": "artifact:.pose/indexes/delivery-integrity.json",
+      "type": "changes"
+    },
+    {
+      "from": "change-set:cs-964043dc8c16",
+      "to": "artifact:.pose/indexes/spec-graph.json",
+      "type": "changes"
+    },
+    {
+      "from": "change-set:cs-964043dc8c16",
+      "to": "artifact:.pose/indexes/validation-matrix.json",
+      "type": "changes"
+    },
+    {
+      "from": "change-set:cs-964043dc8c16",
+      "to": "artifact:.pose/results/delivery-validation.json",
+      "type": "changes"
+    },
+    {
+      "from": "change-set:cs-964043dc8c16",
+      "to": "artifact:.pose/specs/2026-08-22-mcp-stdio-foundation.md",
+      "type": "changes"
+    },
+    {
+      "from": "change-set:cs-964043dc8c16",
+      "to": "artifact:cmd/ailearn/main.go",
+      "type": "changes"
+    },
+    {
+      "from": "change-set:cs-964043dc8c16",
+      "to": "artifact:go.mod",
+      "type": "changes"
+    },
+    {
+      "from": "change-set:cs-964043dc8c16",
+      "to": "artifact:go.sum",
+      "type": "changes"
+    },
+    {
+      "from": "change-set:cs-964043dc8c16",
+      "to": "artifact:internal/application/catalog.go",
+      "type": "changes"
+    },
+    {
+      "from": "change-set:cs-964043dc8c16",
+      "to": "artifact:internal/application/session.go",
+      "type": "changes"
+    },
+    {
+      "from": "change-set:cs-964043dc8c16",
+      "to": "artifact:internal/application/session_test.go",
+      "type": "changes"
+    },
+    {
+      "from": "change-set:cs-964043dc8c16",
+      "to": "artifact:internal/mcpserver/catalog_tools.go",
+      "type": "changes"
+    },
+    {
+      "from": "change-set:cs-964043dc8c16",
+      "to": "artifact:internal/mcpserver/contract_test.go",
+      "type": "changes"
+    },
+    {
+      "from": "change-set:cs-964043dc8c16",
+      "to": "artifact:internal/mcpserver/envelope.go",
+      "type": "changes"
+    },
+    {
+      "from": "change-set:cs-964043dc8c16",
+      "to": "artifact:internal/mcpserver/errors.go",
+      "type": "changes"
+    },
+    {
+      "from": "change-set:cs-964043dc8c16",
+      "to": "artifact:internal/mcpserver/instructions.go",
+      "type": "changes"
+    },
+    {
+      "from": "change-set:cs-964043dc8c16",
+      "to": "artifact:internal/mcpserver/server.go",
+      "type": "changes"
+    },
+    {
+      "from": "change-set:cs-964043dc8c16",
+      "to": "artifact:internal/mcpserver/server_test.go",
+      "type": "changes"
+    },
+    {
+      "from": "change-set:cs-964043dc8c16",
+      "to": "artifact:internal/mcpserver/session_tools.go",
+      "type": "changes"
+    },
+    {
       "from": "change-set:cs-a018e6cae57f",
       "to": "artifact:.pose/indexes/delivery-integrity.json",
       "type": "changes"
@@ -2787,6 +2814,16 @@
       "from": "delivery:contract:ailearn-mcp-v1",
       "to": "entrypoint:cmd/ailearn/main.go",
       "type": "composes"
+    },
+    {
+      "from": "delivery:contract:ailearn-mcp-v1",
+      "to": "validation-result:./go/mcp-contract",
+      "type": "validated-by"
+    },
+    {
+      "from": "entrypoint:cmd/ailearn/main.go",
+      "to": "validation-result:./go/mcp-contract",
+      "type": "validated-by"
     },
     {
       "from": "spec:administrative-cli-fixtures",
@@ -3685,7 +3722,7 @@
     },
     {
       "from": "spec:mcp-stdio-foundation",
-      "to": "change-set:cs-12688d0fa658",
+      "to": "change-set:cs-964043dc8c16",
       "type": "observed-by"
     },
     {
@@ -5248,86 +5285,6 @@
   ],
   "change_sets": [
     {
-      "id": "cs-12688d0fa658",
-      "spec": "mcp-stdio-foundation",
-      "selector": "trailers:mcp-stdio-foundation",
-      "base": "deaaab75a6d22ed36496ed01c23d73d6800a0ec2^",
-      "head": "948c0fc9a32bd74b004fdfafbc516e17586971a2",
-      "resolved_base": "64a2cf1bb29af309c43af33c7aa30a1da2f6d68c",
-      "resolved_head": "948c0fc9a32bd74b004fdfafbc516e17586971a2",
-      "commits": [
-        "deaaab75a6d22ed36496ed01c23d73d6800a0ec2",
-        "948c0fc9a32bd74b004fdfafbc516e17586971a2"
-      ],
-      "paths": [
-        {
-          "action": "created",
-          "path": "internal/application/catalog.go"
-        },
-        {
-          "action": "created",
-          "path": "internal/application/session.go"
-        },
-        {
-          "action": "created",
-          "path": "internal/application/session_test.go"
-        },
-        {
-          "action": "created",
-          "path": "internal/mcpserver/catalog_tools.go"
-        },
-        {
-          "action": "created",
-          "path": "internal/mcpserver/contract_test.go"
-        },
-        {
-          "action": "created",
-          "path": "internal/mcpserver/envelope.go"
-        },
-        {
-          "action": "created",
-          "path": "internal/mcpserver/errors.go"
-        },
-        {
-          "action": "created",
-          "path": "internal/mcpserver/instructions.go"
-        },
-        {
-          "action": "created",
-          "path": "internal/mcpserver/server.go"
-        },
-        {
-          "action": "created",
-          "path": "internal/mcpserver/server_test.go"
-        },
-        {
-          "action": "created",
-          "path": "internal/mcpserver/session_tools.go"
-        },
-        {
-          "action": "modified",
-          "path": ".pose/indexes/validation-matrix.json"
-        },
-        {
-          "action": "modified",
-          "path": ".pose/specs/2026-08-22-mcp-stdio-foundation.md"
-        },
-        {
-          "action": "modified",
-          "path": "cmd/ailearn/main.go"
-        },
-        {
-          "action": "modified",
-          "path": "go.mod"
-        },
-        {
-          "action": "modified",
-          "path": "go.sum"
-        }
-      ],
-      "diff_digest": "sha256:f7e134fb307b8da8c2f9ff14f2f5627d441b3ed7cb35ac65d6acef31e209ddd8"
-    },
-    {
       "id": "cs-15b6a229ef87",
       "spec": "architecture-decision-baseline",
       "selector": "trailers:architecture-decision-baseline",
@@ -5778,6 +5735,103 @@
         }
       ],
       "diff_digest": "sha256:d2cf16cc1d95cd9507cd10245b3c9a3a5b80b6cfe7d67088490db9ee94a0ca89"
+    },
+    {
+      "id": "cs-964043dc8c16",
+      "spec": "mcp-stdio-foundation",
+      "selector": "trailers:mcp-stdio-foundation",
+      "base": "deaaab75a6d22ed36496ed01c23d73d6800a0ec2^",
+      "head": "5f6aeba6793b851d5b1726df28c2483d3bb10742",
+      "resolved_base": "64a2cf1bb29af309c43af33c7aa30a1da2f6d68c",
+      "resolved_head": "5f6aeba6793b851d5b1726df28c2483d3bb10742",
+      "commits": [
+        "deaaab75a6d22ed36496ed01c23d73d6800a0ec2",
+        "948c0fc9a32bd74b004fdfafbc516e17586971a2",
+        "5f6aeba6793b851d5b1726df28c2483d3bb10742"
+      ],
+      "paths": [
+        {
+          "action": "created",
+          "path": ".pose/contributions/20260823-003416-delivery-target-module-can-never-satisfy.md"
+        },
+        {
+          "action": "created",
+          "path": "internal/application/catalog.go"
+        },
+        {
+          "action": "created",
+          "path": "internal/application/session.go"
+        },
+        {
+          "action": "created",
+          "path": "internal/application/session_test.go"
+        },
+        {
+          "action": "created",
+          "path": "internal/mcpserver/catalog_tools.go"
+        },
+        {
+          "action": "created",
+          "path": "internal/mcpserver/contract_test.go"
+        },
+        {
+          "action": "created",
+          "path": "internal/mcpserver/envelope.go"
+        },
+        {
+          "action": "created",
+          "path": "internal/mcpserver/errors.go"
+        },
+        {
+          "action": "created",
+          "path": "internal/mcpserver/instructions.go"
+        },
+        {
+          "action": "created",
+          "path": "internal/mcpserver/server.go"
+        },
+        {
+          "action": "created",
+          "path": "internal/mcpserver/server_test.go"
+        },
+        {
+          "action": "created",
+          "path": "internal/mcpserver/session_tools.go"
+        },
+        {
+          "action": "modified",
+          "path": ".pose/indexes/delivery-integrity.json"
+        },
+        {
+          "action": "modified",
+          "path": ".pose/indexes/spec-graph.json"
+        },
+        {
+          "action": "modified",
+          "path": ".pose/indexes/validation-matrix.json"
+        },
+        {
+          "action": "modified",
+          "path": ".pose/results/delivery-validation.json"
+        },
+        {
+          "action": "modified",
+          "path": ".pose/specs/2026-08-22-mcp-stdio-foundation.md"
+        },
+        {
+          "action": "modified",
+          "path": "cmd/ailearn/main.go"
+        },
+        {
+          "action": "modified",
+          "path": "go.mod"
+        },
+        {
+          "action": "modified",
+          "path": "go.sum"
+        }
+      ],
+      "diff_digest": "sha256:a2219fc6992e15a3066f584cd8f0a662868bc93753145e2bc84deecdd2b2934f"
     },
     {
       "id": "cs-a018e6cae57f",
@@ -6669,15 +6723,6 @@
       "path": "internal/security/policy_test.go",
       "message": "declared artifact action is absent from the attributed Git change sets",
       "remediation": "no Git change sets are attributed to spec security-privacy-hardening (ensure commits carry 'POSE-Spec: security-privacy-hardening' trailer or generate report with pose report)"
-    },
-    {
-      "id": "dif-0bb1b6ec63f7",
-      "code": "unconsumed-capability",
-      "severity": "error",
-      "spec": "mcp-stdio-foundation",
-      "path": "contract:ailearn-mcp-v1",
-      "message": "required current evidence is missing: integration",
-      "remediation": "run registered checks with the required evidenceClass against the current provenance digest"
     },
     {
       "id": "dif-0d995288f4c1",
@@ -9552,9 +9597,9 @@
       "evidence_class": "build",
       "severity": "required",
       "outcome": "pass",
-      "git_head": "948c0fc9a32bd74b004fdfafbc516e17586971a2",
-      "generated_at": "2026-08-23T00:32:36Z",
-      "provenance_digest": "sha256:9aacb1ca743c61b05c63a734aee63b6bc24b324e10720e33f3d8992385e6daa2",
+      "git_head": "5f6aeba6793b851d5b1726df28c2483d3bb10742",
+      "generated_at": "2026-08-23T01:03:38Z",
+      "provenance_digest": "sha256:0ce91732c4938c3e5050aeb60065493ad69be4dd1cfbf645c4c118f436ddbd8f",
       "report": ".pose/results/delivery-validation.json",
       "scope_provenance": {
         "architecture-decision-baseline": "sha256:0cb9538df6c6193eeea826dda56f91288808c178925c98b02a43af253045c99e",
@@ -9562,7 +9607,7 @@
         "go-runtime-foundation": "sha256:9a4e47998be06f380306497a3e5f9a87b700e2ea0881b7f33cea67e2d2d7da03",
         "learning-domain-model": "sha256:d02fa5101f4bf12416a3360691755de2a1bee097647dc70f162cd6c1c2cd9796",
         "local-event-store": "sha256:16d225e08c84782f2b1f11c737e1ef1248487fd80543f66e4f2b03a04f6128d6",
-        "mcp-stdio-foundation": "sha256:9dec771e4b2266f9ba9fa19b651a2c02b55ac2e9cab94730ef4db6967894da88"
+        "mcp-stdio-foundation": "sha256:723cee94349679ddb8bef794d8ce9ba19062de40d43321e5ceae8d0545a387d0"
       }
     },
     {
@@ -9572,9 +9617,9 @@
       "evidence_class": "integration",
       "severity": "required",
       "outcome": "pass",
-      "git_head": "948c0fc9a32bd74b004fdfafbc516e17586971a2",
-      "generated_at": "2026-08-23T00:32:36Z",
-      "provenance_digest": "sha256:9aacb1ca743c61b05c63a734aee63b6bc24b324e10720e33f3d8992385e6daa2",
+      "git_head": "5f6aeba6793b851d5b1726df28c2483d3bb10742",
+      "generated_at": "2026-08-23T01:03:38Z",
+      "provenance_digest": "sha256:0ce91732c4938c3e5050aeb60065493ad69be4dd1cfbf645c4c118f436ddbd8f",
       "report": ".pose/results/delivery-validation.json",
       "scope_provenance": {
         "architecture-decision-baseline": "sha256:0cb9538df6c6193eeea826dda56f91288808c178925c98b02a43af253045c99e",
@@ -9582,7 +9627,7 @@
         "go-runtime-foundation": "sha256:9a4e47998be06f380306497a3e5f9a87b700e2ea0881b7f33cea67e2d2d7da03",
         "learning-domain-model": "sha256:d02fa5101f4bf12416a3360691755de2a1bee097647dc70f162cd6c1c2cd9796",
         "local-event-store": "sha256:16d225e08c84782f2b1f11c737e1ef1248487fd80543f66e4f2b03a04f6128d6",
-        "mcp-stdio-foundation": "sha256:9dec771e4b2266f9ba9fa19b651a2c02b55ac2e9cab94730ef4db6967894da88"
+        "mcp-stdio-foundation": "sha256:723cee94349679ddb8bef794d8ce9ba19062de40d43321e5ceae8d0545a387d0"
       }
     },
     {
@@ -9592,9 +9637,9 @@
       "evidence_class": "unit",
       "severity": "required",
       "outcome": "pass",
-      "git_head": "948c0fc9a32bd74b004fdfafbc516e17586971a2",
-      "generated_at": "2026-08-23T00:32:36Z",
-      "provenance_digest": "sha256:9aacb1ca743c61b05c63a734aee63b6bc24b324e10720e33f3d8992385e6daa2",
+      "git_head": "5f6aeba6793b851d5b1726df28c2483d3bb10742",
+      "generated_at": "2026-08-23T01:03:38Z",
+      "provenance_digest": "sha256:0ce91732c4938c3e5050aeb60065493ad69be4dd1cfbf645c4c118f436ddbd8f",
       "report": ".pose/results/delivery-validation.json",
       "scope_provenance": {
         "architecture-decision-baseline": "sha256:0cb9538df6c6193eeea826dda56f91288808c178925c98b02a43af253045c99e",
@@ -9602,7 +9647,7 @@
         "go-runtime-foundation": "sha256:9a4e47998be06f380306497a3e5f9a87b700e2ea0881b7f33cea67e2d2d7da03",
         "learning-domain-model": "sha256:d02fa5101f4bf12416a3360691755de2a1bee097647dc70f162cd6c1c2cd9796",
         "local-event-store": "sha256:16d225e08c84782f2b1f11c737e1ef1248487fd80543f66e4f2b03a04f6128d6",
-        "mcp-stdio-foundation": "sha256:9dec771e4b2266f9ba9fa19b651a2c02b55ac2e9cab94730ef4db6967894da88"
+        "mcp-stdio-foundation": "sha256:723cee94349679ddb8bef794d8ce9ba19062de40d43321e5ceae8d0545a387d0"
       }
     },
     {
@@ -9612,9 +9657,9 @@
       "evidence_class": "build",
       "severity": "optional",
       "outcome": "pass",
-      "git_head": "948c0fc9a32bd74b004fdfafbc516e17586971a2",
-      "generated_at": "2026-08-23T00:32:36Z",
-      "provenance_digest": "sha256:9aacb1ca743c61b05c63a734aee63b6bc24b324e10720e33f3d8992385e6daa2",
+      "git_head": "5f6aeba6793b851d5b1726df28c2483d3bb10742",
+      "generated_at": "2026-08-23T01:03:38Z",
+      "provenance_digest": "sha256:0ce91732c4938c3e5050aeb60065493ad69be4dd1cfbf645c4c118f436ddbd8f",
       "report": ".pose/results/delivery-validation.json",
       "scope_provenance": {
         "architecture-decision-baseline": "sha256:0cb9538df6c6193eeea826dda56f91288808c178925c98b02a43af253045c99e",
@@ -9622,7 +9667,7 @@
         "go-runtime-foundation": "sha256:9a4e47998be06f380306497a3e5f9a87b700e2ea0881b7f33cea67e2d2d7da03",
         "learning-domain-model": "sha256:d02fa5101f4bf12416a3360691755de2a1bee097647dc70f162cd6c1c2cd9796",
         "local-event-store": "sha256:16d225e08c84782f2b1f11c737e1ef1248487fd80543f66e4f2b03a04f6128d6",
-        "mcp-stdio-foundation": "sha256:9dec771e4b2266f9ba9fa19b651a2c02b55ac2e9cab94730ef4db6967894da88"
+        "mcp-stdio-foundation": "sha256:723cee94349679ddb8bef794d8ce9ba19062de40d43321e5ceae8d0545a387d0"
       }
     }
   ],
@@ -9645,7 +9690,8 @@
       "artifact:go.mod",
       "artifact:go.sum",
       "delivery:contract:ailearn-mcp-v1",
-      "entrypoint:cmd/ailearn/main.go"
+      "entrypoint:cmd/ailearn/main.go",
+      "validation-result:./go/mcp-contract"
     ]
   }
 }
