@@ -1,11 +1,11 @@
 ---
-slug: ailearn-v1
+slug: codinho-v1
 status: active
 created_at: 2026-08-22
 depends_on:
 ---
 
-# Roadmap: ailearn-v1
+# Roadmap: codinho-v1
 
 ## Contexto
 

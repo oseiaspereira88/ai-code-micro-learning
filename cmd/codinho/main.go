@@ -1,5 +1,5 @@
-// Command ailearn is the administrative CLI and MCP server entry point for
-// the ailearn runtime. Administrative commands are implemented in
+// Command codinho is the administrative CLI and MCP server entry point for
+// the codinho runtime. Administrative commands are implemented in
 // internal/cli; "serve" starts the MCP server over stdio (PROJECT.md §15),
 // reserving stdout exclusively for the protocol.
 package main
@@ -13,12 +13,12 @@ import (
 	"syscall"
 
 	"github.com/modelcontextprotocol/go-sdk/mcp"
-	"github.com/oseiaspereira88/ailearn/internal/application"
-	"github.com/oseiaspereira88/ailearn/internal/cli"
-	"github.com/oseiaspereira88/ailearn/internal/config"
-	"github.com/oseiaspereira88/ailearn/internal/curriculum"
-	"github.com/oseiaspereira88/ailearn/internal/eventstore"
-	"github.com/oseiaspereira88/ailearn/internal/mcpserver"
+	"github.com/oseiaspereira88/codinho/internal/application"
+	"github.com/oseiaspereira88/codinho/internal/cli"
+	"github.com/oseiaspereira88/codinho/internal/config"
+	"github.com/oseiaspereira88/codinho/internal/curriculum"
+	"github.com/oseiaspereira88/codinho/internal/eventstore"
+	"github.com/oseiaspereira88/codinho/internal/mcpserver"
 )
 
 func main() {
@@ -28,7 +28,7 @@ func main() {
 	args := os.Args[1:]
 	if len(args) > 0 && args[0] == "serve" {
 		if err := runServe(ctx, os.Stderr); err != nil {
-			fmt.Fprintf(os.Stderr, "ailearn serve: %v\n", err)
+			fmt.Fprintf(os.Stderr, "codinho serve: %v\n", err)
 			os.Exit(1)
 		}
 		return
@@ -55,7 +55,7 @@ func runServe(ctx context.Context, stderr *os.File) error {
 		return fmt.Errorf("catalog failed to load: see diagnostics above")
 	}
 
-	stateDir := filepath.Join(cfg.WorkspaceRoot, ".ailearn", "state")
+	stateDir := filepath.Join(cfg.WorkspaceRoot, ".codinho", "state")
 	if err := os.MkdirAll(stateDir, 0o700); err != nil {
 		return fmt.Errorf("preparing state directory: %w", err)
 	}
