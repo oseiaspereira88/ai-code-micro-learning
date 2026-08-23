@@ -1,8 +1,10 @@
 # ailearn
+## Microaprendizado de código assistido por IA
 
 O **ailearn** é um projeto de prática deliberada assistida por agente. Seu
 objetivo inicial é desenvolver e recuperar fluência em Go sem permitir que a
-IA substitua o raciocínio, a decomposição e a escrita de código pelo aluno.
+IA substitua o raciocínio, a decomposição e a escrita de código pelo aluno,
+usando o conceito de microaprendizado de código assistido por IA.
 
 ## Estado atual
 
