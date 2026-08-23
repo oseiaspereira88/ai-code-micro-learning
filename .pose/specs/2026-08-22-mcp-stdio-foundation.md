@@ -184,6 +184,35 @@ Criar a primeira superfície estruturada utilizável pelo agente sem construir u
   surface-check` continuam inativos até `enabled: true` ser decidido
   explicitamente em outro contexto.
 
+### Decision 5
+- Date: 2026-08-23
+- Context: Com o alvo de entrega declarado, `pose review bundle --seal`
+  passou a falhar com `no passed structured validation evidence is
+  attributed to the review scope` mesmo com `pose validate` passando. A
+  causa é estrutural: `reviewBundleEvidence` só aceita evidência cujo
+  `Module` bate exatamente com o `module:` do alvo declarado; mas
+  `pose validate` só reconhece módulos por `go.mod`, e este projeto tem um
+  único `go.mod` na raiz — logo toda evidência é registrada sob `Module: "."`,
+  nunca `internal/mcpserver`. Tentar declarar `module:.` falha de outra
+  forma: `pose index` rejeita `.` como "path escapes project root"
+  (`validateArtifactPathSyntax` trata `clean == "."` como erro, uma regra
+  literal para artefatos individuais aplicada também a módulos).
+- Options considered: forçar um `go.mod` aninhado só para criar um módulo
+  "internal/mcpserver" reconhecível (fragmenta a arquitetura de módulo
+  único deliberada do projeto); manter `module:internal/mcpserver` mesmo
+  sabendo que bloqueia o `--seal`, e reportar o defeito.
+- Decision: manter `module:internal/mcpserver` (não quebra `pose
+  index`/`pose check`, ao contrário de `.`) e reportar o defeito como
+  [pose#39](https://github.com/oseiaspereira88/pose/issues/39). A spec
+  permanece `in-progress` até o engine ser corrigido.
+- Rationale: nenhuma opção disponível localmente resolve o problema sem
+  criar uma segunda fonte de verdade estrutural (módulo Go artificial) só
+  para satisfazer uma checagem de governança.
+- Consequences: `catalog_search`/`catalog_get`/`session_start`/
+  `session_get`/`instruction_get` estão implementadas, testadas e
+  validadas por `pose validate --strict`; falta apenas o closeout formal
+  via `review bundle`, bloqueado por defeito externo ao código desta spec.
+
 ## 6. Validation
 
 ### Strategy
@@ -272,6 +301,14 @@ Validar protocolo por processo real, golden schemas, erros negativos e integraç
   spec (o contrato já está registrado como alvo de entrega tipado), mas é
   um gap de observabilidade a considerar reportar se recorrer em specs
   futuras com mais tools.
+- Closeout formal via `pose review bundle --seal` está bloqueado por
+  [pose#39](https://github.com/oseiaspereira88/pose/issues/39) (Decisão 5):
+  o filtro de evidência do review bundle exige `evidence.Module` igual ao
+  `module:` do alvo de entrega declarado, mas `pose validate` só reconhece
+  módulos por `go.mod` — e este projeto tem um único `go.mod` na raiz.
+  Declarar `module:.` para contornar falha de outra forma (`pose index`
+  rejeita `.` explicitamente). A spec permanece `in-progress`; todo o
+  código, testes e validação determinística estão completos e passando.
 
 ## 7. Final Report
 

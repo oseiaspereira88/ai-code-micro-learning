@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "input_digest": "sha256:6f41b1dc52f604228457797bae625edf954d9b0d0eda5e522c647cf3c469d9fe",
-  "provenance_digest": "sha256:843e71979c4188af0aad69fe1219f181d53dcca05675e9325267fd6314ab1318",
+  "input_digest": "sha256:db9b1d67d864d616e93f0d3089642116e2d2b83a477bc4957751b3e5055e2133",
+  "provenance_digest": "sha256:9aacb1ca743c61b05c63a734aee63b6bc24b324e10720e33f3d8992385e6daa2",
   "nodes": [
     {
       "id": "artifact:.agents/skills/ailearn/SKILL.md",
@@ -270,6 +270,13 @@
       }
     },
     {
+      "id": "artifact:.pose/review-attestations/rva-79dd6ac6a9aba5e2.json",
+      "type": "artifact",
+      "attributes": {
+        "path": ".pose/review-attestations/rva-79dd6ac6a9aba5e2.json"
+      }
+    },
+    {
       "id": "artifact:.pose/review-attestations/rva-aeeb91251ef17f5c.json",
       "type": "artifact",
       "attributes": {
@@ -288,6 +295,13 @@
       "type": "artifact",
       "attributes": {
         "path": ".pose/review-bundles/rvb-78fd6f4bac4b7492.json"
+      }
+    },
+    {
+      "id": "artifact:.pose/review-bundles/rvb-8667375f8725a30c.json",
+      "type": "artifact",
+      "attributes": {
+        "path": ".pose/review-bundles/rvb-8667375f8725a30c.json"
       }
     },
     {
@@ -344,6 +358,13 @@
       "type": "artifact",
       "attributes": {
         "path": ".pose/specs/2026-08-22-local-event-store.md"
+      }
+    },
+    {
+      "id": "artifact:.pose/specs/2026-08-22-mcp-stdio-foundation.md",
+      "type": "artifact",
+      "attributes": {
+        "path": ".pose/specs/2026-08-22-mcp-stdio-foundation.md"
       }
     },
     {
@@ -561,6 +582,13 @@
       "type": "artifact",
       "attributes": {
         "path": "internal/application/session.go"
+      }
+    },
+    {
+      "id": "artifact:internal/application/session_test.go",
+      "type": "artifact",
+      "attributes": {
+        "path": "internal/application/session_test.go"
       }
     },
     {
@@ -1768,6 +1796,14 @@
       }
     },
     {
+      "id": "change-set:cs-12688d0fa658",
+      "type": "change-set",
+      "attributes": {
+        "diff_digest": "sha256:f7e134fb307b8da8c2f9ff14f2f5627d441b3ed7cb35ac65d6acef31e209ddd8",
+        "selector": "trailers:mcp-stdio-foundation"
+      }
+    },
+    {
       "id": "change-set:cs-15b6a229ef87",
       "type": "change-set",
       "attributes": {
@@ -1800,11 +1836,26 @@
       }
     },
     {
-      "id": "change-set:cs-c0d298616f06",
+      "id": "change-set:cs-a018e6cae57f",
       "type": "change-set",
       "attributes": {
-        "diff_digest": "sha256:97276ec38975712cff24803d7498d61c1030f1d93e2a2f8652a20fabff3c5e11",
+        "diff_digest": "sha256:70af66be7ae38584241d4baf1f5fefbb2d29d20a312fb8e6bea421c57cf97969",
         "selector": "trailers:local-event-store"
+      }
+    },
+    {
+      "id": "delivery:contract:ailearn-mcp-v1",
+      "type": "contract",
+      "attributes": {
+        "module": "internal/mcpserver",
+        "profile": "api-contract"
+      }
+    },
+    {
+      "id": "entrypoint:cmd/ailearn/main.go",
+      "type": "entrypoint",
+      "attributes": {
+        "path": "cmd/ailearn/main.go"
       }
     },
     {
@@ -1923,7 +1974,7 @@
       "id": "spec:local-event-store",
       "type": "spec",
       "attributes": {
-        "status": "in-progress"
+        "status": "done"
       }
     },
     {
@@ -1937,7 +1988,7 @@
       "id": "spec:mcp-stdio-foundation",
       "type": "spec",
       "attributes": {
-        "status": "draft"
+        "status": "in-progress"
       }
     },
     {
@@ -1999,6 +2050,15 @@
       }
     },
     {
+      "id": "validation-result:./go/mcp-contract",
+      "type": "validation-result",
+      "attributes": {
+        "check": "mcp-contract",
+        "evidence_class": "integration",
+        "outcome": "pass"
+      }
+    },
+    {
       "id": "validation-result:./go/test",
       "type": "validation-result",
       "attributes": {
@@ -2018,6 +2078,161 @@
     }
   ],
   "edges": [
+    {
+      "from": "artifact:.pose/indexes/validation-matrix.json",
+      "to": "delivery:contract:ailearn-mcp-v1",
+      "type": "implemented-by"
+    },
+    {
+      "from": "artifact:cmd/ailearn/main.go",
+      "to": "delivery:contract:ailearn-mcp-v1",
+      "type": "implemented-by"
+    },
+    {
+      "from": "artifact:go.mod",
+      "to": "delivery:contract:ailearn-mcp-v1",
+      "type": "implemented-by"
+    },
+    {
+      "from": "artifact:go.sum",
+      "to": "delivery:contract:ailearn-mcp-v1",
+      "type": "implemented-by"
+    },
+    {
+      "from": "artifact:internal/application/catalog.go",
+      "to": "delivery:contract:ailearn-mcp-v1",
+      "type": "implemented-by"
+    },
+    {
+      "from": "artifact:internal/application/session.go",
+      "to": "delivery:contract:ailearn-mcp-v1",
+      "type": "implemented-by"
+    },
+    {
+      "from": "artifact:internal/application/session_test.go",
+      "to": "delivery:contract:ailearn-mcp-v1",
+      "type": "implemented-by"
+    },
+    {
+      "from": "artifact:internal/mcpserver/catalog_tools.go",
+      "to": "delivery:contract:ailearn-mcp-v1",
+      "type": "implemented-by"
+    },
+    {
+      "from": "artifact:internal/mcpserver/contract_test.go",
+      "to": "delivery:contract:ailearn-mcp-v1",
+      "type": "implemented-by"
+    },
+    {
+      "from": "artifact:internal/mcpserver/envelope.go",
+      "to": "delivery:contract:ailearn-mcp-v1",
+      "type": "implemented-by"
+    },
+    {
+      "from": "artifact:internal/mcpserver/errors.go",
+      "to": "delivery:contract:ailearn-mcp-v1",
+      "type": "implemented-by"
+    },
+    {
+      "from": "artifact:internal/mcpserver/instructions.go",
+      "to": "delivery:contract:ailearn-mcp-v1",
+      "type": "implemented-by"
+    },
+    {
+      "from": "artifact:internal/mcpserver/server.go",
+      "to": "delivery:contract:ailearn-mcp-v1",
+      "type": "implemented-by"
+    },
+    {
+      "from": "artifact:internal/mcpserver/server_test.go",
+      "to": "delivery:contract:ailearn-mcp-v1",
+      "type": "implemented-by"
+    },
+    {
+      "from": "artifact:internal/mcpserver/session_tools.go",
+      "to": "delivery:contract:ailearn-mcp-v1",
+      "type": "implemented-by"
+    },
+    {
+      "from": "change-set:cs-12688d0fa658",
+      "to": "artifact:.pose/indexes/validation-matrix.json",
+      "type": "changes"
+    },
+    {
+      "from": "change-set:cs-12688d0fa658",
+      "to": "artifact:.pose/specs/2026-08-22-mcp-stdio-foundation.md",
+      "type": "changes"
+    },
+    {
+      "from": "change-set:cs-12688d0fa658",
+      "to": "artifact:cmd/ailearn/main.go",
+      "type": "changes"
+    },
+    {
+      "from": "change-set:cs-12688d0fa658",
+      "to": "artifact:go.mod",
+      "type": "changes"
+    },
+    {
+      "from": "change-set:cs-12688d0fa658",
+      "to": "artifact:go.sum",
+      "type": "changes"
+    },
+    {
+      "from": "change-set:cs-12688d0fa658",
+      "to": "artifact:internal/application/catalog.go",
+      "type": "changes"
+    },
+    {
+      "from": "change-set:cs-12688d0fa658",
+      "to": "artifact:internal/application/session.go",
+      "type": "changes"
+    },
+    {
+      "from": "change-set:cs-12688d0fa658",
+      "to": "artifact:internal/application/session_test.go",
+      "type": "changes"
+    },
+    {
+      "from": "change-set:cs-12688d0fa658",
+      "to": "artifact:internal/mcpserver/catalog_tools.go",
+      "type": "changes"
+    },
+    {
+      "from": "change-set:cs-12688d0fa658",
+      "to": "artifact:internal/mcpserver/contract_test.go",
+      "type": "changes"
+    },
+    {
+      "from": "change-set:cs-12688d0fa658",
+      "to": "artifact:internal/mcpserver/envelope.go",
+      "type": "changes"
+    },
+    {
+      "from": "change-set:cs-12688d0fa658",
+      "to": "artifact:internal/mcpserver/errors.go",
+      "type": "changes"
+    },
+    {
+      "from": "change-set:cs-12688d0fa658",
+      "to": "artifact:internal/mcpserver/instructions.go",
+      "type": "changes"
+    },
+    {
+      "from": "change-set:cs-12688d0fa658",
+      "to": "artifact:internal/mcpserver/server.go",
+      "type": "changes"
+    },
+    {
+      "from": "change-set:cs-12688d0fa658",
+      "to": "artifact:internal/mcpserver/server_test.go",
+      "type": "changes"
+    },
+    {
+      "from": "change-set:cs-12688d0fa658",
+      "to": "artifact:internal/mcpserver/session_tools.go",
+      "type": "changes"
+    },
     {
       "from": "change-set:cs-15b6a229ef87",
       "to": "artifact:.pose/adr/2026-08-22-agent-mcp-and-core-boundaries.md",
@@ -2494,54 +2709,84 @@
       "type": "changes"
     },
     {
-      "from": "change-set:cs-c0d298616f06",
+      "from": "change-set:cs-a018e6cae57f",
+      "to": "artifact:.pose/indexes/delivery-integrity.json",
+      "type": "changes"
+    },
+    {
+      "from": "change-set:cs-a018e6cae57f",
+      "to": "artifact:.pose/indexes/spec-graph.json",
+      "type": "changes"
+    },
+    {
+      "from": "change-set:cs-a018e6cae57f",
+      "to": "artifact:.pose/results/delivery-validation.json",
+      "type": "changes"
+    },
+    {
+      "from": "change-set:cs-a018e6cae57f",
+      "to": "artifact:.pose/review-attestations/rva-79dd6ac6a9aba5e2.json",
+      "type": "changes"
+    },
+    {
+      "from": "change-set:cs-a018e6cae57f",
+      "to": "artifact:.pose/review-bundles/rvb-8667375f8725a30c.json",
+      "type": "changes"
+    },
+    {
+      "from": "change-set:cs-a018e6cae57f",
       "to": "artifact:.pose/specs/2026-08-22-local-event-store.md",
       "type": "changes"
     },
     {
-      "from": "change-set:cs-c0d298616f06",
+      "from": "change-set:cs-a018e6cae57f",
       "to": "artifact:internal/eventstore/event.go",
       "type": "changes"
     },
     {
-      "from": "change-set:cs-c0d298616f06",
+      "from": "change-set:cs-a018e6cae57f",
       "to": "artifact:internal/eventstore/lock.go",
       "type": "changes"
     },
     {
-      "from": "change-set:cs-c0d298616f06",
+      "from": "change-set:cs-a018e6cae57f",
       "to": "artifact:internal/eventstore/recovery.go",
       "type": "changes"
     },
     {
-      "from": "change-set:cs-c0d298616f06",
+      "from": "change-set:cs-a018e6cae57f",
       "to": "artifact:internal/eventstore/recovery_test.go",
       "type": "changes"
     },
     {
-      "from": "change-set:cs-c0d298616f06",
+      "from": "change-set:cs-a018e6cae57f",
       "to": "artifact:internal/eventstore/snapshot.go",
       "type": "changes"
     },
     {
-      "from": "change-set:cs-c0d298616f06",
+      "from": "change-set:cs-a018e6cae57f",
       "to": "artifact:internal/eventstore/store.go",
       "type": "changes"
     },
     {
-      "from": "change-set:cs-c0d298616f06",
+      "from": "change-set:cs-a018e6cae57f",
       "to": "artifact:internal/eventstore/store_test.go",
       "type": "changes"
     },
     {
-      "from": "change-set:cs-c0d298616f06",
+      "from": "change-set:cs-a018e6cae57f",
       "to": "artifact:internal/evidence/store.go",
       "type": "changes"
     },
     {
-      "from": "change-set:cs-c0d298616f06",
+      "from": "change-set:cs-a018e6cae57f",
       "to": "artifact:internal/evidence/store_test.go",
       "type": "changes"
+    },
+    {
+      "from": "delivery:contract:ailearn-mcp-v1",
+      "to": "entrypoint:cmd/ailearn/main.go",
+      "type": "composes"
     },
     {
       "from": "spec:administrative-cli-fixtures",
@@ -3310,7 +3555,7 @@
     },
     {
       "from": "spec:local-event-store",
-      "to": "change-set:cs-c0d298616f06",
+      "to": "change-set:cs-a018e6cae57f",
       "type": "observed-by"
     },
     {
@@ -3360,7 +3605,22 @@
     },
     {
       "from": "spec:mcp-stdio-foundation",
+      "to": "artifact:.pose/indexes/validation-matrix.json",
+      "type": "declares"
+    },
+    {
+      "from": "spec:mcp-stdio-foundation",
       "to": "artifact:cmd/ailearn/main.go",
+      "type": "declares"
+    },
+    {
+      "from": "spec:mcp-stdio-foundation",
+      "to": "artifact:go.mod",
+      "type": "declares"
+    },
+    {
+      "from": "spec:mcp-stdio-foundation",
+      "to": "artifact:go.sum",
       "type": "declares"
     },
     {
@@ -3371,6 +3631,11 @@
     {
       "from": "spec:mcp-stdio-foundation",
       "to": "artifact:internal/application/session.go",
+      "type": "declares"
+    },
+    {
+      "from": "spec:mcp-stdio-foundation",
+      "to": "artifact:internal/application/session_test.go",
       "type": "declares"
     },
     {
@@ -3412,6 +3677,16 @@
       "from": "spec:mcp-stdio-foundation",
       "to": "artifact:internal/mcpserver/session_tools.go",
       "type": "declares"
+    },
+    {
+      "from": "spec:mcp-stdio-foundation",
+      "to": "delivery:contract:ailearn-mcp-v1",
+      "type": "delivers"
+    },
+    {
+      "from": "spec:mcp-stdio-foundation",
+      "to": "change-set:cs-12688d0fa658",
+      "type": "observed-by"
     },
     {
       "from": "spec:reliability-observability-compatibility",
@@ -4563,6 +4838,11 @@
     {
       "spec": "mcp-stdio-foundation",
       "action": "created",
+      "path": "internal/application/session_test.go"
+    },
+    {
+      "spec": "mcp-stdio-foundation",
+      "action": "created",
       "path": "internal/mcpserver/catalog_tools.go"
     },
     {
@@ -4603,7 +4883,22 @@
     {
       "spec": "mcp-stdio-foundation",
       "action": "modified",
+      "path": ".pose/indexes/validation-matrix.json"
+    },
+    {
+      "spec": "mcp-stdio-foundation",
+      "action": "modified",
       "path": "cmd/ailearn/main.go"
+    },
+    {
+      "spec": "mcp-stdio-foundation",
+      "action": "modified",
+      "path": "go.mod"
+    },
+    {
+      "spec": "mcp-stdio-foundation",
+      "action": "modified",
+      "path": "go.sum"
     },
     {
       "spec": "reliability-observability-compatibility",
@@ -4952,6 +5247,86 @@
     }
   ],
   "change_sets": [
+    {
+      "id": "cs-12688d0fa658",
+      "spec": "mcp-stdio-foundation",
+      "selector": "trailers:mcp-stdio-foundation",
+      "base": "deaaab75a6d22ed36496ed01c23d73d6800a0ec2^",
+      "head": "948c0fc9a32bd74b004fdfafbc516e17586971a2",
+      "resolved_base": "64a2cf1bb29af309c43af33c7aa30a1da2f6d68c",
+      "resolved_head": "948c0fc9a32bd74b004fdfafbc516e17586971a2",
+      "commits": [
+        "deaaab75a6d22ed36496ed01c23d73d6800a0ec2",
+        "948c0fc9a32bd74b004fdfafbc516e17586971a2"
+      ],
+      "paths": [
+        {
+          "action": "created",
+          "path": "internal/application/catalog.go"
+        },
+        {
+          "action": "created",
+          "path": "internal/application/session.go"
+        },
+        {
+          "action": "created",
+          "path": "internal/application/session_test.go"
+        },
+        {
+          "action": "created",
+          "path": "internal/mcpserver/catalog_tools.go"
+        },
+        {
+          "action": "created",
+          "path": "internal/mcpserver/contract_test.go"
+        },
+        {
+          "action": "created",
+          "path": "internal/mcpserver/envelope.go"
+        },
+        {
+          "action": "created",
+          "path": "internal/mcpserver/errors.go"
+        },
+        {
+          "action": "created",
+          "path": "internal/mcpserver/instructions.go"
+        },
+        {
+          "action": "created",
+          "path": "internal/mcpserver/server.go"
+        },
+        {
+          "action": "created",
+          "path": "internal/mcpserver/server_test.go"
+        },
+        {
+          "action": "created",
+          "path": "internal/mcpserver/session_tools.go"
+        },
+        {
+          "action": "modified",
+          "path": ".pose/indexes/validation-matrix.json"
+        },
+        {
+          "action": "modified",
+          "path": ".pose/specs/2026-08-22-mcp-stdio-foundation.md"
+        },
+        {
+          "action": "modified",
+          "path": "cmd/ailearn/main.go"
+        },
+        {
+          "action": "modified",
+          "path": "go.mod"
+        },
+        {
+          "action": "modified",
+          "path": "go.sum"
+        }
+      ],
+      "diff_digest": "sha256:f7e134fb307b8da8c2f9ff14f2f5627d441b3ed7cb35ac65d6acef31e209ddd8"
+    },
     {
       "id": "cs-15b6a229ef87",
       "spec": "architecture-decision-baseline",
@@ -5405,17 +5780,26 @@
       "diff_digest": "sha256:d2cf16cc1d95cd9507cd10245b3c9a3a5b80b6cfe7d67088490db9ee94a0ca89"
     },
     {
-      "id": "cs-c0d298616f06",
+      "id": "cs-a018e6cae57f",
       "spec": "local-event-store",
       "selector": "trailers:local-event-store",
       "base": "732b6d5c78700dc03bfed507aadcd31a4d5baf08^",
-      "head": "732b6d5c78700dc03bfed507aadcd31a4d5baf08",
+      "head": "64a2cf1bb29af309c43af33c7aa30a1da2f6d68c",
       "resolved_base": "57752a76424866c48a4f703ee17958334fd237c4",
-      "resolved_head": "732b6d5c78700dc03bfed507aadcd31a4d5baf08",
+      "resolved_head": "64a2cf1bb29af309c43af33c7aa30a1da2f6d68c",
       "commits": [
-        "732b6d5c78700dc03bfed507aadcd31a4d5baf08"
+        "732b6d5c78700dc03bfed507aadcd31a4d5baf08",
+        "64a2cf1bb29af309c43af33c7aa30a1da2f6d68c"
       ],
       "paths": [
+        {
+          "action": "created",
+          "path": ".pose/review-attestations/rva-79dd6ac6a9aba5e2.json"
+        },
+        {
+          "action": "created",
+          "path": ".pose/review-bundles/rvb-8667375f8725a30c.json"
+        },
         {
           "action": "created",
           "path": "internal/eventstore/event.go"
@@ -5454,10 +5838,22 @@
         },
         {
           "action": "modified",
+          "path": ".pose/indexes/delivery-integrity.json"
+        },
+        {
+          "action": "modified",
+          "path": ".pose/indexes/spec-graph.json"
+        },
+        {
+          "action": "modified",
+          "path": ".pose/results/delivery-validation.json"
+        },
+        {
+          "action": "modified",
           "path": ".pose/specs/2026-08-22-local-event-store.md"
         }
       ],
-      "diff_digest": "sha256:97276ec38975712cff24803d7498d61c1030f1d93e2a2f8652a20fabff3c5e11"
+      "diff_digest": "sha256:70af66be7ae38584241d4baf1f5fefbb2d29d20a312fb8e6bea421c57cf97969"
     }
   ],
   "reverse": {
@@ -5513,7 +5909,8 @@
       "go-runtime-foundation"
     ],
     ".pose/indexes/validation-matrix.json": [
-      "go-runtime-foundation"
+      "go-runtime-foundation",
+      "mcp-stdio-foundation"
     ],
     "Makefile": [
       "installation-documentation-ci"
@@ -5586,10 +5983,12 @@
     ],
     "go.mod": [
       "catalog-schema-loader",
-      "go-runtime-foundation"
+      "go-runtime-foundation",
+      "mcp-stdio-foundation"
     ],
     "go.sum": [
-      "catalog-schema-loader"
+      "catalog-schema-loader",
+      "mcp-stdio-foundation"
     ],
     "internal/application/catalog.go": [
       "mcp-stdio-foundation"
@@ -5600,6 +5999,9 @@
     "internal/application/session.go": [
       "mcp-stdio-foundation",
       "session-orchestration-disclosure"
+    ],
+    "internal/application/session_test.go": [
+      "mcp-stdio-foundation"
     ],
     "internal/assessment/criteria.go": [
       "feedback-evaluation-progression"
@@ -6134,15 +6536,6 @@
   },
   "findings": [
     {
-      "id": "dif-00b25fb6da2e",
-      "code": "existence",
-      "severity": "error",
-      "spec": "security-privacy-hardening",
-      "path": "internal/mcpserver/contract_test.go",
-      "message": "declared current artifact is not tracked at the selected head",
-      "remediation": "correct the exact path or commit the artifact before closeout"
-    },
-    {
       "id": "dif-0123e0c8d217",
       "code": "action-mismatch",
       "severity": "error",
@@ -6276,6 +6669,15 @@
       "path": "internal/security/policy_test.go",
       "message": "declared artifact action is absent from the attributed Git change sets",
       "remediation": "no Git change sets are attributed to spec security-privacy-hardening (ensure commits carry 'POSE-Spec: security-privacy-hardening' trailer or generate report with pose report)"
+    },
+    {
+      "id": "dif-0bb1b6ec63f7",
+      "code": "unconsumed-capability",
+      "severity": "error",
+      "spec": "mcp-stdio-foundation",
+      "path": "contract:ailearn-mcp-v1",
+      "message": "required current evidence is missing: integration",
+      "remediation": "run registered checks with the required evidenceClass against the current provenance digest"
     },
     {
       "id": "dif-0d995288f4c1",
@@ -6773,15 +7175,6 @@
       "remediation": "correct the exact path or commit the artifact before closeout"
     },
     {
-      "id": "dif-38ec05eb1a19",
-      "code": "action-mismatch",
-      "severity": "error",
-      "spec": "mcp-stdio-foundation",
-      "path": "internal/mcpserver/session_tools.go",
-      "message": "declared artifact action is absent from the attributed Git change sets",
-      "remediation": "no Git change sets are attributed to spec mcp-stdio-foundation (ensure commits carry 'POSE-Spec: mcp-stdio-foundation' trailer or generate report with pose report)"
-    },
-    {
       "id": "dif-397b82d2d2f0",
       "code": "existence",
       "severity": "error",
@@ -6852,15 +7245,6 @@
       "path": "docs/catalog/go-foundations.md",
       "message": "declared current artifact is not tracked at the selected head",
       "remediation": "correct the exact path or commit the artifact before closeout"
-    },
-    {
-      "id": "dif-3e59631a3a47",
-      "code": "action-mismatch",
-      "severity": "error",
-      "spec": "mcp-stdio-foundation",
-      "path": "internal/mcpserver/contract_test.go",
-      "message": "declared artifact action is absent from the attributed Git change sets",
-      "remediation": "no Git change sets are attributed to spec mcp-stdio-foundation (ensure commits carry 'POSE-Spec: mcp-stdio-foundation' trailer or generate report with pose report)"
     },
     {
       "id": "dif-3f43debaeb48",
@@ -6989,15 +7373,6 @@
       "remediation": "correct the exact path or commit the artifact before closeout"
     },
     {
-      "id": "dif-48eb4ea6085a",
-      "code": "existence",
-      "severity": "error",
-      "spec": "session-orchestration-disclosure",
-      "path": "internal/mcpserver/session_tools.go",
-      "message": "declared current artifact is not tracked at the selected head",
-      "remediation": "correct the exact path or commit the artifact before closeout"
-    },
-    {
       "id": "dif-490b6cfd9640",
       "code": "action-mismatch",
       "severity": "error",
@@ -7061,15 +7436,6 @@
       "remediation": "correct the exact path or commit the artifact before closeout"
     },
     {
-      "id": "dif-4b8642474f54",
-      "code": "action-mismatch",
-      "severity": "error",
-      "spec": "mcp-stdio-foundation",
-      "path": "internal/mcpserver/catalog_tools.go",
-      "message": "declared artifact action is absent from the attributed Git change sets",
-      "remediation": "no Git change sets are attributed to spec mcp-stdio-foundation (ensure commits carry 'POSE-Spec: mcp-stdio-foundation' trailer or generate report with pose report)"
-    },
-    {
       "id": "dif-4baa1e826847",
       "code": "existence",
       "severity": "error",
@@ -7104,15 +7470,6 @@
       "path": "testdata/catalog-quality",
       "message": "declared artifact action is absent from the attributed Git change sets",
       "remediation": "no Git change sets are attributed to spec catalog-authoring-quality (ensure commits carry 'POSE-Spec: catalog-authoring-quality' trailer or generate report with pose report)"
-    },
-    {
-      "id": "dif-4da159f72a0b",
-      "code": "action-mismatch",
-      "severity": "error",
-      "spec": "mcp-stdio-foundation",
-      "path": "internal/mcpserver/server.go",
-      "message": "declared artifact action is absent from the attributed Git change sets",
-      "remediation": "no Git change sets are attributed to spec mcp-stdio-foundation (ensure commits carry 'POSE-Spec: mcp-stdio-foundation' trailer or generate report with pose report)"
     },
     {
       "id": "dif-4e30eae5e246",
@@ -7304,15 +7661,6 @@
       "remediation": "correct the exact path or commit the artifact before closeout"
     },
     {
-      "id": "dif-5ab3e6cbb275",
-      "code": "existence",
-      "severity": "error",
-      "spec": "mcp-stdio-foundation",
-      "path": "internal/mcpserver/errors.go",
-      "message": "declared current artifact is not tracked at the selected head",
-      "remediation": "correct the exact path or commit the artifact before closeout"
-    },
-    {
       "id": "dif-5acae3dfc222",
       "code": "action-mismatch",
       "severity": "error",
@@ -7412,15 +7760,6 @@
       "remediation": "no Git change sets are attributed to spec mastery-review-scheduling (ensure commits carry 'POSE-Spec: mastery-review-scheduling' trailer or generate report with pose report)"
     },
     {
-      "id": "dif-63375b104be3",
-      "code": "existence",
-      "severity": "error",
-      "spec": "mcp-stdio-foundation",
-      "path": "internal/mcpserver/server_test.go",
-      "message": "declared current artifact is not tracked at the selected head",
-      "remediation": "correct the exact path or commit the artifact before closeout"
-    },
-    {
       "id": "dif-648091914247",
       "code": "action-mismatch",
       "severity": "error",
@@ -7446,15 +7785,6 @@
       "path": "internal/checks/limits.go",
       "message": "declared artifact action is absent from the attributed Git change sets",
       "remediation": "no Git change sets are attributed to spec safe-check-executor (ensure commits carry 'POSE-Spec: safe-check-executor' trailer or generate report with pose report)"
-    },
-    {
-      "id": "dif-67936e0d87a7",
-      "code": "existence",
-      "severity": "error",
-      "spec": "mcp-stdio-foundation",
-      "path": "internal/mcpserver/server.go",
-      "message": "declared current artifact is not tracked at the selected head",
-      "remediation": "correct the exact path or commit the artifact before closeout"
     },
     {
       "id": "dif-68af22c43666",
@@ -7628,15 +7958,6 @@
       "remediation": "no Git change sets are attributed to spec safe-check-executor (ensure commits carry 'POSE-Spec: safe-check-executor' trailer or generate report with pose report)"
     },
     {
-      "id": "dif-72021d7a5835",
-      "code": "existence",
-      "severity": "error",
-      "spec": "mcp-stdio-foundation",
-      "path": "internal/mcpserver/instructions.go",
-      "message": "declared current artifact is not tracked at the selected head",
-      "remediation": "correct the exact path or commit the artifact before closeout"
-    },
-    {
       "id": "dif-726c0eafdd0e",
       "code": "action-mismatch",
       "severity": "error",
@@ -7664,15 +7985,6 @@
       "remediation": "no Git change sets are attributed to spec curriculum-graph-path-recommendation (ensure commits carry 'POSE-Spec: curriculum-graph-path-recommendation' trailer or generate report with pose report)"
     },
     {
-      "id": "dif-74588467470b",
-      "code": "existence",
-      "severity": "error",
-      "spec": "mcp-stdio-foundation",
-      "path": "internal/mcpserver/envelope.go",
-      "message": "declared current artifact is not tracked at the selected head",
-      "remediation": "correct the exact path or commit the artifact before closeout"
-    },
-    {
       "id": "dif-74ad675fb634",
       "code": "action-mismatch",
       "severity": "error",
@@ -7689,15 +8001,6 @@
       "path": ".github/workflows/release.yml",
       "message": "declared artifact action is absent from the attributed Git change sets",
       "remediation": "no Git change sets are attributed to spec installation-documentation-ci (ensure commits carry 'POSE-Spec: installation-documentation-ci' trailer or generate report with pose report)"
-    },
-    {
-      "id": "dif-7625788abb12",
-      "code": "existence",
-      "severity": "error",
-      "spec": "session-orchestration-disclosure",
-      "path": "internal/application/session.go",
-      "message": "declared current artifact is not tracked at the selected head",
-      "remediation": "correct the exact path or commit the artifact before closeout"
     },
     {
       "id": "dif-765215cd1d6b",
@@ -7797,15 +8100,6 @@
       "path": "docs/catalog/go-foundations.md",
       "message": "declared artifact action is absent from the attributed Git change sets",
       "remediation": "no Git change sets are attributed to spec go-foundations-packs (ensure commits carry 'POSE-Spec: go-foundations-packs' trailer or generate report with pose report)"
-    },
-    {
-      "id": "dif-7e6db69130b8",
-      "code": "existence",
-      "severity": "error",
-      "spec": "mcp-stdio-foundation",
-      "path": "internal/mcpserver/session_tools.go",
-      "message": "declared current artifact is not tracked at the selected head",
-      "remediation": "correct the exact path or commit the artifact before closeout"
     },
     {
       "id": "dif-7ee9a59aaa3f",
@@ -7916,15 +8210,6 @@
       "remediation": "no Git change sets are attributed to spec security-privacy-hardening (ensure commits carry 'POSE-Spec: security-privacy-hardening' trailer or generate report with pose report)"
     },
     {
-      "id": "dif-8979959122a2",
-      "code": "action-mismatch",
-      "severity": "error",
-      "spec": "mcp-stdio-foundation",
-      "path": "internal/mcpserver/server_test.go",
-      "message": "declared artifact action is absent from the attributed Git change sets",
-      "remediation": "no Git change sets are attributed to spec mcp-stdio-foundation (ensure commits carry 'POSE-Spec: mcp-stdio-foundation' trailer or generate report with pose report)"
-    },
-    {
       "id": "dif-89929f1127a4",
       "code": "action-mismatch",
       "severity": "error",
@@ -7959,15 +8244,6 @@
       "path": "internal/application/progress.go",
       "message": "declared artifact action is absent from the attributed Git change sets",
       "remediation": "no Git change sets are attributed to spec mastery-review-scheduling (ensure commits carry 'POSE-Spec: mastery-review-scheduling' trailer or generate report with pose report)"
-    },
-    {
-      "id": "dif-8b3d8182317c",
-      "code": "action-mismatch",
-      "severity": "error",
-      "spec": "mcp-stdio-foundation",
-      "path": "internal/application/catalog.go",
-      "message": "declared artifact action is absent from the attributed Git change sets",
-      "remediation": "no Git change sets are attributed to spec mcp-stdio-foundation (ensure commits carry 'POSE-Spec: mcp-stdio-foundation' trailer or generate report with pose report)"
     },
     {
       "id": "dif-8d6420587145",
@@ -8058,15 +8334,6 @@
       "path": "internal/mcpserver/workspace_tools.go",
       "message": "declared artifact action is absent from the attributed Git change sets",
       "remediation": "no Git change sets are attributed to spec safe-check-executor (ensure commits carry 'POSE-Spec: safe-check-executor' trailer or generate report with pose report)"
-    },
-    {
-      "id": "dif-935c23a516a7",
-      "code": "action-mismatch",
-      "severity": "error",
-      "spec": "mcp-stdio-foundation",
-      "path": "internal/mcpserver/envelope.go",
-      "message": "declared artifact action is absent from the attributed Git change sets",
-      "remediation": "no Git change sets are attributed to spec mcp-stdio-foundation (ensure commits carry 'POSE-Spec: mcp-stdio-foundation' trailer or generate report with pose report)"
     },
     {
       "id": "dif-9415fa488b4f",
@@ -8229,15 +8496,6 @@
       "path": "internal/session/service.go",
       "message": "declared current artifact is not tracked at the selected head",
       "remediation": "correct the exact path or commit the artifact before closeout"
-    },
-    {
-      "id": "dif-a18c2533970e",
-      "code": "action-mismatch",
-      "severity": "error",
-      "spec": "mcp-stdio-foundation",
-      "path": "internal/mcpserver/errors.go",
-      "message": "declared artifact action is absent from the attributed Git change sets",
-      "remediation": "no Git change sets are attributed to spec mcp-stdio-foundation (ensure commits carry 'POSE-Spec: mcp-stdio-foundation' trailer or generate report with pose report)"
     },
     {
       "id": "dif-a1963eb2f204",
@@ -8564,15 +8822,6 @@
       "remediation": "correct the exact path or commit the artifact before closeout"
     },
     {
-      "id": "dif-be146d34b1b5",
-      "code": "action-mismatch",
-      "severity": "error",
-      "spec": "mcp-stdio-foundation",
-      "path": "cmd/ailearn/main.go",
-      "message": "declared artifact action is absent from the attributed Git change sets",
-      "remediation": "no Git change sets are attributed to spec mcp-stdio-foundation (ensure commits carry 'POSE-Spec: mcp-stdio-foundation' trailer or generate report with pose report)"
-    },
-    {
       "id": "dif-be486d176611",
       "code": "action-mismatch",
       "severity": "error",
@@ -8580,24 +8829,6 @@
       "path": "internal/curriculum/search.go",
       "message": "declared artifact action is absent from the attributed Git change sets",
       "remediation": "no Git change sets are attributed to spec curriculum-graph-path-recommendation (ensure commits carry 'POSE-Spec: curriculum-graph-path-recommendation' trailer or generate report with pose report)"
-    },
-    {
-      "id": "dif-beff4348fac9",
-      "code": "existence",
-      "severity": "error",
-      "spec": "curriculum-graph-path-recommendation",
-      "path": "internal/mcpserver/catalog_tools.go",
-      "message": "declared current artifact is not tracked at the selected head",
-      "remediation": "correct the exact path or commit the artifact before closeout"
-    },
-    {
-      "id": "dif-bf91c8ce2cd1",
-      "code": "existence",
-      "severity": "error",
-      "spec": "mcp-stdio-foundation",
-      "path": "internal/application/session.go",
-      "message": "declared current artifact is not tracked at the selected head",
-      "remediation": "correct the exact path or commit the artifact before closeout"
     },
     {
       "id": "dif-bfa0b0853e80",
@@ -8834,15 +9065,6 @@
       "remediation": "correct the exact path or commit the artifact before closeout"
     },
     {
-      "id": "dif-d64b32e352fa",
-      "code": "existence",
-      "severity": "error",
-      "spec": "mcp-stdio-foundation",
-      "path": "internal/mcpserver/contract_test.go",
-      "message": "declared current artifact is not tracked at the selected head",
-      "remediation": "correct the exact path or commit the artifact before closeout"
-    },
-    {
       "id": "dif-d64fcc4b106f",
       "code": "action-mismatch",
       "severity": "error",
@@ -8942,15 +9164,6 @@
       "remediation": "correct the exact path or commit the artifact before closeout"
     },
     {
-      "id": "dif-dfe221497423",
-      "code": "existence",
-      "severity": "error",
-      "spec": "mcp-stdio-foundation",
-      "path": "internal/application/catalog.go",
-      "message": "declared current artifact is not tracked at the selected head",
-      "remediation": "correct the exact path or commit the artifact before closeout"
-    },
-    {
       "id": "dif-dffb37285e47",
       "code": "action-mismatch",
       "severity": "error",
@@ -8958,15 +9171,6 @@
       "path": "internal/security/policy.go",
       "message": "declared artifact action is absent from the attributed Git change sets",
       "remediation": "no Git change sets are attributed to spec security-privacy-hardening (ensure commits carry 'POSE-Spec: security-privacy-hardening' trailer or generate report with pose report)"
-    },
-    {
-      "id": "dif-e07081ee2f92",
-      "code": "action-mismatch",
-      "severity": "error",
-      "spec": "mcp-stdio-foundation",
-      "path": "internal/mcpserver/instructions.go",
-      "message": "declared artifact action is absent from the attributed Git change sets",
-      "remediation": "no Git change sets are attributed to spec mcp-stdio-foundation (ensure commits carry 'POSE-Spec: mcp-stdio-foundation' trailer or generate report with pose report)"
     },
     {
       "id": "dif-e270eea0fa9d",
@@ -9111,15 +9315,6 @@
       "path": "testdata/host/session-transcripts",
       "message": "declared current artifact is not tracked at the selected head",
       "remediation": "correct the exact path or commit the artifact before closeout"
-    },
-    {
-      "id": "dif-ee28a26410e9",
-      "code": "action-mismatch",
-      "severity": "error",
-      "spec": "mcp-stdio-foundation",
-      "path": "internal/application/session.go",
-      "message": "declared artifact action is absent from the attributed Git change sets",
-      "remediation": "no Git change sets are attributed to spec mcp-stdio-foundation (ensure commits carry 'POSE-Spec: mcp-stdio-foundation' trailer or generate report with pose report)"
     },
     {
       "id": "dif-ee5e022f6e27",
@@ -9275,15 +9470,6 @@
       "remediation": "no Git change sets are attributed to spec assistance-hints-detours (ensure commits carry 'POSE-Spec: assistance-hints-detours' trailer or generate report with pose report)"
     },
     {
-      "id": "dif-fc411bc40046",
-      "code": "existence",
-      "severity": "error",
-      "spec": "mcp-stdio-foundation",
-      "path": "internal/mcpserver/catalog_tools.go",
-      "message": "declared current artifact is not tracked at the selected head",
-      "remediation": "correct the exact path or commit the artifact before closeout"
-    },
-    {
       "id": "dif-fc4d373b7385",
       "code": "action-mismatch",
       "severity": "error",
@@ -9347,6 +9533,17 @@
       "remediation": "correct the exact path or commit the artifact before closeout"
     }
   ],
+  "deliveries": [
+    {
+      "spec": "mcp-stdio-foundation",
+      "ref": "contract:ailearn-mcp-v1",
+      "kind": "contract",
+      "id": "ailearn-mcp-v1",
+      "module": "internal/mcpserver",
+      "profile": "api-contract",
+      "entrypoint": "cmd/ailearn/main.go"
+    }
+  ],
   "validation_results": [
     {
       "id": "./go/build",
@@ -9355,16 +9552,37 @@
       "evidence_class": "build",
       "severity": "required",
       "outcome": "pass",
-      "git_head": "732b6d5c78700dc03bfed507aadcd31a4d5baf08",
-      "generated_at": "2026-08-23T00:06:20Z",
-      "provenance_digest": "sha256:843e71979c4188af0aad69fe1219f181d53dcca05675e9325267fd6314ab1318",
+      "git_head": "948c0fc9a32bd74b004fdfafbc516e17586971a2",
+      "generated_at": "2026-08-23T00:32:36Z",
+      "provenance_digest": "sha256:9aacb1ca743c61b05c63a734aee63b6bc24b324e10720e33f3d8992385e6daa2",
       "report": ".pose/results/delivery-validation.json",
       "scope_provenance": {
         "architecture-decision-baseline": "sha256:0cb9538df6c6193eeea826dda56f91288808c178925c98b02a43af253045c99e",
         "catalog-schema-loader": "sha256:41b16824af93a5c85baf323d23b4e150e819ad577310f9864368cf215da3dca2",
         "go-runtime-foundation": "sha256:9a4e47998be06f380306497a3e5f9a87b700e2ea0881b7f33cea67e2d2d7da03",
         "learning-domain-model": "sha256:d02fa5101f4bf12416a3360691755de2a1bee097647dc70f162cd6c1c2cd9796",
-        "local-event-store": "sha256:866355b42bf8c236d834788886f3b7ad3a413dad66182358f5c823276a17f644"
+        "local-event-store": "sha256:16d225e08c84782f2b1f11c737e1ef1248487fd80543f66e4f2b03a04f6128d6",
+        "mcp-stdio-foundation": "sha256:9dec771e4b2266f9ba9fa19b651a2c02b55ac2e9cab94730ef4db6967894da88"
+      }
+    },
+    {
+      "id": "./go/mcp-contract",
+      "module": ".",
+      "check": "mcp-contract",
+      "evidence_class": "integration",
+      "severity": "required",
+      "outcome": "pass",
+      "git_head": "948c0fc9a32bd74b004fdfafbc516e17586971a2",
+      "generated_at": "2026-08-23T00:32:36Z",
+      "provenance_digest": "sha256:9aacb1ca743c61b05c63a734aee63b6bc24b324e10720e33f3d8992385e6daa2",
+      "report": ".pose/results/delivery-validation.json",
+      "scope_provenance": {
+        "architecture-decision-baseline": "sha256:0cb9538df6c6193eeea826dda56f91288808c178925c98b02a43af253045c99e",
+        "catalog-schema-loader": "sha256:41b16824af93a5c85baf323d23b4e150e819ad577310f9864368cf215da3dca2",
+        "go-runtime-foundation": "sha256:9a4e47998be06f380306497a3e5f9a87b700e2ea0881b7f33cea67e2d2d7da03",
+        "learning-domain-model": "sha256:d02fa5101f4bf12416a3360691755de2a1bee097647dc70f162cd6c1c2cd9796",
+        "local-event-store": "sha256:16d225e08c84782f2b1f11c737e1ef1248487fd80543f66e4f2b03a04f6128d6",
+        "mcp-stdio-foundation": "sha256:9dec771e4b2266f9ba9fa19b651a2c02b55ac2e9cab94730ef4db6967894da88"
       }
     },
     {
@@ -9374,16 +9592,17 @@
       "evidence_class": "unit",
       "severity": "required",
       "outcome": "pass",
-      "git_head": "732b6d5c78700dc03bfed507aadcd31a4d5baf08",
-      "generated_at": "2026-08-23T00:06:20Z",
-      "provenance_digest": "sha256:843e71979c4188af0aad69fe1219f181d53dcca05675e9325267fd6314ab1318",
+      "git_head": "948c0fc9a32bd74b004fdfafbc516e17586971a2",
+      "generated_at": "2026-08-23T00:32:36Z",
+      "provenance_digest": "sha256:9aacb1ca743c61b05c63a734aee63b6bc24b324e10720e33f3d8992385e6daa2",
       "report": ".pose/results/delivery-validation.json",
       "scope_provenance": {
         "architecture-decision-baseline": "sha256:0cb9538df6c6193eeea826dda56f91288808c178925c98b02a43af253045c99e",
         "catalog-schema-loader": "sha256:41b16824af93a5c85baf323d23b4e150e819ad577310f9864368cf215da3dca2",
         "go-runtime-foundation": "sha256:9a4e47998be06f380306497a3e5f9a87b700e2ea0881b7f33cea67e2d2d7da03",
         "learning-domain-model": "sha256:d02fa5101f4bf12416a3360691755de2a1bee097647dc70f162cd6c1c2cd9796",
-        "local-event-store": "sha256:866355b42bf8c236d834788886f3b7ad3a413dad66182358f5c823276a17f644"
+        "local-event-store": "sha256:16d225e08c84782f2b1f11c737e1ef1248487fd80543f66e4f2b03a04f6128d6",
+        "mcp-stdio-foundation": "sha256:9dec771e4b2266f9ba9fa19b651a2c02b55ac2e9cab94730ef4db6967894da88"
       }
     },
     {
@@ -9393,17 +9612,40 @@
       "evidence_class": "build",
       "severity": "optional",
       "outcome": "pass",
-      "git_head": "732b6d5c78700dc03bfed507aadcd31a4d5baf08",
-      "generated_at": "2026-08-23T00:06:20Z",
-      "provenance_digest": "sha256:843e71979c4188af0aad69fe1219f181d53dcca05675e9325267fd6314ab1318",
+      "git_head": "948c0fc9a32bd74b004fdfafbc516e17586971a2",
+      "generated_at": "2026-08-23T00:32:36Z",
+      "provenance_digest": "sha256:9aacb1ca743c61b05c63a734aee63b6bc24b324e10720e33f3d8992385e6daa2",
       "report": ".pose/results/delivery-validation.json",
       "scope_provenance": {
         "architecture-decision-baseline": "sha256:0cb9538df6c6193eeea826dda56f91288808c178925c98b02a43af253045c99e",
         "catalog-schema-loader": "sha256:41b16824af93a5c85baf323d23b4e150e819ad577310f9864368cf215da3dca2",
         "go-runtime-foundation": "sha256:9a4e47998be06f380306497a3e5f9a87b700e2ea0881b7f33cea67e2d2d7da03",
         "learning-domain-model": "sha256:d02fa5101f4bf12416a3360691755de2a1bee097647dc70f162cd6c1c2cd9796",
-        "local-event-store": "sha256:866355b42bf8c236d834788886f3b7ad3a413dad66182358f5c823276a17f644"
+        "local-event-store": "sha256:16d225e08c84782f2b1f11c737e1ef1248487fd80543f66e4f2b03a04f6128d6",
+        "mcp-stdio-foundation": "sha256:9dec771e4b2266f9ba9fa19b651a2c02b55ac2e9cab94730ef4db6967894da88"
       }
     }
-  ]
+  ],
+  "paths": {
+    "contract:ailearn-mcp-v1": [
+      "spec:mcp-stdio-foundation",
+      "artifact:internal/application/catalog.go",
+      "artifact:internal/application/session.go",
+      "artifact:internal/application/session_test.go",
+      "artifact:internal/mcpserver/catalog_tools.go",
+      "artifact:internal/mcpserver/contract_test.go",
+      "artifact:internal/mcpserver/envelope.go",
+      "artifact:internal/mcpserver/errors.go",
+      "artifact:internal/mcpserver/instructions.go",
+      "artifact:internal/mcpserver/server.go",
+      "artifact:internal/mcpserver/server_test.go",
+      "artifact:internal/mcpserver/session_tools.go",
+      "artifact:.pose/indexes/validation-matrix.json",
+      "artifact:cmd/ailearn/main.go",
+      "artifact:go.mod",
+      "artifact:go.sum",
+      "delivery:contract:ailearn-mcp-v1",
+      "entrypoint:cmd/ailearn/main.go"
+    ]
+  }
 }

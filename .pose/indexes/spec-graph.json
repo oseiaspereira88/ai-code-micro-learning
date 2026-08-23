@@ -588,7 +588,7 @@
       ],
       "path": ".pose/specs/2026-08-22-local-event-store.md",
       "priority": 40,
-      "status": "in-progress"
+      "status": "done"
     },
     "mastery-review-scheduling": {
       "depends_on": [
@@ -608,7 +608,7 @@
       ],
       "path": ".pose/specs/2026-08-22-mcp-stdio-foundation.md",
       "priority": 50,
-      "status": "draft"
+      "status": "in-progress"
     },
     "reliability-observability-compatibility": {
       "depends_on": [
