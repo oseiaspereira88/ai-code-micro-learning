@@ -1,8 +1,8 @@
 ---
 slug: session-orchestration-disclosure
-status: in-progress
+status: done
 created_at: 2026-08-22
-completed_at:
+completed_at: 2026-08-23
 supersedes:
 depends_on: learning-domain-model, catalog-schema-loader, local-event-store, mcp-stdio-foundation
 priority: 60

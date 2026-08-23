@@ -1,0 +1,517 @@
+{
+  "schema_version": 1,
+  "bundle_id": "rvb-5c4faf2ea21566d6",
+  "bundle_digest": "sha256:5c4faf2ea21566d6f70eb14fcac31fce1541cebbfc6b500c93cf237639e6ba43",
+  "state": "sealed",
+  "sealed_at": "2026-08-23T01:21:42Z",
+  "payload": {
+    "scope": {
+      "ref": "spec:session-orchestration-disclosure",
+      "kind": "spec",
+      "slug": "session-orchestration-disclosure",
+      "depends_on": [
+        "catalog-schema-loader",
+        "learning-domain-model",
+        "local-event-store",
+        "mcp-stdio-foundation"
+      ],
+      "components": [
+        "mcp-server",
+        "sessions"
+      ],
+      "sections": [
+        {
+          "kind": "semantic-section",
+          "path": "decisions",
+          "digest": "sha256:fc58d629c6f510bb3712bc0ad1fcc2011d29fbf1c8792bf51ab296b810dea86a",
+          "reason": "governed semantic review input"
+        },
+        {
+          "kind": "semantic-section",
+          "path": "intent",
+          "digest": "sha256:f7dd0abe44b4bdaadbab04e0eb785e08bc21cab9f91aaba1e6a94111167e51a4",
+          "reason": "governed semantic review input"
+        },
+        {
+          "kind": "semantic-section",
+          "path": "requirements",
+          "digest": "sha256:fd7106317a62868fde7941ccfc585c072b2d1e60bd9b002dd3f24fc8a8d3138d",
+          "reason": "governed semantic review input"
+        },
+        {
+          "kind": "semantic-section",
+          "path": "technical plan",
+          "digest": "sha256:88c4c133dfff6e2c4a00bb2b82103a3eb64f4ae6de76674952be03631e727b64",
+          "reason": "governed semantic review input"
+        }
+      ]
+    },
+    "subject": {
+      "change_sets": [
+        "cs-68cc928bc720"
+      ],
+      "base": "f7b933490a3618487db28b4ceb6b18d895267621",
+      "head": "7c55aa3b19c963616f29ec7cf0c2e508079d5dbd",
+      "patch_digest": "sha256:1ddf7d180257effa01506b7f197fee4c165f4e13fa762e528056f6649feac9e2",
+      "tree_digest": "sha256:331b7e2ff265d6c4396264b295265df80e8fc783a7190664cffa66481d87d586",
+      "entries": [
+        {
+          "action": "created",
+          "path": "internal/mcpserver/session_contract_test.go",
+          "class": "implementation",
+          "digest": "sha256:0f30f77e5d9b01eee357a0ffc057312b5ac466071b5631b40f553a4d6f7b44aa",
+          "reason": "attributed implementation path in the immutable change set"
+        },
+        {
+          "action": "created",
+          "path": "internal/session/disclosure.go",
+          "class": "implementation",
+          "digest": "sha256:cf341bcc412c347233ae042d6991048aedded516259147a6395dd72143f7713b",
+          "reason": "attributed implementation path in the immutable change set"
+        },
+        {
+          "action": "created",
+          "path": "internal/session/disclosure_test.go",
+          "class": "implementation",
+          "digest": "sha256:0ee4982d77237eb1fa7d6059720fae1f7b33b612203f65eb564a0d26042905a3",
+          "reason": "attributed implementation path in the immutable change set"
+        },
+        {
+          "action": "created",
+          "path": "internal/session/granularity.go",
+          "class": "implementation",
+          "digest": "sha256:915b3f3e8294b9526a668aa1fe8fe9d465fecd959e572eaa1ed038575bde6dab",
+          "reason": "attributed implementation path in the immutable change set"
+        },
+        {
+          "action": "created",
+          "path": "internal/session/service.go",
+          "class": "implementation",
+          "digest": "sha256:04149e0a85445133b942e8cb1fa274c64a66ca0babe46fbb979660579c60f0ac",
+          "reason": "attributed implementation path in the immutable change set"
+        },
+        {
+          "action": "created",
+          "path": "internal/session/service_test.go",
+          "class": "implementation",
+          "digest": "sha256:ffc7a1dfe8d1bd4bd3fa24b90277cadccaf48a9d91295380f3adda84a708db22",
+          "reason": "attributed implementation path in the immutable change set"
+        },
+        {
+          "action": "modified",
+          "path": "internal/application/catalog.go",
+          "class": "implementation",
+          "digest": "sha256:82346e89b192e1d894f2710be4c2f0584da0e184490daa0728dd3161c92afae1",
+          "reason": "attributed implementation path in the immutable change set"
+        },
+        {
+          "action": "modified",
+          "path": "internal/application/session.go",
+          "class": "implementation",
+          "digest": "sha256:71bbb5f7f4c714332da89a0934649b81b506deec7fc8c2cc6f35c8c24985d131",
+          "reason": "attributed implementation path in the immutable change set"
+        },
+        {
+          "action": "modified",
+          "path": "internal/eventstore/event.go",
+          "class": "implementation",
+          "digest": "sha256:10aee637c10d576cfa635633bcbbba1c4ece88fd962baff578afde54860289f5",
+          "reason": "attributed implementation path in the immutable change set"
+        },
+        {
+          "action": "modified",
+          "path": "internal/mcpserver/contract_test.go",
+          "class": "implementation",
+          "digest": "sha256:55096e578ef0c3cc9c0a23e2fa8bac439901785c514d42e9d470cd67100e4587",
+          "reason": "attributed implementation path in the immutable change set"
+        },
+        {
+          "action": "modified",
+          "path": "internal/mcpserver/errors.go",
+          "class": "implementation",
+          "digest": "sha256:cf1d838ca2c919fa4503b49cfe4fe5c86ad02d81b5ee6678ac6172756db514c0",
+          "reason": "attributed implementation path in the immutable change set"
+        },
+        {
+          "action": "modified",
+          "path": "internal/mcpserver/server_test.go",
+          "class": "implementation",
+          "digest": "sha256:fc799b61cf7e3a2527b370e437d820fd98cb7ec795e3ea3bc1f3cf4daf1ce1cf",
+          "reason": "attributed implementation path in the immutable change set"
+        },
+        {
+          "action": "modified",
+          "path": "internal/mcpserver/session_tools.go",
+          "class": "implementation",
+          "digest": "sha256:c62cae4d443925d374f8a55edc27c4f1f3cd5887802b7b15c7d2c49cf427268e",
+          "reason": "attributed implementation path in the immutable change set"
+        }
+      ]
+    },
+    "plan": {
+      "plan_digest": "sha256:8a09b221826fb715b2641753f6f139b16f6117168b4a6f9b7cee1e412bcbab15",
+      "independence": "same-actor-separate-execution",
+      "components": [
+        {
+          "id": "internal",
+          "path": "internal",
+          "kind": "directory",
+          "sources": [
+            "artifact:session-orchestration-disclosure:internal/application/catalog.go",
+            "artifact:session-orchestration-disclosure:internal/application/session.go",
+            "artifact:session-orchestration-disclosure:internal/eventstore/event.go",
+            "artifact:session-orchestration-disclosure:internal/mcpserver/contract_test.go",
+            "artifact:session-orchestration-disclosure:internal/mcpserver/errors.go",
+            "artifact:session-orchestration-disclosure:internal/mcpserver/server_test.go",
+            "artifact:session-orchestration-disclosure:internal/mcpserver/session_contract_test.go",
+            "artifact:session-orchestration-disclosure:internal/mcpserver/session_tools.go",
+            "artifact:session-orchestration-disclosure:internal/session/disclosure.go",
+            "artifact:session-orchestration-disclosure:internal/session/disclosure_test.go",
+            "artifact:session-orchestration-disclosure:internal/session/granularity.go",
+            "artifact:session-orchestration-disclosure:internal/session/service.go",
+            "artifact:session-orchestration-disclosure:internal/session/service_test.go",
+            "observed:session-orchestration-disclosure:internal/application/catalog.go",
+            "observed:session-orchestration-disclosure:internal/application/session.go",
+            "observed:session-orchestration-disclosure:internal/eventstore/event.go",
+            "observed:session-orchestration-disclosure:internal/mcpserver/contract_test.go",
+            "observed:session-orchestration-disclosure:internal/mcpserver/errors.go",
+            "observed:session-orchestration-disclosure:internal/mcpserver/server_test.go",
+            "observed:session-orchestration-disclosure:internal/mcpserver/session_contract_test.go",
+            "observed:session-orchestration-disclosure:internal/mcpserver/session_tools.go",
+            "observed:session-orchestration-disclosure:internal/session/disclosure.go",
+            "observed:session-orchestration-disclosure:internal/session/disclosure_test.go",
+            "observed:session-orchestration-disclosure:internal/session/granularity.go",
+            "observed:session-orchestration-disclosure:internal/session/service.go",
+            "observed:session-orchestration-disclosure:internal/session/service_test.go"
+          ]
+        }
+      ],
+      "criteria": [
+        {
+          "id": "compatibility",
+          "description": "Public CLI, file and MCP contracts are compatible or explicitly migrated.",
+          "required": true,
+          "profiles": [
+            "spec-closeout@1"
+          ]
+        },
+        {
+          "id": "correctness",
+          "description": "Functional and negative behavior is correct.",
+          "required": true,
+          "evidence_classes": [
+            "test",
+            "validation"
+          ],
+          "profiles": [
+            "spec-closeout@1"
+          ]
+        },
+        {
+          "id": "documentation",
+          "description": "Operational docs, templates and scaffold match runtime behavior.",
+          "required": true,
+          "rules": [
+            "documentation-style"
+          ],
+          "profiles": [
+            "spec-closeout@1"
+          ]
+        },
+        {
+          "id": "operability",
+          "description": "Errors, explanations and remediation are actionable.",
+          "required": true,
+          "profiles": [
+            "spec-closeout@1"
+          ]
+        },
+        {
+          "id": "requirements",
+          "description": "Every requirement has current, relevant evidence.",
+          "required": true,
+          "evidence_classes": [
+            "requirement-trace",
+            "test"
+          ],
+          "profiles": [
+            "spec-closeout@1"
+          ]
+        },
+        {
+          "id": "scope",
+          "description": "The implementation matches the approved spec scope.",
+          "required": true,
+          "rules": [
+            "documentation-style"
+          ],
+          "profiles": [
+            "spec-closeout@1"
+          ]
+        },
+        {
+          "id": "security",
+          "description": "Inputs, paths, evidence and authority boundaries are safe.",
+          "required": true,
+          "rules": [
+            "security"
+          ],
+          "profiles": [
+            "spec-closeout@1"
+          ]
+        }
+      ],
+      "tools": [
+        {
+          "id": "artifact-check",
+          "requiredness": "required",
+          "args": [
+            "pose",
+            "artifact-check",
+            "--spec",
+            "session-orchestration-disclosure",
+            "--strict"
+          ],
+          "rationale": "reconcile declared artifacts with Git-observed provenance",
+          "criteria": [
+            "requirements",
+            "scope"
+          ],
+          "preconditions": [
+            "artifacts-attributed"
+          ]
+        },
+        {
+          "id": "assess-discover",
+          "requiredness": "recommended",
+          "args": [
+            "pose",
+            "assess",
+            "discover",
+            "--component",
+            "internal"
+          ],
+          "rationale": "inspect component structure, language, size and visible debt",
+          "component": "internal",
+          "preconditions": [
+            "scope-authorized"
+          ]
+        },
+        {
+          "id": "assess-tech-debt",
+          "requiredness": "recommended",
+          "args": [
+            "pose",
+            "assess",
+            "tech-debt"
+          ],
+          "rationale": "inspect unresolved TODO, FIXME, panic and stub findings",
+          "criteria": [
+            "correctness"
+          ],
+          "preconditions": [
+            "scope-authorized"
+          ]
+        },
+        {
+          "id": "closeout-check",
+          "requiredness": "required",
+          "args": [
+            "pose",
+            "closeout-check",
+            "spec:session-orchestration-disclosure"
+          ],
+          "rationale": "verify remaining hierarchical closeout blockers",
+          "preconditions": [
+            "review-complete"
+          ]
+        },
+        {
+          "id": "review-check",
+          "requiredness": "required",
+          "args": [
+            "pose",
+            "review-check",
+            "spec:session-orchestration-disclosure"
+          ],
+          "rationale": "verify exact review-plan coverage and freshness",
+          "preconditions": [
+            "review-complete"
+          ]
+        },
+        {
+          "id": "suggest-review",
+          "requiredness": "recommended",
+          "args": [
+            "pose",
+            "suggest",
+            "review",
+            "--path",
+            "internal"
+          ],
+          "rationale": "resolve the component-specific workflow, skill, rules and validation trail",
+          "component": "internal",
+          "preconditions": [
+            "scope-authorized"
+          ]
+        },
+        {
+          "id": "validate",
+          "requiredness": "required",
+          "args": [
+            "pose",
+            "validate",
+            "--strict"
+          ],
+          "rationale": "run the registered deterministic checks for the affected module",
+          "evidence_classes": [
+            "validation"
+          ],
+          "criteria": [
+            "correctness",
+            "requirements"
+          ],
+          "preconditions": [
+            "delivery-target-declared"
+          ]
+        },
+        {
+          "id": "validate",
+          "requiredness": "required",
+          "args": [
+            "pose",
+            "validate",
+            "--strict",
+            "--module",
+            "internal"
+          ],
+          "rationale": "run the registered deterministic checks for the affected module",
+          "evidence_classes": [
+            "validation"
+          ],
+          "component": "internal",
+          "preconditions": [
+            "delivery-target-declared"
+          ]
+        }
+      ]
+    },
+    "evidence": [
+      {
+        "id": "./go/build",
+        "module": ".",
+        "check": "build",
+        "evidence_class": "build",
+        "outcome": "pass",
+        "git_head": "7c55aa3b19c963616f29ec7cf0c2e508079d5dbd",
+        "provenance_digest": "sha256:f38cf52550662669a679e107980d15b095067d5ed02cc8d694ea5d0fb5a5d004",
+        "report": ".pose/results/delivery-validation.json"
+      },
+      {
+        "id": "./go/mcp-contract",
+        "module": ".",
+        "check": "mcp-contract",
+        "evidence_class": "integration",
+        "outcome": "pass",
+        "git_head": "7c55aa3b19c963616f29ec7cf0c2e508079d5dbd",
+        "provenance_digest": "sha256:f38cf52550662669a679e107980d15b095067d5ed02cc8d694ea5d0fb5a5d004",
+        "report": ".pose/results/delivery-validation.json"
+      },
+      {
+        "id": "./go/test",
+        "module": ".",
+        "check": "test",
+        "evidence_class": "unit",
+        "outcome": "pass",
+        "git_head": "7c55aa3b19c963616f29ec7cf0c2e508079d5dbd",
+        "provenance_digest": "sha256:f38cf52550662669a679e107980d15b095067d5ed02cc8d694ea5d0fb5a5d004",
+        "report": ".pose/results/delivery-validation.json"
+      }
+    ],
+    "consumed_inputs": [
+      {
+        "kind": "governed-config",
+        "path": ".pose/indexes/validation-matrix.json",
+        "digest": "sha256:334dde3a647f88d9bd57e4bb3dd2ef68ac51b41e3edf89309511ec680c937ff9",
+        "reason": "consumed review policy or validation contract"
+      },
+      {
+        "kind": "governed-config",
+        "path": ".pose/policy/review.json",
+        "digest": "sha256:89a78e6ec6e1806414c669e66239831b593c08b9a182e36fae119bccecd28b5e",
+        "reason": "consumed review policy or validation contract"
+      },
+      {
+        "kind": "review-plan",
+        "path": "spec-closeout@1",
+        "digest": "sha256:8a09b221826fb715b2641753f6f139b16f6117168b4a6f9b7cee1e412bcbab15",
+        "reason": "effective component-aware plan contract"
+      },
+      {
+        "kind": "review-profile",
+        "path": ".pose/review-profiles/spec-closeout.json",
+        "digest": "sha256:de13c1d59e485aaf4cb474a8c2836507447c44dc7090cbdc2de589fa75c6cc92",
+        "reason": "selected by effective review plan"
+      },
+      {
+        "kind": "rule",
+        "path": ".pose/rules/documentation-style.md",
+        "digest": "sha256:5c5c666fc6c796cf9ae3876d25d3fd4fa523d121892459dc0d681d73da1d60ae",
+        "reason": "selected by effective review criterion"
+      },
+      {
+        "kind": "rule",
+        "path": ".pose/rules/security.md",
+        "digest": "sha256:1cbf29c12d09cad0799e2d8715e94f84a49ee8fa09867bb5f12a544f8df43774",
+        "reason": "selected by effective review criterion"
+      },
+      {
+        "kind": "schema",
+        "path": "review-bundle@1",
+        "digest": "sha256:e7c9643ec88eccb2a6dea3ee3291c351983d78e1d2fa44b61399514c5021bcb0",
+        "reason": "canonical bundle and attestation schema identity"
+      },
+      {
+        "kind": "tool-catalog",
+        "path": "native-review-tools@1",
+        "digest": "sha256:8a09b221826fb715b2641753f6f139b16f6117168b4a6f9b7cee1e412bcbab15",
+        "reason": "closed resolved native tool contract"
+      }
+    ]
+  },
+  "excluded_inputs": [
+    {
+      "kind": "derived-section",
+      "path": "final report",
+      "digest": "sha256:1c2c32e4ee7bf6b43af352d609fa178cea979f79a3aa87d6a3b41ae7f2bca88e",
+      "reason": "operational closeout content is verified by its own gate"
+    },
+    {
+      "kind": "derived-section",
+      "path": "tasks",
+      "digest": "sha256:702635bb576db361408acc8f8b3ce77e104e7614c5b500b9b1b1611f1756b4a3",
+      "reason": "operational closeout content is verified by its own gate"
+    },
+    {
+      "kind": "derived-section",
+      "path": "validation",
+      "digest": "sha256:0914c26154689bc004c452b377cffe2a654b952e9a42137bf48f4232fc1feb0a",
+      "reason": "operational closeout content is verified by its own gate"
+    },
+    {
+      "kind": "lifecycle",
+      "path": "/home/go/GolandProjects/ai-code-micro-learning/.pose/specs/2026-08-22-session-orchestration-disclosure.md",
+      "reason": "status and completed_at do not define the reviewed semantic subject"
+    },
+    {
+      "kind": "semantic-scope",
+      "path": ".pose/specs/2026-08-22-session-orchestration-disclosure.md",
+      "reason": "attributed path is outside the semantic review subject"
+    }
+  ],
+  "warnings": [
+    "unmapped review component explicit:mcp-server",
+    "unmapped review component explicit:sessions"
+  ],
+  "path": ".pose/review-bundles/rvb-5c4faf2ea21566d6.json"
+}
