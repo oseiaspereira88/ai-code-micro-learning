@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "input_digest": "sha256:b413b542437cd3b9507bdeb86c9629a4e44fb8c06161ec4763eedc6999bca7d6",
-  "provenance_digest": "sha256:9fba709d40b59d0658bdc50ad4b5942bd1bd77fa2178c168fb8cadd7cfcadb16",
+  "input_digest": "sha256:6f41b1dc52f604228457797bae625edf954d9b0d0eda5e522c647cf3c469d9fe",
+  "provenance_digest": "sha256:843e71979c4188af0aad69fe1219f181d53dcca05675e9325267fd6314ab1318",
   "nodes": [
     {
       "id": "artifact:.agents/skills/ailearn/SKILL.md",
@@ -78,13 +78,6 @@
       "type": "artifact",
       "attributes": {
         "path": ".github/workflows/release.yml"
-      }
-    },
-    {
-      "id": "artifact:.gitignore",
-      "type": "artifact",
-      "attributes": {
-        "path": ".gitignore"
       }
     },
     {
@@ -277,6 +270,13 @@
       }
     },
     {
+      "id": "artifact:.pose/review-attestations/rva-aeeb91251ef17f5c.json",
+      "type": "artifact",
+      "attributes": {
+        "path": ".pose/review-attestations/rva-aeeb91251ef17f5c.json"
+      }
+    },
+    {
       "id": "artifact:.pose/review-attestations/rva-d8bde250ba75e74b.json",
       "type": "artifact",
       "attributes": {
@@ -305,6 +305,13 @@
       }
     },
     {
+      "id": "artifact:.pose/review-bundles/rvb-bd85ae772435c2a4.json",
+      "type": "artifact",
+      "attributes": {
+        "path": ".pose/review-bundles/rvb-bd85ae772435c2a4.json"
+      }
+    },
+    {
       "id": "artifact:.pose/specs/2026-08-22-architecture-decision-baseline.md",
       "type": "artifact",
       "attributes": {
@@ -330,6 +337,13 @@
       "type": "artifact",
       "attributes": {
         "path": ".pose/specs/2026-08-22-learning-domain-model.md"
+      }
+    },
+    {
+      "id": "artifact:.pose/specs/2026-08-22-local-event-store.md",
+      "type": "artifact",
+      "attributes": {
+        "path": ".pose/specs/2026-08-22-local-event-store.md"
       }
     },
     {
@@ -1778,11 +1792,19 @@
       }
     },
     {
-      "id": "change-set:cs-7b2f05bb6d4e",
+      "id": "change-set:cs-89ad08ccd8e2",
       "type": "change-set",
       "attributes": {
-        "diff_digest": "sha256:12e80d322427f453885109a6a9369448dab74e377443f6e434f6ea4d30db4f75",
+        "diff_digest": "sha256:d2cf16cc1d95cd9507cd10245b3c9a3a5b80b6cfe7d67088490db9ee94a0ca89",
         "selector": "trailers:catalog-schema-loader"
+      }
+    },
+    {
+      "id": "change-set:cs-c0d298616f06",
+      "type": "change-set",
+      "attributes": {
+        "diff_digest": "sha256:97276ec38975712cff24803d7498d61c1030f1d93e2a2f8652a20fabff3c5e11",
+        "selector": "trailers:local-event-store"
       }
     },
     {
@@ -1817,7 +1839,7 @@
       "id": "spec:catalog-schema-loader",
       "type": "spec",
       "attributes": {
-        "status": "in-progress"
+        "status": "done"
       }
     },
     {
@@ -1901,7 +1923,7 @@
       "id": "spec:local-event-store",
       "type": "spec",
       "attributes": {
-        "status": "draft"
+        "status": "in-progress"
       }
     },
     {
@@ -2317,133 +2339,208 @@
       "type": "changes"
     },
     {
-      "from": "change-set:cs-7b2f05bb6d4e",
+      "from": "change-set:cs-89ad08ccd8e2",
+      "to": "artifact:.pose/indexes/delivery-integrity.json",
+      "type": "changes"
+    },
+    {
+      "from": "change-set:cs-89ad08ccd8e2",
+      "to": "artifact:.pose/indexes/spec-graph.json",
+      "type": "changes"
+    },
+    {
+      "from": "change-set:cs-89ad08ccd8e2",
+      "to": "artifact:.pose/results/delivery-validation.json",
+      "type": "changes"
+    },
+    {
+      "from": "change-set:cs-89ad08ccd8e2",
+      "to": "artifact:.pose/review-attestations/rva-aeeb91251ef17f5c.json",
+      "type": "changes"
+    },
+    {
+      "from": "change-set:cs-89ad08ccd8e2",
+      "to": "artifact:.pose/review-bundles/rvb-bd85ae772435c2a4.json",
+      "type": "changes"
+    },
+    {
+      "from": "change-set:cs-89ad08ccd8e2",
       "to": "artifact:.pose/specs/2026-08-22-catalog-schema-loader.md",
       "type": "changes"
     },
     {
-      "from": "change-set:cs-7b2f05bb6d4e",
+      "from": "change-set:cs-89ad08ccd8e2",
       "to": "artifact:go.mod",
       "type": "changes"
     },
     {
-      "from": "change-set:cs-7b2f05bb6d4e",
+      "from": "change-set:cs-89ad08ccd8e2",
       "to": "artifact:go.sum",
       "type": "changes"
     },
     {
-      "from": "change-set:cs-7b2f05bb6d4e",
+      "from": "change-set:cs-89ad08ccd8e2",
       "to": "artifact:internal/curriculum/index.go",
       "type": "changes"
     },
     {
-      "from": "change-set:cs-7b2f05bb6d4e",
+      "from": "change-set:cs-89ad08ccd8e2",
       "to": "artifact:internal/curriculum/loader.go",
       "type": "changes"
     },
     {
-      "from": "change-set:cs-7b2f05bb6d4e",
+      "from": "change-set:cs-89ad08ccd8e2",
       "to": "artifact:internal/curriculum/loader_test.go",
       "type": "changes"
     },
     {
-      "from": "change-set:cs-7b2f05bb6d4e",
+      "from": "change-set:cs-89ad08ccd8e2",
       "to": "artifact:internal/curriculum/model.go",
       "type": "changes"
     },
     {
-      "from": "change-set:cs-7b2f05bb6d4e",
+      "from": "change-set:cs-89ad08ccd8e2",
       "to": "artifact:internal/curriculum/testdata/criteria_without_evidence/manifest.yaml",
       "type": "changes"
     },
     {
-      "from": "change-set:cs-7b2f05bb6d4e",
+      "from": "change-set:cs-89ad08ccd8e2",
       "to": "artifact:internal/curriculum/testdata/criteria_without_evidence/pack.yaml",
       "type": "changes"
     },
     {
-      "from": "change-set:cs-7b2f05bb6d4e",
+      "from": "change-set:cs-89ad08ccd8e2",
       "to": "artifact:internal/curriculum/testdata/duplicate_id/manifest.yaml",
       "type": "changes"
     },
     {
-      "from": "change-set:cs-7b2f05bb6d4e",
+      "from": "change-set:cs-89ad08ccd8e2",
       "to": "artifact:internal/curriculum/testdata/duplicate_id/pack.yaml",
       "type": "changes"
     },
     {
-      "from": "change-set:cs-7b2f05bb6d4e",
+      "from": "change-set:cs-89ad08ccd8e2",
       "to": "artifact:internal/curriculum/testdata/incompatible_schema_version/manifest.yaml",
       "type": "changes"
     },
     {
-      "from": "change-set:cs-7b2f05bb6d4e",
+      "from": "change-set:cs-89ad08ccd8e2",
       "to": "artifact:internal/curriculum/testdata/incompatible_schema_version/pack.yaml",
       "type": "changes"
     },
     {
-      "from": "change-set:cs-7b2f05bb6d4e",
+      "from": "change-set:cs-89ad08ccd8e2",
       "to": "artifact:internal/curriculum/testdata/missing_reference/manifest.yaml",
       "type": "changes"
     },
     {
-      "from": "change-set:cs-7b2f05bb6d4e",
+      "from": "change-set:cs-89ad08ccd8e2",
       "to": "artifact:internal/curriculum/testdata/missing_reference/pack.yaml",
       "type": "changes"
     },
     {
-      "from": "change-set:cs-7b2f05bb6d4e",
+      "from": "change-set:cs-89ad08ccd8e2",
       "to": "artifact:internal/curriculum/testdata/path_escape/manifest.yaml",
       "type": "changes"
     },
     {
-      "from": "change-set:cs-7b2f05bb6d4e",
+      "from": "change-set:cs-89ad08ccd8e2",
       "to": "artifact:internal/curriculum/testdata/prerequisite_cycle/manifest.yaml",
       "type": "changes"
     },
     {
-      "from": "change-set:cs-7b2f05bb6d4e",
+      "from": "change-set:cs-89ad08ccd8e2",
       "to": "artifact:internal/curriculum/testdata/prerequisite_cycle/pack.yaml",
       "type": "changes"
     },
     {
-      "from": "change-set:cs-7b2f05bb6d4e",
+      "from": "change-set:cs-89ad08ccd8e2",
       "to": "artifact:internal/curriculum/testdata/valid/manifest.yaml",
       "type": "changes"
     },
     {
-      "from": "change-set:cs-7b2f05bb6d4e",
+      "from": "change-set:cs-89ad08ccd8e2",
       "to": "artifact:internal/curriculum/testdata/valid/pack.yaml",
       "type": "changes"
     },
     {
-      "from": "change-set:cs-7b2f05bb6d4e",
+      "from": "change-set:cs-89ad08ccd8e2",
       "to": "artifact:internal/curriculum/validator.go",
       "type": "changes"
     },
     {
-      "from": "change-set:cs-7b2f05bb6d4e",
+      "from": "change-set:cs-89ad08ccd8e2",
       "to": "artifact:packs/go-first-steps.yaml",
       "type": "changes"
     },
     {
-      "from": "change-set:cs-7b2f05bb6d4e",
+      "from": "change-set:cs-89ad08ccd8e2",
       "to": "artifact:packs/manifest.yaml",
       "type": "changes"
     },
     {
-      "from": "change-set:cs-7b2f05bb6d4e",
+      "from": "change-set:cs-89ad08ccd8e2",
       "to": "artifact:schemas/catalog.schema.json",
       "type": "changes"
     },
     {
-      "from": "change-set:cs-7b2f05bb6d4e",
+      "from": "change-set:cs-89ad08ccd8e2",
       "to": "artifact:schemas/challenge.schema.json",
       "type": "changes"
     },
     {
-      "from": "change-set:cs-7b2f05bb6d4e",
+      "from": "change-set:cs-89ad08ccd8e2",
       "to": "artifact:schemas/pack.schema.json",
+      "type": "changes"
+    },
+    {
+      "from": "change-set:cs-c0d298616f06",
+      "to": "artifact:.pose/specs/2026-08-22-local-event-store.md",
+      "type": "changes"
+    },
+    {
+      "from": "change-set:cs-c0d298616f06",
+      "to": "artifact:internal/eventstore/event.go",
+      "type": "changes"
+    },
+    {
+      "from": "change-set:cs-c0d298616f06",
+      "to": "artifact:internal/eventstore/lock.go",
+      "type": "changes"
+    },
+    {
+      "from": "change-set:cs-c0d298616f06",
+      "to": "artifact:internal/eventstore/recovery.go",
+      "type": "changes"
+    },
+    {
+      "from": "change-set:cs-c0d298616f06",
+      "to": "artifact:internal/eventstore/recovery_test.go",
+      "type": "changes"
+    },
+    {
+      "from": "change-set:cs-c0d298616f06",
+      "to": "artifact:internal/eventstore/snapshot.go",
+      "type": "changes"
+    },
+    {
+      "from": "change-set:cs-c0d298616f06",
+      "to": "artifact:internal/eventstore/store.go",
+      "type": "changes"
+    },
+    {
+      "from": "change-set:cs-c0d298616f06",
+      "to": "artifact:internal/eventstore/store_test.go",
+      "type": "changes"
+    },
+    {
+      "from": "change-set:cs-c0d298616f06",
+      "to": "artifact:internal/evidence/store.go",
+      "type": "changes"
+    },
+    {
+      "from": "change-set:cs-c0d298616f06",
+      "to": "artifact:internal/evidence/store_test.go",
       "type": "changes"
     },
     {
@@ -2738,7 +2835,7 @@
     },
     {
       "from": "spec:catalog-schema-loader",
-      "to": "change-set:cs-7b2f05bb6d4e",
+      "to": "change-set:cs-89ad08ccd8e2",
       "type": "observed-by"
     },
     {
@@ -3168,11 +3265,6 @@
     },
     {
       "from": "spec:local-event-store",
-      "to": "artifact:.gitignore",
-      "type": "declares"
-    },
-    {
-      "from": "spec:local-event-store",
       "to": "artifact:internal/eventstore/event.go",
       "type": "declares"
     },
@@ -3215,6 +3307,11 @@
       "from": "spec:local-event-store",
       "to": "artifact:internal/evidence/store_test.go",
       "type": "declares"
+    },
+    {
+      "from": "spec:local-event-store",
+      "to": "change-set:cs-c0d298616f06",
+      "type": "observed-by"
     },
     {
       "from": "spec:mastery-review-scheduling",
@@ -4409,11 +4506,6 @@
       "path": "internal/evidence/store_test.go"
     },
     {
-      "spec": "local-event-store",
-      "action": "modified",
-      "path": ".gitignore"
-    },
-    {
       "spec": "mastery-review-scheduling",
       "action": "created",
       "path": "internal/application/progress.go"
@@ -5172,18 +5264,27 @@
       "diff_digest": "sha256:a1f1f3592e4043c7efb7bb360cbbb5e57093b8a6c0525eaa20f403335e9e6ba9"
     },
     {
-      "id": "cs-7b2f05bb6d4e",
+      "id": "cs-89ad08ccd8e2",
       "spec": "catalog-schema-loader",
       "selector": "trailers:catalog-schema-loader",
       "base": "6b6aaab43dcbb96825fdf5342330460ae3d0e132^",
-      "head": "80feec8b75813575a96d8ed8893575638c8f8044",
+      "head": "57752a76424866c48a4f703ee17958334fd237c4",
       "resolved_base": "85a74f40c27f4734c2eaf71eb24fe4bfcd0d928d",
-      "resolved_head": "80feec8b75813575a96d8ed8893575638c8f8044",
+      "resolved_head": "57752a76424866c48a4f703ee17958334fd237c4",
       "commits": [
         "6b6aaab43dcbb96825fdf5342330460ae3d0e132",
-        "80feec8b75813575a96d8ed8893575638c8f8044"
+        "80feec8b75813575a96d8ed8893575638c8f8044",
+        "57752a76424866c48a4f703ee17958334fd237c4"
       ],
       "paths": [
+        {
+          "action": "created",
+          "path": ".pose/review-attestations/rva-aeeb91251ef17f5c.json"
+        },
+        {
+          "action": "created",
+          "path": ".pose/review-bundles/rvb-bd85ae772435c2a4.json"
+        },
         {
           "action": "created",
           "path": "go.sum"
@@ -5282,6 +5383,18 @@
         },
         {
           "action": "modified",
+          "path": ".pose/indexes/delivery-integrity.json"
+        },
+        {
+          "action": "modified",
+          "path": ".pose/indexes/spec-graph.json"
+        },
+        {
+          "action": "modified",
+          "path": ".pose/results/delivery-validation.json"
+        },
+        {
+          "action": "modified",
           "path": ".pose/specs/2026-08-22-catalog-schema-loader.md"
         },
         {
@@ -5289,7 +5402,62 @@
           "path": "go.mod"
         }
       ],
-      "diff_digest": "sha256:12e80d322427f453885109a6a9369448dab74e377443f6e434f6ea4d30db4f75"
+      "diff_digest": "sha256:d2cf16cc1d95cd9507cd10245b3c9a3a5b80b6cfe7d67088490db9ee94a0ca89"
+    },
+    {
+      "id": "cs-c0d298616f06",
+      "spec": "local-event-store",
+      "selector": "trailers:local-event-store",
+      "base": "732b6d5c78700dc03bfed507aadcd31a4d5baf08^",
+      "head": "732b6d5c78700dc03bfed507aadcd31a4d5baf08",
+      "resolved_base": "57752a76424866c48a4f703ee17958334fd237c4",
+      "resolved_head": "732b6d5c78700dc03bfed507aadcd31a4d5baf08",
+      "commits": [
+        "732b6d5c78700dc03bfed507aadcd31a4d5baf08"
+      ],
+      "paths": [
+        {
+          "action": "created",
+          "path": "internal/eventstore/event.go"
+        },
+        {
+          "action": "created",
+          "path": "internal/eventstore/lock.go"
+        },
+        {
+          "action": "created",
+          "path": "internal/eventstore/recovery.go"
+        },
+        {
+          "action": "created",
+          "path": "internal/eventstore/recovery_test.go"
+        },
+        {
+          "action": "created",
+          "path": "internal/eventstore/snapshot.go"
+        },
+        {
+          "action": "created",
+          "path": "internal/eventstore/store.go"
+        },
+        {
+          "action": "created",
+          "path": "internal/eventstore/store_test.go"
+        },
+        {
+          "action": "created",
+          "path": "internal/evidence/store.go"
+        },
+        {
+          "action": "created",
+          "path": "internal/evidence/store_test.go"
+        },
+        {
+          "action": "modified",
+          "path": ".pose/specs/2026-08-22-local-event-store.md"
+        }
+      ],
+      "diff_digest": "sha256:97276ec38975712cff24803d7498d61c1030f1d93e2a2f8652a20fabff3c5e11"
     }
   ],
   "reverse": {
@@ -5328,9 +5496,6 @@
     ],
     ".github/workflows/release.yml": [
       "installation-documentation-ci"
-    ],
-    ".gitignore": [
-      "local-event-store"
     ],
     ".pose/adr/2026-08-22-agent-mcp-and-core-boundaries.md": [
       "architecture-decision-baseline"
@@ -6068,29 +6233,11 @@
       "remediation": "correct the exact path or commit the artifact before closeout"
     },
     {
-      "id": "dif-07da16001115",
-      "code": "action-mismatch",
-      "severity": "error",
-      "spec": "local-event-store",
-      "path": "internal/eventstore/snapshot.go",
-      "message": "declared artifact action is absent from the attributed Git change sets",
-      "remediation": "no Git change sets are attributed to spec local-event-store (ensure commits carry 'POSE-Spec: local-event-store' trailer or generate report with pose report)"
-    },
-    {
       "id": "dif-0864fe562a03",
       "code": "existence",
       "severity": "error",
       "spec": "go-foundations-packs",
       "path": "packs/go-data-text",
-      "message": "declared current artifact is not tracked at the selected head",
-      "remediation": "correct the exact path or commit the artifact before closeout"
-    },
-    {
-      "id": "dif-08b926e49b55",
-      "code": "existence",
-      "severity": "error",
-      "spec": "local-event-store",
-      "path": "internal/eventstore/recovery_test.go",
       "message": "declared current artifact is not tracked at the selected head",
       "remediation": "correct the exact path or commit the artifact before closeout"
     },
@@ -6311,15 +6458,6 @@
       "remediation": "no Git change sets are attributed to spec safe-check-executor (ensure commits carry 'POSE-Spec: safe-check-executor' trailer or generate report with pose report)"
     },
     {
-      "id": "dif-1ff887649b4b",
-      "code": "existence",
-      "severity": "error",
-      "spec": "workspace-observation-baselines",
-      "path": "internal/evidence/store.go",
-      "message": "declared current artifact is not tracked at the selected head",
-      "remediation": "correct the exact path or commit the artifact before closeout"
-    },
-    {
       "id": "dif-211957449618",
       "code": "existence",
       "severity": "error",
@@ -6527,24 +6665,6 @@
       "remediation": "no Git change sets are attributed to spec installation-documentation-ci (ensure commits carry 'POSE-Spec: installation-documentation-ci' trailer or generate report with pose report)"
     },
     {
-      "id": "dif-2e8997439e96",
-      "code": "action-mismatch",
-      "severity": "error",
-      "spec": "local-event-store",
-      "path": "internal/eventstore/recovery_test.go",
-      "message": "declared artifact action is absent from the attributed Git change sets",
-      "remediation": "no Git change sets are attributed to spec local-event-store (ensure commits carry 'POSE-Spec: local-event-store' trailer or generate report with pose report)"
-    },
-    {
-      "id": "dif-2f155bb0f515",
-      "code": "action-mismatch",
-      "severity": "error",
-      "spec": "local-event-store",
-      "path": "internal/evidence/store_test.go",
-      "message": "declared artifact action is absent from the attributed Git change sets",
-      "remediation": "no Git change sets are attributed to spec local-event-store (ensure commits carry 'POSE-Spec: local-event-store' trailer or generate report with pose report)"
-    },
-    {
       "id": "dif-2f1615097222",
       "code": "existence",
       "severity": "error",
@@ -6644,24 +6764,6 @@
       "remediation": "no Git change sets are attributed to spec assistance-hints-detours (ensure commits carry 'POSE-Spec: assistance-hints-detours' trailer or generate report with pose report)"
     },
     {
-      "id": "dif-36f353b35f1d",
-      "code": "existence",
-      "severity": "error",
-      "spec": "local-event-store",
-      "path": "internal/evidence/store_test.go",
-      "message": "declared current artifact is not tracked at the selected head",
-      "remediation": "correct the exact path or commit the artifact before closeout"
-    },
-    {
-      "id": "dif-370d8aa6780f",
-      "code": "existence",
-      "severity": "error",
-      "spec": "local-event-store",
-      "path": "internal/eventstore/store.go",
-      "message": "declared current artifact is not tracked at the selected head",
-      "remediation": "correct the exact path or commit the artifact before closeout"
-    },
-    {
       "id": "dif-37cc2a7298d9",
       "code": "existence",
       "severity": "error",
@@ -6687,15 +6789,6 @@
       "path": "docs/security/privacy.md",
       "message": "declared current artifact is not tracked at the selected head",
       "remediation": "correct the exact path or commit the artifact before closeout"
-    },
-    {
-      "id": "dif-39aa33b792f7",
-      "code": "action-mismatch",
-      "severity": "error",
-      "spec": "local-event-store",
-      "path": "internal/evidence/store.go",
-      "message": "declared artifact action is absent from the attributed Git change sets",
-      "remediation": "no Git change sets are attributed to spec local-event-store (ensure commits carry 'POSE-Spec: local-event-store' trailer or generate report with pose report)"
     },
     {
       "id": "dif-39f2e1d5cc43",
@@ -6851,15 +6944,6 @@
       "remediation": "correct the exact path or commit the artifact before closeout"
     },
     {
-      "id": "dif-46acb41b503f",
-      "code": "existence",
-      "severity": "error",
-      "spec": "local-event-store",
-      "path": "internal/eventstore/lock.go",
-      "message": "declared current artifact is not tracked at the selected head",
-      "remediation": "correct the exact path or commit the artifact before closeout"
-    },
-    {
       "id": "dif-46f4e36a33df",
       "code": "action-mismatch",
       "severity": "error",
@@ -7000,15 +7084,6 @@
       "severity": "error",
       "spec": "learning-practice-debug-modes",
       "path": "internal/session/modes_test.go",
-      "message": "declared current artifact is not tracked at the selected head",
-      "remediation": "correct the exact path or commit the artifact before closeout"
-    },
-    {
-      "id": "dif-4cfd6170a151",
-      "code": "existence",
-      "severity": "error",
-      "spec": "local-event-store",
-      "path": "internal/eventstore/recovery.go",
       "message": "declared current artifact is not tracked at the selected head",
       "remediation": "correct the exact path or commit the artifact before closeout"
     },
@@ -7256,15 +7331,6 @@
       "remediation": "no Git change sets are attributed to spec safe-check-executor (ensure commits carry 'POSE-Spec: safe-check-executor' trailer or generate report with pose report)"
     },
     {
-      "id": "dif-5b7f9889c25c",
-      "code": "action-mismatch",
-      "severity": "error",
-      "spec": "local-event-store",
-      "path": "internal/eventstore/store.go",
-      "message": "declared artifact action is absent from the attributed Git change sets",
-      "remediation": "no Git change sets are attributed to spec local-event-store (ensure commits carry 'POSE-Spec: local-event-store' trailer or generate report with pose report)"
-    },
-    {
       "id": "dif-5cb2334ca177",
       "code": "existence",
       "severity": "error",
@@ -7299,15 +7365,6 @@
       "path": "internal/curriculum/editorial_test.go",
       "message": "declared current artifact is not tracked at the selected head",
       "remediation": "correct the exact path or commit the artifact before closeout"
-    },
-    {
-      "id": "dif-5df82e450c41",
-      "code": "action-mismatch",
-      "severity": "error",
-      "spec": "local-event-store",
-      "path": "internal/eventstore/recovery.go",
-      "message": "declared artifact action is absent from the attributed Git change sets",
-      "remediation": "no Git change sets are attributed to spec local-event-store (ensure commits carry 'POSE-Spec: local-event-store' trailer or generate report with pose report)"
     },
     {
       "id": "dif-5f3bcb0c12be",
@@ -7677,15 +7734,6 @@
       "path": "internal/mastery/model.go",
       "message": "declared artifact action is absent from the attributed Git change sets",
       "remediation": "no Git change sets are attributed to spec mastery-review-scheduling (ensure commits carry 'POSE-Spec: mastery-review-scheduling' trailer or generate report with pose report)"
-    },
-    {
-      "id": "dif-79669116a7cf",
-      "code": "existence",
-      "severity": "error",
-      "spec": "local-event-store",
-      "path": "internal/evidence/store.go",
-      "message": "declared current artifact is not tracked at the selected head",
-      "remediation": "correct the exact path or commit the artifact before closeout"
     },
     {
       "id": "dif-7aeff53a94d2",
@@ -8201,15 +8249,6 @@
       "remediation": "correct the exact path or commit the artifact before closeout"
     },
     {
-      "id": "dif-a32f5e2a7db4",
-      "code": "existence",
-      "severity": "error",
-      "spec": "local-event-store",
-      "path": "internal/eventstore/event.go",
-      "message": "declared current artifact is not tracked at the selected head",
-      "remediation": "correct the exact path or commit the artifact before closeout"
-    },
-    {
       "id": "dif-a351218dabec",
       "code": "existence",
       "severity": "error",
@@ -8345,15 +8384,6 @@
       "remediation": "no Git change sets are attributed to spec administrative-cli-fixtures (ensure commits carry 'POSE-Spec: administrative-cli-fixtures' trailer or generate report with pose report)"
     },
     {
-      "id": "dif-aac8d0b4f4a4",
-      "code": "action-mismatch",
-      "severity": "error",
-      "spec": "local-event-store",
-      "path": "internal/eventstore/lock.go",
-      "message": "declared artifact action is absent from the attributed Git change sets",
-      "remediation": "no Git change sets are attributed to spec local-event-store (ensure commits carry 'POSE-Spec: local-event-store' trailer or generate report with pose report)"
-    },
-    {
       "id": "dif-aacb008c8b45",
       "code": "existence",
       "severity": "error",
@@ -8361,15 +8391,6 @@
       "path": "internal/session/disclosure.go",
       "message": "declared current artifact is not tracked at the selected head",
       "remediation": "correct the exact path or commit the artifact before closeout"
-    },
-    {
-      "id": "dif-ace718bc5f5e",
-      "code": "action-mismatch",
-      "severity": "error",
-      "spec": "local-event-store",
-      "path": ".gitignore",
-      "message": "declared artifact action is absent from the attributed Git change sets",
-      "remediation": "no Git change sets are attributed to spec local-event-store (ensure commits carry 'POSE-Spec: local-event-store' trailer or generate report with pose report)"
     },
     {
       "id": "dif-ad742df21080",
@@ -8795,15 +8816,6 @@
       "remediation": "no Git change sets are attributed to spec v1-integrated-acceptance (ensure commits carry 'POSE-Spec: v1-integrated-acceptance' trailer or generate report with pose report)"
     },
     {
-      "id": "dif-d24a13606114",
-      "code": "existence",
-      "severity": "error",
-      "spec": "local-event-store",
-      "path": "internal/eventstore/snapshot.go",
-      "message": "declared current artifact is not tracked at the selected head",
-      "remediation": "correct the exact path or commit the artifact before closeout"
-    },
-    {
       "id": "dif-d274c56a15fa",
       "code": "action-mismatch",
       "severity": "error",
@@ -8973,15 +8985,6 @@
       "path": "README.md",
       "message": "declared artifact action is absent from the attributed Git change sets",
       "remediation": "no Git change sets are attributed to spec installation-documentation-ci (ensure commits carry 'POSE-Spec: installation-documentation-ci' trailer or generate report with pose report)"
-    },
-    {
-      "id": "dif-e421bbe1ea66",
-      "code": "action-mismatch",
-      "severity": "error",
-      "spec": "local-event-store",
-      "path": "internal/eventstore/event.go",
-      "message": "declared artifact action is absent from the attributed Git change sets",
-      "remediation": "no Git change sets are attributed to spec local-event-store (ensure commits carry 'POSE-Spec: local-event-store' trailer or generate report with pose report)"
     },
     {
       "id": "dif-e440b38bca16",
@@ -9164,15 +9167,6 @@
       "remediation": "correct the exact path or commit the artifact before closeout"
     },
     {
-      "id": "dif-ef98719401aa",
-      "code": "existence",
-      "severity": "error",
-      "spec": "local-event-store",
-      "path": "internal/eventstore/store_test.go",
-      "message": "declared current artifact is not tracked at the selected head",
-      "remediation": "correct the exact path or commit the artifact before closeout"
-    },
-    {
       "id": "dif-f01672530c7c",
       "code": "existence",
       "severity": "error",
@@ -9198,15 +9192,6 @@
       "path": "tests/e2e/installation",
       "message": "declared current artifact is not tracked at the selected head",
       "remediation": "correct the exact path or commit the artifact before closeout"
-    },
-    {
-      "id": "dif-f31180d6ecdd",
-      "code": "action-mismatch",
-      "severity": "error",
-      "spec": "local-event-store",
-      "path": "internal/eventstore/store_test.go",
-      "message": "declared artifact action is absent from the attributed Git change sets",
-      "remediation": "no Git change sets are attributed to spec local-event-store (ensure commits carry 'POSE-Spec: local-event-store' trailer or generate report with pose report)"
     },
     {
       "id": "dif-f33441a07b34",
@@ -9370,15 +9355,16 @@
       "evidence_class": "build",
       "severity": "required",
       "outcome": "pass",
-      "git_head": "80feec8b75813575a96d8ed8893575638c8f8044",
-      "generated_at": "2026-08-22T23:57:36Z",
-      "provenance_digest": "sha256:9fba709d40b59d0658bdc50ad4b5942bd1bd77fa2178c168fb8cadd7cfcadb16",
+      "git_head": "732b6d5c78700dc03bfed507aadcd31a4d5baf08",
+      "generated_at": "2026-08-23T00:06:20Z",
+      "provenance_digest": "sha256:843e71979c4188af0aad69fe1219f181d53dcca05675e9325267fd6314ab1318",
       "report": ".pose/results/delivery-validation.json",
       "scope_provenance": {
         "architecture-decision-baseline": "sha256:0cb9538df6c6193eeea826dda56f91288808c178925c98b02a43af253045c99e",
-        "catalog-schema-loader": "sha256:65d1bac540f432ad6e0e2c0531f2361db0717fccbf2ac64d668c95c494531877",
+        "catalog-schema-loader": "sha256:41b16824af93a5c85baf323d23b4e150e819ad577310f9864368cf215da3dca2",
         "go-runtime-foundation": "sha256:9a4e47998be06f380306497a3e5f9a87b700e2ea0881b7f33cea67e2d2d7da03",
-        "learning-domain-model": "sha256:d02fa5101f4bf12416a3360691755de2a1bee097647dc70f162cd6c1c2cd9796"
+        "learning-domain-model": "sha256:d02fa5101f4bf12416a3360691755de2a1bee097647dc70f162cd6c1c2cd9796",
+        "local-event-store": "sha256:866355b42bf8c236d834788886f3b7ad3a413dad66182358f5c823276a17f644"
       }
     },
     {
@@ -9388,15 +9374,16 @@
       "evidence_class": "unit",
       "severity": "required",
       "outcome": "pass",
-      "git_head": "80feec8b75813575a96d8ed8893575638c8f8044",
-      "generated_at": "2026-08-22T23:57:36Z",
-      "provenance_digest": "sha256:9fba709d40b59d0658bdc50ad4b5942bd1bd77fa2178c168fb8cadd7cfcadb16",
+      "git_head": "732b6d5c78700dc03bfed507aadcd31a4d5baf08",
+      "generated_at": "2026-08-23T00:06:20Z",
+      "provenance_digest": "sha256:843e71979c4188af0aad69fe1219f181d53dcca05675e9325267fd6314ab1318",
       "report": ".pose/results/delivery-validation.json",
       "scope_provenance": {
         "architecture-decision-baseline": "sha256:0cb9538df6c6193eeea826dda56f91288808c178925c98b02a43af253045c99e",
-        "catalog-schema-loader": "sha256:65d1bac540f432ad6e0e2c0531f2361db0717fccbf2ac64d668c95c494531877",
+        "catalog-schema-loader": "sha256:41b16824af93a5c85baf323d23b4e150e819ad577310f9864368cf215da3dca2",
         "go-runtime-foundation": "sha256:9a4e47998be06f380306497a3e5f9a87b700e2ea0881b7f33cea67e2d2d7da03",
-        "learning-domain-model": "sha256:d02fa5101f4bf12416a3360691755de2a1bee097647dc70f162cd6c1c2cd9796"
+        "learning-domain-model": "sha256:d02fa5101f4bf12416a3360691755de2a1bee097647dc70f162cd6c1c2cd9796",
+        "local-event-store": "sha256:866355b42bf8c236d834788886f3b7ad3a413dad66182358f5c823276a17f644"
       }
     },
     {
@@ -9406,15 +9393,16 @@
       "evidence_class": "build",
       "severity": "optional",
       "outcome": "pass",
-      "git_head": "80feec8b75813575a96d8ed8893575638c8f8044",
-      "generated_at": "2026-08-22T23:57:36Z",
-      "provenance_digest": "sha256:9fba709d40b59d0658bdc50ad4b5942bd1bd77fa2178c168fb8cadd7cfcadb16",
+      "git_head": "732b6d5c78700dc03bfed507aadcd31a4d5baf08",
+      "generated_at": "2026-08-23T00:06:20Z",
+      "provenance_digest": "sha256:843e71979c4188af0aad69fe1219f181d53dcca05675e9325267fd6314ab1318",
       "report": ".pose/results/delivery-validation.json",
       "scope_provenance": {
         "architecture-decision-baseline": "sha256:0cb9538df6c6193eeea826dda56f91288808c178925c98b02a43af253045c99e",
-        "catalog-schema-loader": "sha256:65d1bac540f432ad6e0e2c0531f2361db0717fccbf2ac64d668c95c494531877",
+        "catalog-schema-loader": "sha256:41b16824af93a5c85baf323d23b4e150e819ad577310f9864368cf215da3dca2",
         "go-runtime-foundation": "sha256:9a4e47998be06f380306497a3e5f9a87b700e2ea0881b7f33cea67e2d2d7da03",
-        "learning-domain-model": "sha256:d02fa5101f4bf12416a3360691755de2a1bee097647dc70f162cd6c1c2cd9796"
+        "learning-domain-model": "sha256:d02fa5101f4bf12416a3360691755de2a1bee097647dc70f162cd6c1c2cd9796",
+        "local-event-store": "sha256:866355b42bf8c236d834788886f3b7ad3a413dad66182358f5c823276a17f644"
       }
     }
   ]

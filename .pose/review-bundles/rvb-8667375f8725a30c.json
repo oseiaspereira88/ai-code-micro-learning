@@ -1,0 +1,470 @@
+{
+  "schema_version": 1,
+  "bundle_id": "rvb-8667375f8725a30c",
+  "bundle_digest": "sha256:8667375f8725a30c0767965ca4e3af3ecb49e263514116d20737149019531d6c",
+  "state": "sealed",
+  "sealed_at": "2026-08-23T00:06:26Z",
+  "payload": {
+    "scope": {
+      "ref": "spec:local-event-store",
+      "kind": "spec",
+      "slug": "local-event-store",
+      "depends_on": [
+        "architecture-decision-baseline",
+        "go-runtime-foundation",
+        "learning-domain-model"
+      ],
+      "components": [
+        "event-store",
+        "evidence"
+      ],
+      "sections": [
+        {
+          "kind": "semantic-section",
+          "path": "decisions",
+          "digest": "sha256:ef9aa1e9259f27f449c013c4e2117000608f8afee322cdeea31b95cb0aacdd8d",
+          "reason": "governed semantic review input"
+        },
+        {
+          "kind": "semantic-section",
+          "path": "intent",
+          "digest": "sha256:4f854de6285ce0a27f2aa80070a5842e43f1aaeed1d2fe0452b4116924ea2fc4",
+          "reason": "governed semantic review input"
+        },
+        {
+          "kind": "semantic-section",
+          "path": "requirements",
+          "digest": "sha256:2f7260bb774fc7b537a6d56fc59724c3acc875b2090532d2ed281d3e34237b99",
+          "reason": "governed semantic review input"
+        },
+        {
+          "kind": "semantic-section",
+          "path": "technical plan",
+          "digest": "sha256:c7a7c38b940706956a9149821975ec682f38200cd5f3729431d6499531791987",
+          "reason": "governed semantic review input"
+        }
+      ]
+    },
+    "subject": {
+      "change_sets": [
+        "cs-c0d298616f06"
+      ],
+      "base": "57752a76424866c48a4f703ee17958334fd237c4",
+      "head": "732b6d5c78700dc03bfed507aadcd31a4d5baf08",
+      "patch_digest": "sha256:9d7bc3d15aa6e97cdded9f89ac38b8ef590e12690fcb2b5509334f9b53418bc7",
+      "tree_digest": "sha256:cb267f8bd52ff09d1e3e4e860ef6d8c6a8b7d8da5cc7b428866e6c959826b7c5",
+      "entries": [
+        {
+          "action": "created",
+          "path": "internal/eventstore/event.go",
+          "class": "implementation",
+          "digest": "sha256:b934e672c2d575dfe51fdd7258248f282688b2056f0cb034e363acad2214377d",
+          "reason": "attributed implementation path in the immutable change set"
+        },
+        {
+          "action": "created",
+          "path": "internal/eventstore/lock.go",
+          "class": "implementation",
+          "digest": "sha256:50a19c5df49ece9dced38fc9a0a08deb8b80b6aa92c743cdf6dfb5c3bd256068",
+          "reason": "attributed implementation path in the immutable change set"
+        },
+        {
+          "action": "created",
+          "path": "internal/eventstore/recovery.go",
+          "class": "implementation",
+          "digest": "sha256:4559a72119fa1c433909de1b8069d02f9ad2dbec604547047344c31a87280a30",
+          "reason": "attributed implementation path in the immutable change set"
+        },
+        {
+          "action": "created",
+          "path": "internal/eventstore/recovery_test.go",
+          "class": "implementation",
+          "digest": "sha256:bfdf46650ce3289e22eeb1fc4041c0c41f7b3bd809956bc516bea2b829831493",
+          "reason": "attributed implementation path in the immutable change set"
+        },
+        {
+          "action": "created",
+          "path": "internal/eventstore/snapshot.go",
+          "class": "implementation",
+          "digest": "sha256:30afe7a5572b4e6d8dbed5fdad7b3b77981eb352e9cd5e00efaa066712c3eb0e",
+          "reason": "attributed implementation path in the immutable change set"
+        },
+        {
+          "action": "created",
+          "path": "internal/eventstore/store.go",
+          "class": "implementation",
+          "digest": "sha256:6eac5cdad0ada6cc4004dd9d0d2c940767a8e4ecaf443a9367510e66c16abf48",
+          "reason": "attributed implementation path in the immutable change set"
+        },
+        {
+          "action": "created",
+          "path": "internal/eventstore/store_test.go",
+          "class": "implementation",
+          "digest": "sha256:ea7f298e758c5b24aaeeefd082ed49eb9b0da6db984b836bb5cbfde686df6834",
+          "reason": "attributed implementation path in the immutable change set"
+        },
+        {
+          "action": "created",
+          "path": "internal/evidence/store.go",
+          "class": "implementation",
+          "digest": "sha256:6f78cafae2fbc24acdce26a213e375bd5ad13ddeeabb89bca0735539a7456f02",
+          "reason": "attributed implementation path in the immutable change set"
+        },
+        {
+          "action": "created",
+          "path": "internal/evidence/store_test.go",
+          "class": "implementation",
+          "digest": "sha256:556a1041f1a90ddba5ed21eb3d0cf524f02701653be530d6520727a311d40604",
+          "reason": "attributed implementation path in the immutable change set"
+        }
+      ]
+    },
+    "plan": {
+      "plan_digest": "sha256:1d2f5f3866cd213449c8870d3bb81af65ce66fba00e9e2144991d4bcfb1791a8",
+      "independence": "same-actor-separate-execution",
+      "components": [
+        {
+          "id": "internal",
+          "path": "internal",
+          "kind": "directory",
+          "sources": [
+            "artifact:local-event-store:internal/eventstore/event.go",
+            "artifact:local-event-store:internal/eventstore/lock.go",
+            "artifact:local-event-store:internal/eventstore/recovery.go",
+            "artifact:local-event-store:internal/eventstore/recovery_test.go",
+            "artifact:local-event-store:internal/eventstore/snapshot.go",
+            "artifact:local-event-store:internal/eventstore/store.go",
+            "artifact:local-event-store:internal/eventstore/store_test.go",
+            "artifact:local-event-store:internal/evidence/store.go",
+            "artifact:local-event-store:internal/evidence/store_test.go",
+            "observed:local-event-store:internal/eventstore/event.go",
+            "observed:local-event-store:internal/eventstore/lock.go",
+            "observed:local-event-store:internal/eventstore/recovery.go",
+            "observed:local-event-store:internal/eventstore/recovery_test.go",
+            "observed:local-event-store:internal/eventstore/snapshot.go",
+            "observed:local-event-store:internal/eventstore/store.go",
+            "observed:local-event-store:internal/eventstore/store_test.go",
+            "observed:local-event-store:internal/evidence/store.go",
+            "observed:local-event-store:internal/evidence/store_test.go"
+          ]
+        }
+      ],
+      "criteria": [
+        {
+          "id": "compatibility",
+          "description": "Public CLI, file and MCP contracts are compatible or explicitly migrated.",
+          "required": true,
+          "profiles": [
+            "spec-closeout@1"
+          ]
+        },
+        {
+          "id": "correctness",
+          "description": "Functional and negative behavior is correct.",
+          "required": true,
+          "evidence_classes": [
+            "test",
+            "validation"
+          ],
+          "profiles": [
+            "spec-closeout@1"
+          ]
+        },
+        {
+          "id": "documentation",
+          "description": "Operational docs, templates and scaffold match runtime behavior.",
+          "required": true,
+          "rules": [
+            "documentation-style"
+          ],
+          "profiles": [
+            "spec-closeout@1"
+          ]
+        },
+        {
+          "id": "operability",
+          "description": "Errors, explanations and remediation are actionable.",
+          "required": true,
+          "profiles": [
+            "spec-closeout@1"
+          ]
+        },
+        {
+          "id": "requirements",
+          "description": "Every requirement has current, relevant evidence.",
+          "required": true,
+          "evidence_classes": [
+            "requirement-trace",
+            "test"
+          ],
+          "profiles": [
+            "spec-closeout@1"
+          ]
+        },
+        {
+          "id": "scope",
+          "description": "The implementation matches the approved spec scope.",
+          "required": true,
+          "rules": [
+            "documentation-style"
+          ],
+          "profiles": [
+            "spec-closeout@1"
+          ]
+        },
+        {
+          "id": "security",
+          "description": "Inputs, paths, evidence and authority boundaries are safe.",
+          "required": true,
+          "rules": [
+            "security"
+          ],
+          "profiles": [
+            "spec-closeout@1"
+          ]
+        }
+      ],
+      "tools": [
+        {
+          "id": "artifact-check",
+          "requiredness": "required",
+          "args": [
+            "pose",
+            "artifact-check",
+            "--spec",
+            "local-event-store",
+            "--strict"
+          ],
+          "rationale": "reconcile declared artifacts with Git-observed provenance",
+          "criteria": [
+            "requirements",
+            "scope"
+          ],
+          "preconditions": [
+            "artifacts-attributed"
+          ]
+        },
+        {
+          "id": "assess-discover",
+          "requiredness": "recommended",
+          "args": [
+            "pose",
+            "assess",
+            "discover",
+            "--component",
+            "internal"
+          ],
+          "rationale": "inspect component structure, language, size and visible debt",
+          "component": "internal",
+          "preconditions": [
+            "scope-authorized"
+          ]
+        },
+        {
+          "id": "assess-tech-debt",
+          "requiredness": "recommended",
+          "args": [
+            "pose",
+            "assess",
+            "tech-debt"
+          ],
+          "rationale": "inspect unresolved TODO, FIXME, panic and stub findings",
+          "criteria": [
+            "correctness"
+          ],
+          "preconditions": [
+            "scope-authorized"
+          ]
+        },
+        {
+          "id": "closeout-check",
+          "requiredness": "required",
+          "args": [
+            "pose",
+            "closeout-check",
+            "spec:local-event-store"
+          ],
+          "rationale": "verify remaining hierarchical closeout blockers",
+          "preconditions": [
+            "review-complete"
+          ]
+        },
+        {
+          "id": "review-check",
+          "requiredness": "required",
+          "args": [
+            "pose",
+            "review-check",
+            "spec:local-event-store"
+          ],
+          "rationale": "verify exact review-plan coverage and freshness",
+          "preconditions": [
+            "review-complete"
+          ]
+        },
+        {
+          "id": "suggest-review",
+          "requiredness": "recommended",
+          "args": [
+            "pose",
+            "suggest",
+            "review",
+            "--path",
+            "internal"
+          ],
+          "rationale": "resolve the component-specific workflow, skill, rules and validation trail",
+          "component": "internal",
+          "preconditions": [
+            "scope-authorized"
+          ]
+        },
+        {
+          "id": "validate",
+          "requiredness": "required",
+          "args": [
+            "pose",
+            "validate",
+            "--strict"
+          ],
+          "rationale": "run the registered deterministic checks for the affected module",
+          "evidence_classes": [
+            "validation"
+          ],
+          "criteria": [
+            "correctness",
+            "requirements"
+          ],
+          "preconditions": [
+            "delivery-target-declared"
+          ]
+        },
+        {
+          "id": "validate",
+          "requiredness": "required",
+          "args": [
+            "pose",
+            "validate",
+            "--strict",
+            "--module",
+            "internal"
+          ],
+          "rationale": "run the registered deterministic checks for the affected module",
+          "evidence_classes": [
+            "validation"
+          ],
+          "component": "internal",
+          "preconditions": [
+            "delivery-target-declared"
+          ]
+        }
+      ]
+    },
+    "evidence": [
+      {
+        "id": "./go/build",
+        "module": ".",
+        "check": "build",
+        "evidence_class": "build",
+        "outcome": "pass",
+        "git_head": "732b6d5c78700dc03bfed507aadcd31a4d5baf08",
+        "provenance_digest": "sha256:843e71979c4188af0aad69fe1219f181d53dcca05675e9325267fd6314ab1318",
+        "report": ".pose/results/delivery-validation.json"
+      },
+      {
+        "id": "./go/test",
+        "module": ".",
+        "check": "test",
+        "evidence_class": "unit",
+        "outcome": "pass",
+        "git_head": "732b6d5c78700dc03bfed507aadcd31a4d5baf08",
+        "provenance_digest": "sha256:843e71979c4188af0aad69fe1219f181d53dcca05675e9325267fd6314ab1318",
+        "report": ".pose/results/delivery-validation.json"
+      }
+    ],
+    "consumed_inputs": [
+      {
+        "kind": "governed-config",
+        "path": ".pose/indexes/validation-matrix.json",
+        "digest": "sha256:7564215c57d3cd1a7735bb7e8ba0c6689b2485c78588fcaaac8c07ddcd59ddc7",
+        "reason": "consumed review policy or validation contract"
+      },
+      {
+        "kind": "governed-config",
+        "path": ".pose/policy/review.json",
+        "digest": "sha256:89a78e6ec6e1806414c669e66239831b593c08b9a182e36fae119bccecd28b5e",
+        "reason": "consumed review policy or validation contract"
+      },
+      {
+        "kind": "review-plan",
+        "path": "spec-closeout@1",
+        "digest": "sha256:1d2f5f3866cd213449c8870d3bb81af65ce66fba00e9e2144991d4bcfb1791a8",
+        "reason": "effective component-aware plan contract"
+      },
+      {
+        "kind": "review-profile",
+        "path": ".pose/review-profiles/spec-closeout.json",
+        "digest": "sha256:de13c1d59e485aaf4cb474a8c2836507447c44dc7090cbdc2de589fa75c6cc92",
+        "reason": "selected by effective review plan"
+      },
+      {
+        "kind": "rule",
+        "path": ".pose/rules/documentation-style.md",
+        "digest": "sha256:5c5c666fc6c796cf9ae3876d25d3fd4fa523d121892459dc0d681d73da1d60ae",
+        "reason": "selected by effective review criterion"
+      },
+      {
+        "kind": "rule",
+        "path": ".pose/rules/security.md",
+        "digest": "sha256:1cbf29c12d09cad0799e2d8715e94f84a49ee8fa09867bb5f12a544f8df43774",
+        "reason": "selected by effective review criterion"
+      },
+      {
+        "kind": "schema",
+        "path": "review-bundle@1",
+        "digest": "sha256:e7c9643ec88eccb2a6dea3ee3291c351983d78e1d2fa44b61399514c5021bcb0",
+        "reason": "canonical bundle and attestation schema identity"
+      },
+      {
+        "kind": "tool-catalog",
+        "path": "native-review-tools@1",
+        "digest": "sha256:1d2f5f3866cd213449c8870d3bb81af65ce66fba00e9e2144991d4bcfb1791a8",
+        "reason": "closed resolved native tool contract"
+      }
+    ]
+  },
+  "excluded_inputs": [
+    {
+      "kind": "derived-section",
+      "path": "final report",
+      "digest": "sha256:53a2be8d9b9095b837558305466b87d692d3496a13346821f8df0b575b4a7e81",
+      "reason": "operational closeout content is verified by its own gate"
+    },
+    {
+      "kind": "derived-section",
+      "path": "tasks",
+      "digest": "sha256:c17eabbc43e55c08e8e13ab6c362951a344dcc174e8a47bb201a1a24b771ca6d",
+      "reason": "operational closeout content is verified by its own gate"
+    },
+    {
+      "kind": "derived-section",
+      "path": "validation",
+      "digest": "sha256:90a1f35319b96f4d80db20cc003259610e7a9d0f29db6b221bfa32ba5977dbf7",
+      "reason": "operational closeout content is verified by its own gate"
+    },
+    {
+      "kind": "lifecycle",
+      "path": "/home/go/GolandProjects/ai-code-micro-learning/.pose/specs/2026-08-22-local-event-store.md",
+      "reason": "status and completed_at do not define the reviewed semantic subject"
+    },
+    {
+      "kind": "semantic-scope",
+      "path": ".pose/specs/2026-08-22-local-event-store.md",
+      "reason": "attributed path is outside the semantic review subject"
+    }
+  ],
+  "warnings": [
+    "unmapped review component explicit:event-store",
+    "unmapped review component explicit:evidence"
+  ],
+  "path": ".pose/review-bundles/rvb-8667375f8725a30c.json"
+}

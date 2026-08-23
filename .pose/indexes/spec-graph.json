@@ -467,7 +467,7 @@
       ],
       "path": ".pose/specs/2026-08-22-catalog-schema-loader.md",
       "priority": 30,
-      "status": "in-progress"
+      "status": "done"
     },
     "curriculum-graph-path-recommendation": {
       "depends_on": [
@@ -588,7 +588,7 @@
       ],
       "path": ".pose/specs/2026-08-22-local-event-store.md",
       "priority": 40,
-      "status": "draft"
+      "status": "in-progress"
     },
     "mastery-review-scheduling": {
       "depends_on": [

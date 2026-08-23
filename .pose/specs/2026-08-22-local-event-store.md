@@ -1,13 +1,14 @@
 ---
 slug: local-event-store
-status: in-progress
+status: done
 created_at: 2026-08-22
-completed_at:
+completed_at: 2026-08-23
 supersedes:
 depends_on: architecture-decision-baseline, go-runtime-foundation, learning-domain-model
 priority: 40
 components: event-store, evidence
 delivers:
+changelog: none
 ---
 
 # Spec: local-event-store
