@@ -211,7 +211,13 @@ Validar protocolo por processo real, golden schemas, erros negativos e integraç
   sessão do cliente, stderr conteve somente logs — nenhum frame de
   protocolo vazou para stderr nem log vazou para stdout (2026-08-22).
 - `pose assess integrate` executado após o commit da implementação →
-  registrar contrato ativo (ver Final Report).
+  `active_contracts=0, identified_gaps=0`. O detector estático de
+  contratos do engine não reconheceu as tools registradas via
+  `mcp.AddTool` como um contrato (provavelmente detecta por convenções de
+  Protobuf/Kafka/REST/manifesto MCP dedicado, não por chamadas de SDK Go);
+  o alvo de entrega tipado (`contract:ailearn-mcp-v1`) já registra o
+  contrato de outra forma, via `pose index`/delivery-integrity — ver Known
+  gaps.
 
 ### Results summary
 - `internal/mcpserver` expõe `catalog_search`, `catalog_get`, `session_start`,
@@ -260,6 +266,12 @@ Validar protocolo por processo real, golden schemas, erros negativos e integraç
   índice de idempotência, mas a sessão de domínio em memória não é
   reconstruída dele nesta fatia — ver Decisão 2/3). Reavaliar quando a
   reconstrução de sessão a partir do log for implementada.
+- `pose assess integrate` não detectou as 5 tools MCP como contrato ativo
+  (`active_contracts=0`); o mecanismo de detecção estática do engine parece
+  não reconhecer registros via `mcp.AddTool` do SDK Go. Não bloqueia esta
+  spec (o contrato já está registrado como alvo de entrega tipado), mas é
+  um gap de observabilidade a considerar reportar se recorrer em specs
+  futuras com mais tools.
 
 ## 7. Final Report
 
