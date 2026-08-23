@@ -76,7 +76,8 @@
   "moduleOverrides": {
     ".": {
       "checks": [
-        {"name": "build", "program": "go", "args": ["build", "./cmd/ailearn"], "severity": "required", "evidenceClass": "build"}
+        {"name": "build", "program": "go", "args": ["build", "./cmd/ailearn"], "severity": "required", "evidenceClass": "build"},
+        {"name": "mcp-contract", "program": "go", "args": ["test", "./internal/mcpserver/...", "-run", "TestContract"], "severity": "required", "evidenceClass": "integration"}
       ]
     }
   }
