@@ -46,6 +46,8 @@ func TestMapErrorTranslatesKnownErrors(t *testing.T) {
 		{"session not found", application.ErrSessionNotFound, ErrCodeSessionNotActive},
 		{"revision conflict", eventstore.ErrRevisionConflict, ErrCodeStateConflict},
 		{"domain error", learning.DomainError{Code: learning.ErrCodeInvalidValue}, ErrCodeInvalidInput},
+		{"challenge has no steps", application.ErrChallengeHasNoSteps, ErrCodeInvalidInput},
+		{"no window at depth", application.ErrNoWindowAtDepth, ErrCodeInvalidInput},
 		{"unknown", errors.New("boom"), ErrCodeInternalError},
 	}
 	for _, c := range cases {

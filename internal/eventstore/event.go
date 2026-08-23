@@ -36,9 +36,14 @@ const (
 	EventStepAdvanced         EventType = "step_advanced"
 	EventSolutionRevealed     EventType = "solution_revealed"
 	EventSessionPaused        EventType = "session_paused"
-	EventSessionFinished      EventType = "session_finished"
-	EventMasteryProjected     EventType = "mastery_projected"
-	EventReviewScheduled      EventType = "review_scheduled"
+	// EventSessionResumed extends PROJECT.md §18.3's minimum event list
+	// (session-orchestration-disclosure, requirement R5): the minimum list
+	// omits an explicit resume marker, but session_paused's counterpart is
+	// needed to audit lifecycle without inferring it from other events.
+	EventSessionResumed   EventType = "session_resumed"
+	EventSessionFinished  EventType = "session_finished"
+	EventMasteryProjected EventType = "mastery_projected"
+	EventReviewScheduled  EventType = "review_scheduled"
 )
 
 // Event is one immutable, append-only log entry (requirement R1). Revision

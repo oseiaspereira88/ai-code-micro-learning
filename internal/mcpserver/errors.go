@@ -34,6 +34,10 @@ func mapError(err error) (ErrorCode, string, bool) {
 		return ErrCodeSessionNotActive, "no active session with that ID", false
 	case errors.Is(err, eventstore.ErrRevisionConflict):
 		return ErrCodeStateConflict, "the session changed since your last read; fetch it again", true
+	case errors.Is(err, application.ErrChallengeHasNoSteps):
+		return ErrCodeInvalidInput, "the challenge has no authored steps to start from", false
+	case errors.Is(err, application.ErrNoWindowAtDepth):
+		return ErrCodeInvalidInput, "no instructional window exists at that depth for this challenge", false
 	default:
 		var domainErr learning.DomainError
 		if errors.As(err, &domainErr) {

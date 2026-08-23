@@ -5,14 +5,15 @@
 package application
 
 import (
-	"errors"
-
 	"github.com/oseiaspereira88/ailearn/internal/curriculum"
+	"github.com/oseiaspereira88/ailearn/internal/session"
 )
 
 // ErrNotFound is returned when a catalog lookup finds nothing with the
-// given ID.
-var ErrNotFound = errors.New("application: not found")
+// given ID. It is the same sentinel internal/session uses for a missing
+// challenge, so mapError's errors.Is checks work regardless of which layer
+// raised it.
+var ErrNotFound = session.ErrNotFound
 
 // CatalogService adapts the immutable curriculum catalog for MCP tools.
 type CatalogService struct {
@@ -48,14 +49,4 @@ func (s *CatalogService) Get(id string) (curriculum.Item, error) {
 		return curriculum.Item{}, ErrNotFound
 	}
 	return item, nil
-}
-
-// Challenge returns the full, reserved-fields-cleared challenge record for
-// id, or ErrNotFound.
-func (s *CatalogService) Challenge(id string) (curriculum.ChallengeAuthoring, error) {
-	ch, ok := s.catalog.Challenge(id)
-	if !ok {
-		return curriculum.ChallengeAuthoring{}, ErrNotFound
-	}
-	return ch, nil
 }

@@ -143,6 +143,8 @@ func TestContractListsExactlyTheMinimalToolSlice(t *testing.T) {
 	want := map[string]bool{
 		"catalog_search": false, "catalog_get": false,
 		"session_start": false, "session_get": false, "instruction_get": false,
+		"session_configure": false, "session_pause": false, "session_resume": false,
+		"session_finish": false, "granularity_adjust": false,
 	}
 	for _, tool := range res.Tools {
 		if _, known := want[tool.Name]; !known {
